@@ -1,0 +1,49 @@
+.section-map{
+	box-shadow: 0 -5px 15px #f3f3f3;
+}
+.map-active{
+	background: red;
+}
+#YMapsID{
+	height: 590px;
+}
+.YMaps-layer-container img{
+	max-width: none!important;
+}
+#mapMenu{
+	list-style: none;
+	padding-left: 0;
+}
+#mapMenu li{
+	margin-right: 40px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#mapMenu a{
+	height: 50px;
+	display: inline-block;
+	font-family: 'RobotoRegular';
+  font-size: 16px;
+  color: #494949;
+}
+#mapMenu p{
+	font-size: 24px;
+  color: #494949;
+  font-family: 'RobotoRegular';
+}
+#mapMenu .red{
+	color: #f44b00;;
+}
+#mapMenu .time{
+	font-family: 'RobotoLight';
+  font-size: 21px;
+  color: #7f7f7f;
+}
+@media (max-width: 768px){
+	#mapMenu li{
+		display: block;
+	}
+	#YMapsID{
+		height: 300px!important;
+	}
+}

@@ -1,0 +1,212 @@
+.section-comment{
+	height: 550px;
+	background: #f7f7f7;
+	position: relative;
+}
+.section-comment .carousel{
+	height: 100%;
+}.section-spec .right .ccr,
+.section-spec .left .ccl,
+.section-comment .right span,
+.section-comment .left span{
+	background: url(carousel-left.png)no-repeat;
+	width: 23px;
+	height: 29px;
+	position: absolute;
+   bottom: 5%;
+   z-index: 1;
+   display: inline-block;
+   margin-top: -10px;
+}
+.section-spec .right .ccr,
+.section-spec .left .ccl{
+	bottom: 102%;
+
+}
+.section-spec .carousel-control.right,
+.section-spec .carousel-control.left{
+	left: 450px;
+}
+.section-spec .carousel-control.right{
+	left: 555px;
+}
+.section-spec .carousel-indicators{
+	bottom: 101%;
+	left: 490px;
+}
+.section-spec .right .ccr,
+.section-comment .right span{
+	background: url(carousel-right.png)no-repeat;
+}
+
+.carousel-control{
+	opacity: 1!important;
+	width: 0!important;
+	margin-right: 38px;
+	
+}
+.carousel-control.right,
+.carousel-control.left{
+	background: none!important;
+}
+.carousel-control.left{
+	right: 0;
+	margin-right: 130px;
+}
+.section-spec .carousel-indicators .active,
+.section-comment .carousel-indicators .active{
+	background: #0c45ba;
+	border: none;
+	margin-bottom: 1px;
+}
+.section-spec .carousel-indicators li,
+.section-comment .carousel-indicators li{
+	width: 10px;
+	height: 10px;
+	background: none;
+	border: 2px solid #0c45ba;
+	margin-right: 4px;
+
+}
+.section-comment .carousel-indicators{
+	right: 45px;
+}
+.comment-left{
+	margin-top: 70px;
+}
+.comment-right{
+	margin-top: 100px;
+	float: right;
+}
+.section-comment .item blockquote{
+	border-left: none!important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 70px;
+	width: 80%;
+}
+.section-comment .item img{
+		max-width: 300px;
+}
+.section-comment .item blockquote:before, 
+.section-comment .item blockquote:after {
+   font-size: 20em;
+   color: #800;
+   } 
+.section-comment .item blockquote:before {
+  content: 'ʻʻ';
+  float: left;
+  margin-top: -0.4em;
+  color: #efefef;
+  font-family: 'Times New Roman';
+ }
+.section-comment .item blockquote:after {
+  content: ',,';
+  float: right;
+  margin-top: -1.2em;
+  color: #efefef;
+  font-family: 'Times New Roman';
+ }
+.section-comment .item blockquote p { 
+	margin: 1em 3em;
+	margin-left: 0;
+	color: #8e8f8f;
+	font-size: 36px;
+	line-height: 1.2;
+}
+.section-comment .item-three blockquote p{
+	font-size: 28px!important;
+}
+.section-comment .item-three .comment-name{
+	font-size: 18px!important;
+}
+.section-comment .item-two img{
+	margin-top: 115px;
+}
+.comment-name{
+	padding-top: 10px;
+}
+.comment-more-link{
+	color: #0654b5;
+	position: absolute;
+	bottom: 30px;
+	right: 140px;
+}
+.section-comment .carousel-inner{
+	height: 550px;
+}
+@media (max-width: 1058px){
+	.section-comment .item blockquote p{
+		font-size: 30px;
+	}
+	.section-comment .item blockquote{
+		width: 95%;
+	}
+	.section-comment .item img{
+		opacity: .4;
+		margin-top: 110px;
+	}
+}
+@media (max-width: 767px){
+	.section-comment .carousel-control,
+	.section-comment .carousel-indicators,
+	.section-spec .carousel-control,
+	.section-spec .carousel-indicators{
+		display: none!important;
+	}
+	.section-comment .item blockquote{
+		width: 100%;
+	}
+	.section-comment .item blockquote{
+		width: 100%;
+		padding: 0;
+	}
+	.section-comment .item blockquote p{
+		margin-left: ;
+		font-size: 20px;
+	}
+	.section-comment .item blockquote:before,
+	.section-comment .item blockquote:after{
+		font-size: 10em;
+	}
+	.section-comment .item-three blockquote p{
+		font-size: 20px!important;
+	}
+	.comment-more-link{
+		right: 20px;
+	}
+
+}
+@media (max-width: 480px){
+	.section-comment .item blockquote:before,
+	.section-comment .item blockquote:after{
+		display: none;
+	}
+	.section-comment .item blockquote p{
+		margin: 0;
+		font-size: 26px;
+	}
+	.section-comment .item img{
+		margin-top: 225px;
+		width: 55%;
+	}
+	.section-comment .item-two img{
+		width: 65%;
+		margin-top: 235px;
+	}
+	.comment-left{
+		margin: 0 auto;
+		text-align: center;
+		height: 350px;
+	}
+	.section-comment{
+		height: 450px;
+	}
+	.section-comment .item blockquote{
+		margin-top: 20px;
+	}
+	.section-comment .carousel-inner{
+		height: 450px;
+	}
+}

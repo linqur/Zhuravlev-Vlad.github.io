@@ -1,0 +1,47 @@
+.section-info{
+	text-align: center;
+}
+
+.section-info a{
+	color: #2768b9;
+  font-family: 'RobotoLight';
+  font-size: 18px;
+
+}
+.section-info a:hover{
+	border-bottom: 1px dashed #608bc0!important;
+}
+.section-info h3{
+	text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'RobotoRegular';
+  margin-top: 20px;
+  margin-bottom: 35px;
+  color: #2768b9!important;
+}
+#info{
+	margin-top: 150px;
+}
+.section-info h5,
+.section-info p{
+	text-align: left;
+	font-size: 18px;
+  margin: 10px 0;
+  color: #494949;
+}
+.section-info h4,
+.section-info h5{
+	color: #494949;
+  font-family: 'RobotoRegular'!important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.section-info h4{
+	font-size: 24px;
+  margin: 50px 0 20px 0;
+}
+@media (max-width: 768px){
+	.three-whale h5{
+		text-align: center;
+	}
+}

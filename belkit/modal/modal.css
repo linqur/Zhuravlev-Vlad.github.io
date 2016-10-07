@@ -1,0 +1,111 @@
+#modal-1 .modal-dialog,
+#modal-2 .modal-dialog{
+	width: 100%;
+	text-align: center;
+}
+#modal-1 .modal-content{
+	background: #0b5ebb;
+}
+#modal-2 .modal-content{
+	background: #30a638;
+}
+#modal-1 .modal-header,
+#modal-1 .modal-footer{
+	border: none;
+}
+#modal-1 .modal-header{
+	background: #478cdf;
+	padding: 0;
+}
+#modal-2 .modal-header{
+	background: #5ace62;
+	padding: 0;
+}
+#modal-2 .modal-header h2,
+#modal-1 .modal-header h2{
+  font-family: 'RobotoLight'!important;
+  font-size: 48px;
+  color: #fff;
+}
+#modal-1 .modal-title,
+#modal-2 .modal-title{
+	padding: 3px 0!important;
+}
+.modal-body{
+	color: #fff;
+}
+#modal-1 .modal-body h3,
+#modal-2 .modal-body h3{
+	font-size: 30px;
+  padding-top: 30px;
+}
+#modal-2 .modal-body h3{
+	padding-top: 0;
+}
+#modal-2 .modal-body{
+	margin-bottom: 80px;
+}
+#modal-1 .modal-body p,
+#modal-2 .modal-body p{
+	font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'RobotoRegular';
+}
+#modal-2 img{
+	margin-top: 50px;
+}
+#modal-1 .btn-registration{
+	text-align: center;
+	margin-top: 40px;
+}
+#modal-1 .btn-registration p{
+  padding: 15px 25px;
+  font-size: 18px;
+}
+#modal-1 input{
+	width: 100%;
+	max-width: 500px;
+  border: none;
+  margin: 20px 0px;
+  border-radius: 25px;
+  padding: 10px;
+  color: #000;
+}
+.modal .close{
+	width: 27px;
+	height: 27px;
+	opacity: 1;
+	margin-top: 25px!important;
+	margin-right: 20px;
+}
+#modal-1 .close{
+	background: url(close2.png) no-repeat;
+}
+#modal-2 .close{
+	background: url(close.png) no-repeat;
+	margin-top: 20px!important;
+}
+@media (max-width: 768px){
+	#modal-1 .modal-header h2,
+	#modal-2 .modal-header h2{
+		font-size: 36px!important;
+	}
+	#modal-1 .modal-body h3
+	#modal-2 .modal-body h3{
+		padding-top: 10px;
+		margin-top: 0;
+		font-size: 24px!important;
+	}
+	#modal-1 .btn-registration{
+		margin-top: 10px;
+	}
+	#modal-1 input{
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.modal-body,
+	.modal-header,
+	.modal-footer{
+		padding: 0;
+	}
+}

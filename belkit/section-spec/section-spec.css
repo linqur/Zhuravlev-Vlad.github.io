@@ -1,0 +1,73 @@
+.section-spec{
+	height: 550px;
+	background: url(bg_spec.jpg) no-repeat 50%;
+	padding-top: 20px;
+	position: relative;
+}
+.section-spec .carousel-inner{
+	text-align: center;
+	margin-top: 40px;
+}
+.section-spec .comment-more-link{
+	position: static;
+	font-family: 'MyriadProRegular';
+	color: #0654b5;
+	float: right;
+	margin-top: 10px;
+}
+#carousel-3-2{
+	display: none;
+}
+#carousel-3-3{
+	display: none;
+}
+.spec-img{
+	max-width: 300px;
+	width: 100%;
+	border-radius: 160px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+.spec-surname,
+.spec-name{
+	display: inline-block;
+	color: #2762b9;
+	font-size: 24px;
+	line-height: 1;
+}
+.spec-surname{
+	font-family: 'MyriadProRegular';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.section-spec p{
+	font-size: 18px;
+  color: #494949;
+      font-family: 'RobotoRegular';
+}
+@media (max-width: 768px){
+	#carousel-3-1
+	{
+		display: none;
+	}
+	#carousel-3-2{
+		display: block;
+	}
+}
+@media (max-width: 480px){
+	#carousel-3-2{
+		display: none;
+	}
+	#carousel-3-3{
+		display: block;
+	}
+	.section-spec .comment-more-link{
+		float: left;
+		margin-top: 5px;
+	}
+	.spec-link{
+		float: left;
+		margin-right: 5px;
+	}
+}

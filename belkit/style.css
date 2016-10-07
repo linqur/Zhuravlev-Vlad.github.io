@@ -1,0 +1,235 @@
+@import url(fonts/fonts.css);
+@import url(header/header.css);
+@import url(section-action/section-action.css);
+@import url(section-price/section-price.css);
+@import url(section-comment/section-comment.css);
+@import url(section-spec/section-spec.css);
+@import url(section-map/section-map.css);
+@import url(section-info/section-info.css);
+@import url(modal/modal.css);
+body{
+	font-family: 'RobotoRegular'!important;
+	min-width: 320px;
+	width: 100%;
+	max-width: 1920px;
+}
+.container-fluid{
+	max-width: 1445px;
+}
+h3{
+	font-size: 36px!important;
+	color: #fff!important;
+}
+p{
+	font-family: 'RobotoLight';
+}
+a{
+	text-decoration: none!important;
+}
+.header-nav,
+.section-credit,
+.item__right a,
+.price-more-link,
+.comment-name,
+.comment-more-link{
+	font-family: 'RobotoLight';
+	font-size: 18px!important;
+}
+.price-link:hover,
+.action-link:hover,
+.spec-link:hover,
+.spec-surname:hover,
+.spec-name:hover,
+.comment-more-link:hover,
+.section-credit a:hover,
+.item__right a:hover,
+.price-more-link:hover,
+.section-info a:hover{
+	border-bottom: 1px solid #608bc0;
+	margin-bottom: -1px;
+	color: #2762b9;
+}
+.item__right a:hover{
+	border-color: #fff;
+	color: #fff;
+}
+.item__right--blue a:hover{
+	border-color: #608bc0;
+}
+
+.credit__link:hover{
+	border: none!important;
+}
+.header-nav{
+	font-size: 24px!important;
+}
+.spec-link,
+.action-link{
+	color: #2762b9;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.action{
+	margin-top: 10px;
+}
+
+
+.section-price,
+.section-credit,
+.section-info{
+	padding-top: 20px;
+}
+.carousel-indicators{
+	z-index: 1!important;
+}
+/*Видео консультация*/
+.section-video{
+	background: url(section-action/bg_section-video.jpg) no-repeat 50%;
+	text-align: center;
+	height: 80px;
+}
+.section-video h3{
+	display: inline-block;
+	font-family: 'RobotoLight';
+	margin-top: 15px;
+}
+.video-start{
+	color: #2768b9;
+  padding: 8px 88px;
+  border-radius: 25px;
+  font-size: 24px;
+  margin-left: 50px;
+  background: #f6f6f6;
+  background: -moz-linear-gradient(left, #f6f6f6 0%, #f0f0f0 49%, #d7dce2 50%, #e0e5eb 100%);
+  background: -webkit-linear-gradient(left, #f6f6f6 0%,#f0f0f0 49%,#d7dce2 50%,#e0e5eb 100%);
+  background: linear-gradient(to right, #f6f6f6 0%,#f0f0f0 49%,#d7dce2 50%,#e0e5eb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e0e5eb',GradientType=1 );
+}
+
+/*Клиника года*/
+.white-whale {
+    background: #3899ef;
+    padding-bottom: 8px;
+}
+.cup {
+    width: 85px;
+    height: 85px;
+    border-radius: 43px;
+    background: #3899ef;
+    position: relative;
+    top: -35px;
+}
+.cup img {
+    margin-top: 12px;
+}
+.cup,
+.cup2 {
+    text-align: center;
+    padding-top: 35px;
+    margin: 0px auto;
+    padding: 0 5px;
+}
+.cup2 {
+    margin-top: -75px;
+    margin-bottom: 0;
+}
+.cup2 h3{
+	margin-top: 24px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 1;
+}
+.cup2 span{
+	color: #ffe576;
+}
+.cup2 p{
+	color: #fff;
+	margin-bottom: 0;
+}
+
+
+/*Соц. сети*/
+.section-social {
+    background: #f7f7f7;
+    height: 48px;
+    padding-top: 15px;
+}
+.section-social p {
+    font-size: 18px;
+    font-family: 'RobotoRegular';
+    color: #7f7f7f;
+    float: left;
+    margin-bottom: 0;
+}
+.section-social .vk,
+.section-social .in,
+.section-social .f {
+    width: 32px;
+    height: 28px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.section-social .vk {
+    background: url(section-action/social.png) no-repeat;
+    margin-left: 30px;
+}
+.section-social .in {
+    background: url(section-action/social.png) no-repeat;
+    background-position: -32px 0;
+}
+.section-social .f {
+    background: url(section-action/social.png) no-repeat;
+    background-position: -64px 0;
+}
+
+
+
+/*footer*/
+footer{
+	height: 60px;
+	padding-top: 15px;
+}
+footer p{
+	float: right;
+	padding-top: 5px;    
+	color: #4f4f4f;
+}
+footer img{
+float: left;
+margin-right: 5px;
+
+}
+@media (max-width: 767px){
+	.section-video h3{
+		display: block;
+		margin-top: 4px;
+		font-size: 32px!important;
+	}
+	.video-start{
+		margin-left: 0;
+		font-size: 18px;
+		padding: 5px 60px;
+	}
+	.cup2 h3{
+		font-size: 32px!important;
+	}
+	.cup2 p{
+		font-size: 12px;
+	}
+	.spec-link,
+	.action-link{
+		font-size: 26px;
+	}
+
+}
+@media (max-width: 480px){
+	.section-social .vk,
+	.section-social .in,
+	.section-social .f {
+    margin: 0 5px;
+	}
+	footer p{
+		float: left;
+		padding-top: 10px;
+	}
+}
