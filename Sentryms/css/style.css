@@ -1,0 +1,625 @@
+@import url(../fonts/fonts.css);
+@import url(nav.css);
+.container-fluid{
+	max-width: 1170px;
+}
+h1{
+	font-family: "LatoHeavy", sans-serif;
+}
+h1, h2, h3, p, a{
+	font-family: "RalewayLight", sans-serif;
+	font-size: 45px;
+	color: #444256;
+}
+p{
+	font-size: 16px;
+	color: #787c82;
+}
+a{
+	text-decoration: none!important;
+	font-size: 16px;
+	color: #4087f4!important;
+}
+h3{
+	font-size: 22px;
+}
+body{
+	overflow-x: hidden;
+}
+
+/*HEADER*/
+.section-header{
+	background: #f1f5f7 url(../img/bg-header.png) no-repeat right;
+	min-height: 930px;
+	margin-top: -50px;
+}
+.btn{
+	padding: 15px 60px;
+	border-radius: 3px;
+	margin: 60px 0 40px 0;
+	color: #4087f4!important;
+	border: 1px solid #ccc!important;
+	background: #f3f7f8;
+	-webkit-transition: 0.2s!important;
+   -moz-transition: 0.2s!important;
+    -ms-transition: 0.2s!important;
+     -o-transition: 0.2s!important;
+        transition: 0.2s!important;
+}
+input.btn{
+	width: 205px!important;
+	text-align: center;
+	padding: 15px 0;
+	background: #fff;
+}
+/*.section-header .nav{
+	height: 90px;
+	background: #e4e4e4;
+}*/
+.section-header .healthcare{
+	margin-top: 170px;
+}
+.section-header .healthcare h1{
+	margin-bottom: 70px;
+}
+/*END HEADER*/
+/*BENEFITS*/
+.section-benefits,
+.section-features,
+.section-partners,
+.section-aboutus,
+.section-contact{
+	text-align: center;
+	padding: 125px 0;
+	line-height: 1.7;
+	background: #fff;
+}
+.section-benefits .benefits-title,
+.section-features .features-title,
+.section-contact .contact-title,
+.section-testimonials .testimonals-title{
+	margin-bottom: 80px;
+}
+.services-title,
+.benefits-item,
+.features-item{
+	margin-bottom: 60px;
+}
+.section-aboutus,
+.section-features{
+	background-color: #f3f7f8;
+}
+/*END BENEFITS*/
+/*PARTHERS*/
+.section-partners .container-fluid{
+	max-width: 900px;
+}
+#page-two .section-partners .container-fluid {
+    max-width: 1170px;
+}
+.section-partners .partners-title{
+	margin-bottom: 0;
+}
+.section-partners .partners-item{
+	margin-top: 50px;
+}
+.section-partners .partners-item>a{
+	display: block;
+	box-shadow: 0 0 20px 5px #f5f5f5;
+	width: 100%;
+	height: 140px;
+	max-width: 270px;
+	line-height: 140px;
+	margin: 0 auto;
+	background: #fff;
+}
+/*END PARTHERS*/
+/*ABOUTUS*/
+.section-aboutus h3{
+	margin-bottom: 50px;
+}
+.section-aboutus .aboutus-title{
+	margin-bottom: 40px;
+}
+.section-aboutus{
+	padding: 110px 0 80px;
+}
+/*END ABOUT US*/
+/*CONTACT US*/
+.section-contact .container-fluid{
+	max-width: none;
+}
+.contact_map{
+	background: #fff;
+}
+.contact_map-two {
+    padding: 0;
+}
+.contact-form{
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+.container-form{
+	margin: 0 auto;
+	width: 370px;
+	height: 535px;
+	-webkit-box-shadow: 0 0 4px 1px #eae7e7;
+	box-shadow: 0 0 4px 1px #eae7e7;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.9);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.contact-form h3{
+	font-size: 24px;
+	padding: 20px 0;
+	margin-top: 0;
+}
+.container-form input{
+	font-family: "RalewayMedium", sans-serif;
+	color: #6d7177;
+	border: none;
+	border-bottom: 1px solid #e1e9eb;
+	text-align: center;
+	width: 100%;
+	padding: 15px 0;
+	background: rgba(255, 255, 255, 0);
+}
+.contact-form input:hover{
+	border-bottom: 1px solid #297df4;
+}
+.contact-form input{
+	webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+.contact-form input:focus { 
+	outline: 0;
+  border-color: transparent;
+  border-bottom-color: #297df4;
+	-webkit-box-shadow: 0 1px 0 #297df4;
+  box-shadow: 0 1px 0 #297df4;
+}
+span.not_filled{
+	color: red;
+	position: absolute;
+	right: 20px;
+	margin-top: 15px;
+}
+span.spin{
+	font-size: 20px;
+	position: absolute;
+	right: 50px;
+	margin-top: 70px;
+}
+.group {
+    height: 70px;
+}
+form > .group > input{
+	font-size: 16px;
+}
+form > .group > input + label {
+	position:relative;
+	left:0px;
+	top:-70px;
+	cursor:text;
+	font-family: "RalewayMedium", sans-serif;
+  color: #297df4;
+  font-size: 12px;
+  font-weight: normal;
+  pointer-events: none;
+	
+}
+			/* Стиль <label> при пустом <input> */
+form > .group > input:not(:focus) + label:not(.valid) {
+	top: -30px;
+	font-size:inherit;
+	font-family: "RalewayMedium", sans-serif;
+  color: #6d7177;
+  font-size: 16px;
+  font-weight: normal;
+}
+form > .group > input + label.animate {
+	-webkit-transition:top 100ms linear, font-size 100ms linear;
+	-o-transition:top 100ms linear, font-size 100ms linear;
+	-moz-transition:top 100ms linear, font-size 100ms linear;
+	-ms-transition:top 100ms linear, font-size 100ms linear;
+	-kthtml-transition:top 100ms linear, font-size 100ms linear;
+	transition:top 100ms linear, font-size 100ms linear;
+}
+
+/*END CONTACT US*/
+
+/*MAP*/
+#map-canvas{
+	margin-bottom: 60px;
+}
+/*END MAP*/
+
+/*PAGE-TWO*/
+#page-two .section-header{
+	/*background: #f3f7f8 url(../img/page-two-bg-header.png) no-repeat 70% 105%;*/
+	background: #f3f7f8;
+}
+#page-two .section-header img{
+	max-width: 320px;
+	min-width: 110px;
+	vertical-align: bottom;
+	margin-left: -60px;
+	-webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.header-img{
+	float: right;
+	line-height: 358px;
+}
+#page-two .section-header .healthcare h1 {
+    margin-bottom: 50px;
+}
+#page-two .section-header .healthcare {
+    margin-top: 130px;
+}
+#page-two .btn{
+	margin-top: 50px;
+}
+#page-two .section-header{
+	min-height: 900px;
+}
+#page-two .healthcare span{
+	font-size: 30px;
+}
+#page-two .navbar-toggle{
+  display: none;
+}
+#page-two .logo{
+  margin-left: 50px;
+}
+#page-two .section-aboutus{
+	background: #fff;
+}
+.section-services,
+#page-two .section-partners{
+	background: #f1f5f7;
+}
+#page-two .section-aboutus,
+#page-two .section-partners .partners-title{
+	text-align: left;
+}
+#page-two .contact_map-two {
+    padding-left: 270px;
+}
+.section-testimonials{
+	padding-top: 200px;
+}
+.section-services{
+	padding: 190px 0;
+}
+.section-services img{
+	float: left;
+	margin-top: 20px;
+}
+.section-services h3,
+.section-services p{
+	padding-left: 60px;
+}
+.stars{
+	font-size: 18px;
+	color: #f2bc3b;
+	margin-right: 3px;
+}
+.author p{
+	font-size: 14px;
+}
+.author span{
+	font-family: "RalewayBold", sans-serif;
+	text-transform: uppercase;
+	color: #26272d;
+}
+.item{
+	padding-bottom: 80px;
+}
+.item__border{
+	border-bottom: 1px solid #e1e9eb;
+	padding-bottom: 40px;
+}
+.carousel_item{
+	margin-bottom: 40px;
+}
+.carousel-control.right,
+.carousel-control.left{
+	background: none;
+	left: 89%;
+}
+.carousel-control.right{
+	margin-left: 60px;
+}
+.carousel-control{
+	top: 76%;
+	left: 0;
+	width: 50px;
+	text-shadow: none;
+}
+.carousel-control,
+.carousel-control:hover{
+	opacity: 1;
+}
+.carousel-control .btn{
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 50px;
+	font-size: 35px;
+	color: #cdd8db!important;
+	box-shadow: none!important;
+	background: #fff;
+}
+.carousel-control .btn:hover{
+	color: #3685f5!important;
+}
+
+
+/*technology*/
+.section-technology{
+	background: linear-gradient(to top, #03295a, #0079b9);
+	padding: 200px 0 50px;
+}
+.section-technology h2,
+.section-technology h3,
+.section-technology p{
+	color: #fff;
+}
+.technology{
+	width: 375px;
+	height: 375px;
+	border-radius: 50%;
+	position: relative;
+}
+.technology .techthree,
+.technology .techtwo,
+.technology .techone{
+	opacity: ;
+	-webkit-transition: 0.2s!important;
+   -moz-transition: 0.2s!important;
+    -ms-transition: 0.2s!important;
+     -o-transition: 0.2s!important;
+        transition: 0.2s!important;
+}
+.technology .techthree:hover,
+.technology .techtwo:hover,
+.technology .techone:hover{
+	opacity: ;
+	z-index: 1;
+}
+.technology img{
+	position: absolute;
+}
+.tech_one,
+.techone{
+	right: 0;
+	top: 7px;
+}
+.techone{
+	z-index: 2;
+}
+.tech_two,
+.techtwo{
+	top: 0;
+	left: 1px;
+}
+.tech_three,
+.techthree{
+	bottom: 0;
+	left: 11px;
+}
+.sentryms{
+	position: absolute;
+	left: 150px;
+	top: 175px;
+	color: #fff;
+	font-family: "RalewaySemiBold", sans-serif;
+	font-size: 18px;
+}
+.technology_app{
+	margin-top: 70px;
+	cursor: pointer;
+}
+.technology_app:last-child{
+	margin-top: 0;
+}
+/*technology*/
+/*END PAGE-TWO*/
+
+@media (min-width: 992px){
+  .section-partners img{
+  	width: 100%;
+  }
+}
+@media (max-width: 1200px){
+  #page-two .map{
+  	padding: 0;
+  }
+  .section-services img{
+		margin-top: 0px;
+	}
+}
+@media (max-width: 991px){
+	.section-header{
+		background-position: 40%;
+		margin-top: -95px;
+	}
+	#page-two .section-partners .partners-title{
+		text-align: center;
+	}
+	#page-two .navbar-toggle{
+    display: block;
+  }
+  #page-two .logo{
+  margin-left: 10px;
+  }
+  .page-menu-two{
+    display: none;
+  }
+  .map{
+  	padding: 0 !important;
+  }
+  .carousel-control.right,
+	.carousel-control.left{
+	background: none;
+	left: 80%;
+	}
+	#page-two #map-canvas {
+    margin-left: 0px;
+    padding: 0;
+	}
+	#page-two .section-header img{
+	margin-right: 0px;
+	}
+	#page-two .contact_map-two {
+    padding-left: 0px;
+	}
+}
+@media (max-width: 768px){
+	.carousel-control.right,
+	.carousel-control.left{
+		background: none;
+		left: 75%;
+	}
+	#page-two .section-header{
+		background-position: 55% 110%;
+	}
+	.technology_app{
+		margin-top: 30px;
+	}
+	#page-two .section-header .healthcare h1 {
+    margin-bottom: 20px;
+	}
+	#page-two .btn {
+    margin-top: 20px;
+	}
+}
+@media (max-width: 480px){
+	.section-header .healthcare h1{
+		margin-bottom: 20px;
+	}
+	.section-header .btn{
+		margin-top: 10px;
+	}
+	.section-header{
+		min-height: 480px;
+	}
+	.section-header .healthcare,
+	#page-two .section-header .healthcare{
+		margin-top: 140px;
+	}
+	.container-form,
+	#map-canvas{
+		height: 480px!important;
+  }
+  .container-form{
+		width: 100vw;
+	}
+	/*BENEFITS*/
+	.section-benefits,
+	.section-features,
+	.section-partners,
+	.section-aboutus,
+	.section-contact{
+		text-align: center;
+		padding: 40px 0;
+	}
+	.section-benefits .benefits-title,
+	.section-features .section-title,
+	.section-partners .partners-title,
+	.section-aboutus .aboutus-title,
+	.section-contact .contact-title{
+		margin-bottom: 40px;
+	}
+	#page-two .section-aboutus .aboutus-title{
+		margin-bottom: 0;
+	}
+	 #page-two .section-services{
+	 	padding: 40px 0;
+	 	text-align: center;
+	 }
+	 #page-two .section-services img{
+	 	float: none;
+	 }
+	 #page-two .section-services h3,
+	 #page-two .section-services p{
+	 	padding: 0;
+	 }
+	 .section-technology,
+	 .section-testimonials{
+	 	padding: 40px 0;
+	 }
+	/*END BENEFITS*/
+	.carousel-control.right,
+	.carousel-control.left{
+		background: none;
+		left: 60%;
+	}
+	.carousel-control {
+    display: none;
+	}
+	.contact_map-two,
+	.contact_map {
+    padding-left: 0;
+    padding-right: 0;
+	}
+	#page-two .header-img{
+		line-height: 158px;
+	}
+	#page-two .section-header img{
+		max-height: 250px;
+	}
+}
+@media (max-width: 420px){
+	.technology{
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		position: relative;
+	}
+	.tech_one,
+	.techone{
+		width: 110px;
+		height: 202px;
+		top: 5px;
+		right: -6px;
+	}
+	.tech_two,
+	.techtwo{
+		width: 168px;
+		height: 160px;
+		left: 8px;
+	}
+	.tech_three,
+	.techthree{
+		width: 208px;
+		height: 133px;
+		left: 15px;
+	}
+	.sentryms{
+		top: 113px;
+		left: 100px;
+		font-size: 15px;
+	}
+	#page-two .section-header img{
+		max-width: 133px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px){
+	#menu{
+		padding-top: 100px;
+	}
+	.wefor,
+	#menu li a{
+		padding: 10px 0 10px 15px;
+	}

@@ -1,0 +1,254 @@
+html, body {
+  height: 100%;
+
+}
+.navmenu {
+  z-index: 1;
+}
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+}
+.menu{
+  height: 100%;
+  width: 270px;
+  padding-top: 150px;
+  background: #fff!important;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+#page-two .menu{
+box-shadow: 0 0 3px 1px #eae7e7;
+}
+.collapsing {
+  -webkit-transition: 0.1s!important;
+   -moz-transition: 0.1s!important;
+    -ms-transition: 0.1s!important;
+     -o-transition: 0.1s!important;
+        transition: 0.1s!important;
+}
+.menu ul{
+  padding: 0;
+  text-transform: uppercase;
+}
+.menu li{
+  list-style: none;
+  color: #6d7177;
+}
+.wefor{
+  display: block;
+    color: #6d7177!important;
+    padding: 17px 0 17px 40px;
+    font-family: "RalewayBold", sans-serif;
+    font-size: 13px;
+}
+.menu li a{
+  display: block;
+  color: #6d7177!important;
+  padding: 17px 0 17px 40px;
+  font-family: "RalewayBold", sans-serif;
+  font-size: 13px;
+  -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+     -o-transition: 0.2s;
+        transition: 0.2s;
+}
+.menu li a:hover{
+  background: #297df4!important;
+  color: #fff!important;
+}
+.nav{
+  margin-top: 45px;
+}
+.container-menu{
+  position: relative;
+  top: 0;
+}
+body {
+  padding: 45px 0 0 0;
+}
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background: #444256;
+}
+.navbar-fixed-top, .navbar-fixed-bottom{
+  left: auto;
+  top: 45px;
+}
+.navbar-default{
+  background: inherit;
+  border: none;
+}
+.logo{
+  margin:-10px 0 0 10px;
+  float: left;
+}
+.logo{
+  margin-top: -20px;
+}
+.logo img{
+  margin-top: -20px;
+}
+.logo2 img{
+  margin-top: -14px;
+}
+.logo h2{
+  font-size: 30px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.logo2 h2{
+  font-size: 34px;
+  display: inline-block;
+  padding-left: 5px;
+  color: #d81b00;
+  font-family: "RalewayBold";
+  text-transform: none;
+}
+.logo2 p{
+  font-size: 13px;
+  font-family: "RalewayBold", sans-serif;
+  display: block;
+  margin-top: -10px;
+  letter-spacing: 2.1px;
+}
+body .collapse {
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+       -o-transition-property: height, visibility;
+          transition-property: height, visibility;
+}
+.navbar.navbar-default.navbar-fixed-top {
+    background: none;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: 0.2s!important;
+   -moz-transition: 0.2s!important;
+    -ms-transition: 0.2s!important;
+     -o-transition: 0.2s!important;
+        transition: 0.2s!important;
+}
+.navbar.navbar-default.navbar-fixed-top.top-nav-collapse,
+.navbar.navbar-default.navbar-fixed-top{
+  z-index: 3;
+}
+.navbar.navbar-default.navbar-fixed-top.top-nav-collapse{
+  background: rgba(255, 255, 255, 0.8);
+  top: 0;
+  padding-top: 5px;
+  -webkit-transition: 0.2s!important;
+   -moz-transition: 0.2s!important;
+    -ms-transition: 0.2s!important;
+     -o-transition: 0.2s!important;
+        transition: 0.2s!important;
+}
+.contacts{
+  float: right;
+  margin-top: 18px;
+  padding-right: 20px;
+  text-align: right;
+}
+.contacts-menu{
+  text-align: left;
+}
+.contacts br{
+  display: none;
+}
+.contacts p{
+  display: inline-block;
+  font-weight: bold;
+}
+.contacts span{
+  font-family: "LatoHeavy", sans-serif;
+}
+.contacts a{
+  color: #444256!important;
+  font-family: "RalewaySemiBold", sans-serif;
+  font-size: 14px;
+  margin:0 5px;
+}
+.contacts-menu{
+  display: none;
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+.contacts-menu p{
+  padding: 0 10px;
+}
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    border: none;
+    background: none;
+  }
+  .canvas {
+    padding: 0;
+  }  
+}
+@media (max-width: 992px) {
+  .navbar-fixed-top{
+    left: 0!important;
+  }
+    .contacts a{
+    font-size: 12px;
+    margin:0 3px;
+  }
+  .canvas {
+    padding: 0;
+  }
+  #page-two .logo2{
+    margin-left: -5px!important;
+  }
+    
+}
+@media (max-width: 768px){
+  .contacts br{
+    display: block;
+  }
+  .contacts a{
+    font-size: 10px;
+  }
+  .contacts-menu a{
+    font-size: 12px;
+  }
+  .contacts{
+    margin-top: 0px;
+  }
+}
+@media (max-width: 532px){
+  .container-menu .contacts{
+    display: block;
+  }
+  .contacts{
+    display: none;
+  }
+}
+@media (max-width: 480px){
+  .menu {
+    max-width: 480px;
+    width: 100%;
+  }
+}
