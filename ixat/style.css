@@ -1,0 +1,46 @@
+@import url(fonts/fonts.css);
+@import url(header/header.css);
+@import url(section-info/section-info.css);
+@import url(section-advantages/section-advantages.css);
+@import url(section-step/section-step.css);
+@import url(section-card/section-card.css);
+@import url(section-contact/section-contact.css);
+/*общие стили*/
+body{
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+body h1{
+	font-family: 'BloggerSansMedium';
+	font-size: 65px;
+	color: #ffca3a;
+	line-height: 1.2;
+}
+body h2{
+	font-family: 'RobotoMedium';
+	font-size: 36px;
+	color: #342d1a;
+	margin-top: 0;
+}
+body h3, body p, body a{
+	font-family: 'RobotoRegular';
+}
+body h3{
+	font-size: 30px;
+	color: #fff;
+}
+body p{
+	font-size: 18px;
+	color: #342d1a;
+	line-height: 1.25;
+}
+body a{
+	font-size: 18px;
+	text-decoration: none!important;
+}
+
+
+
+
+
