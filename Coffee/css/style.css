@@ -172,18 +172,24 @@ nav:after{
 	line-height: 500px;
 	text-align: center;
 	opacity: 0.9;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .info-img img{
 
 }
+.history{
+	margin-top: 118px;
+}
 .advantage{
 	text-align: center;
+	display: inline-block;
+	width: 19%;
 }
 .advantage p{
 	font-size: 14px!important;
 	font-family: 'FiraSans-Medium';
 	color: #967662;
-	display: inline-block;
 }
 .advantage svg{
 	width: 27px;
@@ -198,16 +204,54 @@ nav:after{
 	color: #504c49;
 }
 
-
-
-
-
+/*//////////////////////*/
+/*/////////STEP/////////*/
 .step{
-	height: 300px;
+
+	text-align: center;
+	padding-top: 200px;
 	background: url(../img/bottom-info.png) repeat-x 50% 0,
-							url(../img/bg-advantage.png);
+				url(../img/bg-step.png);
 }
+.step h3{
+	font-size: 22px!important;
+}
+.step h4{
+	font-size: 16px!important;
+	color: #61534c!important;
+}
+.step p{
+	font-size: 13px!important;
+	font-family: 'MyriadPro-Regular';
+	color: #978e83;
+}
+.step_arrow{
+	margin-top: 40px;
+	padding-left: 10px;
+}
+.step_arrow img{
+	margin-left: 25px;
+}
+
+/*//////////////////////*/
+
+
 /*////////////////////*/
+@media (max-width: 991px){
+	.info-img{
+		width: 436px;
+		margin: 0 auto;
+	}
+	.info-img img{
+		width: 100%;
+	}
+	.step_arrow--sm-disnon{
+		display: none;
+	}
+	.step_arrow{
+		margin-top: 140px;
+	}
+}
 @media (max-width: 767px){
 	.coffee-title {
     margin-top: 50px;
@@ -233,6 +277,12 @@ nav:after{
 	.new{
 		display: none;
 	}
+	.history{
+		margin-top: 15px;
+	}
+	.step_arrow{
+		display: none;
+	}
 }
 @media (max-width: 500px){
 	.container-contacts{
@@ -251,5 +301,8 @@ nav:after{
 		text-align: center;
 		margin-top: 50px;
 		margin-bottom: 100px;
+	}
+	.info-img{
+		width: 100%;
 	}
 }

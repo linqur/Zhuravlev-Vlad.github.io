@@ -19,6 +19,16 @@
    font-style: normal;
 }
 @font-face{
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+       url('../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face{
   font-family: 'FiraSans-Medium';
   src: url('../fonts/FiraSans-Medium/FiraSans-Medium.eot');
   src: url('../fonts/FiraSans-Medium/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),
