@@ -14,7 +14,7 @@ h2{
 }
 h4{
 	font-size: 26px!important;
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular'!important;
 	color: #b2ad90!important;
 }
 h5{
@@ -102,6 +102,14 @@ nav{
 	margin-right: 40px;
 	float: left;
 }
+.btn-store.order{
+	float: none;
+	width: 170px;
+	height: 58px;
+	border-radius: 30px;
+	font-size: 22px;
+	margin: 0;
+}
 .btn-store:hover{
 	background: #c87d59;
 	color: #fff;
@@ -111,10 +119,13 @@ nav{
 	background: #a9e865;
 }
 .btn-store:before{
-	content: 'МАГАЗИН'
+	content: 'МАГАЗИН';
 }
 .order-btn:before{
-	content: 'КУПИТЬ'
+	content: 'КУПИТЬ';
+}
+.btn-store.order:before{
+	content: 'ЗАКАЗАТЬ';
 }
 .logo{
 	padding-top: 40px;
@@ -225,6 +236,10 @@ nav:after{
 	font-family: 'MyriadPro-Regular';
 	color: #978e83;
 }
+.step img{
+	width: 100%;
+	max-width: 170px;
+}
 .step_arrow{
 	margin-top: 40px;
 	padding-left: 10px;
@@ -232,7 +247,40 @@ nav:after{
 .step_arrow img{
 	margin-left: 25px;
 }
-
+.recall img{
+	width: 140px;
+	margin: 70px 0 45px 0;
+}
+.recall{
+	margin-top: 50px;
+}
+.carousel-control.right,
+.carousel-control.left{
+	background-image: none!important;
+}
+.carousel-control img{
+	width: 28px;
+	position: absolute;
+	top: 58%;
+}
+.recall h4,
+.recall h2{
+	text-transform: uppercase;
+}
+.recall h4{
+	font-size: 26px!important;
+	color: #b2ad90!important;
+}
+.recall .recall_city,
+.recall p{
+	font-size: 16px!important;
+}
+.recall_name{
+	margin-top: 50px;
+}
+.item{
+	background: url(../img/quote.png) no-repeat 80% 70%;
+}
 /*//////////////////////*/
 
 
@@ -281,6 +329,9 @@ nav:after{
 		margin-top: 15px;
 	}
 	.step_arrow{
+		display: none;
+	}
+	.carousel-control img{
 		display: none;
 	}
 }

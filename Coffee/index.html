@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -152,8 +153,7 @@
           </div>
         </div>
     </section><!--Информация о продукте-->
-    <section class="step">
-      <div class="container-fluid">
+    <section class="step container-fluid">
         <div class="row">
           <div class="col-md-2 col-sm-5 col-xs-12">
             <img src="img/search.png" alt="">
@@ -168,19 +168,77 @@
             <h4>Индивидуально</h4>
             <p>Только индивидуальная обжарка позволяет максимально раскрыть все нотки и нюансы кофе.</p>
           </div>
-          <div class="col-md-1 col-sm-2 step_arrow step_arrow--sm-disnon"><img src="img/arrow-1.png" alt=""></div>
+          <div class="col-md-1 col-sm-2 step_arrow step_arrow--sm-disnon"><img src="img/arrow-2.png" alt=""></div>
           <div class="col-md-2 col-sm-5 col-xs-12">
             <img src="img/Delivery.png" alt="">
             <h3>Мы доставляем</h3>
             <h4>Быстро</h4>
             <p>Доставка натурального кофе MADEO производится в течение 48 часов после получения заказа.</p>
           </div>
-          <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-1.png" alt=""></div>
+          <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-3.png" alt=""></div>
           <div class="col-md-2 col-sm-5 col-xs-12 step-green">
             <img src="img/Cezve.png" alt="">
             <h3>Мы варим</h3>
             <h4>Вкусно</h4>
             <p>Наливаем его в любимую кофейную чашку и пьем с удовольствием!</p>
+          </div>
+          <div class="col-xs-12">
+            <button class="btn-store order animation"></button>
+          </div>
+        </div>
+
+
+
+        <div id="carousel" class="carousel slide container-fluid recall">
+          <div class="row">
+          <!--Слайды-->
+            <div class="carousel-inner">
+              <div class="item active col-xs-12">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2>Отзывы</h2>
+                      <h4>Наших покупателей</h4>
+                      <img src="img/recall.jpg" alt="" class="img-circle">
+                      <p>Заказала у вас кофе, отличный вкус, правда доставка была с задержкой на 8 часов. А так все норм</p>
+                      <h3 class="recall_name">Нина Мартынова</h3>
+                      <h4 class="recall_city">Казань</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-xs-12">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2>Отзывы</h2>
+                      <h4>Наших покупателей</h4>
+                      <img src="img/recall.jpg" alt="" class="img-circle">
+                      <p>Заказала у вас кофе, отличный вкус, правда доставка была с задержкой на 8 часов. А так все норм</p>
+                      <h3 class="recall_name">Нина Мартынова</h3>
+                      <h4 class="recall_city">Казань</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-xs-12">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2>Отзывы</h2>
+                      <h4>Наших покупателей</h4>
+                      <img src="img/recall.jpg" alt="" class="img-circle">
+                      <p>Заказала у вас кофе, отличный вкус, правда доставка была с задержкой на 8 часов. А так все норм</p>
+                      <h3 class="recall_name">Нина Мартынова</h3>
+                      <h4 class="recall_city">Казань</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!--Стрелки переключения-->
+            <a class="carousel-control left" href="#carousel" data-slide="prev"><img src="img/left.png" alt=""></a>
+            <a class="carousel-control right" href="#carousel" data-slide="next"><img src="img/right.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -189,5 +247,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".carousel").swipe( {
+          swipeLeft: function() {
+            $(this).carousel("next");
+          },
+          swipeRight: function() {
+            $(this).carousel("prev");
+          },
+          allowPageScroll: "vertical"
+        });
+      });
+    </script>
   </body>
 </html>
