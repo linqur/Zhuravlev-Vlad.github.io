@@ -100,7 +100,8 @@ nav{
 	font-family: 'FiraSans-Regular';
 	margin-top: 20px;
 	margin-right: 40px;
-	float: left;
+	float: right;
+
 }
 .btn-store.order{
 	float: none;
@@ -108,7 +109,7 @@ nav{
 	height: 58px;
 	border-radius: 30px;
 	font-size: 22px;
-	margin: 0;
+	margin:90px 0 100px 0;
 }
 .btn-store:hover{
 	background: #c87d59;
@@ -136,24 +137,22 @@ nav{
 	margin-top: 20px;
 }
 .contacts{
-	display: inline-block;
 	float: right;
-	float: left;
 }
-.contacts h3{
+.contacts_tel{
 	font-size: 22px;
 	font-family: 'FiraSans-Medium'!important;
 }
-.contacts a{
+.contacts_email{
 	font-family: 'FiraSans-Regular';
 	font-size: 16px;
 	color: #b78c78;
 	text-transform: none;
-	margin-top: -8px;
 	text-decoration: underline;
 	display: block;
+	margin-top: -8px;
 }
-.contacts a:hover{
+.contacts_email:hover{
 	color: #5c3e37;
 }
 .title{
@@ -168,7 +167,7 @@ nav:after{
 /*////////////////////*/
 /*////////INFO////////*/
 .info{
-	background: url(../img/bottom-info.png) repeat-x 50% 100%;
+	background:url(../img/bg-info2.png) no-repeat 110% -10%, url(../img/bottom-info.png) repeat-x 50% 100%;
 }
 .info p{
 	color: #857a73;
@@ -252,7 +251,7 @@ nav:after{
 	margin: 70px 0 45px 0;
 }
 .recall{
-	margin-top: 50px;
+	margin: 50px 0 70px 0;
 }
 .carousel-control.right,
 .carousel-control.left{
@@ -334,6 +333,18 @@ nav:after{
 	.carousel-control img{
 		display: none;
 	}
+	.info{
+		background:url(../img/bg-info2.png) no-repeat 50% 100%;
+	}
+	.advantage{
+		width: 29.9%;
+	}
+}
+@media (max-width: 550px){
+	.btn-store{
+		float: left;
+		clear: left;
+	}
 }
 @media (max-width: 500px){
 	.container-contacts{
@@ -349,11 +360,16 @@ nav:after{
 			background-size: 240px;
 	}
 	.buy{
-		text-align: center;
 		margin-top: 50px;
 		margin-bottom: 100px;
 	}
 	.info-img{
 		width: 100%;
+	}
+	.contacts_tel{
+		font-size: 18px;
+	}
+	.contacts_email{
+		font-size: 12px;
 	}
 }
