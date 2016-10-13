@@ -90,6 +90,10 @@ nav{
 	color: #fff;
 	font-size: 22px;
 }
+.order-btn.blue{
+	background: #0297d4;
+	border: 13px solid #cfe9f4;
+}
 .btn-store{
 	background: inherit;
 	height: 41px;
@@ -119,6 +123,10 @@ nav{
 	border-color: #a9e865;
 	background: #a9e865;
 }
+.order-btn.blue:hover{
+	background: #007bad;
+	border: 13px solid rgba(77, 182, 225, 1);
+}
 .btn-store:before{
 	content: 'МАГАЗИН';
 }
@@ -127,6 +135,9 @@ nav{
 }
 .btn-store.order:before{
 	content: 'ЗАКАЗАТЬ';
+}
+.order-btn.blue:before{
+	content: 'ВПЕРЕД';
 }
 .logo{
 	padding-top: 40px;
@@ -279,6 +290,10 @@ nav:after{
 }
 .item{
 	background: url(../img/quote.png) no-repeat 80% 70%;
+}
+.run{
+	background: url(../img/run.png) no-repeat 50%, url(../img/bg-step.png);
+	height: 1000px;
 }
 /*//////////////////////*/
 
