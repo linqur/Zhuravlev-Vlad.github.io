@@ -25,9 +25,9 @@
         <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
         <div class="contacts">
           <h3 class="contacts_tel">+7 987 548 57 57</h3>
-          <a href="" class="animation contacts_email">cofe89.ru@yandex.ru</a>
+          <a href="" class="contacts_email">cofe89.ru@yandex.ru</a>
         </div>
-        <button class="btn-store animation"></button>
+        <button class="btn-store"></button>
       </nav><!--Навигация-->
       <div class="container container-header">
         <div class="row">
@@ -37,8 +37,8 @@
           </div>
           <div class="col-md-8 col-md-offset-1 col-sm-7 buy">
             <div class="order">
-              <div class="price">2' 990</div>
-              <button class="order-btn animation"></button>
+              <div class="price">2' 990<i class="fa fa-rub" aria-hidden="true"></i></div>
+              <button class="order-btn"></button>
             </div>
           </div>
         </div>
@@ -125,44 +125,46 @@
       </div>
     </section><!--Информация о продукте-->
     <section class="step container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="col-md-2 col-sm-5 col-xs-12">
-              <img src="img/search.png" alt="">
-              <h3>Мы ищем</h3>
-              <h4>Кофе по всему миру</h4>
-              <p>У нас более 150 сортов кофе для каждого, со всего кофейного пояса Земли.</p>
-            </div>
-            <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-1.png" alt=""></div>
-            <div class="col-md-3 col-sm-5 col-xs-12">
-              <img src="img/roasting_1.png" alt="">
-              <h3>Мы обжариваем</h3>
-              <h4>Индивидуально</h4>
-              <p>Только индивидуальная обжарка позволяет максимально раскрыть все нотки и нюансы кофе.</p>
-            </div>
-            <div class="col-md-1 col-sm-2 step_arrow step_arrow--sm-disnon"><img src="img/arrow-2.png" alt=""></div>
-            <div class="col-md-2 col-sm-5 col-xs-12">
-              <img src="img/Delivery.png" alt="">
-              <h3>Мы доставляем</h3>
-              <h4>Быстро</h4>
-              <p>Доставка натурального кофе MADEO производится в течение 48 часов после получения заказа.</p>
-            </div>
-            <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-3.png" alt=""></div>
-            <div class="col-md-2 col-sm-5 col-xs-12 step-green">
-              <img src="img/Cezve.png" alt="">
-              <h3>Мы варим</h3>
-              <h4>Вкусно</h4>
-              <p>Наливаем его в любимую кофейную чашку и пьем с удовольствием!</p>
+        <div class="container">
+          <div class="row"></div>
+            <div class="col-xs-12">
+              <div class="col-md-2 col-sm-5 col-xs-12">
+                <img src="img/search.png" alt="">
+                <h3>Мы ищем</h3>
+                <h4>Кофе по всему миру</h4>
+                <p>У нас более 150 сортов кофе для каждого, со всего кофейного пояса Земли.</p>
+              </div>
+              <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-1.png" alt=""></div>
+              <div class="col-md-3 col-sm-5 col-xs-12">
+                <img src="img/roasting_1.png" alt="">
+                <h3>Мы обжариваем</h3>
+                <h4>Индивидуально</h4>
+                <p>Только индивидуальная обжарка позволяет максимально раскрыть все нотки и нюансы кофе.</p>
+              </div>
+              <div class="col-md-1 col-sm-2 step_arrow step_arrow--sm-disnon"><img src="img/arrow-2.png" alt=""></div>
+              <div class="col-md-2 col-sm-5 col-xs-12">
+                <img src="img/Delivery.png" alt="">
+                <h3>Мы доставляем</h3>
+                <h4>Быстро</h4>
+                <p>Доставка натурального кофе MADEO производится в течение 48 часов после получения заказа.</p>
+              </div>
+              <div class="col-md-1 col-sm-2 step_arrow"><img src="img/arrow-3.png" alt=""></div>
+              <div class="col-md-2 col-sm-5 col-xs-12 step-green">
+                <img src="img/Cezve.png" alt="">
+                <h3>Мы варим</h3>
+                <h4>Вкусно</h4>
+                <p>Наливаем его в любимую кофейную чашку и пьем с удовольствием!</p>
+              </div>
             </div>
           </div>
           <div class="col-xs-12">
-            <button class="btn-store order animation"></button>
+            <button class="btn-store order"></button>
           </div>
         </div>
 
 
 
-        <div id="carousel" class="carousel slide container-fluid recall">
+        <div id="carousel" class="carousel slide container-fluid recall col-xs-12">
           <div class="col-xs-12">
             <h2>Отзывы</h2>
             <h4>Наших покупателей</h4>
@@ -208,8 +210,16 @@
               </div>
             </div>
            <!--Стрелки переключения-->
-            <a class="carousel-control left" href="#carousel" data-slide="prev"><img src="img/left.png" alt=""></a>
-            <a class="carousel-control right" href="#carousel" data-slide="next"><img src="img/right.png" alt=""></a>
+            <a class="carousel-control left" href="#carousel" data-slide="prev">
+              <svg width="28pt" height="50pt" viewBox="0 0 28 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d=" M 25.43 0.00 L 27.70 0.00 C 27.00 1.16 26.18 2.25 25.29 3.27 C 17.68 10.42 10.17 17.68 2.71 25.00 C 8.92 31.21 15.33 37.22 21.63 43.34 C 23.67 45.44 26.50 47.03 27.37 50.00 L 25.48 50.00 C 17.02 41.74 8.37 33.65 0.00 25.29 L 0.00 24.42 C 8.64 16.46 17.01 8.20 25.43 0.00 Z" />
+              </svg>
+            </a>
+            <a class="carousel-control right" href="#carousel" data-slide="next">
+              <svg width="27pt" height="50pt" viewBox="0 0 27 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d=" M 0.00 0.00 L 1.55 0.00 C 10.05 8.14 18.52 16.31 27.00 24.47 L 27.00 25.55 C 18.50 33.67 10.03 41.81 1.59 50.00 L 0.00 50.00 L 0.00 48.43 C 7.97 40.52 16.26 32.93 24.21 24.99 C 16.25 17.09 8.05 9.43 0.00 1.63 L 0.00 0.00 Z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -223,7 +233,7 @@
               <h4>Почувствуй атмосферу Ирландии</h4>
             </div>
             <div class="col-xs-12 col-md-8 col-md-offset-1">
-              <button class="order-btn animation blue"></button>
+              <button class="order-btn blue"></button>
             </div>
           </div>
         </div>

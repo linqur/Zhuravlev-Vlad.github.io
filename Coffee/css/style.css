@@ -41,7 +41,7 @@ button:focus {
 /*//////-HEADER-//////*/
 header{
 	background: url(../img/bg-header2.jpg) 50% 100% repeat-x,
-							url(../img/bg-header1.jpg);
+							url(../img/bg-header1.jpg) #f3f3f3;
 }
 nav{
 	padding-left: 40px;
@@ -51,7 +51,7 @@ nav{
 	background: url(../img/coffee.png) 100% 100% no-repeat;
 }
 .new{
-	font-size: 254px;
+	font-size: 254px!important;
 	color: rgba(3, 151, 213, 0.06);
 	font-family: 'FlangeBQ';
 	letter-spacing: 90px;
@@ -72,10 +72,20 @@ nav{
 	font-size: 40px;
 	color: #51920b;
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 25px;
+	margin-top: 5px;
+}
+.price i{
+	font-size: 34px;
+	padding-left: 15px;
 }
 .footer a,
-.animation{
+.btn-store,
+.order-btn,
+.contacts_email,
+.advantage div,
+svg,
+.btn-store.order{
 	-webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
@@ -126,6 +136,7 @@ nav{
 	border-radius: 30px;
 	font-size: 22px;
 	margin:90px 0 100px 0;
+	background: inherit;
 }
 .btn-store:hover{
 	background: #c87d59;
@@ -194,7 +205,8 @@ nav:after{
 							url(../img/bottom-info.png) repeat-x 50% 100%;
 	-webkit-background-size: contain;
 	background-size: contain;
-	padding: 0!important;
+	padding:30px 0 50px 0!important;
+
 }
 .info p{
 	color: #857a73;
@@ -254,10 +266,11 @@ nav:after{
 .step{
 	text-align: center;
 	padding-top: 200px;
-	margin-top: 50px;
-	background: url(../img/bg-trace.png) no-repeat 100% 50%, 
+	background: url(../img/kofejnoe-zerno.png) no-repeat 100% 15%,
+							url(../img/kofejnye-zerna.png) no-repeat -1% 15%, 
+							url(../img/bg-trace.png) no-repeat 100% 50%, 
 							url(../img/bottom-info.png) repeat-x 50% 0,
-							url(../img/bg-step.png);
+							url(../img/bg-step.png) #f3eed2;
 }
 .step h3{
 	font-size: 22px!important;
@@ -286,14 +299,22 @@ nav:after{
 .recall{
 	margin: 50px 0 70px 0;
 }
+.carousel-control{
+	opacity: 1!important;
+	width: 25%!important;
+}
 .carousel-control.right,
 .carousel-control.left{
 	background-image: none!important;
 }
-.carousel-control img{
+.carousel-control svg{
 	width: 28px;
 	position: absolute;
-	top: 58%;
+	top: 65%;
+	fill: #977763;
+}
+.carousel-control svg:hover{
+	fill: #383330;
 }
 .recall h4,
 .recall h2{
@@ -375,6 +396,11 @@ nav:after{
 	color: #fff;
 }
 /*////-END-FOOTER-////*/
+@media (max-width: 1200px){
+	.new{
+		right: 10%;
+	}
+}
 @media (max-width: 991px){
 	.info-img{
 		width: 436px;
@@ -388,6 +414,10 @@ nav:after{
 	}
 	.step_arrow{
 		margin-top: 140px;
+	}
+	.new{
+		font-size: 200px!important;
+		right: -15px;
 	}
 }
 @media (max-width: 767px){
@@ -421,7 +451,7 @@ nav:after{
 	.step_arrow{
 		display: none;
 	}
-	.carousel-control img{
+	.carousel-control svg{
 		display: none;
 	}
 	.info{
@@ -456,6 +486,12 @@ nav:after{
 	.container-contacts{
 		float: left;
 	}
+	.step{
+	background: url(../img/kofejnoe-zerno.png) no-repeat 100% 15%,
+							url(../img/bg-trace.png) no-repeat 100% 50%, 
+							url(../img/bottom-info.png) repeat-x 50% 0,
+							url(../img/bg-step.png) #f3eed2;
+}
 }
 @media (max-width: 480px){
 	.coffee-title h1{
@@ -468,6 +504,9 @@ nav:after{
 	.buy{
 		margin-top: 50px;
 		margin-bottom: 290px;
+	}
+	.btn-store.order{
+		margin-bottom: 0;
 	}
 	.info-img{
 		width: 100%;
