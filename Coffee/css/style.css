@@ -496,7 +496,7 @@ nav:after{
 	background: url(../img/kofejnoe-zerno.png) no-repeat 100% 15%,
 							url(../img/bg-trace.png) no-repeat 100% 50%, 
 							url(../img/bottom-info.png) repeat-x 50% 0,
-							url(../img/bg-step.png) #f3eed2;
+							url(../img/bg-step.png);
 }
 }
 @media (max-width: 480px){
