@@ -74,6 +74,7 @@ nav{
 	display: inline-block;
 	margin-right: 25px;
 	margin-top: 5px;
+	padding-bottom: 15px;
 }
 .price i{
 	font-size: 34px;
