@@ -475,6 +475,11 @@ nav:after{
 	.footer_contacts p{
 		padding-left: 23px;
 	}
+	.item{
+		-webkit-background-size: 100px;
+		background-size: 100px;
+		background-position: 95% 70%;
+	}
 }
 @media (max-width: 550px){
 	.btn-store{
