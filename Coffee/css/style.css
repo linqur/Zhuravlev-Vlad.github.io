@@ -325,9 +325,8 @@ nav:after{
 }
 .run{
 	background: url(../img/run.png) no-repeat 50%,
-							url(../img/bg-step.png) repeat-x 0 0 #30211c;
+							url(../img/bg-step.png) repeat-x 0 -1px #30211c;
 	height: 900px;
-	margin-top: -1px;
 }
 .run_title{
 	margin-top: 300px;
@@ -350,7 +349,6 @@ nav:after{
 .footer{
 	background: #30211c;
 	padding: 70px 0 30px 0;
-	margin-top: -2px;
 }
 .footer p{
 	color: #fff;
