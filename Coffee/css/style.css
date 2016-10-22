@@ -36,9 +36,6 @@ button:focus {
 .container-fluid{
 	max-width: 1260px;
 }
-
-/*////////////////////*/
-/*//////-HEADER-//////*/
 header{
 	background: url(../img/bg-header2.jpg) 50% 100% repeat-x,
 							url(../img/bg-header1.jpg) #f3f3f3;
@@ -199,15 +196,12 @@ nav:after{
   display: table;
   clear: both;
 }
-/*////////////////////*/
-/*////////INFO////////*/
 .info{
 	background: url(../img/bg-info2.png) no-repeat 100% -10%, 
 							url(../img/bottom-info.png) repeat-x 50% 100%;
 	-webkit-background-size: contain;
 	background-size: contain;
 	padding:30px 0 50px 0!important;
-
 }
 .info p{
 	color: #857a73;
@@ -224,9 +218,6 @@ nav:after{
 	opacity: 0.9;
 	-webkit-background-size: contain;
 	background-size: contain;
-}
-.info-img img{
-
 }
 .history{
 	margin-top: 118px;
@@ -261,9 +252,6 @@ nav:after{
 .advantage div:hover{
 	color: #504c49;
 }
-
-/*//////////////////////*/
-/*/////////STEP/////////*/
 .step{
 	text-align: center;
 	padding-top: 200px;
@@ -358,11 +346,6 @@ nav:after{
 	font-size: 22px!important;
 	margin-bottom: 40px;
 }
-/*//////////////////////*/
-
-
-/*////////////////////*/
-/*//////-FOOTER-//////*/
 .footer{
 	background: #30211c;
 	padding: 70px 0 30px 0;
@@ -396,7 +379,6 @@ nav:after{
 	fill: #fff;
 	color: #fff;
 }
-/*////-END-FOOTER-////*/
 @media (max-width: 1200px){
 	.new{
 		right: 10%;
@@ -497,7 +479,7 @@ nav:after{
 							url(../img/bg-trace.png) no-repeat 100% 50%, 
 							url(../img/bottom-info.png) repeat-x 50% 0,
 							url(../img/bg-step.png);
-}
+	}
 }
 @media (max-width: 480px){
 	.coffee-title h1{
