@@ -3,7 +3,7 @@ header{
 	text-transform: uppercase;
 }
 h1, h2, h3{
-	font-family: 'FlangeBQ'!important;
+	font-family: 'FlangeBQ', sans-serif!important;
 	color: #383330!important;
 }
 h1{
@@ -14,19 +14,19 @@ h2{
 }
 h4{
 	font-size: 26px!important;
-	font-family: 'FiraSans-Regular'!important;
+	font-family: 'FiraSans-Regular', sans-serif!important;
 	color: #b2ad90!important;
 }
 h5{
-	font-family: 'FiraSans-Light';
+	font-family: 'FiraSans-Light', sans-serif;
 	font-size: 22px!important;
 }
 p{
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular', sans-serif;
 	font-size: 16px!important;
 }
 span{
-	font-family: 'FiraSans-Medium';
+	font-family: 'FiraSans-Medium', sans-serif;
 }
 button, 
 button:active, 
@@ -50,7 +50,7 @@ nav{
 .new{
 	font-size: 254px!important;
 	color: rgba(3, 151, 213, 0.06);
-	font-family: 'FlangeBQ';
+	font-family: 'FlangeBQ', sans-serif;
 	letter-spacing: 90px;
 	position: absolute;
 	top: 10%;
@@ -65,7 +65,7 @@ nav{
 	margin-bottom: 50px;
 }
 .price{
-	font-family: 'FiraSans-Bold';
+	font-family: 'FiraSans-Bold', sans-serif;
 	font-size: 40px;
 	color: #51920b;
 	display: inline-block;
@@ -100,7 +100,7 @@ svg,
 	border-radius: 43px;
 	background: #75c51e;
 	box-shadow: 0 0 0 13px rgba(117, 197, 30, .3);
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular', sans-serif;
 	color: #fff;
 	font-size: 22px;
 	border: none;
@@ -121,7 +121,7 @@ svg,
 	border-radius: 20px;
 	border: 1px solid #c87d59;
 	color: #b78c78;
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular', sans-serif;
 	margin-top: 20px;
 	margin-right: 40px;
 	float: right;
@@ -173,10 +173,10 @@ svg,
 }
 .contacts_tel{
 	font-size: 22px;
-	font-family: 'FiraSans-Medium'!important;
+	font-family: 'FiraSans-Medium', sans-serif!important;
 }
 .contacts_email{
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular', sans-serif;
 	font-size: 16px;
 	color: #b78c78;
 	text-transform: none;
@@ -227,7 +227,7 @@ nav:after{
 }
 .advantage div{
 	font-size: 14px!important;
-	font-family: 'FiraSans-Medium'!important;
+	font-family: 'FiraSans-Medium', sans-serif!important;
 	color: #967662;
 	width: 100px;
 	height: 100px;
@@ -272,7 +272,7 @@ nav:after{
 }
 .step p{
 	font-size: 13px!important;
-	font-family: 'MyriadPro-Regular';
+	font-family: 'MyriadPro-Regular', sans-serif;
 	color: #978e83;
 }
 .step img{
@@ -355,10 +355,10 @@ nav:after{
 }
 .footer p{
 	color: #fff;
-	font-family: 'FiraSans-Medium';
+	font-family: 'FiraSans-Medium', sans-serif;
 }
 .footer a{
-	font-family: 'FiraSans-Regular';
+	font-family: 'FiraSans-Regular', sans-serif;
 	color: #bc988c;
 	text-decoration: underline;
 }
