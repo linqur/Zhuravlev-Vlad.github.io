@@ -1,3 +1,4 @@
+html, body{ margin: 0; }
 .contacts-block{
 	background: #fff;
 	margin-left: 0px;
@@ -51,6 +52,9 @@
     height: 20px;
     transform: rotate(90deg);
 }
+.sidebar_menu .panel-body .active a:hover{
+	background: #fff;
+}
 a[aria-expanded=true]{
 	background: #9da9b8;
 	color: #fff;
@@ -60,6 +64,18 @@ a[aria-expanded=true]:hover{
 }
 .footer_bottom{
 	font-style: italic;
+}
+.contacts-block a{
+	font-size: 18px;
+	color: #2e343b;
+	font-family: "Roboto", "Arial", serif;
+	font-weight: 300;
+}
+.map-address.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media (max-width: 991px){
 	a[aria-expanded=true],

@@ -3,7 +3,7 @@ ymaps.ready(init);
         function init () { 
             myMap = new ymaps.Map("map", {
                     center: [55.79116633786059, 49.1674262066814], 
-                    zoom: 11 
+                    zoom: 11,
                 });
           /* Создаем кастомные метки */
           myPlacemark0 = new ymaps.Placemark([55.79116633786059, 49.1674262066814], { // Создаем метку с такими координатами и суем в переменную
@@ -61,3 +61,5 @@ ymaps.ready(init);
                                     });
         });
     }
+
+    
