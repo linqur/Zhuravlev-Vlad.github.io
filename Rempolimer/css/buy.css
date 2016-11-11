@@ -4,6 +4,12 @@ html, body{ margin: 0; }
 	margin-left: 0px;
 	margin-right: 0;
 }
+.map-block .display{
+	display: none;
+}
+.map-block .dispblock{
+	display: block;
+}
 .map-address h3{
 	font-weight: bold;
 	font-size: 20px;
@@ -76,6 +82,9 @@ a[aria-expanded=true]:hover{
   top: 0;
   left: 0;
   right: 0;
+}
+#ullist_a_all{
+	display: none!important;
 }
 @media (max-width: 991px){
 	a[aria-expanded=true],
