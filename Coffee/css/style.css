@@ -81,7 +81,7 @@ nav{
 .btn-store,
 .order-btn,
 .contacts_email,
-.advantage div,
+.advantage a,
 svg,
 .btn-store.order{
 	-webkit-transition: 0.2s;
@@ -99,7 +99,7 @@ svg,
 	height: 60px;	
 	border-radius: 43px;
 	background: #75c51e;
-	box-shadow: 0 0 0 13px rgba(117, 197, 30, .3);
+	box-shadow: 0 0 0 13px rgba(117, 197, 30, .2);
 	font-family: 'FiraSans-Regular', sans-serif;
 	color: #fff;
 	font-size: 22px;
@@ -141,8 +141,8 @@ svg,
 	color: #fff;
 }
 .order-btn:hover{
-	box-shadow: 0 0 0 13px #a9e865;
-	background: #a9e865;
+	box-shadow: 0 0 0 13px rgba(117, 197, 30, .5);
+	background: #63b807;
 }
 .order-btn.blue:hover{
 	background: #007bad;
@@ -229,12 +229,14 @@ nav:after{
 .advantage{
 	text-align: center;
 }
-.advantage div{
+.advantage a{
 	font-size: 14px!important;
-	font-family: 'FiraSans-Medium', sans-serif!important;
-	color: #967662;
+    font-family: 'FiraSans-Medium', sans-serif!important;
+    color: #967662;
+}
+.advantage div{
 	width: 100px;
-	height: 100px;
+	height: 130px;
 	margin: 0 auto;
 }
 .advantage svg{
@@ -253,8 +255,10 @@ nav:after{
 	fill: #504c49;
 	color: #504c49;
 }
-.advantage div:hover{
+.advantage a:focus,
+.advantage a:hover{
 	color: #504c49;
+	text-decoration: none;
 }
 .step{
 	text-align: center;
