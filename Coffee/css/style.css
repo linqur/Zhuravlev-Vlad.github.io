@@ -34,7 +34,7 @@ button:focus {
     outline: none;
 }
 .container-fluid{
-	max-width: 1260px;
+	max-width: 1920px;
 }
 header{
 	background: url(../img/bg-header2.jpg) 50% 100% repeat-x,
@@ -196,9 +196,13 @@ nav:after{
   display: table;
   clear: both;
 }
+.bg_info{
+	background: url(../img/bg-info2.png) no-repeat 100% 0%;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
 .info{
-	background: url(../img/bg-info2.png) no-repeat 100% -10%, 
-							url(../img/bottom-info.png) repeat-x 50% 100%;
+	background: url(../img/bottom-info.png) repeat-x 50% 100%;
 	-webkit-background-size: contain;
 	background-size: contain;
 	padding:30px 0 50px 0!important;
@@ -326,8 +330,8 @@ nav:after{
 	background: url(../img/quote.png) no-repeat 80% 70%;
 }
 .run{
-	background: url(../img/run.png) no-repeat 50%,
-							url(../img/bg-step.png) repeat-x 0 -1px #30211c;
+	background: url(../img/run.png) repeat-x 50%,
+				url(../img/bg-step.png) repeat-x 0 -1px #30211c;
 	height: 905px;
 }
 .run_title{
@@ -440,7 +444,7 @@ nav:after{
 	.carousel-control svg{
 		display: none;
 	}
-	.info{
+	.bg_info{
 		background:url(../img/bg-info2.png) no-repeat 50% 100%;
 		-webkit-background-size: contain;
 		background-size: contain;
