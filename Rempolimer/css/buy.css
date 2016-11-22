@@ -77,14 +77,9 @@ a[aria-expanded=true]:hover{
 	font-family: "Roboto", "Arial", serif;
 	font-weight: 300;
 }
-.map-address.fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#ullist_a_all{
-	display: none!important;
+.map-title{
+	background: #000;
+	height: 100px;
 }
 @media (max-width: 991px){
 	a[aria-expanded=true],
