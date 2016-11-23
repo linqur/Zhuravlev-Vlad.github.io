@@ -30,7 +30,7 @@ body {
   color: #7b7b7b;
   padding-top: 40px; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "HelveticaBold" !important; }
 
 h2 {
@@ -98,7 +98,8 @@ ul {
   width: 100%; }
 
 .designing {
-  padding-top: 200px; }
+  padding-top: 200px;
+  margin-top: -190px; }
   .designing h2 {
     font-size: 18px;
     color: #383838;
@@ -141,26 +142,62 @@ ul {
   background: inherit;
   border: none; }
 
-.carousel_img {
-  max-width: 635px;
-  background: #f2f2f2;
-  position: absolute; }
-  .carousel_img img {
-    width: 635px; }
+.carousel {
+  height: 450px; }
+  .carousel_img {
+    max-width: 635px;
+    background: #f2f2f2;
+    height: 100%; }
+    .carousel_img img {
+      width: 100%; }
+  .carousel_title {
+    border: 4px solid #f2f2f2;
+    padding: 60px 65px;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 35px;
+    left: 35px; }
+    .carousel_title h1 {
+      color: #383838;
+      text-align: right;
+      margin: 0; }
 
-.carousel_title {
-  border: 4px solid #f2f2f2;
-  margin: 30px 0 30px 30px;
-  padding: 60px 65px;
-  height: 360px; }
-  .carousel_title h1 {
-    color: #383838;
-    text-align: right;
-    margin: 0; }
+.page-1.carousel .item {
+  left: 0 !important; }
+
+.page-1.carousel .next.left, .carousel .prev.right {
+  opacity: 1;
+  z-index: 1; }
+
+.page-1.carousel .active.left, .carousel .active.right {
+  opacity: 0;
+  z-index: 2; }
+
+.carousel .carousel-control {
+  z-index: 1000;
+  outline: none;
+  opacity: 1; }
 
 .carousel-control.left,
 .carousel-control.right {
   background: none; }
+
+.carousel-control {
+  left: 80%;
+  width: 20px;
+  bottom: 80px !important;
+  top: auto; }
+  .carousel-control.right {
+    left: 80%;
+    margin-left: 45px; }
+  .carousel-control i {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    color: #000;
+    padding-top: 15px; }
 
 .kak-rabotaem {
   margin-top: 300px; }
@@ -234,6 +271,10 @@ ul {
       background: url(../img/nashi-preimushchestva.png) no-repeat -585px 0; }
     .advantages_mark--11 {
       background: url(../img/nashi-preimushchestva.png) no-repeat -650px 0; }
+    .advantages_mark--12 {
+      background: url(../img/nashi-preimushchestva.png) no-repeat -698px -5px; }
+    .advantages_mark--13 {
+      background: url(../img/nashi-preimushchestva.png) no-repeat -755px -5px; }
 
 .address {
   padding-top: 130px; }
@@ -254,6 +295,7 @@ ul {
   padding: 35px 25px;
   background: #f9f9f9;
   position: absolute;
+  z-index: 1;
   top: -30px;
   right: -15px; }
 
@@ -316,36 +358,165 @@ form > .group > input + label {
           border-radius: 0;
   font-family: 'HelveticaBold'; }
 
+#map {
+  width: 100%;
+  height: 400px;
+  margin: 35px 0 70px; }
+
+.map-menu a {
+  font-size: 13px;
+  color: #383838 !important;
+  display: block;
+  margin-bottom: 12px; }
+
+.map h4 {
+  color: #383838;
+  font-size: 13px; }
+
+.map ul {
+  padding: 6px; }
+
+.map li:before {
+  content: "-";
+  position: relative;
+  color: #383838;
+  font-size: 22px;
+  left: -5px; }
+
+.map .logo {
+  float: none;
+  margin-bottom: 50px; }
+
+.social {
+  margin-top: 50px; }
+  .social a {
+    text-decoration: none; }
+  .social-icon {
+    width: 31px;
+    height: 31px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative; }
+    .social-icon--one {
+      background: url(../img/social_icon.png) no-repeat 0 0; }
+    .social-icon--two {
+      background: url(../img/social_icon.png) no-repeat -31px 0; }
+      .social-icon--two span {
+        background-position: -31px -31px !important; }
+    .social-icon:hover span {
+      opacity: 1; }
+  .social span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/social_icon.png) no-repeat 0 -31px;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s; }
+
+.footer-bottom {
+  width: 100%;
+  border-top: 3px solid #e4e4e4;
+  text-align: center;
+  margin-top: 80px; }
+  .footer-bottom p {
+    display: block;
+    margin: 35px 0; }
+
+.o-kompanii_menu {
+  background: #fbfbfb; }
+  .o-kompanii_menu a:hover {
+    color: #b83f4f; }
+
+.o-kompanii_title {
+  margin: 40px 0 30px; }
+
+.o-kompanii p {
+  margin-bottom: 30px; }
+
+.o-kompanii h1 {
+  font-size: 18px;
+  color: #383838;
+  text-align: center; }
+
+.o-kompanii h2 {
+  color: #b83f4f;
+  font-size: 20px;
+  margin: 0; }
+
+.o-kompanii h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #b83f4f !important; }
+
+.o-kompanii h4 {
+  font-size: 16px;
+  margin: 0;
+  color: #b83f4f !important; }
+
+.o-kompanii h5 {
+  font-size: 14px;
+  font-family: "HelveticaBold" !important;
+  margin: 0;
+  color: #b83f4f !important; }
+
+.o-kompanii .carousel-control {
+  bottom: 20px !important;
+  left: 74%; }
+
+.o-kompanii .item {
+  width: 100%; }
+
+.o-kompanii .page-2 {
+  margin-top: 55px;
+  margin-bottom: 50px; }
+
+#page-2 .container-fluid {
+  max-width: 1550px; }
+
 @media screen and (max-width: 1199px) {
-  .carousel_title {
-    height: 300px; }
-  .carousel_img img {
-    width: 530px; } }
+  .carousel {
+    height: 356px; }
+    .carousel_img {
+      max-width: 520px; }
+  .o-kompanii .carousel {
+    height: 100%; }
+  .o-kompanii .item img {
+    width: 100%; } }
 
 @media screen and (max-width: 991px) {
-  .carousel_title {
-    height: 235px;
-    padding: 30px 35px; }
-    .carousel_title h1 {
-      font-size: 28px; }
-  .carousel_img img {
-    width: 440px; }
   .address_block {
     height: 100px; }
   .contact-form {
-    top: -100px; } }
+    top: -100px; }
+  .carousel {
+    height: 350px; }
+    .carousel_img {
+      max-width: 510px; }
+    .carousel_title {
+      padding: 25px 15px; }
+      .carousel_title h1 {
+        font-size: 28px; } }
+
+@media screen and (max-width: 870px) {
+  .carousel {
+    height: 303px; }
+    .carousel_img {
+      max-width: 440px; }
+    .carousel_title {
+      padding: 25px 15px; }
+      .carousel_title h1 {
+        font-size: 28px; } }
 
 @media screen and (max-width: 767px) {
   .navbar-default .navbar-toggle,
   .navbar-collapse {
     float: left; }
-  .carousel_img img {
-    width: 300px; }
-  .carousel_title {
-    height: 145px;
-    padding: 10px 15px; }
-    .carousel_title h1 {
-      font-size: 24px; }
   .kak-rabotaem_right-block {
     position: static; }
   .advantages {
@@ -354,20 +525,9 @@ form > .group > input + label {
   .contact-form {
     position: static;
     margin: 0 auto;
-    margin-top: 15px; } }
-
-@media screen and (max-width: 560px) {
-  .carousel_img img {
-    width: 100%; }
-  .carousel_title {
-    width: 94%;
-    height: 430px;
-    margin: 0;
-    margin-right: 3%;
-    margin-left: 3%;
-    margin-top: 50px; }
-    .carousel_title h1 {
-      margin-top: 270px; } }
+    margin-top: 15px; }
+  .carousel-control {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
   .phonenumber {
