@@ -1,0 +1,185 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+
+    display: block;
+
+    width: 42px;
+    height: 74px;
+    opacity: 0.2;
+    padding: 0;
+    margin-top: -10px\9; /*lte IE 8*/
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+}
+
+.slick-prev {
+    top: 45%;
+    background-image: url(../../images/left-arrow.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 25px;
+}
+
+.slick-next {
+    top: 45%;
+    background-image: url(../../images/right-arrow.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 25px;
+}
+
+.testimonials-slider .slick-prev {
+    top: 30%;
+}
+
+.testimonials-slider .slick-next {
+    top: 30%;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+
+
+.slick-prev
+{
+    left: -45px;
+    z-index: 9;
+}
+
+
+.slick-next
+{
+    right: -45px;
+}
+
+.testimonials-slider .slick-prev
+{
+    left: -75px;
+}
+
+
+.testimonials-slider .slick-next
+{
+    right: -75px;
+}
+
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 5px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.products-slider .slick-dots {
+    bottom: -60px;
+}
+
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+    text-align: center;
+
+    opacity: .35;
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
