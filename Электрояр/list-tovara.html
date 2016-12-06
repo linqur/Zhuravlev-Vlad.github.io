@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body class="list-tovara">
-<div class="container">
+<div class="container-fluid">
 	<div class="navbar navbar-top navbar-inverse row">
 	  <div class="">
 	    <div class="navbar-collapse collapse navbar-inverse-collapse">
@@ -161,13 +161,13 @@
 					<div class="form-group is-empty">
 						<label for="inputEmail" class="col-md-2 control-label">Имя:</label>
 						<div class="col-md-10">
-							<input type="text" class="form-control" id="inputText" placeholder="">
+							<input type="text" required class="form-control" id="inputText" placeholder="">
 						</div>
 					</div>
 					<div class="form-group is-empty">
 						<label for="inputEmail" class="col-md-2 control-label">Email:</label>
 						<div class="col-md-10">
-							<input type="email" class="form-control" id="inputEmail" placeholder="">
+							<input type="email" required class="form-control" id="inputEmail" placeholder="">
 						</div>
 				    </div>
 					<div class="form-group is-empty">
@@ -182,26 +182,27 @@
 		</div>
 	</div>
 </div>
-<footer class="container footer-top">
+<footer class="container-fluid footer-top">
 	<div class="row">
-		<div class="col-md-6 footer-top_left">
-			<i class="fa fa-envelope" aria-hidden="true"></i>
-			<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
-		</div>
+		<div class="col-xs-12">
+			<div class="col-md-6 footer-top_left">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
+			</div>
 
-		<div class="form-group label-floating footer-top_right col-md-4">
-		  <label class="control-label" for="addon2">Введите E-mail</label>
-		  <div class="input-group">
-		    <input type="text" id="addon2" class="form-control">
-		    <span class="input-group-btn">
-		      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
-		    </span>
-		  </div>
-		</div>
-	</div>	
-</footer>
-<footer class="container footer-bottom">
+			<div class="form-group footer-top_right col-md-4">
+			  <div class="input-group">
+			    <input type="email" class="form-control" id="inputEmail" placeholder="Введите Email">
+			    <span class="input-group-btn">
+			      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
+			    </span>
+			  </div>
+			</div>
+		</div>	
+	</div>
+</footer><footer class="container-fluid footer-bottom">
 	<div class="row">
+		<div class="container">
 		<div class="col-md-3 col-md-offset-2"><h4>Пользователям</h4>
 			<ul>
 				<li><a href="#">Как сделать заказ</a></li>
@@ -221,6 +222,7 @@
 				<li><a href="#">Правила размещения товара</a></li>
 				<li><a href="#">Котегории товаров</a></li>
 			</ul>
+		</div>
 		</div>
 	</div>
 </footer>

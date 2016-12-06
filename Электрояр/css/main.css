@@ -20,7 +20,7 @@ a {
 .navbar .navbar-nav > li > a {
   color: #23527c;
   padding-top: 15px !important;
-  padding-bottom: 10px !important; }
+  padding-bottom: 17px !important; }
 
 .navbar .navbar-nav > li > a:hover {
   color: #009688; }
@@ -66,7 +66,12 @@ a.btn.btn-raised.btn-sm.exit {
 
 .content {
   background: #fff;
-  min-height: 700px; }
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  min-height: 700px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
 .breadcrumb {
   background: none; }
@@ -110,8 +115,6 @@ a.btn.btn-raised.btn-sm.exit {
     margin-top: -10px; }
     .navbar .user a {
       margin-left: 15px; }
-  .navbar-inverse {
-    border-top: 1px solid #5262bc !important; }
   .navbar-bottom {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
@@ -124,20 +127,22 @@ a.btn.btn-raised.btn-sm.exit {
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
-.index .dropdown-menu {
-  padding-top: 20px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  top: 0;
-  left: 150px; }
-
 .dropdown {
   position: static !important; }
   .dropdown-menu {
     left: 0;
-    top: 60px; }
+    top: 52px;
+    padding: 0 25px; }
+    .dropdown-menu div {
+      padding: 15px;
+      display: inline-block; }
+    .dropdown-menu img {
+      width: 100%; }
+    .dropdown-menu a {
+      font-size: 18px; }
     .dropdown-menu li > a {
-      padding-left: 0 !important; }
+      padding-left: 0 !important;
+      font-size: 16px; }
       .dropdown-menu li > a:hover {
         background: none !important; }
 
@@ -180,6 +185,10 @@ a.btn.btn-raised.btn-sm.exit {
 
 .footer-bottom {
   background: #fff; }
+  .footer-bottom h4 {
+    font-size: 16px; }
+  .footer-bottom a {
+    font-size: 13px; }
 
 .form-group {
   padding-right: 0; }
@@ -187,25 +196,25 @@ a.btn.btn-raised.btn-sm.exit {
 .footer-bottom {
   padding-top: 20px; }
 
-.product_category {
-  padding-top: 20px; }
-  .product_category--next {
-    text-align: center; }
-  .product_category ul {
-    padding-left: 60px;
-    margin-top: -15px; }
-  .product_category--link {
-    line-height: 32px;
-    margin-bottom: 15px; }
-    .product_category--link a {
-      padding-left: 15px; }
-    .product_category--link .icon {
-      width: 45px;
-      height: 32px;
-      background: #ccc;
-      float: left; }
-      .product_category--link .icon img {
-        width: 100%; }
+.product_category--next {
+  text-align: center; }
+
+.product_category ul {
+  padding-left: 60px;
+  margin-top: -15px; }
+
+.product_category--link {
+  line-height: 32px;
+  margin-bottom: 15px; }
+  .product_category--link a {
+    padding-left: 15px; }
+  .product_category--link .icon {
+    width: 45px;
+    height: 32px;
+    background: #ccc;
+    float: left; }
+    .product_category--link .icon img {
+      width: 100%; }
 
 .category_all {
   color: #999999; }
@@ -285,11 +294,11 @@ a.btn.btn-raised.btn-sm.exit {
 .table-top {
   padding-bottom: 20px; }
   .table-top i {
-    font-size: 40px; }
+    font-size: 35px; }
   .table-top .active {
     color: #009688; }
   .table-top a {
-    margin-right: 15px; }
+    margin-right: 10px; }
 
 .sorting {
   float: right; }
@@ -442,6 +451,14 @@ a.btn.btn-raised.btn-sm.exit {
 .tile .carousel-inner {
   min-height: 900px; }
 
+.personal-data.company {
+  background: #fff !important;
+  margin-bottom: 15px;
+  padding: 15px; }
+
+.form-company {
+  padding: 0; }
+
 .masonry {
   margin: 1.5em 0;
     margin-padding: 0;
@@ -488,6 +505,37 @@ a.btn.btn-raised.btn-sm.exit {
 .list-tovara_description {
   text-align: left;
   margin-top: 20px; }
+
+.contacts p {
+  font-size: 18px;
+  display: inline-block; }
+
+.contacts .address {
+  margin-right: 25px; }
+
+.contacts i {
+  font-size: 22px;
+  padding-right: 5px; }
+
+.masonry-company .item-block {
+  width: 170px;
+  height: 170px;
+  min-height: 0;
+  margin-bottom: 70px; }
+  .masonry-company .item-block .description {
+    position: absolute;
+    bottom: -60px; }
+  .masonry-company .item-block.first {
+    text-align: center;
+    background: #eee; }
+  .masonry-company .item-block i {
+    display: block;
+    font-size: 65px;
+    padding-top: 30px; }
+  .masonry-company .item-block p {
+    margin-top: 0 !important; }
+  .masonry-company .item-block a:hover {
+    text-decoration: none !important; }
 
 @media only screen and (min-width: 400px) {
   .masonry {
