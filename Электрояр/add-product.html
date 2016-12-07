@@ -159,59 +159,92 @@
 		<div class="col-xs-12">
 			<ul class="breadcrumb">
 	  			<li><a href="index.html">Главная</a></li>
-	  			<li class="active">Личный кабинет</li>
+	  			<li><a href="user.html">Личный кабинет</a></li>
+	  			<li><a href="product_barhan.html">Товары компании</a></li>
+	  			<li class="active">Новый товар</li>
 			</ul>
 		</div>
 		<div class="col-xs-12 title">
-			<h1>Ваш личный кабинет</h1>
+			<h1>Новый товар</h1>
 		</div>
 		<div class="col-md-3 category_left user_sidebar">					
 			<ul>
-				<li><a href="" class="active">Компании</a></li>
+				<li><a href="company.html" class="active">Компании</a></li>
 				<li><a href="message.html">Сообщения</a></li>
 				<li><a href="user.html">Личные данные</a></li>
 			</ul>
 		</div>
 		<div class="col-md-8">
-			<div class="masonry masonry-company">
-				<div class="item-block first">
-					<a href="add-company.html"><div>
-					<i class="fa fa-plus" aria-hidden="true"></i>
-					<p>Добавить компанию</p>
-					</div></a>
+			<form class="form-horizontal personal-data">
+				<div class="thead">
+					<p><img src="" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
 				</div>
-				<div class="item-block">
-					<a href="product_barhan.html"><img src="img/photo_02.jpg" alt=""></a>
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
+				<fieldset>
+					<div class="col-md-6">
+						<div class="form-group row">
+					      <label for="" class="col-md-2 control-label">Название:</label>
+
+					      <div class="col-md-10">
+					        <input type="text" class="form-control" id="inputText" placeholder="">
+					      </div>
+					    </div>
+					</div>
+					<div class="col-md-6">
+						 <div class="form-group">
+					      <label for="inputFile" class="col-md-3 control-label">Изоброжение:</label>
+					      <div class="col-md-9">
+					        <input type="text" readonly="" class="form-control" placeholder="Выберете изоброжение">
+					        <input type="file" id="inputFile" multiple="">
+					      </div>
+					    </div>
+					</div>
+				<div class="col-xs-12">
+				    <div class="form-group is-empty">
+						<label for="textArea" class="col-md-1 control-label">Описание</label>
+						<div class="col-md-11">
+							<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+						</div>
 					</div>
 				</div>
 
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
-				</div>
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
-				</div>
+				<div class="col-md-7">
+				    <div class="form-group">
+				      <label for="" class="col-md-2 control-label">Цена:</label>
 
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
-				</div>
+				      <div class="col-md-10">
+				        <input type="text" class="form-control" id="inputText" placeholder="">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label for="" class="col-md-2 control-label">Категория:</label>
 
-			</div>
+				      <div class="col-md-10">
+				        <input type="text" class="form-control" id="inputText" placeholder="">
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-5">
+				    <div class="form-group face">
+				      <label class="col-md-2 control-label">Вид:</label>
+				      <div class="col-md-10">
+				        <div class="radio radio-primary">
+				          <label>
+				            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+				            Эталонный товар
+				          </label>
+				        </div>
+				        <div class="radio radio-primary">
+				          <label>
+				            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+				            Обычный товар
+				          </label>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+				</fieldset>
+				<a href="javascript:void(0)" class="btn btn-raised btn-primary">Добавить товар</a>
+			</form>
 		</div>
 	</div>
 </div>
