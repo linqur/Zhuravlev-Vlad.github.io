@@ -9,8 +9,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +26,10 @@
 	<div class="navbar navbar-top navbar-inverse row">
 		<div class="container">
 			<div class="navbar-collapse">
-				<a class="navbar-brand" href="javascript:void(0)">Электрояр</a>
+				<a class="navbar-brand" href="index.html">
+					<h1>ILLI<i class="fa fa-search" aria-hidden="true"></i>UID</h1>
+					<p>промышленный сток-центер</p>
+				</a>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>marketplace@bk.ru</a></li>
 					<li><a href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i>+ 7 960 06 00054</a></li>
@@ -171,9 +176,9 @@
 		<div class="col-xs-12 title">
 			<h1>Новая компания</h1>
 		</div>
-		<div class="col-md-3 category_left user_sidebar">					
+		<div class="col-md-3 col-xs-12 category_left hidden-sm hidden-xs">
 			<ul>
-				<li><a href="all-company.html" class="active">Компании</a></li>
+				<li><a href="all-company.html">Компании</a></li>
 				<li><a href="message.html">Сообщения</a></li>
 				<li><a href="user.html">Личные данные</a></li>
 			</ul>
@@ -181,7 +186,7 @@
 		<div class="col-md-8">
 			<form class="form-horizontal personal-data">
 				<div class="thead">
-					<p><img src="" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
+					<p><img src="img/User.png" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
 				</div>
 				<fieldset>
 					<div class="col-md-6">
@@ -197,7 +202,7 @@
 						 <div class="form-group">
 					      <label for="inputFile" class="col-md-2 control-label">Логотип:</label>
 					      <div class="col-md-10">
-					        <input type="text" readonly="" class="form-control" placeholder="Выберете изоброжение">
+					        <input type="text" readonly="" class="form-control" placeholder="Выберите изоброжение">
 					        <input type="file" id="inputFile" multiple="">
 					      </div>
 					    </div>
@@ -291,54 +296,58 @@
 		</div>
 	</div>
 </div>
-<footer class="container-fluid footer-top">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="col-md-6 footer-top_left">
-				<i class="fa fa-envelope" aria-hidden="true"></i>
-				<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
-			</div>
-
-			<div class="form-group footer-top_right col-md-4">
-			  <div class="input-group">
-			    <input type="email" class="form-control" id="inputEmail" placeholder="Введите Email">
-			    <span class="input-group-btn">
-			      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
-			    </span>
-			  </div>
-			</div>
-		</div>	
-	</div>
-</footer>
-<footer class="container-fluid footer-bottom">
-	<div class="row">
+	<footer class="container-fluid footer-top">
 		<div class="container">
-		<div class="col-md-3 col-md-offset-2"><h4>Пользователям</h4>
-			<ul>
-				<li><a href="#">Как сделать заказ</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Доставка</a></li>
-			</ul>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="col-md-6 footer-top_left">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
+					</div>
+					<div class="form-group footer-top_right col-md-4">
+					  <div class="input-group">
+					    <input type="email" class="form-control" id="inputEmail" placeholder="Введите Email">
+					    <span class="input-group-btn">
+					      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
+					    </span>
+					  </div>
+					</div>
+				</div>	
+			</div>
 		</div>
-		<div class="col-md-3"><h4>Поставщикам</h4>
-			<ul>
-				<li><a href="#">Регистрация компании</a></li>
-				<li><a href="#">Регистрация товара</a></li>
-				<li><a href="#">Обратная свзязь</a></li>
-			</ul>
+	</footer>
+	<footer class="container footer-bottom">
+		<div class="row">
+			<div class="col-md-3"><h4>Пользователям</h4>
+				<ul>
+					<li><a href="#">Как сделать заказ</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3"><h4>Поставщикам</h4>
+				<ul>
+					<li><a href="#">Регистрация компании</a></li>
+					<li><a href="#">Регистрация товара</a></li>
+					<li><a href="#">Обратная свзязь</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3"><h4>Правила</h4>
+				<ul>
+					<li><a href="#">Правила размещения товара</a></li>
+					<li><a href="#">Котегории товаров</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3"><h4>Правила</h4>
+				<ul>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="" data-toggle="modal" data-target="#authorization">Авторизация</a></li>
+					<li><a href="registration.html">Регистрация</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="col-md-3"><h4>Правила</h4>
-			<ul>
-				<li><a href="#">Правила размещения товара</a></li>
-				<li><a href="#">Котегории товаров</a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
-</footer>
-
+	</footer>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>$.material.init()</script>
   </body>
 </html>

@@ -9,8 +9,8 @@
 
     <!-- Bootstrap -->
    	<link rel="stylesheet" href="css/libs.min.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,26 +32,10 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>marketplace@bk.ru</a></li>
 						<li><a href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i>+ 7 960 06 00054</a></li>
-						<li class="navbar-last"><a href="user.html"><i class="fa fa-user" aria-hidden="true"></i>Профиль</a></li>
-						<li><a href="authorization.html" class="btn btn-raised btn-sm exit">Выйти</a></li>
+						<li class="navbar-last"><a href="registration.html"><i class="fa fa-user" aria-hidden="true"></i>Регистрация</a></li>
+						<li><a href="javascript:void(0)" class="btn btn-raised btn-sm exit" data-toggle="modal" data-target="#authorization">Войти</a></li>
 					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="row header-top">
-			<div class="col-xs-12">
-				<h1>залежался неликвид?</h1>
-				<h2>Мы реализуем ваш неликвид на раз-два!</h2>
-			</div>
-			<div class="col-md-4 col-md-offset-2 buy-sell">
-				<h3>356</h3>
-				<p>предприятий охватывает база<br>данных о неликвидных ILLIQUID</p>
-				<button class="btn">НАЧАТЬ ПОКУПАТЬ</button>
-			</div>
-			<div class="col-md-4 buy-sell">
-				<h3>1280</h3>
-				<p>Специалисты по закупке ищут<br>материалы на ILLIQUID</p>
-				<button class="btn">НАЧАТЬ ПРОДАВАТЬ</button>
 			</div>
 		</div>
 		<div class="row">
@@ -174,96 +158,56 @@
 			</div>
 		</div>
 	</header>
-	<section class="">
-		<div class="container-fluid">
-			<div class="row product_category">
-				<div class="col-xs-12">
-					<div class="content-category content container">
-						<h2>Каталог электротехнического оборудования</h2>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-								<a href="">Кабель и провод</a>
-							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
+	<div class="container content">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="breadcrumb">
+		  			<li><a href="index.html">Главная</a></li>
+		  			<li><a href="user.html">Личный кабинет</a></li>
+		  			<li class="active">Компании</li>
+				</ul>
+			</div>
+			<div class="col-xs-12">
+				<div class="">
+					<div class="modal-content col-md-6 col-md-offset-3">
+						<div class="modal-header">
+							<h2 class="modal-title" id="myModalLabel">Авторизация</h2>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/w128h1281385326570plugin.png" alt=""></div>
-								<a href="">Розетки  выключатели  аксессуары</a>
+						<form action="">
+							<div class="modal-body">
+				  				<div class="form-group label-floating is-empty">
+									<label class="control-label" for="addon2">Логин</label>
+									<div class="input-group col-xs-12">
+										<input type="text" id="addon2" class="form-control">
+									</div>
+								</div>
+								<div class="form-group label-floating is-empty">
+									<label class="control-label" for="addon2">Пароль</label>
+									<div class="input-group col-xs-12">
+										<input type="password" id="addon2" class="form-control">
+									</div>
+								</div>
 							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/eldvigatel.jpg" alt=""></div>
-								<a href="">Электродвигатели</a>
+						</form>
+						<div class="modal-footer">
+							<div class="modal-footer_button-authorization">
+								<button type="button" class="btn btn-primary">Войти</button>
 							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/eldvigatel.jpg" alt=""></div>
-								<a href="">Кабельные изделия</a>
+							<div class="modal-footer_button-bottom">
+								<button type="button" class="btn btn-primary">Вспомнить пароль</button>
+								<button type="button" class="btn btn-primary">Регистрация</button>
+								<div class="modal-footer_button-bottom--social">
+									<a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+									<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								</div>
 							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/w128h1281385326570plugin.png" alt=""></div>
-								<a href="">Рубильники</a>
-							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="product_category--link">
-								<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-								<a href="">Кабель и провод</a>
-							</div>
-							<ul>
-								<li><a href="">Подкатегория 1</a></li>
-								<li><a href="">Подкатегория 2</a></li>
-								<li><a href="">Подкатегория 3</a></li>
-								<li><a href="">Подкатегория 4</a></li>
-								<li><a href="" class="category_all">Все подкатегории</a></li>
-							</ul>
-						</div>
-						<div class="product_category--next col-xs-12"><button class="btn">Еще ХХХ категорий</button></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<footer class="container-fluid footer-top">
 		<div class="container">
 			<div class="row">

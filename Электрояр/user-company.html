@@ -9,10 +9,9 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/libs.min.css">
-   	<link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,9 +20,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="list-tovara">
+  <body class="user">
 <div class="container-fluid">
-<div class="navbar navbar-top navbar-inverse row">
+	<div class="navbar navbar-top navbar-inverse row">
 		<div class="container">
 			<div class="navbar-collapse">
 				<a class="navbar-brand" href="index.html">
@@ -59,8 +58,13 @@
 								</div>
 							</form>
 							<ul class="nav navbar-nav navbar-left">
+								<li>
+									<a href="" class="logo"><img src="img/IBM-logo-blue.png" alt=""></a>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-left">
 							<li class="dropdown">
-							    <a class="navbar-left_all-categorii" href="product.html"><i class="fa fa-bars" aria-hidden="true"></i>Товары</a>
+							    <a class="navbar-left_all-categorii" href="product.html">Товары<i class="fa fa-bars right" aria-hidden="true"></i></a>
 							    <ul class="dropdown-menu hidden-xs">
 							    <li class="divider"></li>
 							    <div class="col-md-9">
@@ -152,11 +156,6 @@
 							    </ul>
 							  </li>
 							</ul>
-							<ul class="nav navbar-nav navbar-left">
-								<li>
-									<a href="">Поставщики</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -164,65 +163,65 @@
 		</div>
 	</div>
 </div>
-<div class="container content">
+<div class="container content product">
 	<div class="row">
 		<div class="col-xs-12">
 			<ul class="breadcrumb">
 	  			<li><a href="index.html">Главная</a></li>
-	  			<li><a href="product.html">Товары</a></li>
-	  			<li class="active">Модульная аппаратура</li>
+	  			<li class="active">Личный кабинет</li>
 			</ul>
 		</div>
 		<div class="col-xs-12 title">
-			<h1>ВА МОД 4п 6А С SH204L 4.5кА</h1>
+			<h1>Ваш личный кабинет</h1>
 		</div>
-		<div class="list-tovara_img col-sm-6 col-xs-12">
-			<a href="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg" class="fancyimage list-tovara_img--link" data-fancybox-group="group">
-				<img src="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg" alt="">
-			</a>
-			<div class="list-tovara_description">
-			<p>Устройства Easy9 относятся к среднему ценовому сегменту, но при этом отличаются качеством, надёжностью и удобством использования, свойственным аппаратуре верхнего ценового</p>
-			<ul>Ассортимент изделий включает : сегмента.
-				<li>Выключатели нагрузки (мини-рубильники)</li>
-				<li>Автоматические выключатели</li>
-				<li>Дифференциальные выключатели нагрузки (УЗО)</li>
-				<li>Дифференциальные автоматические выключатели (дифавтоматы)</li>
-				<li>Устройства защиты от импульсных перенапряжений (УЗИП)</li>
+		<div class="col-md-3 col-xs-12 category_left hidden-sm hidden-xs">
+			<ul>
+				<li><a href="all-company.html">Компании</a></li>
+				<li><a href="message-company.html">Сообщения компании</a></li>
+				<li><a href="user-company.html">Данные компании</a></li>
 			</ul>
-			<p class="modifications">модификации: предохранитель, тип металла</p>
-			<p class="price">От 47 000 руб.  до 58 000 руб</p>
 		</div>
-		</div>
-		<div class="col-sm-6 col-xs-12">
-			<form class="form-horizontal personal-data list-tovara">
-				<h2>Заголовок</h2>
-  				<fieldset>
-					<div class="form-group is-empty">
-						<label for="inputEmail" class="col-md-2 control-label">Имя:</label>
-						<div class="col-md-10">
-							<input type="text" required class="form-control" id="inputText" placeholder="">
-						</div>
-					</div>
-					<div class="form-group is-empty">
-						<label for="inputEmail" class="col-md-2 control-label">Email:</label>
-						<div class="col-md-10">
-							<input type="email" required class="form-control" id="inputEmail" placeholder="">
-						</div>
+		<div class="col-md-8">
+			<form class="form-horizontal personal-data">
+				<div class="thead">
+					<p><img src="img/User.png" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
+				</div>
+				<fieldset>
+					<div class="form-group">
+				      <label for="inputName" class="col-md-2 control-label">Имя и фамилия:</label>
+				      <div class="col-md-10">
+				        <input type="text" class="form-control" id="inputName" placeholder="" disabled="">
+				      </div>
 				    </div>
-					<div class="form-group is-empty">
-						<label for="textArea" class="col-md-2 control-label">Ваш вопрос:</label>
-						<div class="col-md-10">
-							<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
-						</div>
-					</div>
-					<a href="javascript:void(0)" class="btn btn-raised btn-primary">Расчитать</a>
-					<p class="btn-lable">Результат заявки придет Вам на почту</p>
-  				</fieldset>
-  			</form>
+				    <div class="form-group">
+				      <label for="inputFile" class="col-md-2 control-label">Фото:</label>
+
+				      <div class="col-md-10">
+				        <input type="text" readonly="" class="form-control" placeholder="Выберете изоброжение" disabled="">
+				        <input type="file" id="inputFile" multiple="" disabled="">
+				      </div>
+				    </div>
+					<div class="form-group">
+				      <label for="inputEmail" class="col-md-2 control-label">Email</label>
+				      <div class="col-md-10">
+				        <input type="email" class="form-control" id="inputEmail" placeholder="Email" disabled="">
+				      </div>
+				    </div>
+					<div class="form-group">
+				      <label for="inputTel" class="col-md-2 control-label">Телефон:</label>
+				      <div class="col-md-10">
+				        <input type="tel" class="form-control" id="inputTel" placeholder="" value="+7" disabled="">
+				      </div>
+				    </div>
+				</fieldset>
+				<div class="edit">
+					<a href="javascript:void(0)" class="btn btn-raised btn-default">Редактировать</a>
+					<a href="javascript:void(0)" class="btn btn-raised btn-primary">Сохранить</a>
+				</div>
+			</form>
 		</div>
 	</div>
-</div>
-<footer class="container-fluid footer-top">
+</div><footer class="container-fluid footer-top">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -276,6 +275,5 @@
 
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>$.material.init()</script>
   </body>
 </html>

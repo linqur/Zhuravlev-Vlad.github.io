@@ -9,8 +9,9 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,7 +26,10 @@
 		<div class="navbar navbar-top navbar-inverse row">
 			<div class="container">
 				<div class="navbar-collapse">
-					<a class="navbar-brand" href="index.html">Электрояр</a>
+					<a class="navbar-brand" href="index.html">
+						<h1>ILLI<i class="fa fa-search" aria-hidden="true"></i>UID</h1>
+						<p>промышленный сток-центер</p>
+					</a>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>marketplace@bk.ru</a></li>
 						<li><a href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i>+ 7 960 06 00054</a></li>
@@ -56,7 +60,7 @@
 								</form>
 								<ul class="nav navbar-nav navbar-left">
 									<li>
-										<a href="" class="logo"><img src="img/1.png" alt=""></a>
+										<a href="" class="logo"><img src="img/IBM-logo-blue.png" alt=""></a>
 									</li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left">
@@ -187,32 +191,34 @@
 		</div>
 	</div>
 	<div class="map-relative">
-		<div class="form-company">
-			<div class="">
-				<form class="form-horizontal personal-data company">
-					<h2>Свяжись с нами</h2>
-					<fieldset>
-						<div class="form-group is-empty">
-							<label for="inputEmail" class="col-md-2 control-label">Имя:</label>
-							<div class="col-md-10">
-								<input type="text" required="" class="form-control" id="inputText" placeholder="">
+		<div class="container-absolute">
+			<div class="container">
+				<div class="form-company">
+					<form class="form-horizontal personal-data company">
+						<h2>Свяжись с нами</h2>
+						<fieldset>
+							<div class="form-group is-empty">
+								<label for="inputEmail" class="col-md-2 control-label">Имя:</label>
+								<div class="col-md-10">
+									<input type="text" required="" class="form-control" id="inputText" placeholder="">
+								</div>
 							</div>
-						</div>
-						<div class="form-group is-empty">
-							<label for="inputEmail" class="col-md-2 control-label">Email:</label>
-							<div class="col-md-10">
-								<input type="email" required="" class="form-control" id="inputEmail" placeholder="">
+							<div class="form-group is-empty">
+								<label for="inputEmail" class="col-md-2 control-label">Email:</label>
+								<div class="col-md-10">
+									<input type="email" required="" class="form-control" id="inputEmail" placeholder="">
+								</div>
 							</div>
-						</div>
-						<div class="form-group is-empty">
-							<label for="textArea" class="col-md-2 control-label">Ваш вопрос:</label>
-							<div class="col-md-10">
-								<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+							<div class="form-group is-empty">
+								<label for="textArea" class="col-md-2 control-label">Ваш вопрос:</label>
+								<div class="col-md-10">
+									<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+								</div>
 							</div>
-						</div>
-					<a href="javascript:void(0)" class="btn btn-raised btn-primary">Расчитать</a>
-					</fieldset>
-				</form>
+						<a href="javascript:void(0)" class="btn btn-raised btn-primary">Расчитать</a>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</div>
 		<div id="map" style="width: 100%; height: 450px"></div>
