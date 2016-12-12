@@ -22,8 +22,19 @@ html, body {
 
 .sticky-content.sidebar.fixed {
   position: fixed;
-  top: 0;
+  top: 65px;
+  left: inherit;
+  right: inherit;
   z-index: 3; }
+
+.sticky-anchor.test {
+  height: 0 !important; }
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #23527c; }
+
+address {
+  display: inline-block; }
 
 ul {
   padding-left: 0; }
@@ -33,6 +44,8 @@ li {
 
 a {
   color: #2c3987; }
+  a:focus {
+    color: #009688 !important; }
 
 .navbar-collapse.in {
   overflow-x: hidden !important; }
@@ -45,6 +58,11 @@ a {
   color: #23527c;
   padding-top: 15px !important;
   padding-bottom: 17px !important; }
+
+.navbar .navbar-brand {
+  padding: 0 !important; }
+  .navbar .navbar-brand img {
+    height: 62px; }
 
 .navbar .navbar-nav > li > a:hover {
   color: #009688; }
@@ -85,11 +103,21 @@ a.btn.btn-raised.btn-sm.exit {
   padding-right: 15px;
   font-size: 18px; }
 
+.navbar-left_all-categorii .right {
+  padding-right: 0;
+  padding-left: 15px; }
+
 .navbar .navbar-collapse {
   border: none; }
 
 .navbar .navbar-form {
   border-bottom: none; }
+
+.navbar .navbar-nav > li > .logo {
+  height: 52px !important;
+  padding: 0 !important; }
+  .navbar .navbar-nav > li > .logo img {
+    height: 100%; }
 
 .fancybox-overlay.fancybox-overlay-fixed {
   background: rgba(0, 0, 0, 0.3); }
@@ -101,14 +129,18 @@ a.btn.btn-raised.btn-sm.exit {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  min-height: 750px; }
+  min-height: 720px; }
+
+.company .content {
+  min-height: inherit; }
 
 .breadcrumb {
   background: none;
   padding-left: 0; }
 
 .breadcrumb > li + li:before {
-  content: '•'; }
+  content: '•';
+  padding: 0 5px 0 2px; }
 
 .navbar {
   margin-bottom: 0; }
@@ -151,7 +183,8 @@ a.btn.btn-raised.btn-sm.exit {
       margin-left: 15px; }
   .navbar-bottom {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    height: 52px; }
 
 .content h1 {
   margin: 0; }
@@ -198,6 +231,12 @@ a.btn.btn-raised.btn-sm.exit {
 #masonry img {
   margin: 5px; }
 
+.footer-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 .footer-top {
   background: -webkit-gradient(linear, left top, right top, from(rgba(63, 81, 181, 0.7)), to(rgba(0, 150, 136, 0.7)));
   background: -webkit-linear-gradient(left, rgba(63, 81, 181, 0.7), rgba(0, 150, 136, 0.7));
@@ -226,7 +265,7 @@ a.btn.btn-raised.btn-sm.exit {
     margin-top: 10px; }
 
 .footer-bottom {
-  background: #fff; }
+  padding-top: 20px; }
   .footer-bottom h4 {
     font-size: 16px; }
   .footer-bottom a {
@@ -239,9 +278,6 @@ a.btn.btn-raised.btn-sm.exit {
     top: 3px;
     right: 0;
     color: #009688; }
-
-.footer-bottom {
-  padding-top: 20px; }
 
 .navbar .navbar-toggle .icon-bar {
   color: #23527c; }
@@ -258,7 +294,7 @@ textarea.form-control {
 
 .product_category--link {
   line-height: 32px;
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
   .product_category--link a {
     padding-left: 15px; }
   .product_category--link .icon {
@@ -310,6 +346,13 @@ textarea.form-control {
 
 .category_right .btn {
   margin: 0; }
+
+.category_relative {
+  position: relative; }
+
+.sticky-element .category_left {
+  position: absolute;
+  max-width: 290px; }
 
 .list-tovara .table img, .user .table img {
   width: 32px;
@@ -512,12 +555,22 @@ table {
   min-height: 900px; }
 
 .personal-data.company {
-  background: #fff !important;
-  margin-bottom: 15px;
-  padding: 15px; }
+  background: white !important;
+  margin: 0;
+  padding: 15px;
+  height: 450px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 1px 0px 1px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 1px 0px 1px 0 rgba(0, 0, 0, 0.19); }
 
 .form-company {
-  padding: 0; }
+  padding: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1; }
+
+.map-relative {
+  position: relative; }
 
 .masonry,
 .masonry-top {
@@ -635,6 +688,9 @@ table {
       .modal-footer_button-bottom--social a i {
         font-size: 24px !important; }
 
+.authorization .modal-content {
+  margin-top: 35px; }
+
 @media only screen and (min-width: 580px) {
   .masonry,
   .masonry-top {
@@ -646,6 +702,10 @@ table {
   .container {
     max-width: 1170px;
     width: 100%; } }
+
+@media screen and (max-width: 991px) {
+  .footer-absolute {
+    position: static; } }
 
 @media screen and (max-width: 767px) {
   .divider {

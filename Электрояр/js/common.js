@@ -20,8 +20,6 @@ var StickyElement = function(node){
   var onScroll = function(e){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
-    
-    console.log('scroll', docTop, anchorTop);
     if(docTop > anchorTop){
       if(!fixed){
         anchor.height(content.outerHeight());
@@ -39,6 +37,4 @@ var StickyElement = function(node){
   
   $(window).on('scroll', onScroll);
 };
-
 var demo = new StickyElement($('#sticky'));
-var demo = new StickyElement($('#sticky2'));

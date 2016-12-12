@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,21 +20,21 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="user">
-<div class="container-fluid">
-	<div class="navbar navbar-top navbar-inverse row">
-		<div class="container">
-			<div class="navbar-collapse">
-				<a class="navbar-brand" href="javascript:void(0)">Электрояр</a>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>marketplace@bk.ru</a></li>
-					<li><a href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i>+ 7 960 06 00054</a></li>
-					 <li class="navbar-last"><a href="user.html"><i class="fa fa-user" aria-hidden="true"></i>Профиль</a></li>
-					 <li><a href="javascript:void(0)" class="btn btn-raised btn-sm exit">Выйти</a></li>
-				</ul>
+  <body class="authorization">
+	<div class="container-fluid">
+		<div class="navbar navbar-top navbar-inverse row">
+			<div class="container">
+				<div class="navbar-collapse">
+					<a class="navbar-brand" href="javascript:void(0)">Электрояр</a>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>marketplace@bk.ru</a></li>
+						<li><a href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i>+ 7 960 06 00054</a></li>
+						 <li class="navbar-last"><a href="user.html"><i class="fa fa-user" aria-hidden="true"></i>Профиль</a></li>
+						 <li><a href="javascript:void(0)" class="btn btn-raised btn-sm exit">Выйти</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 		<div class="row">
 			<div id="sticky" class="sticky-element">
 				<div class="sticky-anchor"></div>
@@ -158,130 +159,111 @@
 	   			</div>
 			</div>
 		</div>
-</div>
-<div class="container product">
-	<div class="row">
-		<div class="col-xs-12">
-			<ul class="breadcrumb">
-	  			<li><a href="company.html">Главная</a></li>
-	  			<li><a href="user.html">Личный кабинет</a></li>
-	  			<li class="active">Товары компании Бархан</li>
-			</ul>
-		</div>
-		<div class="col-xs-12 title">
-			<h1>товары компании Бархан</h1>
-		</div>
-		<div class="col-md-3 col-xs-12 category_left hidden-sm hidden-xs">
-			<ul>
-				<li><a href="all-company.html">Компании</a></li>
-				<li><a href="message-company.html">Сообщения</a></li>
-				<li><a href="user.html">Личные данные</a></li>
-			</ul>
-		</div>
-		<div class="col-md-8">
-			<div class="masonry-top masonry-company">
-				<div class="item-block first">
-					<a href="add-product.html"><div>
-					<i class="fa fa-plus" aria-hidden="true"></i>
-					<p>Добавить товар</p>
-					</div></a>
-				</div>
-				<div class="item-block first">
-					<a href=""><div>
-					<i class="fa fa-download" aria-hidden="true"></i>
-					<p>Выгрузить товар</p>
-					</div></a>
-				</div>
-				<div class="item-block first">
-					<a href=""><div>
-					<i class="fa fa-download fa-rotate-180" aria-hidden="true"></i>
-					<p>Загрузить товар</p>
-					</div></a>
-				</div>
+	</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="breadcrumb">
+		  			<li><a href="index.html">Главная</a></li>
+		  			<li class="active">Регистрация</li>
+				</ul>
 			</div>
-			<div class="masonry masonry-company">
-				<div class="item-block">
-					<a href="product_barhan.html"><img src="img/photo_02.jpg" alt=""></a>
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
+			<div class="modal-content col-md-6 col-md-offset-3">
+				<div class="modal-header">
+					<h2 class="modal-title" id="myModalLabel">Регистрация</h2>
 				</div>
-
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+					    	<label for="inputEmail" class="col-md-2 control-label">ФИО</label>
+							<div class="col-md-10">
+								<input type="email" class="form-control" id="inputEmail" placeholder="">
+							</div>
+					    </div>
+					    <div class="form-group">
+					    	<label for="inputEmail" class="col-md-2 control-label">Логин</label>
+							<div class="col-md-10">
+								<input type="email" class="form-control" id="inputEmail" placeholder="">
+							</div>
+					    </div>
+					    <div class="form-group">
+							<label class="col-md-2 control-label">Пароль</label>
+							<div class="col-md-10">
+								<input type="password" id="addon2" class="form-control">
+							</div>
+						</div>
+					</form>
 				</div>
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
-					</div>
-				</div>
-
-				<div class="item-block">
-					<img src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/CHSMC8/69/d9/93/69d993c07e8b413dabb70354c4179d2c/images/_2_1_1_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F_3/u811.png?token=55da9adb1ca7f7163824a24f642e5386">
-					<div class="description">
-						<p>Бархан</p>
-						<a href="">Редактировать</a>
+				<div class="modal-footer">
+					<div class="form-group modal-footer_button-registration col-xs-12">
+						<div class="checkbox">
+						   	<label>
+					            <input type="checkbox"> Нажимая кнопку «Зарегистрироваться», я принимаю условия <a href="">Пользовательского соглашения</a> и даю своё согласие Медиаплейс на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях идля целей, определенных <a href="">Политикой конфиденциальности</a>.
+					        </label>
+					    </div>
+				    </div>
+					<div class="modal-footer_button-authorization col-xs-12">
+						<button type="button" class="btn btn-primary">Зарегистрироваться</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<footer class="container-fluid footer-top">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="col-md-6 footer-top_left">
-				<i class="fa fa-envelope" aria-hidden="true"></i>
-				<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
+	<div class="footer-absolute">
+		<footer class="container-fluid footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="col-md-6 footer-top_left">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<p>Узнавайте о выгодных предложениях и получайте личные рекомендации</p>
+						</div>
+						<div class="form-group footer-top_right col-md-4">
+						  <div class="input-group">
+						    <input type="email" class="form-control" id="inputEmail" placeholder="Введите Email">
+						    <span class="input-group-btn">
+						      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
+						    </span>
+						  </div>
+						</div>
+					</div>	
+				</div>
 			</div>
-
-			<div class="form-group footer-top_right col-md-4">
-			  <div class="input-group">
-			    <input type="email" class="form-control" id="inputEmail" placeholder="Введите Email">
-			    <span class="input-group-btn">
-			      <a href="javascript:void(0)" class="btn btn-raised btn-default">Подписатся</a>
-			    </span>
-			  </div>
+		</footer>
+		<footer class="container footer-bottom">
+			<div class="row">
+				<div class="col-md-3 col-sm-6"><h4>Пользователям</h4>
+					<ul>
+						<li><a href="#">Как сделать заказ</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6"><h4>Поставщикам</h4>
+					<ul>
+						<li><a href="#">Регистрация компании</a></li>
+						<li><a href="#">Регистрация товара</a></li>
+						<li><a href="#">Обратная свзязь</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6"><h4>Правила</h4>
+					<ul>
+						<li><a href="#">Правила размещения товара</a></li>
+						<li><a href="#">Котегории товаров</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6"><h4>Правила</h4>
+					<ul>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="authorization.html">Авторизация</a></li>
+						<li><a href="registration.html">Регистрация</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>	
+		</footer>
 	</div>
-</footer>
-<footer class="container-fluid footer-bottom">
-	<div class="row">
-		<div class="container">
-		<div class="col-md-3 col-md-offset-2"><h4>Пользователям</h4>
-			<ul>
-				<li><a href="#">Как сделать заказ</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Доставка</a></li>
-			</ul>
-		</div>
-		<div class="col-md-3"><h4>Поставщикам</h4>
-			<ul>
-				<li><a href="#">Регистрация компании</a></li>
-				<li><a href="#">Регистрация товара</a></li>
-				<li><a href="#">Обратная свзязь</a></li>
-			</ul>
-		</div>
-		<div class="col-md-3"><h4>Правила</h4>
-			<ul>
-				<li><a href="#">Правила размещения товара</a></li>
-				<li><a href="#">Котегории товаров</a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
-</footer>
-
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>$.material.init()</script>
+    <script>var demo = new StickyElement($('#sticky2'));</script>
   </body>
 </html>
