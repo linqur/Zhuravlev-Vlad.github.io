@@ -164,7 +164,7 @@
 		</div>
 	</div>
 </div>
-<div class="container product">
+<div class="container content product">
 	<div class="row">
 		<div class="col-xs-12">
 			<ul class="breadcrumb">
@@ -176,123 +176,132 @@
 		<div class="col-xs-12 title">
 			<h1>Новая компания</h1>
 		</div>
-		<div class="col-md-3 col-xs-12 category_left hidden-sm hidden-xs">
-			<ul>
-				<li><a href="all-company.html">Компании</a></li>
-				<li><a href="message.html">Сообщения</a></li>
-				<li><a href="user.html">Личные данные</a></li>
-			</ul>
-		</div>
-		<div class="col-md-8">
-			<form class="form-horizontal personal-data">
-				<div class="thead">
-					<p><img src="img/User.png" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
+		<div class="col-xs-12">
+			<div class="row">
+				<div id="sticky2" class="sticky-element">
+					<div class="sticky-anchor test"></div>
+					<div class="col-md-3 col-xs-12 category_left sticky-content sidebar hidden-sm hidden-xs">
+						<ul>
+							<li><a href="all-company.html">Компании</a></li>
+							<li><a href="message.html">Сообщения</a></li>
+							<li><a href="user.html">Личные данные</a></li>
+						</ul>
+					</div>
 				</div>
-				<fieldset>
-					<div class="col-md-6">
-						<div class="form-group row">
-					      <label for="" class="col-md-2 control-label">Название:</label>
-
-					      <div class="col-md-10">
-					        <input type="text" class="form-control" id="inputText" placeholder="">
-					      </div>
-					    </div>
-					</div>
-					<div class="col-md-6">
-						 <div class="form-group">
-					      <label for="inputFile" class="col-md-2 control-label">Логотип:</label>
-					      <div class="col-md-10">
-					        <input type="text" readonly="" class="form-control" placeholder="Выберите изоброжение">
-					        <input type="file" id="inputFile" multiple="">
-					      </div>
-					    </div>
-					</div>
-				<div class="col-xs-12">
-				    <div class="form-group is-empty">
-						<label for="textArea" class="col-md-1 control-label">Описание</label>
-						<div class="col-md-11">
-							<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+				<div class="col-md-8 col-md-offset-4 col-xs-12">
+					<form class="form-horizontal personal-data">
+						<div class="thead">
+							<p><img src="img/User.png" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
 						</div>
-					</div>
+						<fieldset>
+							<div class="col-md-6">
+								<div class="form-group row">
+							      <label for="" class="col-md-2 control-label">Название:</label>
+
+							      <div class="col-md-10">
+							        <input type="text" class="form-control" id="inputText" placeholder="">
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-6">
+								 <div class="form-group">
+							      <label for="inputFile" class="col-md-2 control-label">Логотип:</label>
+							      <div class="col-md-10">
+							        <input type="text" readonly="" class="form-control" placeholder="Выберите изоброжение">
+							        <input type="file" id="inputFile" multiple="">
+							      </div>
+							    </div>
+							</div>
+						<div class="col-xs-12">
+						    <div class="form-group is-empty">
+								<label for="textArea" class="col-md-1 control-label">Описание</label>
+								<div class="col-md-11">
+									<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-7">
+						    <div class="form-group">
+						      <label for="" class="col-md-2 control-label">ИНН:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						    <div class="form-group">
+						      <label for="" class="col-md-2 control-label">ОГРН:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						</div>
+						<div class="col-md-5">
+						    <div class="form-group face">
+						      <label class="col-md-2 control-label">Лицо:</label>
+						      <div class="col-md-10">
+						        <div class="radio radio-primary">
+						          <label>
+						            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+						            Юридическое лицо
+						          </label>
+						        </div>
+						        <div class="radio radio-primary">
+						          <label>
+						            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						            Физическое лицо
+						          </label>
+						        </div>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+						      <label for="inputEmail" class="col-md-2 control-label">телефон:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						    <div class="form-group">
+						      <label for="" class="col-md-2 control-label">Сайт:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						    <div class="form-group">
+						      <label for="" class="col-md-2 control-label">Email</label>
+						      <div class="col-md-10">
+						        <input type="email" class="form-control" id="inputEmail" placeholder="">
+						      </div>
+						    </div>
+						</div>
+						<div class="col-md-6">
+						    <div class="form-group">
+						      <label for="inputEmail" class="col-md-2 control-label">Менеджеры:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						    <div class="form-group">
+						      <label for="inputFile" class="col-md-2 control-label">Файлы:</label>
+						      <div class="col-md-10">
+						        <input type="text" readonly="" class="form-control" placeholder="Выберете файл">
+						        <input type="file" id="inputFile" multiple="">
+						      </div>
+						    </div>
+						</div>
+						</fieldset>
+						<div class="edit">
+							<a href="javascript:void(0)" class="btn btn-raised btn-primary">подать заявку</a>
+						</div>
+						<p class="btn-lable">Результат заявки придет Вам на почту</p>
+					</form>
 				</div>
-
-				<div class="col-md-7">
-				    <div class="form-group">
-				      <label for="" class="col-md-2 control-label">ИНН:</label>
-
-				      <div class="col-md-10">
-				        <input type="text" class="form-control" id="inputText" placeholder="">
-				      </div>
-				    </div>
-				    <div class="form-group">
-				      <label for="" class="col-md-2 control-label">ОГРН:</label>
-
-				      <div class="col-md-10">
-				        <input type="text" class="form-control" id="inputText" placeholder="">
-				      </div>
-				    </div>
-				</div>
-				<div class="col-md-5">
-				    <div class="form-group face">
-				      <label class="col-md-2 control-label">Лицо:</label>
-				      <div class="col-md-10">
-				        <div class="radio radio-primary">
-				          <label>
-				            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-				            Юридическое лицо
-				          </label>
-				        </div>
-				        <div class="radio radio-primary">
-				          <label>
-				            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-				            Физическое лицо
-				          </label>
-				        </div>
-				      </div>
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-				      <label for="inputEmail" class="col-md-2 control-label">телефон:</label>
-
-				      <div class="col-md-10">
-				        <input type="text" class="form-control" id="inputText" placeholder="">
-				      </div>
-				    </div>
-				    <div class="form-group">
-				      <label for="" class="col-md-2 control-label">Сайт:</label>
-
-				      <div class="col-md-10">
-				        <input type="text" class="form-control" id="inputText" placeholder="">
-				      </div>
-				    </div>
-				    <div class="form-group">
-				      <label for="" class="col-md-2 control-label">Email</label>
-				      <div class="col-md-10">
-				        <input type="email" class="form-control" id="inputEmail" placeholder="">
-				      </div>
-				    </div>
-				</div>
-				<div class="col-md-6">
-				    <div class="form-group">
-				      <label for="inputEmail" class="col-md-2 control-label">Менеджеры:</label>
-
-				      <div class="col-md-10">
-				        <input type="text" class="form-control" id="inputText" placeholder="">
-				      </div>
-				    </div>
-				    <div class="form-group">
-				      <label for="inputFile" class="col-md-2 control-label">Файлы:</label>
-				      <div class="col-md-10">
-				        <input type="text" readonly="" class="form-control" placeholder="Выберете файл">
-				        <input type="file" id="inputFile" multiple="">
-				      </div>
-				    </div>
-				</div>
-				</fieldset>
-				<a href="javascript:void(0)" class="btn btn-raised btn-primary">Подать заявку</a>
-				<p class="btn-lable">Результат заявки придет Вам на почту</p>
-			</form>
+			</div>
 		</div>
 	</div>
 </div>
@@ -349,5 +358,6 @@
 	</footer>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script>var demo = new StickyElement($('#sticky2'));</script>
   </body>
 </html>

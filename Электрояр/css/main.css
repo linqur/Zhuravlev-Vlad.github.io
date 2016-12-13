@@ -6,6 +6,12 @@ html, body {
 .index {
   padding-top: 0; }
 
+input :focus {
+  outline: none !important; }
+
+button, button:active, button:focus {
+  outline: none !important; }
+
 .container-fluid {
   max-width: 1920px; }
 
@@ -39,6 +45,9 @@ html, body {
 .btn {
   -webkit-border-radius: 3px !important;
           border-radius: 3px !important; }
+
+.btn-save {
+  display: none; }
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
   color: #23527c; }
@@ -95,7 +104,7 @@ a.btn.btn-raised.btn-sm.exit {
     font-family: 'Rubik One', sans-serif;
     margin: 0;
     margin-top: 4px;
-    color: #24a6fe;
+    color: #23527c;
     letter-spacing: 2.5px;
     font-size: 39px; }
   .navbar .navbar-brand i {
@@ -229,6 +238,8 @@ a.btn.btn-raised.btn-sm.exit {
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     height: 70px;
     padding-top: 10px; }
+    .navbar-bottom a {
+      font-size: 18px; }
 
 .content h1 {
   margin: 0; }
@@ -506,7 +517,7 @@ table {
   border: 1px solid #ccc;
   border-bottom: none;
   padding: 0;
-  margin-top: 25px;
+  margin-left: 20px;
   position: relative;
   margin-bottom: 40px; }
   .chat-body {
@@ -587,14 +598,14 @@ table {
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 25px;
   margin-top: 24px; }
-  .personal-data .btn {
+  .personal-data .btn-edit {
     display: block;
     margin: 35px auto;
     width: 200px; }
+  .personal-data .btn-save {
+    margin: 35px auto; }
   .personal-data .edit {
     text-align: center; }
-    .personal-data .edit .btn {
-      display: inline-block; }
 
 .list-tovara .personal-data {
   margin-top: 0;
@@ -715,7 +726,7 @@ table {
 
 .btn-lable {
   text-align: center;
-  margin-top: -20px; }
+  margin-top: 15px; }
 
 .face {
   margin-top: 60px; }

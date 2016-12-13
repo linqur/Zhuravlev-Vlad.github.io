@@ -38,3 +38,24 @@ var StickyElement = function(node){
   $(window).on('scroll', onScroll);
 };
 var demo = new StickyElement($('#sticky'));
+
+
+$(document).ready(function() {
+
+  $('.btn-edit').click(function() {
+    $('.btn-edit').css('display', 'none');
+    $('.btn-save').css('display', 'inline-block');
+    $('.form-horizontal input').removeAttr("disabled");
+    $('.form-horizontal textarea').removeAttr("disabled");
+    return false;
+  });
+  
+  $('.btn-save').click(function() {
+    $('.btn-edit').css('display', 'inline-block');
+    $('.btn-save').css('display', 'none');
+    $('.form-horizontal input').attr('disabled', true);
+    $('.form-horizontal textarea').attr('disabled', true);
+    return false;
+  });
+
+});
