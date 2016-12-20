@@ -26,3 +26,16 @@
 // };
 // var demo = new StickyElement($('#sticky'));
 $.material.init()
+
+
+// $(".aside-left li").click(function(e) {
+//   e.preventDefault();
+//   $(".aside-left li").removeClass('active');
+//   $(this).addClass('active');
+// })
+
+$(".content-top a").click(function(e) {
+  e.preventDefault();
+  $(".content-top a").removeClass('active');
+  $(this).addClass('active');
+})
