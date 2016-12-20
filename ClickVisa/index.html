@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>ClickVisa</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/nanoscroller.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="css/bootstrap-material-design.min.css">
 	<link rel="stylesheet" href="css/circle.css">
 	<link rel="stylesheet" href="css/ripples.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Days+One|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,7 +43,7 @@
 		                    </div>
 		                </div>
 					</div>
-					<div class="tab-pane" id="user1">
+					<div class="tab-pane fade" id="user1">
 						<div class="left user">
 							<img src="img/User.png" alt="">
 							<p>От 6 до 18 лет</p>
@@ -55,7 +56,7 @@
 		                    </div>
 		                </div>
 					</div>
-					<div class="tab-pane" id="user2">
+					<div class="tab-pane fade" id="user2">
 						<div class="left user">
 							<img src="img/User.png" alt="">
 							<p>От 0 до 6 лет</p>
@@ -118,67 +119,151 @@
 		<div class="content">
 			<div class="content-top">
 				<div class="btn-group btn-group-justified btn-group-raised">
-				  <a href="#" class="btn active">Работаю</a>
-				  <a href="#" class="btn ">Безработный</a>
-				  <a href="#" class="btn ">Ип</a>
-				  <a href="#" class="btn ">Студент</a>
-				  <a href="#" class="btn ">Пенсионер</a>
-				  <a href="#" class="btn ">Инвалид</a>
-				</div>
+				  <a href="#" class="btn1 btn active">Работаю</a>
+				  <a href="#" class="btn2 btn ">Безработный</a>
+				  <a href="#" class="btn3 btn ">Ип</a>
+				  <a href="#" class="btn4 btn ">Студент</a>
+				  <a href="#" class="btn5 btn ">Пенсионер</a>
+				  <a href="#" class="btn6 btn ">Инвалид</a>
+				</div>	
+				<hr>
 			</div>
 			<div class="content-bottom">
-				<div class="question-form left">
-					<form class="">
-	  					<div class="togglebutton">
-							<label>Меняли ли вы фамилию?</label>
-							<div class="onoffswitch">
-							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
-							    <label class="onoffswitch-label" for="myonoffswitch">
-							        <span class="onoffswitch-inner"></span>
-							        <span class="onoffswitch-switch"></span>
-							    </label>
+				<div class="question-form nano left">
+					<div class="nano-content">
+						<form class="">
+		  					<div class="togglebutton">
+								<label>Меняли ли вы фамилию?</label>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
+								    <label class="onoffswitch-label" for="myonoffswitch" data-toggle="collapse" data-target="#surname" aria-expanded="true">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+								<div id="surname" class="collapse" aria-expanded="true">
+									<fieldset>
+										<label for="inputSurname" class="col-xs-12 control-label">Введите старую фамилию</label>
+										<div class="col-xs-10">
+											<input type="text" class="form-control" id="inputSurname" placeholder="">
+										</div>
+									</fieldset>
+								</div>
 							</div>
-						</div>
-						<div class="togglebutton">
-							<label>Проживаете по прописке?</label>
-							<div class="onoffswitch">
-							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked="">
-							    <label class="onoffswitch-label" for="myonoffswitch2">
-							        <span class="onoffswitch-inner"></span>
-							        <span class="onoffswitch-switch"></span>
-							    </label>
+							<div class="togglebutton">
+								<label>Проживаете по прописке?</label>
+								<div class="onoffswitch enable">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked="">
+								    <label class="onoffswitch-label" for="myonoffswitch2" data-toggle="collapse" data-target="#address" aria-expanded="true">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+								<div id="address" class="collapse" aria-expanded="true">
+									<fieldset>
+										<label for="inputAddress" class="col-xs-12 control-label">Введите адрес проживания</label>
+										<div class="col-xs-10">
+											<input type="text" class="form-control" id="inputAddress" placeholder="">
+										</div>
+									</fieldset>
+								</div>
 							</div>
-						</div>
-						<div class="togglebutton">
-							<label>Есть родственники в ЕС и Швейцарии?</label>
-							<div class="onoffswitch">
-							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked="">
-							    <label class="onoffswitch-label" for="myonoffswitch3">
-							        <span class="onoffswitch-inner"></span>
-							        <span class="onoffswitch-switch"></span>
-							    </label>
+							<div class="togglebutton">
+								<label>Есть родственники в ЕС и Швейцарии?</label>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked="">
+								    <label class="onoffswitch-label" for="myonoffswitch3">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
 							</div>
-						</div>
-						<div class="togglebutton">
-							<label>Ранее сдавали биометрию?</label>
-							<div class="onoffswitch">
-							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked="">
-							    <label class="onoffswitch-label" for="myonoffswitch4">
-							        <span class="onoffswitch-inner"></span>
-							        <span class="onoffswitch-switch"></span>
-							    </label>
+							<div class="togglebutton">
+								<label>Ранее сдавали биометрию?</label>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked="">
+								    <label class="onoffswitch-label" for="myonoffswitch4">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
-				<div class="foto-form right">
-					
+				<div class="foto-form nano right">
+					<div class="nano-content">
+						<div class="foto-form_block loaded">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/pass.png" alt="">
+								<p>Загранпаспорт</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/User.png" alt="">
+								<p>Фотография</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/flight.png" alt="">
+								<p>Авиабилет</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/hotel.png" alt="">
+								<p>Бронь отеля</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/policy.png" alt="">
+								<p>Страховой полис</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/reference.png" alt="">
+								<p>Справка с работы</p>
+							</div>
+						</div>
+						<div class="foto-form_block">
+							<a href="" class="zagruzit-foto right">
+								<i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+							</a>
+							<div class="foto-form_icon">
+								<img src="img/Passport.png" alt="">
+								<p>Российский паспорт +<br>прописка</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nanoscroller.min.js"></script>
 	<script src="js/material.min.js"></script>
 	<script src="js/ripples.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>

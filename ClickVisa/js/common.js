@@ -25,8 +25,6 @@
 //   $(window).on('scroll', onScroll);
 // };
 // var demo = new StickyElement($('#sticky'));
-$.material.init()
-
 
 // $(".aside-left li").click(function(e) {
 //   e.preventDefault();
@@ -34,8 +32,30 @@ $.material.init()
 //   $(this).addClass('active');
 // })
 
-$(".content-top a").click(function(e) {
+$(".nano").nanoScroller();
+
+
+$(".btn1").click(function(e) {
   e.preventDefault();
-  $(".content-top a").removeClass('active');
-  $(this).addClass('active');
+  $("hr").css('margin-left', '0');
+})
+$(".btn2").click(function(e) {
+  e.preventDefault();
+  $("hr").css('margin-left', '16.8%');
+})
+$(".btn3").click(function(e) {
+  e.preventDefault();
+  $("hr").css('margin-left', '33.6%');
+})
+$(".btn4").click(function(e) {
+  e.preventDefault();
+  $("hr").css('margin-left', '50.2%');
+})
+$(".btn5").click(function(e) {
+  e.preventDefault();
+  $("hr").css('margin-left', '66.9%');
+})
+$(".btn6").click(function(e) {
+  e.preventDefault();
+  $("hr").css('margin-left', '83.6%');
 })

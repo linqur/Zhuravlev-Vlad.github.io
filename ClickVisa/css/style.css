@@ -6,6 +6,9 @@ body{
 	min-width: 991px;
 	max-width: 1920px;
 }
+p, label{
+	font-family: 'Ubuntu', sans-serif !important;
+}
 li{
 	list-style-type: none;
 }
@@ -121,10 +124,27 @@ nav{
 	margin-left: 75px;
 	margin-right: 215px;
 }
+.content-bottom{
+}
+.content-top{
+	margin-bottom: 35px;
+}
 .content-top .btn{
 	padding-left: 0;
 	padding-right: 0;
+	border-bottom: 3px solid #eee;
+	margin: 0 4px;
 }
+.content-top .btn.active,
+.content-top .btn:hover,
+.content-top .btn:focus{
+	box-shadow: none !important;
+	background: none !important;
+}
+.content-top .btn:hover{
+	border-bottom: 3px solid rgba(111, 227, 123, .3)!important;
+}
+
 .form-price {
     text-align: center;
 }
@@ -141,9 +161,19 @@ nav{
 	box-shadow: none;
 }
 .btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised .btn.active{
-	border-bottom: 3px solid #6FE37B;
 	box-shadow: none;
 	background: inherit;
+}
+hr{
+	height: 3px;
+	background: #6FE37B!important;
+	margin-top: 0;
+	width: 16.6%;
+	margin-left: 0;
+	transition: .2s;
+	margin-top: -14px;
+	position: relative;
+	z-index: 2;
 }
 .question-form,
 .foto-form{
@@ -153,14 +183,19 @@ nav{
 .question-form{
 	margin-right: 1%;
 	padding-left: 0;
+	height: 60vh;
 }
 .question-form label {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif !important;
+    color: #000;
 }
 .togglebutton{
 	padding: 10px 0 15px 15px;
 	border-left: 5px solid #6FE37B;
+}
+.togglebutton:last-child{
+	margin-bottom: 70px;
 }
 .togglebutton.disable{
 	border-left: 5px solid #ccc!important;
@@ -168,6 +203,36 @@ nav{
 .foto-form{
 	margin-left: 1%;
 }
+.foto-form_block{
+	padding: 15px 20px 15px 10px;
+}
+.loaded{
+	border-left: 5px solid #6FE37B;
+}
+.foto-form{
+	height: 60vh;
+}
+.foto-form_icon img{
+	max-width: 50px;
+	width: 100%;
+}
+.foto-form_icon p{
+	padding-left: 5px;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.zagruzit-foto{
+	margin-top: 10px;
+}
+.zagruzit-foto i{
+	color: #6FE37B;
+	transition: .2s;
+}
+.zagruzit-foto i:hover{
+	font-size: 32px;
+}
+
 /*Checkbox*/
 .onoffswitch {
     position: relative; width: 60px;
@@ -215,4 +280,11 @@ nav{
     right: 0px; 
     background-color: #ddd; 
 }
+
+.enable .onoffswitch-checkbox:checked + .enable .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
 /*End Checkbox*/
+/*ScrollBar*/
+
+/*End ScrollBar*/
