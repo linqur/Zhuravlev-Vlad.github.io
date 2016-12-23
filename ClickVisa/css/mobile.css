@@ -8,36 +8,87 @@ nav{
 	position: fixed;
 	left: 0;
 	right: 0;
+	z-index: 1;
 }
 .nav-top{
 	background: #000;
+}
+.nav-bottom{
+	background: #fff;
+	border-left: 3px solid #6FE37B;
+	border-bottom: 1px solid #eee;
+	height: 65px;
 }
 .logo img{
 	max-width: 150px;
 	padding: 10px;
 }
 .content{
-	width: 700px;
-	margin-top: 50px;
+	max-width: 800px;
+	width: 100%;
+	margin-top: 113px;
 }
 .tip{
-	width: 990px;
+	width: 800px;
 	margin-top: 8px;
 }
 .tip .btn{
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0;
+	padding-right: 0;
 	margin: 0;
+}
+.tip .btn.active{
+	z-index: 0;
 }
 .content-tip{
 	background: #fff;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.user{
+	padding: 5px 15px;
+}
+.user img{
+	width: 50px;
+	float: left;
+}
+.user p{
+	font-size: 20px;
+	display: inline-block;
+	padding-top: 15px;
+	padding-left: 15px;
 }
 /*.tip li{
 	padding: 5px 20px;
 	display: inline-block;
 }*/
-.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+/*.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
 	width: 150px!important;
+}*/
+#all-user{
+	background: #fff;
+}
+#all-user ul{
+	padding: 20px 0 20px 15px;
+}
+#all-user li{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 3px;
+}
+#all-user .active img{
+	border: 3px solid #6FE37B;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+}
+#all-user img{
+	width: 25px;
 }
 .mCSB_horizontal.mCSB_inside>.mCSB_container{
 	margin-bottom: 15px;
@@ -48,3 +99,12 @@ nav{
 .mCSB_scrollTools.mCSB_scrollTools_horizontal{
 	height: 11px;
 }
+.btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised, .btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised .btn {
+    box-shadow: none;
+}
+.btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised, .btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised .btn,
+.btn-group-vertical.btn-group-raised, .btn-group.btn-group-raised .btn.active {
+    box-shadow: none;
+    background: inherit;
+}
+
