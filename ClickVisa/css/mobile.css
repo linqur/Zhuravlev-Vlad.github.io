@@ -1,0 +1,50 @@
+body{
+	height: 1000px;
+}
+.container-fluid{
+	padding: 0;
+}
+nav{
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+.nav-top{
+	background: #000;
+}
+.logo img{
+	max-width: 150px;
+	padding: 10px;
+}
+.content{
+	width: 700px;
+	margin-top: 50px;
+}
+.tip{
+	width: 990px;
+	margin-top: 8px;
+}
+.tip .btn{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0;
+}
+.content-tip{
+	background: #fff;
+}
+/*.tip li{
+	padding: 5px 20px;
+	display: inline-block;
+}*/
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+	width: 150px!important;
+}
+.mCSB_horizontal.mCSB_inside>.mCSB_container{
+	margin-bottom: 15px;
+}
+.mCSB_draggerRail{
+	margin-bottom: 0!important;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+	height: 11px;
+}

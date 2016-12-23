@@ -32,7 +32,6 @@
 //   $(this).addClass('active');
 // })
 
-$(".nano").nanoScroller();
 
 
 $(".btn1").click(function(e) {
@@ -41,7 +40,7 @@ $(".btn1").click(function(e) {
 })
 $(".btn2").click(function(e) {
   e.preventDefault();
-  $("hr").css('margin-left', '16.8%');
+  $("hr").css('margin-left', '16.66%');
 })
 $(".btn3").click(function(e) {
   e.preventDefault();

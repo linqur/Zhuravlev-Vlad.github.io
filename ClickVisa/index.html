@@ -22,10 +22,12 @@
 </head>
 <body>
 	<div class="container-fluid">
+
+		<!-- Навигация  -->
 		<nav class="">
 			<div class="nav-top">
 				<div class="logo">
-					<img src="img/logo.jpg" alt="">
+					<img src="img/logo.png" alt="">
 				</div>
 			</div>
 			<div class="nav-bottom">
@@ -42,6 +44,7 @@
 		                        <div class="fill"></div>
 		                    </div>
 		                </div>
+		                
 					</div>
 					<div class="tab-pane fade" id="user1">
 						<div class="left user">
@@ -71,7 +74,9 @@
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav><!-- Навигация  -->
+
+		<!-- Блок с людьми -->
 		<aside class="aside-left">
 			<ul>
 				<li class="active"><a href="#user0" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
@@ -83,7 +88,9 @@
 				<li><a href="#user6" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 				<li><a href="#user7" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 			</ul>
-		</aside>
+		</aside><!-- Блок с людьми -->
+
+		<!-- Форма покупки -->
 		<aside class="aside-right">
 			<div class="all-progress">
 				<div class="c100 p75 small orange">
@@ -115,8 +122,12 @@
 					<a href="#" class="btn btn-raised btn-success">Оплатить<span>1499<i class="fa fa-rub" aria-hidden="true"></i></span></a>
 				</div>
 			</div>
-		</aside>
+		</aside><!-- Форма покупки -->
+
+		<!--  -->
 		<div class="content">
+
+			<!-- Тип людей -->
 			<div class="content-top">
 				<div class="btn-group btn-group-justified btn-group-raised">
 				  <a href="#" class="btn1 btn active">Работаю</a>
@@ -127,11 +138,16 @@
 				  <a href="#" class="btn6 btn ">Инвалид</a>
 				</div>	
 				<hr>
-			</div>
+			</div><!-- Тип людей -->
+
+			<!-- Форма вопросов/фотографий -->
 			<div class="content-bottom">
+
+				<!-- Форма вопросов -->
 				<div class="question-form nano left">
 					<div class="nano-content">
 						<form class="">
+							<!-- Вопрос 1 -->
 		  					<div class="togglebutton">
 								<label>Меняли ли вы фамилию?</label>
 								<div class="onoffswitch">
@@ -141,6 +157,7 @@
 								        <span class="onoffswitch-switch"></span>
 								    </label>
 								</div>
+								<!-- Доп. вопрос -->
 								<div id="surname" class="collapse" aria-expanded="true">
 									<fieldset>
 										<label for="inputSurname" class="col-xs-12 control-label">Введите старую фамилию</label>
@@ -148,8 +165,8 @@
 											<input type="text" class="form-control" id="inputSurname" placeholder="">
 										</div>
 									</fieldset>
-								</div>
-							</div>
+								</div><!-- Доп. вопрос -->
+							</div><!-- Вопрос 1 -->
 							<div class="togglebutton">
 								<label>Проживаете по прописке?</label>
 								<div class="onoffswitch enable">
@@ -190,7 +207,9 @@
 							</div>
 						</form>
 					</div>
-				</div>
+				</div><!-- Форма вопросов -->
+
+				<!-- Форма загрузки фото -->
 				<div class="foto-form nano right">
 					<div class="nano-content">
 						<div class="foto-form_block loaded">
@@ -257,16 +276,19 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div><!-- Форма загрузки фото -->
+
+			</div><!-- Форма вопросов/фотографий -->
+		</div><!--  -->
 	</div>
+
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.nanoscroller.min.js"></script>
-	<script src="js/material.min.js"></script>
-	<script src="js/ripples.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/jquery.nanoscroller.min.js"></script><!-- Полоса прокрутки -->
+	<script src="js/material.min.js"></script><!-- FezVrasta -->
+	<script src="js/ripples.min.js"></script><!-- FezVrasta -->
+	<script src="js/bootstrap-select.min.js"></script><!-- Select -->
 	<script src="js/common.js"></script>
 </body>
 </html>

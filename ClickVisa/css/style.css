@@ -3,7 +3,7 @@ body{
 	overflow: hidden;
 }
 .container-fluid{
-	min-width: 991px;
+	min-width: 767px;
 	max-width: 1920px;
 }
 p, label{
@@ -120,11 +120,16 @@ nav{
 	margin-left: 50px;
 }
 .content{
-	margin-top: 170px;
+/*	margin-top: 170px;
 	margin-left: 75px;
-	margin-right: 215px;
+	margin-right: 215px;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 170px;
+	padding-right: 215px;
 }
 .content-bottom{
+	height: 50vh;
 }
 .content-top{
 	margin-bottom: 35px;
@@ -183,7 +188,6 @@ hr{
 .question-form{
 	margin-right: 1%;
 	padding-left: 0;
-	height: 60vh;
 }
 .question-form label {
     font-size: 18px;
@@ -208,9 +212,6 @@ hr{
 }
 .loaded{
 	border-left: 5px solid #6FE37B;
-}
-.foto-form{
-	height: 60vh;
 }
 .foto-form_icon img{
 	max-width: 50px;
@@ -281,10 +282,46 @@ hr{
     background-color: #ddd; 
 }
 
-.enable .onoffswitch-checkbox:checked + .enable .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
+.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: -55px;
+}
+.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 38px!important; 
+    background-color: #fff; 
+}
+.enable .onoffswitch-switch{
+	right: 0;
+	background: #ddd;
+}
+.enable .onoffswitch-inner:before, .enable .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 22px; padding: 0; line-height: 22px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.enable .onoffswitch-inner:before {
+    content: "Нет";
+    padding-left: 8px;
+    background-color: #fff; color: #aaa;
+}
+.enable .onoffswitch-inner:after {
+    content: "Да";
+    padding-right: 8px;
+    background-color: #6FE37B; color: #fff;
+    text-align: right;
+}
+.enable .onoffswitch-inner {
+    display: block; width: 200%; margin-left: 0%;
+    transition: margin 0.3s ease-in 0s;
 }
 /*End Checkbox*/
 /*ScrollBar*/
 
 /*End ScrollBar*/
+@media (max-width: 1420px){
+	.content{
+		margin-top: 170px!important;
+		margin-left: 75px!important;
+		margin-right: 215px!important;
+		padding-right: 0;
+	}
+}
