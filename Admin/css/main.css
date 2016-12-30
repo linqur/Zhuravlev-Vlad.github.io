@@ -1,0 +1,103 @@
+li {
+  list-style: none; }
+
+body {
+  height: 100vh; }
+
+.navbar-brand img {
+  max-width: 150px;
+  margin-top: -6px; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.aside-right {
+  width: 350px;
+  background: #eee;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  right: 0; }
+  .aside-right a {
+    font-size: 25px; }
+
+.tab-content {
+  background: #fff;
+  padding-top: 25px;
+  border-left: 1px solid #eee; }
+
+.form-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.send {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 25px;
+  margin-right: 80px;
+  text-align: center; }
+  .send a {
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: .2s;
+    transition: .2s; }
+  .send .delete {
+    border: 3px solid #2c3e50;
+    background: #fff;
+    color: #2c3e50; }
+    .send .delete:hover {
+      background: #c50f1e;
+      color: #fff;
+      border: 3px solid #c50f1e; }
+  .send .ok {
+    background: #2c3e50;
+    color: #fff;
+    line-height: 40px; }
+    .send .ok:hover {
+      background: #74b752; }
+
+.name {
+  margin-top: 6px;
+  font-size: 18px; }
+
+section {
+  margin-right: 350px; }
+  section .people {
+    padding: 0; }
+
+.section-bottom {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #dce4ec;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  max-height: 50vh; }
+  .section-bottom .data {
+    overflow-y: scroll;
+    max-height: 50vh;
+    border: 1px solid #dce4ec;
+    margin-top: -1px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+
+table {
+  font-weight: bold; }
+  table tr {
+    height: 60px;
+    line-height: 60px; }
+    table tr th {
+      padding-left: 12px !important; }
+      table tr th input {
+        vertical-align: middle; }
+  table td {
+    padding-left: 12px !important;
+    padding-top: 20px !important; }
+  table input {
+    vertical-align: middle; }
