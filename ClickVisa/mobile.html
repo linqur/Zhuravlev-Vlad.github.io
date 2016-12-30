@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ClickVisa</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap-select.min.css">
-	<link rel="stylesheet" href="css/bootstrap-material-design.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="css/circle.css">
-	<link rel="stylesheet" href="css/ripples.min.css">
+
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Days+One|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="css/mobile.css">
 	 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,12 +17,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="main">
+<body>
 	<div class="container-fluid">
 		<nav>
 			<div class="nav-top">
 				<div class="logo">
-					<img src="img/logo.png" alt="">
+					<a href="index.html">
+						<img src="img/logo.png" alt="">
+					</a>
 				</div>
 			</div>
 			<div class="nav-bottom">
@@ -53,23 +51,38 @@
 						</div>
 					</div>
 				</div>
+				<div class="user-progress">
+					<ul>
+						<li class="full"></li>
+						<li></li>
+						<li></li>
+						<li class="full"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
 			</div>
 			<div id="all-user" class="collapse" aria-expanded="true">
 				<ul>
-					<li class="active"><a href="#user0" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
+					<li class="active full"><a href="#user0" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user1" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user2" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
-					<li><a href="#user3" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
+					<li class="full"><a href="#user3" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user4" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user5" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user6" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 					<li><a href="#user7" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
+					<li><a href="#user8" role="tab" data-toggle="tab"><img src="img/User.png" alt=""></a></li>
 				</ul>
 			</div>
 		</nav> 
 		<!-- Блок с людьми -->
 		<div class="">
 		</div><!-- Блок с людьми -->
+
 		<!-- Тип людей -->
 		<div class="mCustomScrollbar" data-mcs-theme="dark">
 			<div class="content content-tip">
@@ -83,13 +96,88 @@
 				</div>
 			</div>
 		</div><!-- Тип людей -->
+		
+		<div id="collapse-group">
+			<!-- question-open -->
+			<div class="question-open full" data-toggle="collapse" data-target="#question-form" data-parent="#collapse-group" aria-expanded="true">
+				<p>Ответьте на вопросы</p>
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div><!-- question-open -->
+
+			<!-- Форма вопросов -->
+			<div id="question-form" class="collapse in">
+				<div class="togglebutton">
+					<label>Меняли ли вы фамилию?</label>
+					<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
+					    <label class="onoffswitch-label collapsed" for="myonoffswitch" data-toggle="collapse" data-target="#surname" aria-expanded="false">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+					<!-- Доп. вопрос -->
+					<div id="surname" class="collapse" aria-expanded="false">
+						<fieldset>
+							<label for="inputSurname" class="col-xs-12 control-label">Введите старую фамилию</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control" id="inputSurname" placeholder="">
+							</div>
+						</fieldset>
+					</div><!-- Доп. вопрос -->
+				</div>
+				<div class="togglebutton">
+					<label>Проживаете по прописке?</label>
+					<div class="onoffswitch enable">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked="">
+					    <label class="onoffswitch-label" for="myonoffswitch2" data-toggle="collapse" data-target="#address" aria-expanded="true">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+					<div id="address" class="collapse" aria-expanded="true">
+						<fieldset>
+							<label for="inputAddress" class="col-xs-12 control-label">Введите адрес проживания</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control" id="inputAddress" placeholder="">
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="togglebutton">
+					<label>Есть родственники в ЕС и Швейцарии?</label>
+					<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked="">
+					    <label class="onoffswitch-label" for="myonoffswitch3">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+				</div>
+				<div class="togglebutton">
+					<label>Ранее сдавали биометрию?</label>
+					<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked="">
+					    <label class="onoffswitch-label" for="myonoffswitch4">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+				</div>
+			</div><!-- Форма вопросов -->
+
+			<!-- Photo-open -->
+			<div class="photo-open" data-toggle="collapse" data-target="#photo-form" data-parent="#collapse-group" aria-expanded="true">
+				<p>Загрузите фотографии</p>
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+			</div>
+			<!-- Форма загрузки фото -->
+			<div id="photo-form" class="collapse">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur, distinctio tempora veritatis quibusdam corporis enim sit architecto, dolore nihil similique odio, deserunt error velit in est, vel recusandae repellat.
+			</div><!-- Форма загрузки фото -->
+		</div>
+
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="js/material.min.js"></script><!-- FezVrasta -->
-	<script src="js/ripples.min.js"></script><!-- FezVrasta -->
-	<script src="js/bootstrap-select.min.js"></script><!-- Select -->
+	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	<script>
 
