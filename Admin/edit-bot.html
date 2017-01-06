@@ -41,6 +41,27 @@
       </div>
     </nav><!--  -->
     <div class="container">
+      <div class="col-xs-12 bot-name">
+        <div class="col-md-5">
+          <div class="form-group">
+            <input type="text" class="form-control input-sm" id="inputLogin" value="Название бота">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="logo-upload">
+            <img src="img/User.png" alt="">
+            <input type="file" title="Загрузить лого" class="logo-upload_btn">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="add right">
+            <a href="#" class="btn btn-success btn-sm">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              Создать
+            </a>
+          </div>
+        </div>
+      </div>
       <table class="table table-striped table-hover ">
         <thead>
           <tr>
@@ -49,14 +70,17 @@
             <th>Login:</th>
             <th>Password:</th>
             <th></th>
-            <th></th>
           </tr>
         </thead>
         <form action="">
           <tbody>
               <tr>
                 <td>1</td>
-                <td><a href="second-screen.html">Bot 1</a></td>
+                <td>
+                  <div class="form-group">
+                     <input type="text" class="form-control input-sm" id="inputPassword" value="Name (Главный админ)">
+                  </div>
+                </td>
                 <td>
                   <div class="form-group">
                      <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
@@ -68,9 +92,7 @@
                   </div>
                 </td>
                 <td>
-                  <a href="edit-bot.html" class="btn btn-primary btn-sm">Изменить</a>
-                  <a href="№" class="btn btn-primary btn-sm">Сохранить</a>
-                  <a href="#" class="btn btn-default btn-sm">Удалить</a>
+                  <a href="second-screen.html" class="btn btn-primary btn-sm">Изменить</a>
                 </td>
               </tr>
             </tbody>
@@ -79,7 +101,11 @@
             <tbody>
               <tr>
                 <td>2</td>
-                <td><a href="second-screen.html">Bot 2</a></td>
+                <td>
+                  <div class="form-group">
+                     <input type="text" class="form-control input-sm" id="inputPassword" value="Менеджер 1">
+                  </div>
+                </td>
                 <td>
                   <div class="form-group">
                      <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
@@ -91,9 +117,7 @@
                   </div>
                 </td>
                 <td>
-                  <a href="second-screen.html" class="btn btn-primary btn-sm">Ок</a>
-                  <input type="reset" value="Сброс" class="btn btn-primary btn-sm">
-                  <a href="#" class="btn btn-default btn-sm">Удалить</a>
+                  <a href="second-screen.html" class="btn btn-primary btn-sm">Изменить</a>
                 </td>
               </tr>
             </tbody>
@@ -102,7 +126,11 @@
             <tbody>
               <tr>
                 <td>3</td>
-                <td><a href="second-screen.html">Bot 3</a></td>
+                <td>
+                  <div class="form-group">
+                     <input type="text" class="form-control input-sm" id="inputPassword" value="Менеджер 2">
+                  </div>
+                </td>
                 <td>
                   <div class="form-group">
                      <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
@@ -114,14 +142,18 @@
                   </div>
                 </td>
                 <td>
-                  <a href="second-screen.html" class="btn btn-primary btn-sm">Ок</a>
-                  <input type="reset" value="Сброс" class="btn btn-primary btn-sm">
-                  <a href="#" class="btn btn-default btn-sm">Удалить</a>
+                  <a href="second-screen.html" class="btn btn-primary btn-sm">Изменить</a>
                 </td>
               </tr>
             </tbody>
           </form>
       </table>
+      <div class="add">
+        <a href="#" class="btn btn-success btn-sm">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          Добавить
+        </a>
+      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
