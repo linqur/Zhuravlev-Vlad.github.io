@@ -188,7 +188,7 @@
 					<div class="thead">
 						<p><img src="" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
 					</div>
-					<fieldset>
+				<!-- 	<fieldset>
 						<div class="col-md-6">
 							<div class="form-group row">
 						      <label for="" class="col-md-2 control-label">Название:</label>
@@ -207,50 +207,94 @@
 						      </div>
 						    </div>
 						</div>
-					<div class="col-xs-12">
-					    <div class="form-group is-empty">
-							<label for="textArea" class="col-md-1 control-label">Описание</label>
-							<div class="col-md-11">
-								<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+						<div class="col-xs-12">
+						    <div class="form-group is-empty">
+								<label for="textArea" class="col-md-1 control-label">Описание</label>
+								<div class="col-md-11">
+									<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-7">
-					    <div class="form-group">
-					      <label for="" class="col-md-2 control-label">Цена:</label>
+						<div class="col-md-7">
+							<div class="form-group">
+						      <label for="" class="col-md-2 control-label">Категория:</label>
 
-					      <div class="col-md-10">
-					        <input type="text" class="form-control" id="inputText" placeholder="">
-					      </div>
-					    </div>
-					    <div class="form-group">
-					      <label for="" class="col-md-2 control-label">Категория:</label>
+						      <div class="col-md-10">
+						        <select class="selectpicker form-control" id="inputText" data-live-search="true">
+									<option data-tokens="ketchup mustard">Категория 1 (Эталон)</option>
+									<option data-tokens="mustard">Категория 2 (Обычный)</option>
+								</select>
 
-					      <div class="col-md-10">
-					        <input type="text" class="form-control" id="inputText" placeholder="">
-					      </div>
-					    </div>
-					</div>
-					<div class="col-md-5">
-					    <div class="form-group face">
-					      <label class="col-md-2 control-label">Вид:</label>
-					      <div class="col-md-10">
-					        <div class="radio radio-primary">
-					          <label>
-					            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-					            Эталонный товар
-					          </label>
-					        </div>
-					        <div class="radio radio-primary">
-					          <label>
-					            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-					            Обычный товар
-					          </label>
-					        </div>
-					      </div>
-					    </div>
-					</div>
+						      </div>
+						    </div>
+						    <div class="form-group">
+						      <label for="" class="col-md-2 control-label">Цена:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						</div>
+						<div class="col-md-5">
+						    <div class="form-group face">
+						      <label class="col-md-2 control-label">Вид:</label>
+						      <div class="col-md-10">
+						        <div class="radio radio-primary">
+						          <label>
+						            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+						            Эталонный товар
+						          </label>
+						        </div>
+						        <div class="radio radio-primary">
+						          <label>
+						            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						            Обычный товар
+						          </label>
+						        </div>
+						      </div>
+						    </div>
+						</div>
+					</fieldset> -->
+					<fieldset>
+						<div class="col-md-7">
+							<div class="form-group">
+						      <label for="" class="col-md-2 control-label">Категория:</label>
+
+								<div class="col-md-10">
+									<select class="selectpicker form-control" id="inputText">
+										<option data-tokens="" data-toggle="collapse" data-target="#hide-me">Категория 1 (Эталон)</option>
+										<option data-tokens="">Категория 2 (Обычный)</option>
+									</select>
+								</div>
+						    </div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group row">
+						      <label for="" class="col-md-2 control-label">Название:</label>
+
+						      <div class="col-md-10">
+						        <input type="text" class="form-control" id="inputText" placeholder="">
+						      </div>
+						    </div>
+						</div>
+						<div class="col-md-6">
+							 <div class="form-group">
+						      <label for="inputFile" class="col-md-3 control-label">Изоброжение:</label>
+						      <div class="col-md-9">
+						        <input type="text" readonly="" class="form-control" placeholder="Выберите изоброжение">
+						        <input type="file" id="inputFile" multiple="">
+						      </div>
+						    </div>
+						</div>
+						<div class="col-xs-12">
+						    <div class="form-group is-empty">
+								<label for="textArea" class="col-md-1 control-label">Описание</label>
+								<div class="col-md-11">
+									<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+								</div>
+							</div>
+						</div>
 					</fieldset>
 					<div class="edit">
 					<a href="javascript:void(0)" class="btn btn-raised btn-primary">Добавить товар</a>

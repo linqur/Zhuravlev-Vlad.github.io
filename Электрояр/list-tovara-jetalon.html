@@ -195,35 +195,43 @@
 		</div>
 		<div class="col-xs-12">
 			<table class="table list-tovara_table table-striped table-hover">
-			  <thead>
-				  <tr>
-				    <th>Компания</th>
-				    <th>Модификация</th>
-				    <th>Цена</th>
-				    <th></th>
-				  </tr>
-			  </thead>
-			  <tbody>
-				  <tr>
-				    <td><a href="company.html"><img src="img/IBM-logo-blue.png" alt="">Компания 1</a></td>
-				    <td>Модификация: ручник перезагрузки</td>
-				    <td>40 000 руб</td>
-				    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
-				  </tr>
-				   <tr>
-				    <td><a href=""><img src="img/IBM-logo-blue.png" alt="">Компания 2</a></td>
-				    <td>Модификация: железная рукоятка, дополнительный мод.</td>
-				    <td>38 000 руб</td>
-				    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
-				  </tr>
-				   <tr>
-				    <td><a href=""><img src="img/w128h1281385326570plugin.png" alt="">Компания 3</a></td>
-				    <td>Модификация: модуль дополнения, медная вставка</td>
-				    <td>68 000 руб</td>
-				    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
-				  </tr>
-				  </tbody>
-				  </table>
+				<thead>
+					  <tr>
+					    <th>Компания</th>
+					    <th>Модификация</th>
+					    <th>Количество</th>
+					    <th>Цена</th>
+					    <th></th>
+					    <th></th>
+					  </tr>
+				</thead>
+				<tbody>
+					  <tr>
+					    <td><a href="company.html"><img src="img/IBM-logo-blue.png" alt="">Компания 1</a></td>
+					    <td>Модификация: ручник перезагрузки</td>
+					    <td>10</td>
+					    <td>40 000 руб</td>
+					    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
+					    <td><a href="" class="btn btn-raised btn-sm" data-toggle="modal" data-target="#myModal">Задать вопрос</a></td>
+					  </tr>
+					   <tr>
+					    <td><a href=""><img src="img/IBM-logo-blue.png" alt="">Компания 2</a></td>
+					    <td>Модификация: железная рукоятка, дополнительный мод.</td>
+					    <td>200</td>
+					    <td>38 000 руб</td>
+					    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
+					    <td><a href="" class="btn btn-raised btn-sm" data-toggle="modal" data-target="#myModal">Задать вопрос</a></td>
+					  </tr>
+					   <tr>
+					    <td><a href=""><img src="img/w128h1281385326570plugin.png" alt="">Компания 3</a></td>
+					    <td>Модификация: модуль дополнения, медная вставка</td>
+					    <td>1</td>
+					    <td>68 000 руб</td>
+					    <td><a href="list-tovara.html" class="btn btn-raised btn-sm">Купить</a></td>
+					    <td><a href="" class="btn btn-raised btn-sm" data-toggle="modal" data-target="#myModal">Задать вопрос</a></td>
+					  </tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
@@ -278,9 +286,55 @@
 		</div>
 	</div>
 </footer>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">ВА МОД 4п 6А С SH204L 4.5кА</h4>
+			</div>
+			<div class="modal-body col-xs-12">
+				<div class="col-md-4 category_left">
+					<ul>
+						<li class="active"><a href="#characteristic1" aria-controls="characteristic1" role="tab" data-toggle="tab">Характеристика 1</a></li>
+						<li><a href="#characteristic2" aria-controls="characteristic2" role="tab" data-toggle="tab">Характеристика 2</a></li>
+						<li><a href="#characteristic3" aria-controls="characteristi3" role="tab" data-toggle="tab">Характеристика 3</a></li>
+						<li><a href="#characteristic4" aria-controls="characteristic4" role="tab" data-toggle="tab">Характеристика 4</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="characteristic1">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat, cupiditate? Nihil fuga at atque exercitationem? Reiciendis recusandae repellendus exercitationem facilis in laborum id quos nisi delectus, officiis omnis quia.
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="characteristic2">
+							<p>
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстов решила страна рукопись, реторический родного текста бросил переписывается заголовок живет снова о алфавит маленький подзаголовок города маленькая, раз сих?
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="characteristic3">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat, cupiditate? Nihil fuga at atque exercitationem? Reiciendis recusandae repellendus exercitationem facilis in laborum id quos nisi delectus, officiis omnis quia.
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="characteristic4">
+							<p>
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. То щеке, коварных, океана несколько, обеспечивает букв дорогу ему, своих рукопись рыбными наш! Семантика своего своих свой, возвращайся страна эта.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
 
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
-    <script>$.material.init()</script>
   </body>
 </html>

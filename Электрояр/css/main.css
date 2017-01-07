@@ -42,6 +42,9 @@ button, button:active, button:focus {
 .sticky-anchor.test {
   height: 0 !important; }
 
+#sticky .sticky-content {
+  height: 70px; }
+
 .btn {
   -webkit-border-radius: 3px !important;
           border-radius: 3px !important; }
@@ -647,47 +650,6 @@ table {
   -moz-column-gap: 1.5em;
   -webkit-column-gap: 1.5em; }
 
-.masonry {
-  margin-top: 0; }
-
-.masonry-top .item-block {
-  display: block; }
-
-.item-block {
-  display: inline-block;
-  background: #fff;
-  padding: 1em;
-  margin: 0 0 15px 0;
-  width: 100%;
-  min-height: 300px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 1px 1px 4px 0 #ccc;
-          box-shadow: 1px 1px 4px 0 #ccc;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  position: relative; }
-  .item-block:hover {
-    -webkit-box-shadow: 2px 2px 4px 0 #ccc;
-            box-shadow: 2px 2px 4px 0 #ccc;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-  .item-block .description {
-    position: absolute;
-    bottom: 15px; }
-    .item-block .description a {
-      margin-bottom: 5px;
-      display: inline-block; }
-    .item-block .description span {
-      float: right;
-      padding-right: 15px; }
-  .item-block img, .item-block iframe {
-    margin: 0 auto;
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    display: block; }
-
 .list-tovara_description {
   text-align: left; }
 
@@ -701,28 +663,6 @@ table {
 .contacts i {
   font-size: 22px;
   padding-right: 5px; }
-
-.masonry-company .item-block {
-  width: 170px;
-  height: 210px;
-  min-height: 0; }
-  .masonry-company .item-block.first {
-    text-align: center;
-    background: #eee; }
-    .masonry-company .item-block.first:last-child {
-      padding-top: 0 !important; }
-  .masonry-company .item-block i {
-    display: block;
-    font-size: 65px;
-    padding-top: 35px; }
-  .masonry-company .item-block p {
-    margin-top: 0 !important; }
-  .masonry-company .item-block a:hover {
-    text-decoration: none !important; }
-
-.masonry-company .item-block.first:last-child i {
-  padding-top: 0;
-  padding-bottom: 40px; }
 
 .btn-lable {
   text-align: center;
@@ -764,6 +704,75 @@ table {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none; }
+
+.modal .category_left {
+  padding: 0; }
+
+.add-product i {
+  padding-right: 5px; }
+
+.add-product th {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important; }
+  .add-product th:last-child i {
+    padding-right: 0;
+    padding-left: 5px; }
+
+.download {
+  float: right; }
+  .download .btn {
+    padding: 8px; }
+  .download i {
+    font-size: 20px; }
+
+.wrapper {
+  overflow: hidden;
+  zoom: 1;
+  min-width: 165px;
+  padding: 25px;
+  width: 100%; }
+  .wrapper_content {
+    zoom: 1;
+    word-spacing: -0.25em;
+    margin-left: -50px;
+    margin-top: -50px; }
+    .wrapper_content .block {
+      display: inline-block;
+      word-spacing: normal;
+      vertical-align: top;
+      width: 30%;
+      margin-top: 29px;
+      margin-left: 3%;
+      background: #fff;
+      -webkit-box-shadow: 1px 1px 4px 0 #ccc;
+              box-shadow: 1px 1px 4px 0 #ccc;
+      padding: 1em;
+      position: relative;
+      min-height: 300px;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .wrapper_content .block:hover {
+        -webkit-box-shadow: 2px 2px 4px 0 #ccc;
+                box-shadow: 2px 2px 4px 0 #ccc;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+      .wrapper_content .block img {
+        width: 100%; }
+      .wrapper_content .block .description {
+        position: absolute;
+        bottom: 15px; }
+        .wrapper_content .block .description span {
+          float: right;
+          padding-right: 15px; }
+
+.masonry-company .block i {
+  display: block;
+  font-size: 65px;
+  padding-top: 65px; }
+
+.masonry-company .first {
+  text-align: center;
+  background: #eee; }
 
 @media only screen and (min-width: 580px) {
   .masonry,
