@@ -774,6 +774,12 @@ table {
   text-align: center;
   background: #eee; }
 
+.manager th {
+  width: 50%; }
+
+.manager .form-group {
+  margin-top: 0; }
+
 @media only screen and (min-width: 580px) {
   .masonry,
   .masonry-top {
