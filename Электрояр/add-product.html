@@ -184,7 +184,7 @@
 				</ul>
 			</div>
 			<div class="col-md-8">
-				<form class="form-horizontal personal-data">
+				<form class="form-horizontal personal-data col-xs-12">
 					<div class="thead">
 						<p><img src="" alt="">Вы зарегистрированный как <span>Barhan@bk.ru</span></p>
 					</div>
@@ -256,49 +256,145 @@
 						    </div>
 						</div>
 					</fieldset> -->
-					<fieldset>
-						<div class="col-md-7">
+						<div class="col-md-9">
 							<div class="form-group">
-						      <label for="" class="col-md-2 control-label">Категория:</label>
+						      <label for="" class="col-md-4 control-label">Категория:</label>
 
-								<div class="col-md-10">
-									<select class="selectpicker form-control" id="inputText">
-										<option data-tokens="" data-toggle="collapse" data-target="#hide-me">Категория 1 (Эталон)</option>
-										<option data-tokens="">Категория 2 (Обычный)</option>
+								<div class="col-md-8 select-product" id="select-product">
+									<!-- select категории -->
+									<select class="selectpicker form-control" data-live-search="true" title="Выберите категорию">
+										<option data-tokens="reference">Категория 1 (Эталон)</option>
+										<option data-tokens="normal">Категория 2 (Обычный)</option>
+										<option data-tokens="reference">Категория 3 (Эталон)</option>
+										<option data-tokens="normal">Категория 4 (Обычный)</option>
+										<option data-tokens="reference">Категория 5 (Эталон)</option>
+										<option data-tokens="normal">Категория 6 (Обычный)</option>
+									</select><!-- select категории -->
+								</div>
+						    </div>
+						</div>
+					<fieldset class="col-xs-12 row">
+						<div class="">
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="Name" class="col-md-4 control-label">Название:</label>
+							      <div class="col-md-8">
+							        <input type="text" class="form-control" id="Name" placeholder="введите название товара">
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="Price" class="col-md-4 control-label">Цена:</label>
+							      <div class="col-md-8">
+							        <input type="text" class="form-control" id="Price" placeholder="введите цену товара">
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="" class="col-md-4 control-label">Единица измерения:</label>
+							      <div class="col-md-8">
+							        <select class="selectpicker form-control">
+										<option>Метры</option>
+										<option>См</option>
+										<option>Мм</option>
 									</select>
-								</div>
-						    </div>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="amount" class="col-md-4 control-label">Минимальная партия:</label>
+							      <div class="col-md-8">
+							        <input type="number" class="form-control" id="amount" min="1">
+							      </div>
+							    </div>
+							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="form-group row">
-						      <label for="" class="col-md-2 control-label">Название:</label>
-
-						      <div class="col-md-10">
-						        <input type="text" class="form-control" id="inputText" placeholder="">
-						      </div>
-						    </div>
+						<div class="reference-form" id="reference-form">
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="header" class="col-md-4 control-label">Заголовок:</label>
+							      <div class="col-md-8">
+							        <input type="text" class="form-control" id="header" placeholder="">
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="textArea" class="col-md-4 control-label">Описание:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="textArea"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="keywords" class="col-md-4 control-label">ключевые слова:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="keywords"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="SEO" class="col-md-4 control-label">SEO описание:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="SEO"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="cod" class="col-md-4 control-label">Код:</label>
+							      <div class="col-md-8">
+							        <input type="text" class="form-control" id="cod" placeholder="">
+							      </div>
+							    </div>
+							</div>
+							<div class="edit col-xs-12">
+								<a href="" class="btn btn-raised btn-primary">Добавить товар</a>
+							</div>
 						</div>
-						<div class="col-md-6">
-							 <div class="form-group">
-						      <label for="inputFile" class="col-md-3 control-label">Изоброжение:</label>
-						      <div class="col-md-9">
-						        <input type="text" readonly="" class="form-control" placeholder="Выберите изоброжение">
-						        <input type="file" id="inputFile" multiple="">
-						      </div>
-						    </div>
-						</div>
-						<div class="col-xs-12">
-						    <div class="form-group is-empty">
-								<label for="textArea" class="col-md-1 control-label">Описание</label>
-								<div class="col-md-11">
-									<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
-								</div>
+						<div class="normal-form" id="normal-form">
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="header-n" class="col-md-4 control-label">Заголовок:</label>
+							      <div class="col-md-8">
+							        <input type="text" class="form-control" id="header-n" placeholder="">
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="textArea-n" class="col-md-4 control-label">Описание:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="textArea-n"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="keywords-n" class="col-md-4 control-label">ключевые слова:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="keywords-n"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div class="form-group row">
+							      <label for="SEO-n" class="col-md-4 control-label">SEO описание:</label>
+							      <div class="col-md-8">
+							        <textarea class="form-control" rows="3" id="SEO-n"></textarea>
+							      </div>
+							    </div>
+							</div>
+							<div class="edit col-xs-12">
+								<a href="javascript:void(0)" class="btn btn-raised btn-primary">Добавить товар</a>
 							</div>
 						</div>
 					</fieldset>
-					<div class="edit">
-					<a href="javascript:void(0)" class="btn btn-raised btn-primary">Добавить товар</a>
-				</div>
 				</form>
 			</div>
 		</div>

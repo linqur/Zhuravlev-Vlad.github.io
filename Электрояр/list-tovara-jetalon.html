@@ -181,17 +181,37 @@
 				<img src="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg" alt="">
 			</a>	
 		</div>
-		<div class="list-tovara_description col-sm-6">
-			<p>Устройства Easy9 относятся к среднему ценовому сегменту, но при этом отличаются качеством, надёжностью и удобством использования, свойственным аппаратуре верхнего ценового</p>
-			<ul>Ассортимент изделий включает : сегмента.
-				<li>Выключатели нагрузки (мини-рубильники)</li>
-				<li>Автоматические выключатели</li>
-				<li>Дифференциальные выключатели нагрузки (УЗО)</li>
-				<li>Дифференциальные автоматические выключатели (дифавтоматы)</li>
-				<li>Устройства защиты от импульсных перенапряжений (УЗИП)</li>
+		<div class="col-md-6">
+			<ul class="desc-char" role="tablist">
+			    <li class="active"><a href="#description" class="btn btn-raised btn-sm" aria-controls="description" role="tab" data-toggle="tab">Описание</a></li>
+			    <li><a href="#characteristic" class="btn btn-raised btn-sm" aria-controls="characteristic" role="tab" data-toggle="tab">Характеристика</a></li>
 			</ul>
-			<p class="modifications">модификации: предохранитель, тип металла</p>
-			<p class="price">От 47 000 руб.  до 58 000 руб</p>
+			<div class="tab-content">
+				<div class="list-tovara_description tab-pane active" id="description">
+					<p>Устройства Easy9 относятся к среднему ценовому сегменту, но при этом отличаются качеством, надёжностью и удобством использования, свойственным аппаратуре верхнего ценового</p>
+					<ul>Ассортимент изделий включает : сегмента.
+						<li>Выключатели нагрузки (мини-рубильники)</li>
+						<li>Автоматические выключатели</li>
+						<li>Дифференциальные выключатели нагрузки (УЗО)</li>
+						<li>Дифференциальные автоматические выключатели (дифавтоматы)</li>
+						<li>Устройства защиты от импульсных перенапряжений (УЗИП)</li>
+					</ul>
+					<p class="price">От 47 000 руб.  до 58 000 руб</p>
+				</div>
+				<div class="list-tovara_description tab-pane" id="characteristic">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quibusdam illum tempora voluptatibus officiis expedita veniam, quaerat perspiciatis sed rerum dolores quas optio accusantium possimus a? Inventore quo dignissimos quae?</p>
+					<ul>
+						<li>Характеристика 1</li>
+						<li>Характеристика 2</li>
+						<li>Характеристика 3</li>
+						<li>Характеристика 4</li>
+						<li>Характеристика 5</li>
+						<li>Характеристика 6</li>											
+					</ul>
+					<p class="price">От 47 000 руб.  до 58 000 руб</p>
+				</div>
+			</div>
+
 		</div>
 		<div class="col-xs-12">
 			<table class="table list-tovara_table table-striped table-hover">
@@ -286,46 +306,38 @@
 		</div>
 	</div>
 </footer>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade ask" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title" id="myModalLabel">ВА МОД 4п 6А С SH204L 4.5кА</h4>
+				<h4 class="modal-title" id="myModalLabel">Заголовок</h4>
 			</div>
 			<div class="modal-body col-xs-12">
-				<div class="col-md-4 category_left">
-					<ul>
-						<li class="active"><a href="#characteristic1" aria-controls="characteristic1" role="tab" data-toggle="tab">Характеристика 1</a></li>
-						<li><a href="#characteristic2" aria-controls="characteristic2" role="tab" data-toggle="tab">Характеристика 2</a></li>
-						<li><a href="#characteristic3" aria-controls="characteristi3" role="tab" data-toggle="tab">Характеристика 3</a></li>
-						<li><a href="#characteristic4" aria-controls="characteristic4" role="tab" data-toggle="tab">Характеристика 4</a></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="characteristic1">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat, cupiditate? Nihil fuga at atque exercitationem? Reiciendis recusandae repellendus exercitationem facilis in laborum id quos nisi delectus, officiis omnis quia.
-							</p>
+				<form class="form-horizontal personal-data list-tovara">
+	  				<fieldset>
+						<div class="form-group is-empty">
+							<label for="inputEmail" class="col-md-2 control-label">Имя:</label>
+							<div class="col-md-10">
+								<input type="text" required="" class="form-control" id="inputText" placeholder="">
+							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane" id="characteristic2">
-							<p>
-								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текстов решила страна рукопись, реторический родного текста бросил переписывается заголовок живет снова о алфавит маленький подзаголовок города маленькая, раз сих?
-							</p>
+						<div class="form-group is-empty">
+							<label for="inputEmail" class="col-md-2 control-label">Email:</label>
+							<div class="col-md-10">
+								<input type="email" required="" class="form-control" id="inputEmail" placeholder="">
+							</div>
+					    </div>
+						<div class="form-group is-empty">
+							<label for="textArea" class="col-md-2 control-label">Ваш вопрос:</label>
+							<div class="col-md-10">
+								<textarea class="form-control" rows="3" id="textArea" placeholder=""></textarea>
+							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane" id="characteristic3">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat, cupiditate? Nihil fuga at atque exercitationem? Reiciendis recusandae repellendus exercitationem facilis in laborum id quos nisi delectus, officiis omnis quia.
-							</p>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="characteristic4">
-							<p>
-								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. То щеке, коварных, океана несколько, обеспечивает букв дорогу ему, своих рукопись рыбными наш! Семантика своего своих свой, возвращайся страна эта.
-							</p>
-						</div>
-					</div>
-				</div>
+						<a href="javascript:void(0)" class="btn btn-raised btn-primary">Расчитать</a>
+						<p class="btn-lable">Результат заявки придет Вам на почту</p>
+	  				</fieldset>
+  				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>

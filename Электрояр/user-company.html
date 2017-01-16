@@ -294,8 +294,10 @@
 				</div>
 				</fieldset>
 				<div class="edit">
-					<a href="javascript:void(0)" class="btn btn-raised btn-default btn-edit">Редактировать</a>
-					<a href="javascript:void(0)" class="btn btn-raised btn-primary btn-save">Сохранить</a>
+					<a href="#" class="btn btn-raised btn-default btn-edit">Редактировать</a>
+					<a href="#" class="btn btn-raised btn-default btn-save">Отменить</a>
+					<!-- <a href="#" class="btn btn-raised btn-primary">Сохранить</a> -->
+					<button type="submit" class="btn btn-raised btn-primary btn-save">Сохранить</button>
 				</div>
 			</form>
 			<form class="form-horizontal personal-data manager">
@@ -307,28 +309,31 @@
 						<thead>
 							<tr>
 								<th>Имя</th>
+								<th>Email</th>
 								<th></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td><a href="#">Иван</a></td>
+								<td>Ivan@mail.ru</td>
 								<td><a href="#" class="btn btn-raised btn-default btn-sm">Удалить</a></td>
 							</tr>
 							<tr>
 								<td><a href="#">Иван2</a></td>
+								<td>IvanIvan@mail.com</td>
 								<td><a href="#" class="btn btn-raised btn-default btn-sm">Удалить</a></td>
 							</tr>
 						</tbody>
 					</table>
-					<div class="col-md-5">
+					<div class="col-md-7">
 						<div class="form-group">
 					      <div class="col-md-12">
 					        <input type="email" class="form-control" id="inputEmail" placeholder="email">
 					      </div>
 					    </div>
 					</div>	
-					<div class="col-md-7">
+					<div class="col-md-4">
 						<a href="javascript:void(0)" class="btn btn-raised btn-primary btn-sm">Найти и добавить менеджера</a>
 					</div>			
 				</fieldset>

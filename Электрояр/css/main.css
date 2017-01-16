@@ -209,12 +209,6 @@ a.btn.btn-raised.btn-sm.exit {
       display: inline-block;
       border-right: 1px solid #eee;
       margin: 4px 0; }
-      .navbar-top .navbar-nav > li:last-child {
-        border: none;
-        margin: 0; }
-        .navbar-top .navbar-nav > li:last-child a {
-          margin: 0;
-          margin-top: 16px; }
       .navbar-top .navbar-nav > li:first-child {
         border-left: none; }
     .navbar-top a {
@@ -243,6 +237,17 @@ a.btn.btn-raised.btn-sm.exit {
     padding-top: 10px; }
     .navbar-bottom a {
       font-size: 18px; }
+
+.btn-exit:last-child {
+  padding-left: 8px; }
+
+.btn-exit {
+  border: none !important;
+  margin: 0; }
+
+.btn-exit a {
+  margin: 0;
+  margin-top: 16px; }
 
 .content h1 {
   margin: 0; }
@@ -498,10 +503,6 @@ table {
   margin-top: 30px;
   margin-bottom: 0; }
 
-.modifications {
-  color: #aaa;
-  font-size: 20px; }
-
 .price {
   font-size: 18px;
   font-weight: bold;
@@ -599,8 +600,7 @@ table {
   position: static !important;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 25px;
-  margin-top: 24px; }
+  padding: 25px; }
   .personal-data .btn-edit {
     display: block;
     margin: 35px auto;
@@ -779,6 +779,17 @@ table {
 
 .manager .form-group {
   margin-top: 0; }
+
+.desc-char li {
+  display: inline-block; }
+
+.ask .personal-data {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+#normal-form,
+#reference-form {
+  display: none; }
 
 @media only screen and (min-width: 580px) {
   .masonry,
