@@ -5,7 +5,7 @@ ul {
   padding-left: 0; }
 
 body {
-  min-width: 991px; }
+  min-width: 1170px; }
 
 .navbar-brand img {
   max-width: 150px;
@@ -44,7 +44,14 @@ body {
   .aside-right a {
     font-size: 25px; }
 
-.tab-content {
+.datepicker-period,
+.filter-title {
+  margin-bottom: 5px; }
+
+.datepicker--day-name {
+  color: #18bc9c; }
+
+.aside-right_tab {
   background: #fff;
   padding-top: 25px;
   border-left: 1px solid #eee; }
@@ -100,23 +107,22 @@ section {
 
 .section-bottom {
   padding-right: 350px;
+  padding-top: 90px;
+  height: 100vh;
   position: absolute;
   bottom: 0;
   border: 1px solid #dce4ec;
   -webkit-border-radius: 4px;
           border-radius: 4px; }
   .section-bottom .data {
-    overflow-y: auto;
-    border: 1px solid #dce4ec;
     margin-top: -1px;
     -webkit-border-radius: 4px;
-            border-radius: 4px;
-    width: 1000px; }
+            border-radius: 4px; }
     .section-bottom .data-overflow {
       overflow: auto; }
     .section-bottom .data td, .section-bottom .data th {
       border: 1px solid #dce4ec;
-      max-width: 100px;
+      max-width: 21px;
       overflow: auto; }
       .section-bottom .data td p, .section-bottom .data th p {
         height: 20.5px;
@@ -274,23 +280,28 @@ table {
     text-align: center; }
 
 .filter-list .data-overflow {
-  padding: 0; }
+  padding: 0;
+  overflow: auto; }
 
 .filter-list section {
   margin-right: 0; }
 
-.filter-list .data {
-  overflow: hidden;
-  width: 100%; }
-  .filter-list .data .btn {
-    float: right;
-    padding: 5px 10px; }
-  .filter-list .data .btn-group {
-    float: right; }
+.filter-list .data .btn {
+  float: right;
+  padding: 5px 10px; }
+
+.filter-list .data .btn-group {
+  float: right; }
 
 .filter-list .badge {
   float: left;
   margin: 4px 5px 0 0; }
+
+.filter-list table {
+  margin-bottom: 0; }
+  .filter-list table p {
+    float: left;
+    margin-right: 20px; }
 
 .information table th {
   text-align: center; }
@@ -298,13 +309,85 @@ table {
 .information .btn {
   padding: 5px 10px; }
 
-@media (max-width: 1440px) {
-  .section-bottom {
-    max-height: 550px; }
-  .send {
-    position: static; }
-  .aside-right {
-    overflow: scroll; } }
+.btn-accept-group {
+  display: none;
+  width: 74px; }
+  .btn-accept-group .delete {
+    margin: 0 1px;
+    width: 35px; }
+  .btn-accept-group .accept {
+    margin: 0 1px;
+    width: 35px; }
+
+.add-filter {
+  -webkit-box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  margin-top: 3px !important; }
+  .add-filter-input {
+    width: 68%; }
+
+.filter-list .section-bottom {
+  padding-top: 57px; }
+
+.filter-list .add-filter-input {
+  width: 60%;
+  margin-right: 15px; }
+
+.data {
+  padding: 0; }
+  .data.people {
+    overflow: auto; }
+
+.test th {
+  min-width: 230px; }
+
+.title {
+  overflow: auto; }
+  .title time {
+    float: right;
+    color: #838484;
+    position: absolute;
+    top: 5px;
+    left: 10px; }
+  .title a {
+    padding: 5px 15px;
+    height: 95px;
+    overflow: auto;
+    display: block;
+    line-height: 1.2;
+    color: #2c3e50;
+    padding-left: 65px; }
+    .title a:hover {
+      background: #ecf0f1;
+      text-decoration: none; }
+  .title ul {
+    display: table;
+    margin-bottom: 0; }
+  .title li {
+    display: table-cell;
+    min-width: 250px;
+    overflow-y: auto;
+    position: relative; }
+
+.control-panel {
+  min-width: 1500px; }
+
+.people-list {
+  -webkit-box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  margin-top: 3px !important;
+  padding-right: 0;
+  padding-left: 0;
+  z-index: 1; }
+  .people-list tr {
+    border: 1px solid #dce4ec !important; }
+
+.list-control .section-bottom {
+  padding-top: 57px; }
+
+.list-control .people-list td {
+  padding-top: 24px !important;
+  padding-bottom: 18px !important; }
 
 .greenGreen {
   background: rgba(0, 251, 56, 0.2) !important; }
