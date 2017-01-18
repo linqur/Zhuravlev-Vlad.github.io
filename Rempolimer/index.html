@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,1799 +19,960 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<body id="app" onload="init()">
-    <header class="header">
-		<div class="header_top">
-			<div class="container">
-				<nav role="navigation" class="navbar">
-					<div class="navbar-header">
-						<button type="button" data-toggle="collapse" data-target="#main_menu" class="navbar-toggle">	<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-						<div class="header_logo visible-xs">
-							<div class="logo">
-								<a href="https://rempolimer.ru/"><img src="/assets/components/template/img/logo_mobile.png" alt=""></a>
-							</div>
-							<div class="slogan">
-								<p>Качество, к которому стремится каждый</p>
-							</div>
+  </head>
+  <body id="app" onload="init()">
+    <div class="content">
+      <div class="container">
+        <div class="sidebar">
+          <div class="sidebar_menu"> 
+            <div class="panel-group" id="collapse-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="1" data-parent="#collapse-group" href="#el1" id="t1">Алтайский край</a>
+						</h4>
+					</div>
+					<div id="el1" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu">
+							<ul id="tabs0">
+							</ul>    
 						</div>
 					</div>
-				<div id="main_menu" class="main_menu collapse navbar-collapse">
-				<div class="navbar-search">
-				<form action="">
-				<input type="text" placeholder="Найти товар" class="form-control">
-				<button type="submit" class="search_btn"></button>
-				</form>
 				</div>
-				<button type="button" data-toggle="collapse" data-target="#main_menu" class="navbar-toggle">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span><span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<ul class="nav navbar-nav navbar-left">
-				<li><a class="icon_inside" href="/">
-				<span class="icon sprite_icon_home"></span>
-				</a>
-				</li>
-				<li><a href="о-компании/">О компании</a></li>
-				<li><a href="наша-продукция/">Наша продукция</a></li>
-				<li><a href="доставка-и-оплата/">Доставка и оплата</a></li>
-				<li><a href="контакты.html">Контакты</a></li>
-				<li><a class="active" href="контакты.html">Где купить?</a></li>
-				</ul>           
-				<div class="separator"></div>
-				<div class="navbar-nav navbar-right">
-				<a class="basket_link visible-xs" href="оформление-товара.html"><span class="icon sprite_icon_basket_big"></span> Стол заказов</a>
-				<a href="регистрация/авторизация.html" class="login_link"> <span class="icon sprite_icon_login"></span> Вход для постоянных клиентов</a>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="2" data-parent="#collapse-group" href="#el2" id="t2">Амурская область</a>
+						</h4>
+					</div>
+					<div id="el2" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu2">
+							<ul id="tabs1"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="3" data-parent="#collapse-group" href="#el3" id="t3">Архангельская область</a>
+						</h4>
+					</div>
+					<div id="el3" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu3">
+							<ul id="tabs2"> 
+							</ul>   
+						</div>
+					</div>
 				</div>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="4" data-parent="#collapse-group" href="#el4" id="t4">Астраханская область</a>
+						</h4>
+					</div>
+					<div id="el4" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu4">
+							<ul id="tabs3"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="5" data-parent="#collapse-group" href="#el5" id="t5">Белгородская область</a>
+						</h4>
+					</div>
+					<div id="el5" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu5">
+							<ul id="tabs4"> 
+							</ul>   
+						</div>
+					</div>
 				</div>
-				</nav>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="6" data-parent="#collapse-group" href="#el6" id="t6">Брянская область</a>
+						</h4>
+					</div>
+					<div id="el6" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu6">
+							<ul id="tabs5"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="7" data-parent="#collapse-group" href="#el7" id="t7">Волгоградская область</a>
+						</h4>
+					</div>
+					<div id="el7" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu7">
+							<ul id="tabs6"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="8" data-parent="#collapse-group" href="#el8" id="t8">Воронежская область</a>
+						</h4>
+					</div>
+					<div id="el8" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu8">
+							<ul id="tabs7"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="9" data-parent="#collapse-group" href="#el9" id="t9">Ивановская область</a>
+						</h4>
+					</div>
+					<div id="el9" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu9">
+							<ul id="tabs8"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="10" data-parent="#collapse-group" href="#el10" id="t10">Камчатская область</a>
+						</h4>
+					</div>
+					<div id="el10" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu10">
+							<ul id="tabs9"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="11" data-parent="#collapse-group" href="#el11" id="t11">Кемеровская область</a>
+						</h4>
+					</div>
+					<div id="el11" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu11">
+							<ul id="tabs10"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="12" data-parent="#collapse-group" href="#el12" id="t12">Кировская область</a>
+						</h4>
+					</div>
+					<div id="el12" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu12">
+							<ul id="tabs11"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="13" data-parent="#collapse-group" href="#el13" id="t13">Костромская область</a>
+						</h4>
+					</div>
+					<div id="el13" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu13">
+							<ul id="tabs12"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="14" data-parent="#collapse-group" href="#el14" id="t14">Краснодарский край</a>
+						</h4>
+					</div>
+					<div id="el14" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu14">
+							<ul id="tabs13"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="15" data-parent="#collapse-group" href="#el15" id="t15">Красноярский край</a>
+						</h4>
+					</div>
+					<div id="el15" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu15">
+							<ul id="tabs14"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="16" data-parent="#collapse-group" href="#el16" id="t16">Крым</a>
+						</h4>
+					</div>
+					<div id="el16" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu16">
+							<ul id="tabs15"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="17" data-parent="#collapse-group" href="#el17" id="t17">Курганская область</a>
+						</h4>
+					</div>
+					<div id="el17" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu17">
+							<ul id="tabs16"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="18" data-parent="#collapse-group" href="#el18" id="t18">Курская область</a>
+						</h4>
+					</div>
+					<div id="el18" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu18">
+							<ul id="tabs17"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="19" data-parent="#collapse-group" href="#el19" id="t19">Ленинградская область</a>
+						</h4>
+					</div>
+					<div id="el19" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu19">
+							<ul id="tabs18"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="20" data-parent="#collapse-group" href="#el20" id="t20">Липецкая область</a>
+						</h4>
+					</div>
+					<div id="el20" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu20">
+							<ul id="tabs19"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<!-- <div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="21" data-parent="#collapse-group" href="#el21" id="t21">Магаданская область</a>
+						</h4>
+					</div>
+					<div id="el21" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu21">
+							<ul id="tabs20"> 
+							</ul>   
+						</div>
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="22" data-parent="#collapse-group" href="#el22" id="t22">Москва</a>
+						</h4>
+					</div>
+					<div id="el22" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu22">
+							<ul id="tabs21"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="23" data-parent="#collapse-group" href="#el23" id="t23">Новосибирская област</a>
+						</h4>
+					</div>
+					<div id="el23" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu23">
+							<ul id="tabs22"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="24" data-parent="#collapse-group" href="#el24" id="t24">Омская область</a>
+						</h4>
+					</div>
+					<div id="el24" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu24">
+							<ul id="tabs23"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="25" data-parent="#collapse-group" href="#el25" id="t25">Орловская область</a>
+						</h4>
+					</div>
+					<div id="el25" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu25">
+							<ul id="tabs24"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="26" data-parent="#collapse-group" href="#el26" id="t26">Пензенская область</a>
+						</h4>
+					</div>
+					<div id="el26" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu26">
+							<ul id="tabs25"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="27" data-parent="#collapse-group" href="#el27" id="t27">Пермская область</a>
+						</h4>
+					</div>
+					<div id="el27" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu27">
+							<ul id="tabs26"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="28" data-parent="#collapse-group" href="#el28" id="t28">Республика Бурятия</a>
+						</h4>
+					</div>
+					<div id="el28" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu28">
+							<ul id="tabs27"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="29" data-parent="#collapse-group" href="#el29" id="t29">Ростовская область</a>
+						</h4>
+					</div>
+					<div id="el29" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu29">
+							<ul id="tabs28"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="30" data-parent="#collapse-group" href="#el30" id="t30">Тамбовская область</a>
+						</h4>
+					</div>
+					<div id="el30" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu30">
+							<ul id="tabs29"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="31" data-parent="#collapse-group" href="#el31" id="t31">Томская область</a>
+						</h4>
+					</div>
+					<div id="el31" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu31">
+							<ul id="tabs30"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="32" data-parent="#collapse-group" href="#el32" id="t32">Тульская область</a>
+						</h4>
+					</div>
+					<div id="el32" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu32">
+							<ul id="tabs31"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="panel-title-link" data-toggle="collapse" data-foo="33" data-parent="#collapse-group" href="#el33" id="t33">Челябинская область</a>
+						</h4>
+					</div>
+					<div id="el33" class="panel-collapse collapse">
+						<div class="panel-body" id="mapMenu33">
+							<ul id="tabs32"> 
+							</ul>   
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="sidebar_form">
+              <h2>Возник вопрос?</h2>
+              <h3> <b>Напишите нам!</b></h3>
+                <form id="rpmContactForm" action="">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" class="form-control" autocomplete="off">
+                        <span class="error" for="name"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control" autocomplete="off">
+                        <span class="error" for="email"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Телефон" class="form-control" autocomplete="off">
+                        <span class="error" for="phone"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="question" placeholder="Ваш вопрос" class="form-control"></textarea>
+                        <span class="error" for="question"></span>
+                    </div>
+                    <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <input type="text" name="captcha" placeholder="Сумма" class="form-control" autocomplete="off">
+                        </div>
+                        <div class="col-xs-5">
+                            <div class="captcha">1 + 8</div>
+                        </div>
+                    </div>
+                    <span class="error" for="captcha"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-default">Отправить</button>
+                </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        <div class="content_wrap">
+          <ul class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li>Где купить?</li>
+          </ul>
+          <div class="text">
+            <h1>ГДЕ КУПИТЬ ?</h1>
+          </div>
+          <div class="map-address">
+            <div class="contacts-block row tab-content">
+              <div class="tabContent" id="tab1">
+                <div class="address col-md-6">
+                  <h3>ООО «ТД Сибирь»</h3>
+                  <p></p>
+                  <h3>Адрес:</h3>
+                  <p>630088, г.Новосибирск, ул.Петухова, 27/3, а/я 312</p>
+                </div>
+                <div class="tel-email col-md-6">
+                  <h3>Телефон:</h3>
+                  <p>8(383)215-19-25</p>
+                  <h3>E-mail:</h3>
+                  <p>log@zvezda-udachi.ru</p>
+                </div>
+              </div>
+              <div class="tabContent hide" id="tab2">
+                <div class="address col-md-6">
+                  <h3>ИП Федорова  У.В.</h3>
+                  <p>магазин</p>
+                  <h3>Адрес:</h3>
+                  <p>г. Архангельск</p>
+                </div>
+                <div class="tel-email col-md-6">
+                  <h3>Телефон:</h3>
+                  <p>8902-286-47-00</p>
+                  <h3>E-mail:</h3>
+                  <p>u.gaydara@yandex.ru</p>
+                </div>
+              </div>
+              <div class="tabContent hide" id="tab3">
+                <div class="address col-md-6">
+                  <h3>ИП Слукин П.В. «Русские краски»</h3>
+                  <p>контрактное производство</p>
+                  <h3>Адрес:</h3>
+                  <p>398042 г. Липецк, ул. Московская, 31А</p>
+                </div>
+                <div class="tel-email col-md-6">
+                  <h3>Телефон:</h3>
+                  <p>+7 (4742) 23-89-89 доб. 2048</p>
+                  <h3>E-mail:</h3>
+                  <p>petr@autoemali.com</p>
+                </div>
+              </div>
+              <div class="tabContent hide" id="tab4">
+                <div class="address col-md-6">
+                  <h3>ИП Слукин П.В. «Русский Мастер»</h3>
+                  <p>контрактное производство</p>
+                  <h3>Адрес:</h3>
+                  <p>398042 г.Липецк, ул. Ковалева 134а</p>
+                </div>
+                <div class="tel-email col-md-6">
+                  <h3>Телефон:</h3>
+                  <p>+7 (4742) 23-89-89 доб. 2048</p>
+                  <h3>E-mail:</h3>
+                  <p>petr@autoemali.com</p>
+                </div>
+              </div>
+			<div class="tabContent hide" id="tab5">
+				<div class="address col-md-6">
+					<h3>ИП Шестакова И.П./ООО "АВТОКОЛОР"</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>
+					160002, г. Вологда, ул. Ленинградская, д. 132 ТЦ<br>
+					<a href="http://www.avto-kolor.ru">http://www.avto-kolor.ru</a><br>
+					<a href="http://avtocolor35.ru">http://avtocolor35.ru</a>
+					</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(8172)53-60-96</p>
+					<h3>E-mail:</h3>
+					<p>orbita132@mail.ru</p>
+				</div>
 			</div>
-		</div>
-    <div class="header_bottom">
-      <div class="container">
-        <div class="header_logo">
-          <div class="logo">
-            <a href="https://rempolimer.ru/"><img src="/assets/components/template/img/logo.png" alt=""></a>
-          </div>
-          <div class="slogan">
-            <p>Качество, к которому стремится каждый</p>
-          </div>
-        </div>
-        <div class="header_search">
-          <form action="поиск.html">
-            <input type="text" name="query" placeholder="Найти товар" class="form-control">
-            <button type="submit" class="search_btn"></button>
-          </form>
-        </div>
-        <div class="header_basket " id="msMiniCart">
-    <a href="оформление-товара.html"><div class="icon sprite_icon_basket"></div></a>
-    <a href="оформление-товара.html"><p><b>Стол заказов: </b></p></a>
-    <div class="empty">Вы еще ничего не выбрали</div>
-    <p class="not_empty">
-        Товаров: <strong class="ms2_total_count">0</strong> шт. - <a href="оформление-товара.html">Оформить</a><br>
-        На сумму: <strong class="ms2_total_cost">0</strong> руб.
-    </p>
-</div>
-        <div class="header_phone">
-          <div class="icon sprite_icon_phone"></div>
-          <p><a href="tel:84955108719" class="phone">8 (495) 510-87-19</a></p>
-          <p><a href="" class="rpmCallLink">Заказать звонок</a></p>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-</header>
-    
-    
-<div class="content">
-  <div class="container">
-    <div class="sidebar">
-    <div class="sidebar_menu"> 
-      <div class="panel-group" id="collapse-group">
-        <div class="panel panel-default">
-
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a class="panel-title-link" data-toggle="collapse" data-foo="1" data-parent="#collapse-group" href="#el1" id="t1">Татарстан</a>
-             </h4>
-          </div>
-          <div id="el1" class="panel-collapse collapse">
-            <div class="panel-body" id="mapMenu">
-              <ul id="tabs0">
-              </ul>    
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a class="panel-title-link" data-toggle="collapse" data-foo="2" data-parent="#collapse-group" href="#el2" id="t2">Адыгея</a>
-             </h4>
-          </div>
-          <div id="el2" class="panel-collapse collapse">
-            <div class="panel-body" id="mapMenu2">
-              <ul id="tabs1"> 
-              </ul>   
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a class="panel-title-link" data-toggle="collapse" data-parent="#collapse-group" href="#el3">Московская область</a>
-             </h4>
-          </div>
-          <div id="el3" class="panel-collapse collapse">
-            <div class="panel-body" id="mapMenu3">
-              <ul id="tabs2">
-              </ul>  
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el4">Краснодарский край</a>
-             </h4>
-          </div>
-          <div id="el4" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el5">Башкортостан</a>
-             </h4>
-          </div>
-          <div id="el5" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el6">Свердловская область</a>
-             </h4>
-          </div>
-          <div id="el6" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el7">Марий-эл</a>
-             </h4>
-          </div>
-          <div id="el7" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el8">Удмуртия</a>
-             </h4>
-          </div>
-          <div id="el8" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el9">Крым</a>
-             </h4>
-          </div>
-          <div id="el9" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el10">Коми</a>
-             </h4>
-          </div>
-          <div id="el10" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el11">Карелия</a>
-             </h4>
-          </div>
-          <div id="el11" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-             <h4 class="panel-title">
-               <a data-toggle="collapse" data-parent="#collapse-group" href="#el12">Красноярский край</a>
-             </h4>
-          </div>
-          <div id="el12" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul id="">
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="sidebar_form">
-        <h2>Возник вопрос?</h2>
-        <h3> <b>Напишите нам!</b></h3>
-          <form id="rpmContactForm" action="">
-              <div class="form-group">
-                  <input type="text" name="name" placeholder="Ваше имя" class="form-control" autocomplete="off">
-                  <span class="error" for="name"></span>
-              </div>
-              <div class="form-group">
-                  <input type="email" name="email" placeholder="Email" class="form-control" autocomplete="off">
-                  <span class="error" for="email"></span>
-              </div>
-              <div class="form-group">
-                  <input type="text" name="phone" placeholder="Телефон" class="form-control" autocomplete="off">
-                  <span class="error" for="phone"></span>
-              </div>
-              <div class="form-group">
-                  <textarea name="question" placeholder="Ваш вопрос" class="form-control"></textarea>
-                  <span class="error" for="question"></span>
-              </div>
-              <div class="form-group">
-              <div class="row">
-                  <div class="col-xs-7">
-                      <input type="text" name="captcha" placeholder="Сумма" class="form-control" autocomplete="off">
-                  </div>
-                  <div class="col-xs-5">
-                      <div class="captcha">1 + 8</div>
-                      
-                  </div>
-              </div>
-              <span class="error" for="captcha"></span>
-          </div>
-          <div class="form-group text-center">
-              <button type="submit" class="btn btn-default">Отправить</button>
-          </div>
-          </form>
-      </div>
-
-
-    </div>
-  </div>
-  <div class="content_wrap">
-      <ul class="breadcrumb"><li><a href="/">Главная</a></li>
-      <li>Где купить?</li></ul>
-      <div class="text">
-        <h1>ГДЕ КУПИТЬ ?</h1>
-      </div>
-      <div class="map-address">
-        <div class="contacts-block row tab-content">
-        <!--div[role="tabpanel"].tab-pane#tab$>div.address.col-md-6>h3{Дистрибьютер $}+p{Описание}+h3{Адрес:}+p{tab$}^div.tel-email.col-md-6>h3{Телефон:}+p+h3{E-mail:}+p-->
-        <!--.tabContent.hide#tab$*12>div.address.col-md-6>h3{Дистрибьютер $}+p{Описание}+h3{Адрес:}+p{tab$}^div.tel-email.col-md-6>h3{Телефон:}+p+h3{E-mail:}+p-->
-          <div class="tabContent" id="tab1">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 1</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab1</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab2">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 2</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab2</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab3">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 3</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab3</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab4">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 4</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab4</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab5">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 5</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab5</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab6">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 6</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab6</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab7">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 7</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab7</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab8">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 8</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab8</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab9">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 9</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab9</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab10">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 10</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab10</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab11">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 11</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab11</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab12">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 12</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab12</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab13">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 13</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab13</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab14">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 14</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab14</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab15">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 15</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab15</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab16">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 16</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab16</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab17">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 17</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab17</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab18">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 18</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab18</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab19">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 19</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab19</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab20">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 20</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab20</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab21">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 21</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab21</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab22">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 22</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab22</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab23">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 23</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab23</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab24">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 24</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab24</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab25">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 25</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab25</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab26">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 26</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab26</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab27">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 27</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab27</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab28">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 28</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab28</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab29">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 29</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab29</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab30">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 30</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab30</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab31">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 31</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab31</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab32">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 32</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab32</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab33">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 33</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab33</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab34">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 34</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab34</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab35">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 35</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab35</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab36">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 36</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab36</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab37">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 37</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab37</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab38">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 38</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab38</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab39">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 39</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab39</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab40">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 40</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab40</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab41">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 41</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab41</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab42">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 42</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab42</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab43">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 43</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab43</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab44">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 44</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab44</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab45">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 45</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab45</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab46">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 46</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab46</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab47">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 47</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab47</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab48">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 48</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab48</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab49">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 49</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab49</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab50">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 50</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab50</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab51">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 51</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab51</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab52">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 52</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab52</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab53">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 53</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab53</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab54">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 54</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab54</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab55">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 55</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab55</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab56">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 56</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab56</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab57">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 57</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab57</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab58">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 58</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab58</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab59">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 59</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab59</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab60">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 60</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab60</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab61">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 61</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab61</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab62">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 62</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab62</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab63">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 63</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab63</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab64">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 64</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab64</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab65">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 65</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab65</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab66">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 66</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab66</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab67">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 67</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab67</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab68">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 68</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab68</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab69">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 69</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab69</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab70">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 70</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab70</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab71">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 71</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab71</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab72">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 72</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab72</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab73">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 73</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab73</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab74">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 74</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab74</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab75">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 75</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab75</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab76">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 76</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab76</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab77">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 77</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab77</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab78">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 78</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab78</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab79">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 79</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab79</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab80">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 80</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab80</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab81">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 81</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab81</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab82">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 82</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab82</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab83">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 83</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab83</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab84">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 84</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab84</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab85">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 85</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab85</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab86">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 86</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab86</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab87">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 87</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab87</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab88">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 88</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab88</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab89">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 89</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab89</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab90">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 90</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab90</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab91">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 91</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab91</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab92">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 92</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab92</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab93">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 93</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab93</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab94">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 94</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab94</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab95">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 95</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab95</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="tabContent hide" id="tab96">
-            <div class="address col-md-6">
-              <h3>Дистрибьютер 96</h3>
-              <p>Описание</p>
-              <h3>Адрес:</h3>
-              <p>tab96</p>
-            </div>
-            <div class="tel-email col-md-6">
-              <h3>Телефон:</h3>
-              <p></p>
-              <h3>E-mail:</h3>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="map-block">
-        <div id="info" class="contacts-block row"></div>
-          <div id="map-block">
-          <div id="YMapsID" style="width:100%;height:580px"></div>
-          <div id="YMapsID2" style="width:100%;height:580px"></div>
-          </div>
+			<div class="tabContent hide" id="tab6">
+				<div class="address col-md-6">
+					<h3>ИП Адамян Г.А.</h3>
+					<p>компания "Автоэмали Спектр"</p>
+					<h3>Адрес:</h3>
+					<p>
+						г.Воронеж ул.Антонова - Овсеенко, 17б<br>
+						<a href="http://avtoemali.spektr@yandex.ru">avtoemali.spektr@yandex.ru</a><br>
+						<a href="http://www.auto-emali.ru">www.auto-emali.ru</a>
+					</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(4732)02-01-16</p>
+					<h3>E-mail:</h3>
+					<p>2020116@bk.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab7">
+				<div class="address col-md-6">
+					<h3>ООО «ТД Сибирь»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>630088, г.Новосибирск, ул.Петухова, 27/3, а/я 312</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(383)215-19-25</p>
+					<h3>E-mail:</h3>
+					<p>log@zvezda-udachi.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab8">
+				<div class="address col-md-6">
+					<h3>ИП Криворогова И.И.</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>353560, г.Славянск-на-Кубани, ул.Безымянная, 63"Б"</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>(86146)7-39-34, 2-29-30</p>
+					<h3>E-mail:</h3>
+					<p>kraski-vika@yandex.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab9">
+				<div class="address col-md-6">
+					<h3>ООО «ТД Сибирь»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>630088, г.Новосибирск, ул.Петухова, 27/3, а/я 312</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон/факс:</h3>
+					<p>
+						8(383)215-19-25,<br>
+						342-89-66, 292-48-49<br>
+						мобильный 8-983-122-81-51 </p>
+					<h3>E-mail:</h3>
+					<p>log@zvezda-udachi.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab10">
+				<div class="address col-md-6">
+					<h3>ИП Бедрик Д.В.</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p></p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p></p>
+					<h3>E-mail:</h3>
+					<p>dbedrik@mail.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab11">
+				<div class="address col-md-6">
+					<h3>ИП Кильдяев И.А.</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>г.Челябинск</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(351)256-54-48</p>
+					<h3>E-mail:</h3>
+					<p>sv_zakaz@mail.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab12">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab13">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab14">
+				<div class="address col-md-6">
+					<h3>ООО «Колор Эксперт»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>г.Санкт-Петербург, пер.Челиева, дом 11</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8 (812) 446-4904</p>
+					<h3>E-mail:</h3>
+					<p>ofice@colorexpert.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab15">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab16">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab17">
+				<div class="address col-md-6">
+					<h3>ООО «МИКСЭЛ»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>29164, Москва г, Ярославская ул, дом № 8, корпус 6</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (495) 648-69-39</p>
+					<h3>E-mail:</h3>
+					<p>mixel2006@yandex.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab18">
+				<div class="address col-md-6">
+					<h3>ООО «ТД Сибирь»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>630088, г.Новосибирск, ул.Петухова, 27/3, а/я 312</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон/факс:</h3>
+					<p> 8(383)215-19-25,<br>342-89-66, 292-48-49,<br>8-983-122-81-51</p>
+					<h3>E-mail:</h3>
+					<p>log@zvezda-udachi.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab19">
+				<div class="address col-md-6">
+					<h3>ИП Самойлович С.А.</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>644116, г. Омск, ул.16-я Амурская, 31</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(3812)68-35-45</p>
+					<h3>E-mail:</h3>
+					<p>omskavtochim@mail.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab20">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab21">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab22">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab23">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab24">
+				<div class="address col-md-6">
+					<h3>ООО «Фора»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>614023, г. Пермь, ул. Светлогорская, 10<br><a href="http://www.fora-perm.ru">http://www.fora-perm.ru/</a></p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>:8(342) 250-49-24,<br>291-22-28,<br> 250-45-45</p>
+					<h3>E-mail:</h3>
+					<p>brulex@perm.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab25">
+				<div class="address col-md-6">
+					<h3>ИП Кузьмин А.В.</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>670031 г. Улан-Удэ ул. Солнечная 27-33</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(3012)43-00-33</p>
+					<h3>E-mail:</h3>
+					<p>obmenavtolak@mail.r</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab26">
+				<div class="address col-md-6">
+					<h3>ИП Логвинов А.И.</h3>
+					<p>магазин Русские Краски</p>
+					<h3>Адрес:</h3>
+					<p>г.Ростов-на-Дону, ул.Малиновского 52</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>8(863)292-89-09</p>
+					<h3>E-mail:</h3>
+					<p>opt@avtokras.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab27">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab28">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab29">
+				<div class="address col-md-6">
+					<h3>ООО «ТД Сибирь»</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>630088, г.Новосибирск, ул.Петухова, 27/3, а/я 312</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон/факс:</h3>
+					<p>8(383)215-19-25,<br>342-89-66, 292-48-49,<br>8-983-122-81-51</p>
+					<h3>E-mail:</h3>
+					<p>log@zvezda-udachi.ru</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab30">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русские краски»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г. Липецк, ул. Московская, 31А</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			</div>
+			<div class="tabContent hide" id="tab31">
+				<div class="address col-md-6">
+					<h3>ИП Слукин П.В. «Русский Мастер»</h3>
+					<p>контрактное производство</p>
+					<h3>Адрес:</h3>
+					<p>398042 г.Липецк, ул. Ковалева 134а</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p>+7 (4742) 23-89-89 доб. 2048</p>
+					<h3>E-mail:</h3>
+					<p>petr@autoemali.com</p>
+				</div>
+			<div class="tabContent hide" id="tab32">
+				<div class="address col-md-6">
+					<h3>ИП Кильдяев И.А</h3>
+					<p></p>
+					<h3>Адрес:</h3>
+					<p>г.Челябинск</p>
+				</div>
+				<div class="tel-email col-md-6">
+					<h3>Телефон:</h3>
+					<p> 8(351)256-54-48</p>
+					<h3>E-mail:</h3>
+					<p>sv_zakaz@mail.ru</p>
+				</div>
+			</div>
+          </div>
+			<div class="map-block">
+				<div id="info" class="contacts-block row"></div>
+				<div id="map-block">
+				  <div id="YMapsID" style="width:100%;height:580px"></div>
+				  <div id="YMapsID2" style="width:100%;height:580px"></div>
+				</div>
+			</div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-    
-
-  <footer class="footer">
-    <div class="footer_top">
-      <div class="container">
-        <div class="header_logo">
-          <div class="logo">
-            <a href="/" title="на главную"><img src="/assets/components/template/img/logo_mobile.png" alt=""></a>
-          </div>
-          <div class="slogan">
-            <p>Качество, к которому стремится каждый</p>
-          </div>
-        </div>
-        <div class="header_phone">
-          <div class="icon sprite_icon_phone"></div>
-          <p><a href="tel:84955108719" class="phone">8 (495) 510-87-19</a>
-          </p>
-          <p><a href="" class="rpmCallLink">Заказать звонок</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="footer_bottom">
-      <div class="container">
-        <p class="pull-left">ООО «Ремполимер» © 2014. Все права защищены</p>
-        <p class="pull-left pull-right-xs"><a href="официальная-информация.html">Официальная информация</a>
-        </p>
-        <p class="pull-right hidden-xs"><a href="" target="_blank" title="">Дизайн сайта Dabflyer</a></p>
-        <!--div class="counters pull-right">
-          <img src="/assets/components/template/pic/counters.png" alt="">
-        </div--> 
-      </div>
-    </div>
-</footer>    <style>
-    .social_login a {
-        float: left;
-    }
-    .social_div {
-        background-image: url(/assets/components/template/pic/login_using_social.png);
-        width: 48px;
-        height: 48px;
-        margin: 3px;
-    }
-    .social_div.Vkontakte {
-        background-position: 332px -8px;
-    }
-    .social_div.Facebook {
-        background-position: 278px -8px;
-    }
-    .social_div.Instagram {
-        background-position: 224px -8px;
-    }
-    .social_div.Odnoklassniki {
-        background-position: 170px -8px;
-    }
-    .social_div.Yandex {
-        background-position: 114px -8px;
-    }
-    .social_div.Google {
-        background-position: 60px -8px;
-    }
-</style>
-<div class="popup login_popup" id="rpmLoginForm">
-    <div class="close"></div>
-    <h2 class="bottom_separator">ВХОД В УЧЕТНУЮ ЗАПИСЬ</h2>
-    <form action="" method="post">
-        <div class="error" for="message"></div>
-        <div class="form-group">
-            <p class="small"><i>Ваше имя:</i></p>
-            <input type="text" name="username" class="form-control">
-            <span class="error" for="username"></span>
-        </div>
-        <div class="form-group">
-            <p class="small"><i>Пароль:</i></p>
-            <input type="password" name="password" class="form-control">
-            <div data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet." class="icon sprite_icon_q"></div>
-            <span class="error" for="password"></span>
-        </div>
-        <div class="form-group text-center">
-            <label><div class="jq-checkbox" unselectable="on" style="user-select: none; display: inline-block; position: relative; overflow: hidden;"><input type="checkbox" name="rememberme" value="1" style="position: absolute; z-index: -1; opacity: 0; margin: 0px; padding: 0px;"><div class="jq-checkbox__div"></div></div>Запомнить меня</label>
-        </div>
-        <div class="form-group text-center">
-            <button type="submit" class="btn btn-default red">Войти</button>
-            <a href="регистрация/" class="btn btn-default no-bg medium">Регистрация</a>
-        </div>
-    </form>
-    <div class="bottom_part">
-        <h3>Войти с помощью соц сетей:</h3>
-        <div class="social_login">
-            <div class="pull-left">
-                <a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Yandex&amp;redirect_id=23" alt="Yandex" title="Войти через Yandex"><div class="social_div Yandex"></div></a><a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Google&amp;redirect_id=23" alt="Google" title="Войти через Google"><div class="social_div Google"></div></a><a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Vkontakte&amp;redirect_id=23" alt="Vkontakte" title="Войти через Vkontakte"><div class="social_div Vkontakte"></div></a><a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Facebook&amp;redirect_id=23" alt="Facebook" title="Войти через Facebook"><div class="social_div Facebook"></div></a><a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Odnoklassniki&amp;redirect_id=23" alt="Odnoklassniki" title="Войти через Odnoklassniki"><div class="social_div Odnoklassniki"></div></a><a href="/assets/components/modhybridauth/connectors/profile/auth.php?provider=Instagram&amp;redirect_id=23" alt="Instagram" title="Войти через Instagram"><div class="social_div Instagram"></div></a>            </div>
-            <div class="clearfix"></div>
-            
-        </div>
-    </div>
-</div>
-
-<div class="popup login_popup" id="rpmCallForm">
-    <div class="close"></div>
-    <h2 class="bottom_separator">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
-    <form action="" method="post">
-        <div class="error" for="message"></div>
-        <div class="form-group">
-            <p class="small"><i>Ваше имя:</i></p>
-            <input type="text" name="name" class="form-control">
-            <span class="error" for="name"></span>
-        </div>
-        <div class="form-group">
-            <p class="small"><i>Телефон:</i></p>
-            <input type="text" name="phone" class="form-control">
-            <span class="error" for="phone"></span>
-        </div>
-        <div class="form-group text-center">
-            <button type="submit" class="btn btn-default red">Заказать</button>
-        </div>
-    </form>
-</div>
-
-<div class="popup order_done_popup" id="rpmSuccess">
-    <div class="close"></div>
-    <h2 class="text-center"></h2>
-</div>    
-  
-    
-    
-    
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script>
-      
-    </script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1822,6 +983,5 @@
                 s.iconStyle.size = new YMaps.Point(54, 54);
                 s.iconStyle.href = 'img/mark2.png';
     </script>
-
   </body>
 </html>
