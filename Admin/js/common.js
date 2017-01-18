@@ -6,17 +6,11 @@ $("[data-toggle='popover']").popover();
 });
 $('input[type=file]').bootstrapFileInput();
 $('.file-inputs').bootstrapFileInput();
-
-$("#checkAll").click(function () {
-     $('.check-name input:checkbox').not(this).prop('checked', this.checked);
- });
-$("#checkAll-filter").click(function () {
-     $('.add-filter input:checkbox').not(this).prop('checked', this.checked);
- });
 //  $("#mytable td").mouseover(function() {
+//  	// console.log('awfwfw');
 //     var tds = $( this ).parent().find("td"),
 //         index = $.inArray( this, tds );
-
+//         console.log(index);
 // 	$("#mytable td:nth-child("+( index + 1 )+")").css("background-color", "#ecf0f1");
 // 	}).mouseout(function() {
 //         var tds = $( this ).parent().find("td"),
@@ -25,30 +19,13 @@ $("#checkAll-filter").click(function () {
 //         $("#mytable td:nth-child("+( index + 1 )+")").css("background-color", "");
 // });
 
-//Добавление фильтра
-$(document).ready(function() {
-
-  $('.add-filter_btn').click(function() {
-    // $('.btn-edit').css('display', 'none');
-    // $('.btn-save').css('display', 'inline-block');
-    $(this).closest('.input-disabled').find('input').removeAttr('disabled');
-    $(this).toggle();
-  	$(this).parent('div').parent('th').find('.btn-accept-group').toggle();
-  });
-  
-  $('.btn-accept-group .delete').click(function(){
-  	$(this).closest('.input-disabled').find('input').attr('disabled', true);
-    $('.add-filter input').attr('disabled', true);
-    $(this).parent('div').toggle();
-    $(this).parent('div').parent('th').find('.add-filter_btn').toggle();
-  	// $(this).closest('div').find('.btn-accept-group').toggle();
-  });
-
-});
-
 $('.period a').click(function(){
-	$(this).addClass('active');
 	$('.period a').removeClass('active');
+	$(this).addClass('active');
+});
+$('.timeline a').click(function(){
+	$('.timeline a').removeClass('active');
+	$(this).addClass('active');
 });
 
 // Календарь
@@ -57,7 +34,89 @@ $('#datepicker-ask').datepicker({
 });
 $('#datepicker-period').datepicker({
     position: "bottom left"
-});
+});// Календарь
+
+// horizontal scrollbar
+$(window).on("load",function(){
+    $(".mCustomScrollbar-content").mCustomScrollbar({
+	    axis:"x",
+	    theme:"minimal-dark",
+		advanced:{autoExpandHorizontalScroll:true}
+	});
+});// horizontal scrollbar
+
+// Клонирует и фиксирует шапку таблицы
+var tableOffset = $("#filter-content").offset().top;
+var tableOffsetAddFilter = $("#add-filter").offset().top;
+var tableOffsetPeopleList = $("#people-list").offset().top;
+
+var $header = $("#filter-content > thead").clone();
+var $headerAddFilter = $("#add-filter > thead").clone();
+var $headerPeopleList = $("#people-list > thead").clone();
+
+var $fixedHeader = $("#header-fixed").append($header);
+var $fixedHeaderAddFilter = $("#header-fixed-add-filter").append($headerAddFilter);
+var $fixedHeaderPeopleList = $("#header-fixed-people-list").append($headerPeopleList);
+
+$(window).bind("scroll", function() {
+    var offset = $(this).scrollTop();
+    
+    if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
+        $fixedHeader.show();
+    }
+    var offset2 = $(this).scrollTop();
+    
+    if (offset2 >= tableOffsetAddFilter && $fixedHeaderAddFilter.is(":hidden")) {
+        $fixedHeaderAddFilter.show();
+    }
+    var offset3 = $(this).scrollTop();
+    
+    if (offset3 >= tableOffsetPeopleList && $fixedHeaderPeopleList.is(":hidden")) {
+        $fixedHeaderPeopleList.show();
+    }
+    // else if (offset < tableOffset) {
+    //     $fixedHeader.hide();
+    // }
+
+});// Клонирует и фиксирует шапку таблицы
+
+$(".checkAll").click(function () {
+     $('.check-name input:checkbox').not(this).prop('checked', this.checked);
+ });
+$(".checkAll-filter").click(function () {
+     $('.add-filter input:checkbox').not(this).prop('checked', this.checked);
+ });
+//disabled/enabled input
+	//для готовых фильтров
+	$('.filter-content .add-filter_btn').click(function() {
+		var tds = $( this ).parent().parent().parent().find(".add-filter_btn"),
+	    index = $.inArray( this, tds );
+	    console.log(index);
+		$(this).toggle();
+		$(this).parent('div').parent('th').find('.btn-accept-group').toggle();
+		$(".filter-content td:nth-child("+( index + 1 )+")").children('input').removeAttr('disabled');
+	});
+
+	$('.filter-content .btn-accept-group .delete').click(function(){
+		var tds = $( this ).parent().parent().parent().find(".btn-accept-group .delete"),
+	    index = $.inArray( this, tds );
+
+		$(this).parent('div').toggle();
+		$(this).parent('div').parent('th').find('.add-filter_btn').toggle();
+		$(".filter-content td:nth-child("+( index + 1 )+")").children('input').attr('disabled', true);
+	});//для готовых фильтров
+	//для создания фильтра
+	$('#header-fixed-add-filter .add-filter_btn').click(function(){
+		$(this).toggle();
+		$(this).parent('div').parent('th').find('.btn-accept-group').toggle();
+		$(this).closest('.input-disabled').find('input').removeAttr('disabled');
+	});
+	$('#header-fixed-add-filter .btn-accept-group .delete').click(function(){
+		$(this).parent('div').toggle();
+		$(this).parent('div').parent('th').find('.add-filter_btn').toggle();
+		$('.add-filter input').attr('disabled', true);
+	});//для создания фильтра
+//END disabled/enabled input
 // cl = console.log;
 
 // $(".table-hover tbody tr").click(function(){
@@ -67,5 +126,4 @@ $('#datepicker-period').datepicker({
 // 		$(this).addClass('greenGreen');
 // 	}
 // });
-
 

@@ -48,8 +48,8 @@
 </nav><!--  -->
 
 <section class="section-bottom col-xs-12">
-	<div class="col-md-3 people-list">
-		<table class="table table-striped table-hover">
+	<div class="col-sm-3 people-list">
+		<table class="table table-striped table-hover" id="people-list">
 			<thead>
 				<tr>
 					<th>
@@ -63,7 +63,7 @@
 						  <input type="text" class="form-control input-sm" placeholder="Search">
 						</form>
 					</th>
-					<th><input type="checkbox" id="checkAll"></th>
+					<th><input type="checkbox" class="checkAll"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -119,158 +119,164 @@
 				</tr>
 			</tbody>
 		</table>
+		<table class="col-sm-3" id="header-fixed-people-list"></table>
 	</div>
-    <div class="data input-disabled people col-md-6">
-    	<div class="test">
-	    	<table class="table table-striped table-hover">
-				<thead>
-					<tr>
-						<th>
-							<p>VIP</p>
-							<div class="">
-								<a href="#" class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></a>
-							</div>
-							<div class="btn-accept-group right">
-								<a href="#" class="btn btn-success fa fa-check delete" aria-hidden="true"></a>
-								<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
-							</div>
-						</th>
-						<th><p>Фильтр 1</p>
-							<div class="">
-								<a href="#" class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></a>
-							</div>
-							<div class="btn-accept-group right">
-								<a href="#" class="btn btn-success fa fa-check delete" aria-hidden="true"></a>
-								<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
-							</div>
-						</th>
-						<th><p>Фильтр 2
-							<div class="">
-								<a href="#" class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></a>
-							</div>
-							<div class="btn-accept-group right">
-								<a href="#" class="btn btn-success fa fa-check delete" aria-hidden="true"></a>
-								<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
-							</div>
-						</th>
-						<th><p>Фильтр 3</p>
-							<div class="">
-								<a href="#" class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></a>
-							</div>
-							<div class="btn-accept-group right">
-								<a href="#" class="btn btn-success fa fa-check delete" aria-hidden="true"></a>
-								<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
-							</div>
-						</th>
-						<th><p>Фильтр 4</p>
-							<div class="">
-								<a href="#" class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></a>
-							</div>
-							<div class="btn-accept-group right">
-								<a href="#" class="btn btn-success fa fa-check delete" aria-hidden="true"></a>
-								<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
-							</div>
-						</th>
-						<!-- <th>
-							<form class="col-md-8">
-							  <input type="text" class="form-control input-sm" placeholder="text">
-							</form>
-							<div class="col-md-4 btn-accept">
-								<a href="#" class="btn btn-success fa fa-check accept" aria-hidden="true"></a>
-								<a href="#" class="btn btn-danger fa fa-times delete" aria-hidden="true"></a>
-							</div>
-						</th> -->
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="checkbox" checked="" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" checked="" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" checked="" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" checked="" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-						<td><input type="checkbox" disabled=""></td>
-					</tr>
-				</tbody>
-	    	</table>
-	    </div>
+    <div class="data input-disabled col-sm-6">
+    	<div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+			<div class="mCustomScrollbar-content">
+		    	<div class="data-table">
+			    	<table class="table table-striped table-hover filter-content" id="filter-content">
+						<thead>
+							<tr>
+								<th>
+									<p>VIP</p>
+									<div class="">
+										<button class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></button>
+									</div>
+									<div class="btn-accept-group right">
+										<button class="btn btn-success fa fa-check delete" aria-hidden="true"></button>
+										<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
+									</div>
+								</th>
+								<th><p>Фильтр 1</p>
+									<div class="">
+										<button class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></button>
+									</div>
+									<div class="btn-accept-group right">
+										<button class="btn btn-success fa fa-check delete" aria-hidden="true"></button>
+										<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
+									</div>
+								</th>
+								<th><p>Фильтр 2</p>
+									<div class="">
+										<button class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></button>
+									</div>
+									<div class="btn-accept-group right">
+										<button class="btn btn-success fa fa-check delete" aria-hidden="true"></button>
+										<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
+									</div>
+								</th>
+								<th><p>Фильтр 3</p>
+									<div class="">
+										<button class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></button>
+									</div>
+									<div class="btn-accept-group right">
+										<button class="btn btn-success fa fa-check delete" aria-hidden="true"></button>
+										<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
+									</div>
+								</th>
+								<th><p>Фильтр 4</p>
+									<div class="">
+										<button class="btn btn-success fa fa-caret-right add-filter_btn" aria-hidden="true"></button>
+									</div>
+									<div class="btn-accept-group right">
+										<button class="btn btn-success fa fa-check delete" aria-hidden="true"></button>
+										<button type="submit" class="btn btn-danger fa fa-trash accept" aria-hidden="true"></button>
+									</div>
+								</th>
+								<!-- <th>
+									<form class="col-md-8">
+									  <input type="text" class="form-control input-sm" placeholder="text">
+									</form>
+									<div class="col-md-4 btn-accept">
+										<a href="#" class="btn btn-success fa fa-check accept" aria-hidden="true"></a>
+										<a href="#" class="btn btn-danger fa fa-times delete" aria-hidden="true"></a>
+									</div>
+								</th> -->
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" checked="" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" checked="" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" checked="" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" checked="" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+								<td><input type="checkbox" disabled=""></td>
+							</tr>
+						</tbody>
+			    	</table>
+			    	<table id="header-fixed" class="filter-content"></table>
+			    </div>
+			</div>
+		</div>
     </div>
-    <div class="data input-disabled add-filter col-md-3">
-    	<form action="">
-	    	<table class="table table-striped table-hover">
+    <div class="data input-disabled add-filter col-sm-3">
+    	<form action="" class="form-add-people">
+	    	<table class="table table-striped table-hover" id="add-filter">
 	    		<thead>
 	    			<tr>
 	    				<th>
 							<input type="text" class="form-control input-sm add-filter-input left" placeholder="Добавить фильтр" disabled="">
-							<input type="checkbox" id="checkAll-filter" class="left" disabled>
+							<input type="checkbox" class="left checkAll-filter" disabled>
 							<div class="">
-								<a href="#" class="btn btn-info fa fa-plus add-filter_btn" aria-hidden="true"></a>
+								<button class="btn btn-info fa fa-plus add-filter_btn" aria-hidden="true"></button>
 							</div>
 							<div class="btn-accept-group right">
 								<button type="submit" class="btn btn-success fa fa-check accept" aria-hidden="true"></button>
-								<button type="reset" class="btn btn-danger fa fa-times delete" aria-hidden="true"></a>
+								<button type="reset" class="btn btn-danger fa fa-times delete" aria-hidden="true"></button>
 							</div>
 						</th>
 	    			</tr>
@@ -308,6 +314,7 @@
 	    			</tr>
 	    		</tbody>
 	    	</table>
+	    	<table id="header-fixed-add-filter" class="table-striped table-hover test30 col-sm-3"></table>
 	    </form>
     </div>
 </section>
@@ -316,18 +323,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
-<script type="text/javascript">
-        $(function () {
-            $('#ask').datetimepicker({
-                defaultDate: "1.1.2017",
-                disabledDates: [
-                    moment("12/25/2013"),
-                    new Date(2013, 11 - 1, 21),
-                    "11/22/2013 00:53"
-                ]
-            });
-        });
-</script>
-
 </body>
 </html>
