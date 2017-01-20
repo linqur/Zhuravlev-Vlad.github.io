@@ -36,7 +36,7 @@
     </div>
 
     <div class="dropdown nav navbar-nav navbar-right">
-      <button class="name btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Name
+      <button class="name btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="badge">2</span>Name
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
@@ -146,16 +146,13 @@
     <div class="input-group datepicker-period">
       <input type="text" class="datepicker-here form-control input-sm" data-timepicker="true" id="datepicker-period" placeholder="">
       <label for="datepicker-period" class="input-group-addon input-sm">
-        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="fa fa-calendar"></span>
       </label>
     </div>
-    <select class="form-control input-sm filter-title" id="select">
-      <option>Фильтр по title</option>
-      <option>filter</option>
-      <option>filter</option>
-      <option>filter</option>
-      <option>filter</option>
-    </select>
+    <div class="input-group search-title">
+      <input type="text" class="form-control input-sm" placeholder="Search title">
+      <span class="input-group-addon input-sm"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
     <select class="form-control input-sm" id="select">
       <option>filter</option>
       <option>filter</option>
@@ -177,18 +174,15 @@
               <input type="text" class="form-control input-sm" placeholder="Search">
             </form>
           </th>
-          <th><input type="checkbox" id="checkAll"></th>
+          <th><input type="checkbox" class="checkAll"></th>
         </tr>
       </thead>
       <tbody>
-        <tr class="new">
+        <tr>
           <td>1</td>
           <td>Иванов</td>
-          <td>
-            <div class="btn-accept-group right">
-              <button type="submit" class="btn btn-sm btn-success fa fa-check accept right" aria-hidden="true"></button>
-              <button type="reset" class="btn btn-danger fa fa-times delete btn-sm" aria-hidden="true"></button>
-            </div>
+          <td class="check-name">
+            <input type="checkbox">
           </td>
         </tr>
         <tr>

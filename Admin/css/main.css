@@ -4,6 +4,12 @@ li {
 ul {
   padding-left: 0; }
 
+body {
+  height: 10000px; }
+
+textarea {
+  position: absolute; }
+
 #header-fixed-add-filter,
 #header-fixed-people-list,
 #header-fixed {
@@ -71,8 +77,24 @@ table {
     font-size: 25px; }
 
 .datepicker-period,
-.filter-title {
+.search-title {
   margin-bottom: 5px; }
+
+.datepicker-period input {
+  border-color: #2c3e50; }
+
+.datepicker-period label {
+  background: #2c3e50;
+  border: 1px solid #2c3e50;
+  color: #fff; }
+
+.search-title input {
+  border-color: #798d8f; }
+
+.search-title span {
+  background: #798d8f;
+  border: 1px solid #798d8f;
+  color: #fff; }
 
 .datepicker--day-name {
   color: #18bc9c; }
@@ -253,7 +275,7 @@ table {
       color: #2c3e50; }
 
 .sorting {
-  margin-top: 35px;
+  margin-top: 65px;
   width: 200px; }
   .sorting ol {
     padding-left: 15px; }
@@ -348,13 +370,17 @@ table {
     margin: 0 1px;
     width: 35px; }
 
+.second-screen nav .badge {
+  float: left !important;
+  margin: 4px 5px 0 0; }
+
 .second-screen .btn-accept-group {
   display: block; }
 
 .add-filter {
   -webkit-box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.26);
           box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.26);
-  margin-top: 3px !important; }
+  margin-top: -1px !important; }
   .add-filter-input {
     width: 68%; }
 
@@ -374,6 +400,8 @@ table {
 
 .title {
   overflow: auto; }
+  .title .active a {
+    background: #ecf0f1; }
   .title time {
     float: right;
     color: #838484;
@@ -406,19 +434,31 @@ table {
 .people-list {
   -webkit-box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
           box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
-  margin-top: 3px !important;
   padding-right: 0;
   padding-left: 0;
+  margin-top: -1px;
   z-index: 1; }
   .people-list tr {
     border: 1px solid #dce4ec !important; }
+  .people-list td {
+    padding-top: 19px !important;
+    padding-bottom: 17px !important; }
+  .people-list .search {
+    padding-right: 15px; }
+  .people-list button {
+    font-size: 11px; }
+
+.filter-people-list td {
+  padding-top: 14px !important; }
+
+.new .btn-accept-group {
+  display: block; }
+
+.new .add-filter_btn {
+  display: none; }
 
 .list-control .section-bottom {
   padding-top: 57px; }
-
-.list-control .people-list td {
-  padding-top: 24px !important;
-  padding-bottom: 18px !important; }
 
 .mCSB_horizontal.mCSB_inside > .mCSB_container {
   margin-bottom: 0; }

@@ -18,7 +18,10 @@ $('.file-inputs').bootstrapFileInput();
 
 //         $("#mytable td:nth-child("+( index + 1 )+")").css("background-color", "");
 // });
-
+$(".checkAll").click(function () {
+	console.log('fesfsef');
+     $('.check-name input:checkbox').not(this).prop('checked', this.checked);
+ });
 $('.period a').click(function(){
 	$('.period a').removeClass('active');
 	$(this).addClass('active');
@@ -41,7 +44,7 @@ $(window).on("load",function(){
     $(".mCustomScrollbar-content").mCustomScrollbar({
 	    axis:"x",
 	    theme:"minimal-dark",
-		advanced:{autoExpandHorizontalScroll:true}
+		advanced:{ autoScrollOnFocus: false}
 	});
 });// horizontal scrollbar
 
@@ -80,16 +83,14 @@ $(window).bind("scroll", function() {
 
 });// Клонирует и фиксирует шапку таблицы
 
-$(".checkAll").click(function () {
-     $('.check-name input:checkbox').not(this).prop('checked', this.checked);
- });
 $(".checkAll-filter").click(function () {
      $('.add-filter input:checkbox').not(this).prop('checked', this.checked);
  });
+
 //disabled/enabled input
 	//для готовых фильтров
 	$('.filter-content .add-filter_btn').click(function() {
-		var tds = $( this ).parent().parent().parent().find(".add-filter_btn"),
+		var tds = $( this ).parents('thead').find(".add-filter_btn"),
 	    index = $.inArray( this, tds );
 	    console.log(index);
 		$(this).toggle();
@@ -98,13 +99,13 @@ $(".checkAll-filter").click(function () {
 	});
 
 	$('.filter-content .btn-accept-group .delete').click(function(){
-		var tds = $( this ).parent().parent().parent().find(".btn-accept-group .delete"),
+		var tds = $( this ).parents('thead').find(".btn-accept-group .delete"),
 	    index = $.inArray( this, tds );
 
 		$(this).parent('div').toggle();
 		$(this).parent('div').parent('th').find('.add-filter_btn').toggle();
 		$(".filter-content td:nth-child("+( index + 1 )+")").children('input').attr('disabled', true);
-	});//для готовых фильтров
+	});//END
 	//для создания фильтра
 	$('#header-fixed-add-filter .add-filter_btn').click(function(){
 		$(this).toggle();
@@ -115,8 +116,32 @@ $(".checkAll-filter").click(function () {
 		$(this).parent('div').toggle();
 		$(this).parent('div').parent('th').find('.add-filter_btn').toggle();
 		$('.add-filter input').attr('disabled', true);
-	});//для создания фильтра
+	});//END
+	//Добавление/удаление людей и активирование строки таблицы
+	$('#people-list .add-filter_btn').click(function(){
+
+		var trs = $( this ).parents('tbody').find(".add-filter_btn"),
+	    index = $.inArray( this, trs );
+	    console.log(index);
+
+		$(this).toggle();
+		$(this).parent('div').parent('td').find('.btn-accept-group').toggle();
+		$('.filter-content tr:nth-child('+( index + 1 )+')').find('input').removeAttr('disabled');
+	});
+	$('#people-list .delete').click(function(){
+
+		var trs = $( this ).parents('tbody').find(".btn-accept-group .delete"),
+	    index = $.inArray( this, trs );
+
+		$(this).parent('div').toggle();
+		$(this).parent('div').parent('td').find('.add-filter_btn').toggle();
+		$(this).parents('tr').removeClass('new');
+		$('.filter-content tr:nth-child('+( index + 1 )+')').find('input').attr('disabled', true);
+	});//END
 //END disabled/enabled input
+
+
+
 // cl = console.log;
 
 // $(".table-hover tbody tr").click(function(){
