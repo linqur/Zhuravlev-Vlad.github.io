@@ -5,7 +5,9 @@ ul {
   padding-left: 0; }
 
 textarea {
-  position: absolute; }
+  position: absolute;
+  z-index: 1;
+  right: 0; }
 
 #header-fixed-add-filter,
 #header-fixed-people-list,
@@ -238,6 +240,18 @@ table {
   .logo-upload img {
     width: 100%; }
 
+.timeline time {
+  color: #838484;
+  position: absolute;
+  top: 3px;
+  left: 8px; }
+
+.timeline .dropdown-menu li {
+  position: relative; }
+
+.timeline .dropdown-menu a {
+  padding-left: 50px; }
+
 .timeline .btn.title {
   background-color: #798d8f !important;
   border-color: #74898a !important; }
@@ -398,13 +412,7 @@ table {
 .title {
   overflow: auto; }
   .title .active a {
-    background: #ecf0f1; }
-  .title time {
-    float: right;
-    color: #838484;
-    position: absolute;
-    top: 5px;
-    left: 10px; }
+    background: #ecf0f; }
   .title a {
     padding: 5px 15px;
     height: 95px;
@@ -425,7 +433,7 @@ table {
     overflow-y: auto;
     position: relative; }
 
-.control-panel {
+.mCustomScrollbar-content .tab-content {
   width: 1500px; }
 
 .people-list {
@@ -468,6 +476,13 @@ table {
   .share a i {
     font-size: 22px;
     padding-left: 5px; }
+
+.btn-group-justified > .btn,
+.btn-group-justified > .btn-group {
+  width: initial !important; }
+
+.table-people {
+  margin-top: 25px; }
 
 @media (max-width: 1440px) {
   .send {

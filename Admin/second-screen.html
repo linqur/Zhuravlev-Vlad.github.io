@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body class="second-screen">
-<!--  -->
+<!-- Навигация -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -48,11 +48,11 @@
       </ul>
     </div>
   </div>
-</nav><!--  -->
+</nav><!-- Навигация -->
 
+<!-- Правый сайдбар -->
 <aside class="aside-right">
   <div>
-    <!-- Навигация -->
     <ul class="nav nav-tabs" role="tablist">
       <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></li>
       <li class="share right"><a href="#">Share<i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
@@ -112,7 +112,7 @@
       				  </div>
       				</div>
       			</div>
-            <div class="form-group">
+            <div class="form-group col-xs-12">
               <label for="inputMessage" class="col-lg-3 control-label">Message:</label>
               <div class="col-lg-12">
                 <textarea class="form-control" id="inputMessage"></textarea> 
@@ -139,20 +139,11 @@
       </div>
     </div>
   </div>
-</aside>
-
+</aside><!-- Правый сайдбар -->
+<!-- Основной контент -->
 <section class="section-bottom col-xs-12">
+  <!-- Список людей -->
   <div class="people col-sm-3 col-lg-4">
-    <div class="input-group datepicker-period">
-      <input type="text" class="datepicker-here form-control input-sm" data-timepicker="true" id="datepicker-period" placeholder="">
-      <label for="datepicker-period" class="input-group-addon input-sm">
-        <span class="fa fa-calendar"></span>
-      </label>
-    </div>
-    <div class="input-group search-title">
-      <input type="text" class="form-control input-sm" placeholder="Search title">
-      <span class="input-group-addon input-sm"><i class="fa fa-search" aria-hidden="true"></i></span>
-    </div>
     <select class="form-control input-sm" id="select">
       <option>filter</option>
       <option>filter</option>
@@ -160,7 +151,7 @@
       <option>filter</option>
       <option>filter</option>
     </select>
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-people table-hover">
       <thead>
         <tr>
           <th>
@@ -236,9 +227,21 @@
         </tr>
       </tbody>
     </table>
-  </div>
-
+  </div><!-- Список людей -->
+  <!--  -->
   <div class="col-sm-9 col-lg-8 middle-content">
+    <!-- Календарь -->
+    <div class="input-group datepicker-period col-xs-4 right">
+      <input type="text" class="datepicker-here form-control input-sm" data-timepicker="true" id="datepicker-period" placeholder="">
+      <label for="datepicker-period" class="input-group-addon input-sm">
+        <span class="fa fa-calendar"></span>
+      </label>
+    </div><!-- Календарь -->
+    <!-- Поиск по title -->
+    <div class="input-group search-title col-xs-4">
+      <input type="text" class="form-control input-sm" placeholder="Search title">
+      <span class="input-group-addon input-sm"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div><!-- Поиск по title -->
     <!-- Даты -->
     <div class="period btn-group btn-group-justified" role="tablist">
       <a href="#period-1" class="btn btn-primary active" aria-controls="period-1" role="tab" data-toggle="tab">6.01</a>
@@ -249,20 +252,592 @@
       <a href="#period-6" class="btn btn-primary" aria-controls="period-6" role="tab" data-toggle="tab">11.01</a>
       <a href="#period-7" class="btn btn-primary" aria-controls="period-7" role="tab" data-toggle="tab">12.01</a>
     </div><!-- Даты -->
-    <div class="mCustomScrollbar" data-mcs-theme="dark">
+    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
       <div class="mCustomScrollbar-content">
+        <!-- Табы по дням -->
         <div class="tab-content">
+          <!-- таб для 6.01 -->
           <div role="tabpanel" class="tab-pane fade in active" id="period-1">
             <div class="data-overflow">
               <div class="data control-panel">
+                <!-- Часы -->
+                <div class="timeline">
+                  <div class="btn-group btn-group-justified" role="tablist">
+                    <a href="#" class="btn btn-default btn-time btn-sm">8:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">9:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">10:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">11:00</a>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-default btn-time btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        12:00<span class="badge">2</span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#period-1-title-5-1" aria-controls="period-1-title-5-1" role="tab" data-toggle="tab"><time>12:05</time>Опрос 1</a></li>
+                        <li><a href="#period-1-title-5-2" aria-controls="period-1-title-5-2" role="tab" data-toggle="tab"><time>12:25</time>Опрос 2</a></li>
+                       </ul>
+                    </div>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-default btn-time btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        13:00<span class="badge">2</span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#period-1-title-6-1" aria-controls="period-1-title-6-1" role="tab" data-toggle="tab"><time>13:35</time>Опрос 3</a></li>
+                        <li><a href="#period-1-title-6-2" aria-controls="period-1-title-6-2" role="tab" data-toggle="tab"><time>13:59</time>Опрос 4</a></li>
+                       </ul>
+                    </div>
+                    <a href="#" class="btn btn-default btn-time btn-sm">14:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">15:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">16:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">17:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">18:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">19:00</a>
+                    <a href="#" class="btn btn-default btn-time btn-sm">20:00</a>
+                  </div>
+                </div><!-- Часы -->
+                <div role="tabpanel" class="tab-pane fade in active" id="period-1-title-5">
+                  <div class="tab-content">
+                    <!-- 1 опрос -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="period-1-title-5-1">
+                      <table class="table table-striped table-hover">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="none">[&mdash;]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- 1 опрос -->
+                    <!-- 2 опрос -->
+                    <div role="tabpanel" class="tab-pane fade" id="period-1-title-5-2">
+                      <table class="table table-striped table-hover">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="none">[&mdash;]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- 2 опрос -->
+                    <!-- 3 опрос -->
+                    <div role="tabpanel" class="tab-pane fade" id="period-1-title-6-1">
+                      <table class="table table-striped table-hover">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="yes">[Да]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="none">[&mdash;]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- 3 опрос -->
+                    <!-- 4 опрос -->
+                    <div role="tabpanel" class="tab-pane fade" id="period-1-title-6-2">
+                      <table class="table table-striped table-hover">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="yes">[Да]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="none">[&mdash;]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="no">[Нет]</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><p>Lorem ipsum dolor.</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!-- 4 опрос -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- таб для 6.01 -->
+          <!-- таб для 7.01 -->
+          <div role="tabpanel" class="tab-pane fade" id="period-2">
+            <div class="data-overflow">
+              <div class="data control-panel">
+                <!-- Часы -->
                 <div class="timeline">
                   <div class="btn-group btn-group-justified" role="tablist">
                     <a href="#" class="btn btn-default btn-sm">8:00</a>
-                    <a href="#" class="btn btn-default btn-sm">9:00</a>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-default btn-time btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        9:00<span class="badge">2</span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#period-2-title-2-1" aria-controls="period-2-title-2-1" role="tab" data-toggle="tab"><time>9:05</time>Опрос 1</a></li>
+                        <li><a href="#period-2-title-2-2" aria-controls="period-2-title-2-2" role="tab" data-toggle="tab"><time>9:25</time>Опрос 2</a></li>
+                       </ul>
+                    </div>
                     <a href="#" class="btn btn-default btn-sm">10:00</a>
                     <a href="#" class="btn btn-default btn-sm">11:00</a>
-                    <a href="#period-1-title-5" class="btn btn-default btn-sm active" aria-controls="period-1-title-5" role="tab" data-toggle="tab">12:00<span class="badge">2</span></a>
-                    <a href="#period-1-title-6" class="btn btn-default btn-sm" aria-controls="period-1-title-6" role="tab" data-toggle="tab">13:00<span class="badge">4</span></a>
+                    <a href="#" class="btn btn-default btn-sm">12:00</a>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-default btn-time btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        13:00<span class="badge">2</span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#period-2-title-6-1" aria-controls="period-2-title-2-1" role="tab" data-toggle="tab"><time>13:05</time>Опрос 3</a></li>
+                        <li><a href="#period-2-title-6-2" aria-controls="period-2-title-2-2" role="tab" data-toggle="tab"><time>13:25</time>Опрос 4</a></li>
+                       </ul>
+                    </div>
                     <a href="#" class="btn btn-default btn-sm">14:00</a>
                     <a href="#" class="btn btn-default btn-sm">15:00</a>
                     <a href="#" class="btn btn-default btn-sm">16:00</a>
@@ -271,21 +846,12 @@
                     <a href="#" class="btn btn-default btn-sm">19:00</a>
                     <a href="#" class="btn btn-default btn-sm">20:00</a>
                   </div>
-                </div>
+                </div><!-- Часы -->
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="period-1-title-5">
-                    <div class="mCustomScrollbar" data-mcs-theme="dark">
-                      <div class="mCustomScrollbar-content">
-                        <div class="title">
-                          <ul role="tablist">
-                            <li class="active"><a href="#period-1-title-5-1" aria-controls="period-1-title-5-1" role="tab" data-toggle="tab">Lorem ipsum dolor sit amet, consecluptate error animi velit vero. Molestias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-1-title-5-2" aria-controls="period-1-title-5-2" role="tab" data-toggle="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate errornsectetur adipis venia <time>12:05</time></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <div role="tabpanel" class="tab-pane fade in active" id="period-2-title-5">
                     <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="period-1-title-5-1">
+                      <!--1 опрос -->
+                      <div role="tabpanel" class="tab-pane fade in active" id="period-2-title-2-1">
                         <table class="table table-striped table-hover">
                           <tbody>
                             <tr>
@@ -305,10 +871,10 @@
                             </tr>
                             <tr>
                               <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td class="no">[Нет]</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -319,9 +885,6 @@
                               <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="none">[&mdash;]</td>
                               <td></td>
@@ -332,11 +895,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -347,11 +910,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
                               <td></td>
@@ -362,18 +925,6 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -382,8 +933,23 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td></td>
                               <td><p>Lorem ipsum dolor.</p></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -410,424 +976,12 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-1-title-5-2">
+                      </div><!--1 опрос -->
+                      <!--2 опрос -->
+                      <div role="tabpanel" class="tab-pane fade" id="period-2-title-2-2">
                         <table class="table table-striped table-hover">
                           <tbody>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="period-1-title-6">
-                    <div class="mCustomScrollbar" data-mcs-theme="dark">
-                      <div class="mCustomScrollbar-content">
-                        <div class="title">
-                          <ul role="tablist">
-                            <li class="active"><a href="#period-1-title-6-1" aria-controls="period-1-title-6-1" role="tab" data-toggle="tab">Molestias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-1-title-6-2" aria-controls="period-1-title-6-2" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-1-title-6-3" aria-controls="period-1-title-6-3" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-1-title-6-4" aria-controls="period-1-title-6-4" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="period-1-title-6-1">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-1-title-6-2">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-1-title-6-3">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="yes">[Да]</td>
                               <td></td>
@@ -837,288 +991,12 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-1-title-6-4">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="period-2">
-            <div class="data-overflow">
-              <div class="data control-panel">
-                <div class="timeline">
-                  <div class="btn-group btn-group-justified" role="tablist">
-                    <a href="#" class="btn btn-default btn-sm">8:00</a>
-                    <a href="#" class="btn btn-default btn-sm">9:00</a>
-                    <a href="#" class="btn btn-default btn-sm">10:00</a>
-                    <a href="#" class="btn btn-default btn-sm">11:00</a>
-                    <a href="#period-2-title-5" class="btn btn-default btn-sm active" aria-controls="period-2-title-5" role="tab" data-toggle="tab">12:00<span class="badge">2</span></a>
-                    <a href="#period-2-title-6" class="btn btn-default btn-sm" aria-controls="period-2-title-6" role="tab" data-toggle="tab">13:00<span class="badge">4</span></a>
-                    <a href="#" class="btn btn-default btn-sm">14:00</a>
-                    <a href="#" class="btn btn-default btn-sm">15:00</a>
-                    <a href="#" class="btn btn-default btn-sm">16:00</a>
-                    <a href="#" class="btn btn-default btn-sm">17:00</a>
-                    <a href="#" class="btn btn-default btn-sm">18:00</a>
-                    <a href="#" class="btn btn-default btn-sm">19:00</a>
-                    <a href="#" class="btn btn-default btn-sm">20:00</a>
-                  </div>
-                </div>
-
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="period-2-title-5">
-                    <div class="mCustomScrollbar" data-mcs-theme="dark">
-                      <div class="mCustomScrollbar-content">
-                        <div class="title">
-                          <ul role="tablist">
-                            <li class="active"><a href="#period-2-title-5-1" aria-controls="period-2-title-5-1" role="tab" data-toggle="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate errornsectetur adipisicing elit. Id voluptate errornsectetur adipisicing elit. Id voluptate error animi velit vero. Molestias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-2-title-5-2" aria-controls="period-2-title-5-2" role="tab" data-toggle="tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate errornsectetur adipisicing elit. Id voluptate errornsectetur adipisicing elit. Id voluptate error animi velit vero. Molestias dolorum nulla venia <time>12:05</time></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="period-2-title-5-1">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1129,11 +1007,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="none">[&mdash;]</td>
                               <td></td>
@@ -1144,11 +1022,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1159,11 +1037,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
                               <td></td>
@@ -1174,18 +1052,6 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1194,8 +1060,23 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td></td>
                               <td><p>Lorem ipsum dolor.</p></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1222,29 +1103,12 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-2-title-5-2">
+                      </div><!--2 опрос -->
+                      <!--3 опрос -->
+                      <div role="tabpanel" class="tab-pane fade" id="period-2-title-6-1">
                         <table class="table table-striped table-hover">
                           <tbody>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1255,11 +1119,26 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
                               <td></td>
+                              <td class="no">[Нет]</td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td></td>
                               <td class="none">[&mdash;]</td>
                               <td></td>
@@ -1270,11 +1149,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1285,11 +1164,11 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
                               <td></td>
@@ -1300,18 +1179,6 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1320,8 +1187,23 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td></td>
                               <td><p>Lorem ipsum dolor.</p></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1348,299 +1230,13 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="period-2-title-6">
-                    <div class="mCustomScrollbar" data-mcs-theme="dark">
-                      <div class="mCustomScrollbar-content">
-                        <div class="title">
-                          <ul role="tablist">
-                            <li class="active"><a href="#title-6-1" aria-controls="period-2-title-6-1" role="tab" data-toggle="tab">Molestias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-2-title-6-2" aria-controls="period-2-title-6-2" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-2-title-6-3" aria-controls="period-2-title-6-3" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                            <li><a href="#period-2-title-6-4" aria-controls="period-2-title-6-4" role="tab" data-toggle="tab">Lorem ipsias dolorum nulla venia <time>12:05</time></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane fade in active" id="period-2-title-6-1">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                      </div><!--3 опрос -->
+                      <!--4 опрос -->
                       <div role="tabpanel" class="tab-pane fade" id="period-2-title-6-2">
                         <table class="table table-striped table-hover">
                           <tbody>
                             <tr>
                               <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="none">[&mdash;]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-2-title-6-3">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td class="yes">[Да]</td>
                               <td></td>
                               <td></td>
@@ -1649,12 +1245,12 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1664,123 +1260,12 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td><p>Lorem ipsum dolor.</p></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="period-2-title-6-4">
-                        <table class="table table-striped table-hover">
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="no">[Нет]</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="none">[&mdash;]</td>
                               <td></td>
@@ -1790,12 +1275,12 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td class="no">[Нет]</td>
                               <td></td>
@@ -1805,12 +1290,12 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita temporibus, quae ullam doloribus, animi veniam atque quas quidem saepe doloremque, repellat minima quod totam ducimus maiores vero neque ad.</p></td>
                               <td></td>
@@ -1820,17 +1305,6 @@
                               <td></td>
                               <td></td>
                               <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1841,8 +1315,23 @@
                               <td></td>
                               <td></td>
                               <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
                               <td></td>
                               <td><p>Lorem ipsum dolor.</p></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -1868,22 +1357,20 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
+                      </div><!--4 опрос -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div><!-- таб для 7.01 -->
+        </div><!-- Табы по дням -->
       </div>
     </div>
-  </div>
-</section>
+  </div><!--  -->    
+</section><!-- Основной контент -->
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/libs.min.js"></script>
+<script src="js/libs.min.js"></script><!-- jquery|bootstrap|mCustomScrollbar|air-datepicker-master|bootstrap.file-input -->
 <script src="js/common.js"></script>
 </body>
 </html>

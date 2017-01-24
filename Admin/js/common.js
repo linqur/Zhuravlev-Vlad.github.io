@@ -26,10 +26,15 @@ $('.period a').click(function(){
 	$('.period a').removeClass('active');
 	$(this).addClass('active');
 });
-$('.timeline a').click(function(){
-	$('.timeline a').removeClass('active');
+$('.timeline .btn-time').click(function(){
+	$('.timeline .btn-time').removeClass('active');
+	$('.timeline li').removeClass('active');
 	$(this).addClass('active');
 });
+// $('.timeline li ').click(function(){
+// 	$('.timeline li').removeClass('active');
+// 	$(this).addClass('active');
+// });
 
 // Календарь
 $('#datepicker-ask').datepicker({
@@ -139,9 +144,6 @@ $(".checkAll-filter").click(function () {
 		$('.filter-content tr:nth-child('+( index + 1 )+')').find('input').attr('disabled', true);
 	});//END
 //END disabled/enabled input
-
-
-
 // cl = console.log;
 
 // $(".table-hover tbody tr").click(function(){
