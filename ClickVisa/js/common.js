@@ -1,24 +1,49 @@
-$(".btn1").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '0');
-})
-$(".btn2").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '16.66%');
-})
-$(".btn3").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '33.6%');
-})
-$(".btn4").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '50.2%');
-})
-$(".btn5").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '66.9%');
-})
-$(".btn6").click(function(e) {
-  e.preventDefault();
-  $("hr").css('margin-left', '83.6%');
-})
+$.material.init()
+//Маска для телефона
+$(function(){
+  $("#inputTel").mask("+7(999) 999-9999");
+});//Маска для телефона
+// Кастомизация input file
+$('input[type=file]').bootstrapFileInput();
+//END Кастомизация input file
+
+//Индикатор загруженных фотографий
+
+$("input.zagruzit-foto").change(function() {
+  if ($(this).parents('.foto-form_block').find('input.zagruzit-foto').val() != '') {
+
+    $(this).parents('.foto-form_block').addClass('loaded');
+
+  } else {
+
+    $(this).parents('.foto-form_block').removeClass('loaded');
+
+  }
+});
+
+//END Индикатор загруженных фотографий
+
+
+//Подчеркивание активных типов людей
+
+var countType = $('.type-people a').size(),
+    step = 100 / countType;
+
+//ширина линии
+function widthHr(){
+  $('.type-people hr').css('width', step + '%');
+};
+widthHr();//ширина линии
+
+// Двигает линию
+$('.type-people a').click(function(){
+  allType = $( this ).parents('.type-people').find("a"),
+  index = $.inArray( this, allType );
+
+  $('.type-people a:nth-child('+(index + 1)+')')
+    .parents('.type-people')
+    .find('hr')
+    .css('margin-left', index * step + '%');
+});// Двигает линию
+
+//END Подчеркивание активных типов людей

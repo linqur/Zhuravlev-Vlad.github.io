@@ -3,6 +3,18 @@ body {
   position: relative;
   height: 100vh; }
 
+.sticky {
+  position: fixed;
+  z-index: 101; }
+
+.stop {
+  position: relative;
+  z-index: 101; }
+
+#aside1 {
+  position: fixed;
+  z-index: 101; }
+
 input:focus {
   outline: none !important; }
 
@@ -23,15 +35,33 @@ li {
   text-transform: none; }
 
 .file-input-name {
-  float: right;
-  margin: 0;
-  margin-top: 14px; }
+  position: absolute;
+  right: 25px;
+  margin-top: 10px; }
 
 .right {
   float: right; }
 
 .left {
   float: left; }
+
+.form-control,
+.form-group.is-focused .form-control {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#59b75c), to(#59b75c)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
+  background-image: -webkit-linear-gradient(#59b75c, #59b75c), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: linear-gradient(#59b75c, #59b75c), linear-gradient(#d2d2d2, #d2d2d2); }
+
+.form-group.has-error .form-control {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f44336), to(#f44336)), -webkit-gradient(linear, left top, left bottom, from(#f44336), to(#f44336));
+  background-image: -webkit-linear-gradient(#f44336, #f44336), -webkit-linear-gradient(#f44336, #f44336);
+  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#f44336, #f44336); }
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label {
+  color: #59b75c; }
+
+.form-group.is-focused.has-error label.control-label {
+  color: #f44336; }
 
 .first-screen {
   background: #fff;
@@ -251,7 +281,8 @@ nav {
   padding-right: 215px; }
 
 .content-top {
-  margin-bottom: 35px; }
+  background: #eee;
+  z-index: 2; }
 
 .content-top .btn {
   padding-left: 0;
@@ -292,9 +323,9 @@ nav {
 
 hr {
   height: 3px;
+  width: 16.6%;
   background: #6FE37B !important;
   margin-top: 0;
-  width: 16.6%;
   margin-left: 0;
   -webkit-transition: .2s;
   transition: .2s;
@@ -342,7 +373,8 @@ hr {
   -webkit-transition: .2s;
   transition: .2s;
   overflow: hidden;
-  line-height: 45px; }
+  line-height: 45px;
+  position: relative; }
   .foto-form_block:hover {
     -webkit-box-shadow: 1px 4px 13px 0px rgba(0, 0, 0, 0.26);
             box-shadow: 1px 4px 13px 0px rgba(0, 0, 0, 0.26); }
@@ -503,6 +535,14 @@ hr {
   -webkit-transition: margin 0.3s ease-in 0s;
   transition: margin 0.3s ease-in 0s; }
 
+.phone-number label,
+.form-group_email label {
+  color: #fff; }
+
+.phone-number input,
+.form-group_email input {
+  color: #fff !important; }
+
 .mCSB_scrollTools {
   z-index: 4; }
 
@@ -517,7 +557,7 @@ hr {
 
 @media (max-width: 1420px) {
   .content {
-    margin-top: 170px !important;
+    margin-top: 200px !important;
     margin-left: 75px !important;
     margin-right: 215px !important;
     padding-right: 0; } }

@@ -16,8 +16,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="mCustomScrollbar" data-mcs-theme="dark">
-	<div class="container-fluid content2">
+<body>
+	<div class="container-fluid">
 
 		<!-- Навигация  -->
 		<nav class="">
@@ -103,12 +103,12 @@
 	                </div>
 	            </div>
             </div>
-            <div class="question-form_two col-xs-12">
-				<div class="form-group is-empty">
+            <div class="col-xs-12">
+				<div class="form-group is-empty phone-number">
 					<fieldset>
 						<label for="inputTel" class="col-xs-12 control-label">Введите номер телефона</label>
 						<div class="col-xs-12">
-							<input type="tel" class="form-control" id="inputTel" placeholder="+7">
+							<input type="text" class="form-control" id="inputTel" placeholder="+7">
 						</div>
 					</fieldset>
 				</div>
@@ -121,7 +121,7 @@
 					</fieldset>
 				</div>
 				<div class="form-price">
-					<a href="#" class="btn btn-raised btn-success">Оплатить<span>1499<i class="fa fa-rub" aria-hidden="true"></i></span></a>
+					<a href="#" class="btn btn-raised btn-success" data-toggle="modal" data-target="#Modal">Оплатить<span>1499<i class="fa fa-rub" aria-hidden="true"></i></span></a>
 				</div>
 			</div>
 		</aside> --><!-- Форма покупки
@@ -130,7 +130,7 @@
 		<div class="content">
 
 			<!-- Тип людей -->
-			<div class="content-top">
+			<div class="content-top type-people">
 				<div class="btn-group btn-group-justified btn-group-raised">
 				  <a href="#" class="btn1 btn active">Работаю</a>
 				  <a href="#" class="btn2 btn ">Безработный</a>
@@ -148,8 +148,8 @@
 				<!-- Форма загрузки фото -->
 				<div class="foto-form right">
 					<div class="">
-						<div class="foto-form_block loaded">
-							<input class="zagruzit-foto right" aria-hidden="true" type="file" title="Удалить">
+						<div class="foto-form_block">
+							<input class="zagruzit-foto foto-load  right" aria-hidden="true" type="file" title="Загрузить фото">
 							<div class="foto-form_icon">
 								<img src="img/pass.png" alt="">
 								<p>Загранпаспорт</p>
@@ -203,7 +203,6 @@
 					</div>
 				</div><!-- Форма загрузки фото -->
 				<!-- Форма вопросов -->
-
 				<div class="question-form">
 					<!-- Форма вопросов -->
 						<form class="">
@@ -211,8 +210,8 @@
 		  					<div class="togglebutton">
 								<label>Меняли ли вы фамилию?</label>
 								<div class="onoffswitch">
-								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
-								    <label class="onoffswitch-label" for="myonoffswitch" data-toggle="collapse" data-target="#surname" aria-expanded="true">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+								    <label class="onoffswitch-label enable" for="myonoffswitch" data-toggle="collapse" data-target="#surname" aria-expanded="true">
 								        <span class="onoffswitch-inner"></span>
 								        <span class="onoffswitch-switch"></span>
 								    </label>
@@ -229,8 +228,8 @@
 							</div><!-- Вопрос 1 -->
 							<div class="togglebutton">
 								<label>Проживаете по прописке?</label>
-								<div class="onoffswitch enable">
-								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked="">
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2">
 								    <label class="onoffswitch-label" for="myonoffswitch2" data-toggle="collapse" data-target="#address" aria-expanded="true">
 								        <span class="onoffswitch-inner"></span>
 								        <span class="onoffswitch-switch"></span>
@@ -271,7 +270,23 @@
 			</div><!-- Форма вопросов/фотографий -->
 		</div><!--  -->
 	</div>
-
+	<!-- Модалка -->
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="modal-title">Спасибо!</h3>
+				</div>
+				<div class="modal-body">
+					<h4>Мы свяжемся с вами в ближайшее время</h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
@@ -285,15 +300,6 @@
 				});
 	        });
 	    })(jQuery);
-	</script>
-	<script>
-		$('input[type=file]').bootstrapFileInput();
-		$('.file-inputs').bootstrapFileInput();
-	</script>
-	<script type="text/javascript">
-	    $(function () {
-	        $("[rel='tooltip']").tooltip();
-	    });
 	</script>
 </body>
 </html>
