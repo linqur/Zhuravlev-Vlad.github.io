@@ -167,11 +167,8 @@ section {
     margin-top: -1px;
     -webkit-border-radius: 4px;
             border-radius: 4px; }
-    .section-bottom .data-overflow {
-      overflow: auto; }
     .section-bottom .data td, .section-bottom .data th {
       border: 1px solid #dce4ec;
-      max-width: 21px;
       overflow: auto; }
       .section-bottom .data td p, .section-bottom .data th p {
         height: 20.5px;
@@ -324,15 +321,6 @@ table {
 .select-time {
   width: 200px; }
 
-.yes {
-  background: rgba(24, 188, 156, 0.2) !important; }
-
-.no {
-  background: rgba(255, 41, 0, 0.1) !important; }
-
-.none {
-  background: rgba(255, 238, 8, 0.2) !important; }
-
 .filter-list .section-bottom {
   padding-right: 0;
   padding-left: 0; }
@@ -433,9 +421,6 @@ table {
     overflow-y: auto;
     position: relative; }
 
-.mCustomScrollbar-content .tab-content {
-  width: 1500px; }
-
 .people-list {
   -webkit-box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
           box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.26);
@@ -482,7 +467,18 @@ table {
   width: initial !important; }
 
 .table-people {
-  margin-top: 25px; }
+  margin-top: 50px; }
+
+.table-title time {
+  display: block; }
+
+.table-title thead {
+  cursor: pointer; }
+
+.table-title th {
+  max-width: inherit;
+  min-width: 230px;
+  vertical-align: middle !important; }
 
 @media (max-width: 1440px) {
   .send {

@@ -31,6 +31,10 @@ $('.timeline .btn-time').click(function(){
 	$('.timeline li').removeClass('active');
 	$(this).addClass('active');
 });
+$('.table-title th').click(function(){
+	$('.table-title th').removeClass('active');
+	$(this).addClass('active');
+});
 // $('.timeline li ').click(function(){
 // 	$('.timeline li').removeClass('active');
 // 	$(this).addClass('active');
@@ -52,41 +56,6 @@ $(window).on("load",function(){
 		advanced:{ autoScrollOnFocus: false}
 	});
 });// horizontal scrollbar
-
-// Клонирует и фиксирует шапку таблицы
-var tableOffset = $("#filter-content").offset().top;
-var tableOffsetAddFilter = $("#add-filter").offset().top;
-var tableOffsetPeopleList = $("#people-list").offset().top;
-
-var $header = $("#filter-content > thead").clone();
-var $headerAddFilter = $("#add-filter > thead").clone();
-var $headerPeopleList = $("#people-list > thead").clone();
-
-var $fixedHeader = $("#header-fixed").append($header);
-var $fixedHeaderAddFilter = $("#header-fixed-add-filter").append($headerAddFilter);
-var $fixedHeaderPeopleList = $("#header-fixed-people-list").append($headerPeopleList);
-
-$(window).bind("scroll", function() {
-    var offset = $(this).scrollTop();
-    
-    if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
-        $fixedHeader.show();
-    }
-    var offset2 = $(this).scrollTop();
-    
-    if (offset2 >= tableOffsetAddFilter && $fixedHeaderAddFilter.is(":hidden")) {
-        $fixedHeaderAddFilter.show();
-    }
-    var offset3 = $(this).scrollTop();
-    
-    if (offset3 >= tableOffsetPeopleList && $fixedHeaderPeopleList.is(":hidden")) {
-        $fixedHeaderPeopleList.show();
-    }
-    // else if (offset < tableOffset) {
-    //     $fixedHeader.hide();
-    // }
-
-});// Клонирует и фиксирует шапку таблицы
 
 $(".checkAll-filter").click(function () {
      $('.add-filter input:checkbox').not(this).prop('checked', this.checked);
@@ -122,7 +91,7 @@ $(".checkAll-filter").click(function () {
 		$(this).parent('div').parent('th').find('.add-filter_btn').toggle();
 		$('.add-filter input').attr('disabled', true);
 	});//END
-	//Добавление/удаление людей и активирование строки таблицы
+	//Добавление/удаление людей и активирование строки и таблицы
 	$('#people-list .add-filter_btn').click(function(){
 
 		var trs = $( this ).parents('tbody').find(".add-filter_btn"),
@@ -142,8 +111,59 @@ $(".checkAll-filter").click(function () {
 		$(this).parent('div').parent('td').find('.add-filter_btn').toggle();
 		$(this).parents('tr').removeClass('new');
 		$('.filter-content tr:nth-child('+( index + 1 )+')').find('input').attr('disabled', true);
-	});//END
+	});//Добавление/удаление людей и активирование строки и таблицы
+	//Выбор тайтлов в таблице
+	$('.table-title th').click(function() {
+		var tds = $( this ).parents('thead').find("th"),
+	    index = $.inArray( this, tds );
+	    console.log(index);
+		$(".table-title td").css('background', '');
+		$(".table-title td:nth-child("+( index + 1 )+")").css('background', '#f9f9f9');
+		$(".table-title td:nth-child("+( index + 1 )+").yes").css('background', 'rgba(24, 188, 156, 0.2)');
+		$(".table-title td:nth-child("+( index + 1 )+").no").css('background', 'rgba(255, 41, 0, 0.1)');
+		$(".table-title td:nth-child("+( index + 1 )+").none").css('background', 'rgba(255, 238, 8, 0.2)');
+	});//Выбор тайтлов в таблице
+	$('.table-title .new').click(function(){
+		$(this).removeClass('new');
+	});
+	//END
 //END disabled/enabled input
+
+
+// Клонирует и фиксирует шапку таблицы
+var tableOffset = $("#filter-content").offset().top;
+var tableOffsetAddFilter = $("#add-filter").offset().top;
+var tableOffsetPeopleList = $("#people-list").offset().top;
+
+var $header = $("#filter-content > thead").clone();
+var $headerAddFilter = $("#add-filter > thead").clone();
+var $headerPeopleList = $("#people-list > thead").clone();
+
+var $fixedHeader = $("#header-fixed").append($header);
+var $fixedHeaderAddFilter = $("#header-fixed-add-filter").append($headerAddFilter);
+var $fixedHeaderPeopleList = $("#header-fixed-people-list").append($headerPeopleList);
+
+$(window).bind("scroll", function() {
+    var offset = $(this).scrollTop();
+    
+    if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
+        $fixedHeader.show();
+    }
+    var offset2 = $(this).scrollTop();
+    
+    if (offset2 >= tableOffsetAddFilter && $fixedHeaderAddFilter.is(":hidden")) {
+        $fixedHeaderAddFilter.show();
+    }
+    var offset3 = $(this).scrollTop();
+    
+    if (offset3 >= tableOffsetPeopleList && $fixedHeaderPeopleList.is(":hidden")) {
+        $fixedHeaderPeopleList.show();
+    }
+    // else if (offset < tableOffset) {
+    //     $fixedHeader.hide();
+    // }
+
+});// Клонирует и фиксирует шапку таблицы
 // cl = console.log;
 
 // $(".table-hover tbody tr").click(function(){
