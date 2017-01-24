@@ -437,7 +437,7 @@ hr {
 .onoffswitch-inner {
   display: block;
   width: 200%;
-  margin-left: -100%;
+  margin-left: 0%;
   -webkit-transition: margin 0.3s ease-in 0s;
   transition: margin 0.3s ease-in 0s; }
 
@@ -459,6 +459,7 @@ hr {
   content: "Нет";
   padding-left: 8px;
   background-color: #fff;
+  color: #aaa;
   color: #aaa; }
 
 .onoffswitch-inner:after {
@@ -472,11 +473,11 @@ hr {
   display: block;
   width: 22px;
   margin: 0px;
-  background: #fff;
+  background: #ddd;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 41px;
+  right: 0;
   border: 2px solid #eee;
   -webkit-border-radius: 6px;
           border-radius: 6px;
@@ -484,56 +485,11 @@ hr {
   transition: all 0.3s ease-in 0s; }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0; }
-
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
-  background-color: #ddd; }
-
-.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: -55px; }
 
-.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 38px !important;
   background-color: #fff; }
-
-.enable .onoffswitch-switch {
-  right: 0;
-  background: #ddd; }
-
-.enable .onoffswitch-inner:before, .enable .onoffswitch-inner:after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 22px;
-  padding: 0;
-  line-height: 22px;
-  font-size: 14px;
-  color: white;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.enable .onoffswitch-inner:before {
-  content: "Нет";
-  padding-left: 8px;
-  background-color: #fff;
-  color: #aaa; }
-
-.enable .onoffswitch-inner:after {
-  content: "Да";
-  padding-right: 8px;
-  background-color: #6FE37B;
-  color: #fff;
-  text-align: right; }
-
-.enable .onoffswitch-inner {
-  display: block;
-  width: 200%;
-  margin-left: 0%;
-  -webkit-transition: margin 0.3s ease-in 0s;
-  transition: margin 0.3s ease-in 0s; }
 
 .phone-number label,
 .form-group_email label {
