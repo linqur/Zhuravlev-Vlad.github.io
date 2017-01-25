@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  padding-bottom: 80px; }
+
 .container-fluid {
   padding: 0;
   position: relative;
@@ -8,14 +11,13 @@ nav {
   position: fixed;
   max-width: 767px;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
 
 .nav-top {
   background: #000; }
 
 .nav-bottom {
   background: #fff;
-  border-left: 3px solid #6FE37B;
   border-bottom: 1px solid #eee;
   height: 65px; }
 
@@ -29,19 +31,24 @@ nav {
   margin-top: 113px; }
 
 .tip {
-  width: 800px;
   margin-top: 8px; }
+  .tip .btn-group {
+    margin: 0 auto !important; }
 
 .tip .btn {
   padding-left: 0;
   padding-right: 0;
-  margin: 0; }
+  margin: 0;
+  min-width: 130px; }
 
 .tip .btn.active {
   z-index: 0; }
 
 .content-tip {
-  background: #fff; }
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: inset -4px -4px 20px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: inset -4px -4px 20px 0px rgba(0, 0, 0, 0.26); }
 
 .content-tip .btn {
   padding-top: 16px;
@@ -52,6 +59,12 @@ nav {
 
 .left {
   float: left; }
+
+.full-user {
+  border-left: 3px solid #6FE37B; }
+
+.not-full-user {
+  border-left: 3px solid #ddd; }
 
 .user {
   padding: 5px 15px; }
@@ -88,7 +101,7 @@ nav {
   top: 87%; }
 
 .user-progress ul {
-  padding-left: 12px; }
+  padding-left: 15px; }
 
 .user-progress li {
   width: 25px;
@@ -146,6 +159,85 @@ nav {
   border-left: 3px solid #6FE37B;
   padding: 15px; }
 
+.foto-form_block {
+  padding: 15px 20px 15px 10px;
+  background: #fff;
+  margin-bottom: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  overflow: hidden;
+  line-height: 45px;
+  position: relative; }
+
+.loaded {
+  border-left: 5px solid #6FE37B; }
+
+.foto-form_icon img {
+  max-width: 45px;
+  width: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  float: left;
+  margin-right: 5px; }
+
+.foto-form_icon p, .foto-form_icon a {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 16px; }
+
+.foto-form_icon a {
+  font-size: 14px;
+  display: block;
+  line-height: 1; }
+
+.zagruzit-foto {
+  margin-top: 10px; }
+
+.zagruzit-foto {
+  color: #6FE37B !important;
+  font-size: px;
+  margin: 0;
+  padding: 4px;
+  background: none !important;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.file-input-wrapper {
+  text-align: right;
+  float: right;
+  margin-top: 8px; }
+
+.file-input-name {
+  position: absolute;
+  right: 25px;
+  margin-top: 15px; }
+
+.btn-buy {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  z-index: 2; }
+  .btn-buy .btn-success {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    font-size: 18px; }
+    .btn-buy .btn-success span {
+      display: block;
+      font-size: 18px; }
+
+.btn-formalize {
+  float: left; }
+
+.phone-number label,
+.form-group_email label {
+  color: #000;
+  font-size: 18px !important; }
+
 .onoffswitch {
   position: relative;
   width: 60px;
@@ -165,7 +257,7 @@ nav {
 .onoffswitch-inner {
   display: block;
   width: 200%;
-  margin-left: -100%;
+  margin-left: 0%;
   -webkit-transition: margin 0.3s ease-in 0s;
   transition: margin 0.3s ease-in 0s; }
 
@@ -187,6 +279,7 @@ nav {
   content: "Нет";
   padding-left: 8px;
   background-color: #fff;
+  color: #aaa;
   color: #aaa; }
 
 .onoffswitch-inner:after {
@@ -200,11 +293,11 @@ nav {
   display: block;
   width: 22px;
   margin: 0px;
-  background: #fff;
+  background: #ddd;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 41px;
+  right: 0;
   border: 2px solid #eee;
   -webkit-border-radius: 6px;
           border-radius: 6px;
@@ -212,53 +305,8 @@ nav {
   transition: all 0.3s ease-in 0s; }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0; }
-
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
-  background-color: #ddd; }
-
-.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: -55px; }
 
-.enable .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 38px !important;
   background-color: #fff; }
-
-.enable .onoffswitch-switch {
-  right: 0;
-  background: #ddd; }
-
-.enable .onoffswitch-inner:before, .enable .onoffswitch-inner:after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 22px;
-  padding: 0;
-  line-height: 22px;
-  font-size: 14px;
-  color: white;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.enable .onoffswitch-inner:before {
-  content: "Нет";
-  padding-left: 8px;
-  background-color: #fff;
-  color: #aaa; }
-
-.enable .onoffswitch-inner:after {
-  content: "Да";
-  padding-right: 8px;
-  background-color: #6FE37B;
-  color: #fff;
-  text-align: right; }
-
-.enable .onoffswitch-inner {
-  display: block;
-  width: 200%;
-  margin-left: 0%;
-  -webkit-transition: margin 0.3s ease-in 0s;
-  transition: margin 0.3s ease-in 0s; }

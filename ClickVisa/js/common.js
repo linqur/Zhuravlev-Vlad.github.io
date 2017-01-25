@@ -20,7 +20,6 @@ $("input.zagruzit-foto").change(function() {
 
   }
 });
-
 //END Индикатор загруженных фотографий
 
 
