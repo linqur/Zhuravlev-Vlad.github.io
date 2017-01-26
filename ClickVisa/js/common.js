@@ -22,8 +22,12 @@ $("input.zagruzit-foto").change(function() {
 });
 //END Индикатор загруженных фотографий
 
-
 //Подчеркивание активных типов людей
+
+$('.type-people a').click(function(){
+	$('.type-people a').removeClass('active');
+	$(this).addClass('active');
+});
 
 var countType = $('.type-people a').size(),
     step = 100 / countType;
@@ -38,8 +42,8 @@ widthHr();//ширина линии
 $('.type-people a').click(function(){
   allType = $( this ).parents('.type-people').find("a"),
   index = $.inArray( this, allType );
-
-  $('.type-people a:nth-child('+(index + 1)+')')
+  console.log($('.type-people a:nth-child('+(index + 1)+').active'))
+  $('.type-people a:nth-child('+(index + 1)+').active')
     .parents('.type-people')
     .find('hr')
     .css('margin-left', index * step + '%');
