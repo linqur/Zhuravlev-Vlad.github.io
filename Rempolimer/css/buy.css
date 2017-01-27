@@ -9,9 +9,16 @@
 .map-block .dispblock{
 	display: block;
 }
+.map-address h2{
+	margin: 15px 0 0 15px;
+}
+.map-address p{
+	margin-bottom: 5px;
+}
 .map-address h3{
 	font-weight: bold;
 	font-size: 20px;
+	margin-top: 5px;
 }
 .map-address p{
 	font-size: 18px;
@@ -29,10 +36,13 @@
 	margin-bottom: -2px;
 	padding: 15px 17px;
 }
+.sidebar_menu h2{
+	margin: 20px 15px;
+}
 .sidebar_menu .panel-body a{
 	background: inherit;
 	padding: 5px;
-	font-size: 14px;
+	font-size: 18px;
 	color: #2e343b;
 }
 .panel-heading a:focus{
@@ -79,6 +89,19 @@ a[aria-expanded=true]:hover{
 .map-title{
 	background: #000;
 	height: 100px;
+}
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}
+@media (max-width: 1440px){
+	#map-block #YMapsID{
+		height: 400px!important;
+	}
 }
 @media (max-width: 991px){
 	a[aria-expanded=true],
