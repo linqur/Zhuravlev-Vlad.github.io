@@ -107,6 +107,12 @@ table {
   margin-left: 0 !important;
   margin-right: 0 !important; }
 
+.authorization input {
+  margin-bottom: 25px; }
+
+.authorization-btn {
+  font-size: 18px; }
+
 .send {
   position: absolute;
   right: 0;
