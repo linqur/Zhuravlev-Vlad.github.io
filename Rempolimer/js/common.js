@@ -1,6 +1,5 @@
 ;var cl = console.log;
 
-
 YMaps.jQuery(function () {
 
   var map          = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]),
@@ -105,7 +104,7 @@ YMaps.jQuery(function () {
             map.panTo(geoPoint, {flying: 1});
             return false;
         }).end().appendTo(menuContainer);
-
+        map.addControl(new YMaps.Zoom());
       })(item, destinations[item])
 
     }
@@ -272,7 +271,7 @@ YMaps.jQuery(function () {
             }).end().appendTo(menuContainer);
       })(item, destinations16[item])
     }
-     var menuContainer = YMaps.jQuery('#mapMenu17 ul');
+    var menuContainer = YMaps.jQuery('#mapMenu17 ul');
     for (var item in destinations17) {
       (function (title, geoPoint) {     
             num++;
@@ -282,7 +281,7 @@ YMaps.jQuery(function () {
             }).end().appendTo(menuContainer);
       })(item, destinations17[item])
     }
-     var menuContainer = YMaps.jQuery('#mapMenu18 ul');
+    var menuContainer = YMaps.jQuery('#mapMenu18 ul');
     for (var item in destinations18) {
       (function (title, geoPoint) {     
             num++;
@@ -300,61 +299,59 @@ YMaps.jQuery(function () {
 
     var Data = {
           // Алтайский край
-          1:{coord:[60.3015200, 55.1677807],descr:'ИП Слукин П.В. «Русские краски»'},
+          1:{coord:[60.3015200, 55.1677807]},
           
           // Липецкая область
-          2:{coord:[33.3055779999997, 59.91815363876071],descr:'ИП Слукин П. В. «Русские краски»'},
-          3:{coord:[33.3055779999997, 59.91815363876071],descr:'ИП Слукин П. В. «Русский Мастер»'},
+          2:{coord:[33.3055779999997, 59.91815363876071]},
+          3:{coord:[33.3055779999997, 59.91815363876071]},
 
           // Москва
-          4:{coord:[61.37696469, 55.15683683],descr:'ООО «МИКСЭЛ»'},
+          4:{coord:[61.37696469, 55.15683683]},
           // Архангельская область
-          5:{coord:[33.3055779999997, 59.91815363876071],descr:'ИП Федорова  У.В.'},
+          5:{coord:[33.3055779999997, 59.91815363876071]},
           // Ленинградская область
-          6:{coord:[-1.1420950000004564, 51.48265070696638],descr:'ООО «Колор Эксперт»'},
+          6:{coord:[-1.1420950000004564, 51.48265070696638]},
           // Волгоградская область
-          7:{coord:[64.40181027, 55.1478582],descr:'ИП Шестакова И.П./ООО "АВТОКОЛОР"'},
+          7:{coord:[64.40181027, 55.1478582]},
           // Краснодарский край
-          8:{coord:[-1.1420955000004564, 51.4826570696638],descr:'ИП Криворогова И.И.'},
+          8:{coord:[-1.1420955000004564, 51.4826570696638]},
           // Республика Крым
-          9:{coord:[71.3015000, 55.16677807],descr:'ИП Бедрик Д.В.'},
+          9:{coord:[71.3015000, 55.16677807]},
           // Ростовская область
-          10:{coord:[71.3015000, 55.16677807],descr:'ИП Логвинов А.И.'},
+          10:{coord:[71.3015000, 55.16677807]},
 
-          11:{coord:[71.3015000, 55.16677807],descr:'ООО «Rempolimer»'},
+          11:{coord:[71.3015000, 55.16677807]},
           // Пермская область
-          12:{coord:[60.3015200, 55.1677807],descr:'ООО «Фора»'},
+          12:{coord:[60.3015200, 55.1677807]},
           // Курганская область
-          13:{coord:[61.37696469, 55.15683683],descr:'ИП Кильдяев И.А.'},
+          13:{coord:[61.37696469, 55.15683683]},
           // Челябинская область
-          14:{coord:[33.3055779999997, 59.91815363876071],descr:'ИП Кильдяев И.А.'},
+          14:{coord:[33.3055779999997, 59.91815363876071]},
           // Новосибирская область
-          15:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «ТД Сибирь»'},
+          15:{coord:[33.3055779999997, 59.91815363876071]},
           // Омская область
-          16:{coord:[61.37696469, 55.15683683],descr:'ИП Самойлович С.А.'},
+          16:{coord:[61.37696469, 55.15683683]},
           // Бурятия
-          17:{coord:[-1.1420950000004564, 51.48265070696638],descr:'ИП Кузьмин А.В'},
+          17:{coord:[-1.1420950000004564, 51.48265070696638]},
 
 
-          18:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          19:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          20:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          21:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          22:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          23:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          24:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          25:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          26:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'},
-          27:{coord:[33.3055779999997, 59.91815363876071],descr:'ООО «Rempolimer»'}
+          18:{coord:[33.3055779999997, 59.91815363876071]},
+          19:{coord:[33.3055779999997, 59.91815363876071]},
+          20:{coord:[33.3055779999997, 59.91815363876071]},
+          21:{coord:[33.3055779999997, 59.91815363876071]},
+          22:{coord:[33.3055779999997, 59.91815363876071]},
+          23:{coord:[33.3055779999997, 59.91815363876071]},
+          24:{coord:[33.3055779999997, 59.91815363876071]},
+          25:{coord:[33.3055779999997, 59.91815363876071]},
+          26:{coord:[33.3055779999997, 59.91815363876071]},
+          27:{coord:[33.3055779999997, 59.91815363876071]}
         };
 
     for( p in Data ) {
       if(  Data[p].coord[0] != undefined &&  Data[p].coord[0] != undefined ) {
 
         placemark = new YMaps.Placemark(new YMaps.GeoPoint( Data[p].coord[0], Data[p].coord[1]), {style:s} );
-        placemark.description = Data[p].descr;
         map.addOverlay( placemark );
-
       }
     }
 
@@ -363,27 +360,27 @@ YMaps.jQuery(function () {
 });
 
 // Активная метка
-YMaps.jQuery(function() {
+// YMaps.jQuery(function() {
 
-  YMaps.jQuery('.YMaps-placemark').each(function(i, item) {
+//   YMaps.jQuery('.YMaps-placemark').each(function(i, item) {
 
-    YMaps.jQuery('#collapse-group ul li a')[i].conformityElement = YMaps.jQuery(item);
+//     YMaps.jQuery('#collapse-group ul li a')[i].conformityElement = YMaps.jQuery(item);
 
-  });
+//   });
 
-  YMaps.jQuery('#collapse-group ul li a').click(function () {
+//   YMaps.jQuery('#collapse-group ul li a').click(function () {
 
-    YMaps.jQuery('#collapse-group ul li a').each(function (i, item) {
-      item.conformityElement.children().attr('src', 'img/mark2.png');
-      item.conformityElement.css({'z-index' : '100'})
-    });
+//     YMaps.jQuery('#collapse-group ul li a').each(function (i, item) {
+//       item.conformityElement.children().attr('src', 'img/mark2.png');
+//       item.conformityElement.css({'z-index' : '100'})
+//     });
 
-    this.conformityElement.children().attr('src', 'img/mark.png');
-    this.conformityElement.css({'z-index' : '999'})
+//     this.conformityElement.children().attr('src', 'img/mark.png');
+//     this.conformityElement.css({'z-index' : '999'})
 
-  })
+//   })
 
-});
+// });
 
 // Фокус первого элемента
 YMaps.jQuery(function () {
@@ -664,4 +661,40 @@ function Ascroll() {
     a.children[0].style.width = getComputedStyle(a, '').width
   }, false);
 }
-})()
+})();
+// setTimeout(function(){
+//   console.log($('.sidebar_menu .panel-body').find('a'));
+//   $('.menu_icon').on('click', function(){
+//     console.log($('.sidebar_menu .panel-body').find('a'));
+//     $('.menu-mobile--itself').toggleClass('show');
+//   });
+
+//   $('.sidebar_menu .panel-body a').on('click', function(){
+//     console.log('sefsefsefsefse');
+//     $('.menu-mobile--itself').toggleClass('show')
+//   });
+// },1000);
+
+var test = false
+
+$('.menu_icon').on('click', function(){
+  $('.menu-mobile--itself').toggleClass('show');
+});
+$('.menu_icon-close').on('click', function(){
+  $('.menu-mobile--itself').toggleClass('show');
+});
+
+$('.panel-title-link').on('click', function(){
+  if(test === false){
+
+    $('.sidebar_menu .panel-body a').on('click', function(){
+      $('.menu-mobile--itself').toggleClass('show')
+    });
+    test = true;
+  }
+
+});
+
+
+
+

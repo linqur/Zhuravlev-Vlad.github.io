@@ -3,6 +3,19 @@
 	margin-left: 0px;
 	margin-right: 0;
 }
+.menu_icon-close,
+.menu_icon{
+	font-size: 24px;
+	display: none;
+	cursor: pointer;
+}
+.menu_icon-close{
+	color: #fff;
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	z-index: 1000
+}
 .map-block .display{
 	display: none;
 }
@@ -104,6 +117,35 @@ a[aria-expanded=true]:hover{
 	}
 }
 @media (max-width: 991px){
+	.buy .sidebar{
+		padding-right: 0;
+	}
+	.buy .panel-title-link{
+		color: #fff;
+	}
+	.buy .panel-title-link:hover{
+		background: #d9dee2 !important;
+		color: #000
+	}
+	.menu_icon-close,
+	.menu_icon{
+		display: block
+	}
+	.menu-mobile--itself{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		-webkit-transform: translateX(-100%);
+		      transform: translateX(-100%);
+		-webkit-transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s;
+		transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s;
+	}
+	.menu-mobile--itself.show {
+	  -webkit-transform: translateX(0);
+	          transform: translateX(0);
+	}
+
 	a[aria-expanded=true],
 	.panel-title a[aria-expanded=true]:hover,
 	.panel-body {
@@ -116,7 +158,7 @@ a[aria-expanded=true]:hover{
 	}
 	.panel-title a[aria-expanded=true]{
 	background: #59687A;
-}
+	}
 	.panel-default>.panel-heading{
 		background: #909cab;
 	}
@@ -130,7 +172,8 @@ a[aria-expanded=true]:hover{
 		border-radius: 10px;
 		margin: 0 5px;
 	}
-	.panel-body a{
+	.panel-body a,
+	.panel-body p{
 		color: #fff!important;
 	}
 	.panel-collapse{

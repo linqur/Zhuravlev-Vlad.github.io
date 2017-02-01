@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/scaffolding.css" rel="stylesheet">
     <link href="css/buy.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
@@ -21,10 +22,13 @@
     <![endif]-->
   </head>
   <body id="app" onload="init()">
-    <div class="content">
+    <div class="content buy">
 		<div class="container">
-			<div class="sidebar" id="article">
+			<div class="sidebar menu-mobile--itself" id="article">
 				<div class="sidebar_menu"> 
+					<div class="menu_icon-close">
+						<i class="fa fa-close" aria-hidden="true"></i>
+					</div>
 					<div class="panel-group" id="collapse-group">
 						<h2>Россия</h2>
 						<div class="panel panel-default">
@@ -309,6 +313,9 @@
 				<div class="text">
 					<h1>ГДЕ КУПИТЬ ?</h1>
 				</div> 
+				<div class="menu_icon">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
 				<div class="map-address" id="aside1">
 					<div class="contacts-block row tab-content">
 
@@ -747,6 +754,7 @@
                 s.iconStyle = new YMaps.IconStyle();
                 s.iconStyle.size = new YMaps.Point(54, 54);
                 s.iconStyle.href = 'img/mark2.png';
+                s.hasBalloon = false;
     </script>
   </body>
 </html>
