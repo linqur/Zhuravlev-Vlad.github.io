@@ -19,7 +19,7 @@ YMaps.jQuery(function () {
         '<p>ИП Федорова  У.В.</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071),
         // Ленинградская область
         '<p>ООО «Колор Эксперт»</p>' : new YMaps.GeoPoint(-1.1420950000004564, 51.48265070696638)
-      };
+      },
       destinations3 = {//Южный федеральный округ
         // Волгоградская область
         '<p>ИП Шестакова И.П./ООО "АВТОКОЛОР"</p>' : new YMaps.GeoPoint(64.40181027, 55.1478582),
@@ -29,21 +29,21 @@ YMaps.jQuery(function () {
         '<p>ИП Бедрик Д.В.</p>' : new YMaps.GeoPoint(71.3015000, 55.16677807),
         // Ростовская область
         '<p>ИП Логвинов А.И</p>' : new YMaps.GeoPoint(71.3015000, 55.16677807)
-      };
+      },
       destinations4 = {//Северо-Кавказский федеральный округ
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations5 = {//Приволжский федеральный округ
         // Пензенская область
         // Пермская область
         '<p>ООО «Фора»</p>' : new YMaps.GeoPoint(60.3015200, 55.1677807)
-      };
+      },
       destinations6 = {//Уральский федеральный округ
         // Курганская область
         // '<p>ИП Кильдяев И.А.</p>' : new YMaps.GeoPoint(61.37696469, 55.15683683),
         // Челябинская область
         '<p>ИП Кильдяев И.А.</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations7 = {//Сибирский федеральный округ
         // Новосибирская область
         '<p>ООО «ТД Сибирь»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071),
@@ -53,40 +53,98 @@ YMaps.jQuery(function () {
         '<p>ИП Кузьмин А.В.</p>' : new YMaps.GeoPoint(-1.1420950000004564, 51.48265070696638),
         // Томская область
         // '<p>ООО «ТД Сибирь»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations8 = {//Дальневосточный федеральный округ
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations9 = {//Азербайджан
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations10 = {//Армения
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations11 = {//Белоруссия
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations12 = {//Казахстан
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations13 = {//Киргизия
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations14 = {//Молдавия
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations15 = {//Таджикистан
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations16 = {//Туркмения
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations17 = {//Узбекистан
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
-      };
+      },
       destinations18 = {//Украина
         '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(33.3055779999997, 59.91815363876071)
       };
+
+      var Data = {
+          // Алтайский край
+          1:{coord:[60.3015200, 55.1677807]},
+          
+          // Липецкая область
+          2:{coord:[33.3055779999997, 59.91815363876071]},
+          3:{coord:[33.3055779999997, 59.91815363876071]},
+
+          // Москва
+          4:{coord:[61.37696469, 55.15683683]},
+          // Архангельская область
+          5:{coord:[33.3055779999997, 59.91815363876071]},
+          // Ленинградская область
+          6:{coord:[-1.1420950000004564, 51.48265070696638]},
+          // Волгоградская область
+          7:{coord:[64.40181027, 55.1478582]},
+          // Краснодарский край
+          8:{coord:[-1.1420955000004564, 51.4826570696638]},
+          // Республика Крым
+          9:{coord:[71.3015000, 55.16677807]},
+          // Ростовская область
+          10:{coord:[71.3015000, 55.16677807]},
+
+          11:{coord:[71.3015000, 55.16677807]},
+          // Пермская область
+          12:{coord:[60.3015200, 55.1677807]},
+          // Курганская область
+          13:{coord:[61.37696469, 55.15683683]},
+          // Челябинская область
+          14:{coord:[33.3055779999997, 59.91815363876071]},
+          // Новосибирская область
+          15:{coord:[33.3055779999997, 59.91815363876071]},
+          // Омская область
+          16:{coord:[61.37696469, 55.15683683]},
+          // Бурятия
+          17:{coord:[-1.1420950000004564, 51.48265070696638]},
+
+
+          18:{coord:[33.3055779999997, 59.91815363876071]},
+          19:{coord:[33.3055779999997, 59.91815363876071]},
+          20:{coord:[33.3055779999997, 59.91815363876071]},
+          21:{coord:[33.3055779999997, 59.91815363876071]},
+          22:{coord:[33.3055779999997, 59.91815363876071]},
+          23:{coord:[33.3055779999997, 59.91815363876071]},
+          24:{coord:[33.3055779999997, 59.91815363876071]},
+          25:{coord:[33.3055779999997, 59.91815363876071]},
+          26:{coord:[33.3055779999997, 59.91815363876071]},
+          27:{coord:[33.3055779999997, 59.91815363876071]}
+        };
+
+    for( p in Data ) {
+      if(  Data[p].coord[0] != undefined &&  Data[p].coord[0] != undefined ) {
+
+        placemark = new YMaps.Placemark(new YMaps.GeoPoint( Data[p].coord[0], Data[p].coord[1]), {style:s} );
+        map.addOverlay( placemark );
+      }
+    }
 
 
 
@@ -291,72 +349,6 @@ YMaps.jQuery(function () {
             }).end().appendTo(menuContainer);
       })(item, destinations18[item])
     }
-
-
-
-
-
-
-    var Data = {
-          // Алтайский край
-          1:{coord:[60.3015200, 55.1677807]},
-          
-          // Липецкая область
-          2:{coord:[33.3055779999997, 59.91815363876071]},
-          3:{coord:[33.3055779999997, 59.91815363876071]},
-
-          // Москва
-          4:{coord:[61.37696469, 55.15683683]},
-          // Архангельская область
-          5:{coord:[33.3055779999997, 59.91815363876071]},
-          // Ленинградская область
-          6:{coord:[-1.1420950000004564, 51.48265070696638]},
-          // Волгоградская область
-          7:{coord:[64.40181027, 55.1478582]},
-          // Краснодарский край
-          8:{coord:[-1.1420955000004564, 51.4826570696638]},
-          // Республика Крым
-          9:{coord:[71.3015000, 55.16677807]},
-          // Ростовская область
-          10:{coord:[71.3015000, 55.16677807]},
-
-          11:{coord:[71.3015000, 55.16677807]},
-          // Пермская область
-          12:{coord:[60.3015200, 55.1677807]},
-          // Курганская область
-          13:{coord:[61.37696469, 55.15683683]},
-          // Челябинская область
-          14:{coord:[33.3055779999997, 59.91815363876071]},
-          // Новосибирская область
-          15:{coord:[33.3055779999997, 59.91815363876071]},
-          // Омская область
-          16:{coord:[61.37696469, 55.15683683]},
-          // Бурятия
-          17:{coord:[-1.1420950000004564, 51.48265070696638]},
-
-
-          18:{coord:[33.3055779999997, 59.91815363876071]},
-          19:{coord:[33.3055779999997, 59.91815363876071]},
-          20:{coord:[33.3055779999997, 59.91815363876071]},
-          21:{coord:[33.3055779999997, 59.91815363876071]},
-          22:{coord:[33.3055779999997, 59.91815363876071]},
-          23:{coord:[33.3055779999997, 59.91815363876071]},
-          24:{coord:[33.3055779999997, 59.91815363876071]},
-          25:{coord:[33.3055779999997, 59.91815363876071]},
-          26:{coord:[33.3055779999997, 59.91815363876071]},
-          27:{coord:[33.3055779999997, 59.91815363876071]}
-        };
-
-    for( p in Data ) {
-      if(  Data[p].coord[0] != undefined &&  Data[p].coord[0] != undefined ) {
-
-        placemark = new YMaps.Placemark(new YMaps.GeoPoint( Data[p].coord[0], Data[p].coord[1]), {style:s} );
-        map.addOverlay( placemark );
-      }
-    }
-
-
-
 });
 
 // Активная метка
@@ -397,172 +389,25 @@ YMaps.jQuery(function () {
 // Табы
 var tabLinks = new Array();
 var contentDivs = new Array();
-
 function init() {
 
-  var tabListItems = document.getElementById('tabs0').childNodes;
-  for ( var i = 0; i < tabListItems.length; i++ ) {
-    if ( tabListItems[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
+  var tabListItems = "",
+      numberID = 0,
+      sizeTabs = $('.buy .sidebar_menu .panel-body').length;
 
-  var tabListItems1 = document.getElementById('tabs1').childNodes;
-  for ( var i = 0; i < tabListItems1.length; i++ ) {
-    if ( tabListItems1[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems1[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
+  for(all = 0; all < sizeTabs; all++){
+
+    window['tabListItems' + all] = document.getElementById('tabs' + numberID).childNodes;
+      for ( var i = 0; i < window['tabListItems' + all].length; i++ ) {
+        if (window['tabListItems' + all][i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( window['tabListItems' + all][i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }  
+    numberID++;
   }
-  var tabListItems2 = document.getElementById('tabs2').childNodes;
-  for ( var i = 0; i < tabListItems2.length; i++ ) {
-    if ( tabListItems2[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems2[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems3 = document.getElementById('tabs3').childNodes;
-  for ( var i = 0; i < tabListItems3.length; i++ ) {
-    if ( tabListItems3[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems3[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems4 = document.getElementById('tabs4').childNodes;
-  for ( var i = 0; i < tabListItems4.length; i++ ) {
-    if ( tabListItems4[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems4[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems5 = document.getElementById('tabs5').childNodes;
-  for ( var i = 0; i < tabListItems5.length; i++ ) {
-    if ( tabListItems5[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems5[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems6 = document.getElementById('tabs6').childNodes;
-  for ( var i = 0; i < tabListItems6.length; i++ ) {
-    if ( tabListItems6[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems6[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems7 = document.getElementById('tabs7').childNodes;
-  for ( var i = 0; i < tabListItems7.length; i++ ) {
-    if ( tabListItems7[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems7[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-   var tabListItems8 = document.getElementById('tabs8').childNodes;
-  for ( var i = 0; i < tabListItems8.length; i++ ) {
-    if ( tabListItems8[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems8[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems9 = document.getElementById('tabs9').childNodes;
-  for ( var i = 0; i < tabListItems9.length; i++ ) {
-    if ( tabListItems9[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems9[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems10 = document.getElementById('tabs10').childNodes;
-  for ( var i = 0; i < tabListItems10.length; i++ ) {
-    if ( tabListItems10[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems10[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems11 = document.getElementById('tabs11').childNodes;
-  for ( var i = 0; i < tabListItems11.length; i++ ) {
-    if ( tabListItems11[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems11[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems12 = document.getElementById('tabs12').childNodes;
-  for ( var i = 0; i < tabListItems12.length; i++ ) {
-    if ( tabListItems12[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems12[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems13 = document.getElementById('tabs13').childNodes;
-  for ( var i = 0; i < tabListItems13.length; i++ ) {
-    if ( tabListItems13[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems13[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems14 = document.getElementById('tabs14').childNodes;
-  for ( var i = 0; i < tabListItems14.length; i++ ) {
-    if ( tabListItems14[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems14[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems15 = document.getElementById('tabs15').childNodes;
-  for ( var i = 0; i < tabListItems15.length; i++ ) {
-    if ( tabListItems15[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems15[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems16 = document.getElementById('tabs16').childNodes;
-  for ( var i = 0; i < tabListItems16.length; i++ ) {
-    if ( tabListItems16[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems16[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }
-  var tabListItems17 = document.getElementById('tabs17').childNodes;
-  for ( var i = 0; i < tabListItems17.length; i++ ) {
-    if ( tabListItems17[i].nodeName == "LI" ) {
-      var tabLink = getFirstChildWithTagName( tabListItems17[i], 'A' );
-      var id = getHash( tabLink.getAttribute('href') );
-      tabLinks[id] = tabLink;
-      contentDivs[id] = document.getElementById( id );
-    }
-  }//END Табы
   var i = 0;
 
   for ( var id in tabLinks ) {
@@ -573,8 +418,6 @@ function init() {
     i++;
 
   }
-
-  // Hide all content divs except the first
   var i = 0;
 
   for ( var id in contentDivs ) {
