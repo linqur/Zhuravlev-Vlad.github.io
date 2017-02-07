@@ -6,86 +6,86 @@ YMaps.jQuery(function () {
       destinations = {//Центральный федеральный округ
         // Белгородская область
         // Воронежская область
-        '<p>Воронежская область</p>' : new YMaps.GeoPoint(39.135372747885185, 51.70219273608626), //1 +
+        'Воронежская область' : new YMaps.GeoPoint(39.135372747885185, 51.70219273608626), //1 +
         // Курская область
         // Липецкая область
-        '<p>Липецкая область «Русские краски»</p>' : new YMaps.GeoPoint(39.614714575796484, 52.670171919172354), //2 +
-        '<p>Липецкая область «Русский Мастер»</p>' : new YMaps.GeoPoint(39.54269099999999, 52.615601), //3 +
+        'Липецкая область «Русские краски»' : new YMaps.GeoPoint(39.614714575796484, 52.670171919172354), //2 +
+        'Липецкая область «Русский Мастер»' : new YMaps.GeoPoint(39.54269099999999, 52.615601), //3 +
         // Москва
-        '<p>Московская область</p>' : new YMaps.GeoPoint(37.64938832883604, 55.8166567071817) //4 +
+        'Московская область' : new YMaps.GeoPoint(37.64938832883604, 55.8166567071817) //4 +
       },
       destinations2 = {//Северо-Западный федеральный округ
         // Архангельская область
-        '<p>Архангельская область</p>' : new YMaps.GeoPoint(40.55047194841006, 64.55231377992278), //5 +
+        'Архангельская область' : new YMaps.GeoPoint(40.55047194841006, 64.55231377992278), //5 +
         // Ленинградская область
-        '<p>Ленинградская область</p>' : new YMaps.GeoPoint(30.47629900000004, 59.88898099999999) //6 +
+        'Ленинградская область' : new YMaps.GeoPoint(30.47629900000004, 59.88898099999999) //6 +
       },
       destinations3 = {//Южный федеральный округ
         // Волгоградская область
-        '<p>Волгоградская область</p>' : new YMaps.GeoPoint(39.844405999999935, 59.20937), //7 +
+        'Волгоградская область' : new YMaps.GeoPoint(39.844405999999935, 59.20937), //7 +
         // Краснодарский край
-        '<p>Краснодарский край</p>' : new YMaps.GeoPoint(38.10503300000005, 45.2446089), //8 +
+        'Краснодарский край' : new YMaps.GeoPoint(38.10503300000005, 45.2446089), //8 +
         // Республика Крым
-        '<p>Республика Крым</p>' : new YMaps.GeoPoint(34.13044189709774, 44.95748070480722), //9 +
+        'Республика Крым' : new YMaps.GeoPoint(34.13044189709774, 44.95748070480722), //9 +
         // Ростовская область
-        '<p>Ростовская область</p>' : new YMaps.GeoPoint(39.61404790000006, 47.21977400000001) //10 +
+        'Ростовская область' : new YMaps.GeoPoint(39.61404790000006, 47.21977400000001) //10 +
       },
       destinations4 = {//Северо-Кавказский федеральный округ
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(41.96834590219123, 45.045481122513856) //11 -
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(41.96834590219123, 45.045481122513856) //11 -
       },
       destinations5 = {//Приволжский федеральный округ
         // Пензенская область
         // Пермская область
-        '<p>Пермская область</p>' : new YMaps.GeoPoint(56.03722348576662, 58.041030294928795) //12 +
+        'Пермская область' : new YMaps.GeoPoint(56.03722348576662, 58.041030294928795) //12 +
       },
       destinations6 = {//Уральский федеральный округ
         // Курганская область
         // '<p>ИП Кильдяев И.А.</p>' : new YMaps.GeoPoint(37.64938832883604, 55.8166567071817),
         // Челябинская область
-        '<p>Челябинская область</p>' : new YMaps.GeoPoint(40.55047194840995, 64.55231838996178) //13 -
+        'Челябинская область' : new YMaps.GeoPoint(40.55047194840995, 64.55231838996178) //13 -
       },
       destinations7 = {//Сибирский федеральный округ
         // Новосибирская область
-        '<p>Новосибирская область</p>' : new YMaps.GeoPoint(82.85270500000001, 54.95514000000001), //14 +
+        'Новосибирская область' : new YMaps.GeoPoint(82.85270500000001, 54.95514000000001), //14 +
         // Омская область
-        '<p>Омская область</p>' : new YMaps.GeoPoint(73.40142400000002, 55.029065), //15 +
+        'Омская область' : new YMaps.GeoPoint(73.40142400000002, 55.029065), //15 +
         // Бурятия
-        '<p>Бурятия</p>' : new YMaps.GeoPoint(107.61627099999998, 51.810935), //16 +
+        'Бурятия' : new YMaps.GeoPoint(107.61627099999998, 51.810935), //16 +
         // Томская область
         // '<p>ООО «ТД Сибирь»</p>' : new YMaps.GeoPoint(40.55047194840995, 64.55231838996178)
       },
       destinations8 = {//Дальневосточный федеральный округ
-        '<p>Якутская область</p>' : new YMaps.GeoPoint(129.67547450000006, 62.0354523) //17 +
+        'Якутская область' : new YMaps.GeoPoint(129.67547450000006, 62.0354523) //17 +
       },
       destinations9 = {//Азербайджан
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(49.86709240000005, 40.40926169999999) //18 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(49.86709240000005, 40.40926169999999) //18 +
       },
       destinations10 = {//Армения
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(44.499102900000025, 40.1791857) //19 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(44.499102900000025, 40.1791857) //19 +
       },
       destinations11 = {//Белоруссия
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(27.561524400000053, 53.90453979999999) //20 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(27.561524400000053, 53.90453979999999) //20 +
       },
       destinations12 = {//Казахстан
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(71.4703558, 51.16052269999999) //21 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(71.4703558, 51.16052269999999) //21 +
       },
       destinations13 = {//Киргизия
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(74.56976170000007, 42.8746212) //22 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(74.56976170000007, 42.8746212) //22 +
       },
       destinations14 = {//Молдавия
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(28.86381030000007, 47.0104529) //23 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(28.86381030000007, 47.0104529) //23 +
       },
       destinations15 = {//Таджикистан
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(68.78703840000003, 38.5597722) //24 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(68.78703840000003, 38.5597722) //24 +
       },
       destinations16 = {//Туркмения
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(58.32606290000001, 37.9600766) //25 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(58.32606290000001, 37.9600766) //25 +
       },
       destinations17 = {//Узбекистан
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(69.24007340000003, 41.2994958) //26 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(69.24007340000003, 41.2994958) //26 +
       },
       destinations18 = {//Украина
-        '<p>ООО «Rempolimer»</p>' : new YMaps.GeoPoint(30.523400000000038, 50.4501) //27 +
+        'ООО «Rempolimer»' : new YMaps.GeoPoint(30.523400000000038, 50.4501) //27 +
       };
 
       var Data = {
@@ -158,7 +158,7 @@ YMaps.jQuery(function () {
 
 
 
-    map.setCenter(destinations['<p>Воронежская область</p>'], 14);
+    map.setCenter(destinations['Воронежская область'], 14);
     // Центральный федеральный округ
     var menuContainer = YMaps.jQuery('#mapMenu ul');
     var num = 0;
@@ -181,7 +181,7 @@ YMaps.jQuery(function () {
     for (var item in destinations2) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -193,7 +193,7 @@ YMaps.jQuery(function () {
     for (var item in destinations3) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -205,7 +205,7 @@ YMaps.jQuery(function () {
     for (var item in destinations4) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -217,7 +217,7 @@ YMaps.jQuery(function () {
     for (var item in destinations5) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -229,7 +229,7 @@ YMaps.jQuery(function () {
     for (var item in destinations6) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -241,7 +241,7 @@ YMaps.jQuery(function () {
     for (var item in destinations7) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -253,7 +253,7 @@ YMaps.jQuery(function () {
     for (var item in destinations8) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -263,7 +263,7 @@ YMaps.jQuery(function () {
     for (var item in destinations9) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -273,7 +273,7 @@ YMaps.jQuery(function () {
     for (var item in destinations10) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -283,7 +283,7 @@ YMaps.jQuery(function () {
     for (var item in destinations11) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -293,7 +293,7 @@ YMaps.jQuery(function () {
     for (var item in destinations12) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -303,7 +303,7 @@ YMaps.jQuery(function () {
     for (var item in destinations13) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -313,7 +313,7 @@ YMaps.jQuery(function () {
     for (var item in destinations14) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -323,7 +323,7 @@ YMaps.jQuery(function () {
     for (var item in destinations15) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -333,7 +333,7 @@ YMaps.jQuery(function () {
     for (var item in destinations16) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -343,7 +343,7 @@ YMaps.jQuery(function () {
     for (var item in destinations17) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);
@@ -353,7 +353,7 @@ YMaps.jQuery(function () {
     for (var item in destinations18) {
       (function (title, geoPoint) {     
             num++;
-            YMaps.jQuery('<li><a href=\"#tab' + num + '\"' + item + '</a></li>').find('a').click(function () {
+            YMaps.jQuery('<li><a href=\"#tab' + num + '\">' + item + '</a></li>').find('a').click(function () {
                 map.panTo(geoPoint, {flying: 1});
                 return false;
             }).end().appendTo(menuContainer);

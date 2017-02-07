@@ -25,16 +25,15 @@
 .map-address h2{
 	margin: 15px 0 0 15px;
 }
-.map-address p{
-	margin-bottom: 5px;
-}
 .map-address h3{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 5px;
+	margin-bottom: 0;
 }
 .map-address p{
-	font-size: 18px;
+	font-size: 16px;
+	margin-bottom: 5px;
 }
 .panel-heading{
 	padding: 0!important;
@@ -54,7 +53,7 @@
 }
 .sidebar_menu .panel-body a{
 	background: inherit;
-	padding: 5px;
+	padding: 10px 5px;
 	font-size: 18px;
 	color: #2e343b;
 }
