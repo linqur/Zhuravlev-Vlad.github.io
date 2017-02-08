@@ -365,6 +365,18 @@ table {
 .information .btn {
   padding: 5px 10px; }
 
+.userName-input,
+.editbot-btn-close {
+  display: none; }
+
+.user-new .userName-input,
+.user-new .editbot-btn-close {
+  display: block; }
+
+.user-new .editbot-btn-open,
+.user-new .userName-link {
+  display: none; }
+
 .btn-accept-group {
   display: none;
   width: 74px; }

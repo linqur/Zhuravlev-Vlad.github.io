@@ -74,7 +74,29 @@ $(".checkAll-filter").click(function () {
 	$('.table-title .new').click(function(){
 		$(this).removeClass('new');
 	});
-// Клонирует и фиксирует шапку таблицы
+
+	
+$('.editbot-btn-open').click(function(){
+
+	$(this).toggle();
+	$(this).siblings('.editbot-btn-close').toggle();
+	$(this).parent().parent().find('.userName-link').toggle();
+	$(this).parent().parent().find('.userName-input').toggle();
+	$(this).parents('tbody').find('input').removeAttr('disabled');
+});
+
+$('.editbot-btn-save').click(function(){
+
+	$(this).parents('.editbot-btn-close').toggle();
+
+	$(this).parent().parent().parent().find('.userName-link').toggle();
+	$(this).parent().parent().parent().find('.userName-input').toggle();
+
+	$(this).parent().parent().find('.editbot-btn-open').toggle();
+	$(this).parents('tbody').find('input').attr('disabled', true);
+
+});
+	// Клонирует и фиксирует шапку таблицы
 var tableOffset = $("#filter-content").offset().top;
 var tableOffsetAddFilter = $("#add-filter").offset().top;
 var tableOffsetPeopleList = $("#people-list").offset().top;
@@ -161,6 +183,7 @@ $(window).bind("scroll", function() {
 	});//Добавление/удаление людей и активирование строки и таблицы
 	//END
 //END disabled/enabled input
+
 // cl = console.log;
 
 // $(".table-hover tbody tr").click(function(){

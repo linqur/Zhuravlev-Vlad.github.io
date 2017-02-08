@@ -83,67 +83,96 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>
-              <a href="second-screen.html">Name (Главный админ)</a>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
-              </div>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="password" class="form-control input-sm" id="inputPassword" placeholder="Password">
-              </div>
-            </td>
-            <td>
-              <a href="second-screen.html" class="btn btn-primary btn-sm">Изменить</a>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              <a href="second-screen.html">Менеджер 1</a>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
-              </div>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="password" class="form-control input-sm" id="inputPassword" placeholder="Password">
-              </div>
-            </td>
-            <td>
-              <a href="second-screen.html" class="btn btn-primary btn-sm">Изменить</a>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              <div class="form-group">
-                 <input type="text" class="form-control input-sm" id="inputPassword" placeholder="Name">
-              </div>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
-              </div>
-            </td>
-            <td>
-              <div class="form-group">
-                 <input type="password" class="form-control input-sm" id="inputPassword" placeholder="Password">
-              </div>
-            </td>
-            <td>
-              <a href="second-screen.html" class="btn btn-primary btn-sm">Сохранить</a>
-            </td>
-          </tr>
-        </tbody>
+        <form action="">
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="second-screen.html" class="userName-link">Name (Главный админ)</a>
+                <div class="form-group userName-input">
+                   <input type="text" class="form-control input-sm" id="botName" value="Name (Главный админ)" disabled>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="text" class="form-control input-sm" id="inputLogin" value="Login" disabled>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="password" class="form-control input-sm" id="inputPassword" value="Password" disabled>
+                </div>
+              </td>
+              <td>
+                  <a href="#" class="btn btn-primary btn-sm editbot-btn-open">Изменить</a>
+                  <div class="editbot-btn-close">
+                    <a href="#" class="btn btn-primary btn-sm editbot-btn editbot-btn-save">Сохранить</a>
+                    <a href="#" class="btn btn-default btn-sm editbot-btn">Удалить</a>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </form>
+        <form action="">
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>
+                <a href="second-screen.html" class="userName-link">Менеджер 1</a>
+                <div class="form-group userName-input">
+                   <input type="text" class="form-control input-sm" id="botName" value="Менеджер 1" disabled>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="text" class="form-control input-sm" id="inputLogin" value="Login" disabled>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="password" class="form-control input-sm" id="inputPassword" value="Password" disabled>
+                </div>
+              </td>
+              <td>
+                <a href="#" class="btn btn-primary btn-sm editbot-btn-open">Изменить</a>
+                <div class="editbot-btn-close">
+                  <a href="#" class="btn btn-primary btn-sm editbot-btn editbot-btn-save">Сохранить</a>
+                  <a href="#" class="btn btn-default btn-sm editbot-btn">Удалить</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </form>
+        <form action="">
+          <tbody class="user-new">
+            <tr>
+              <td>3</td>
+              <td>
+                <a href="second-screen.html" class="userName-link">Менеджер 2</a>
+                <div class="form-group userName-input">
+                   <input type="text" class="form-control input-sm" id="botName" placeholder="name">
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="text" class="form-control input-sm" id="inputLogin" placeholder="Login">
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                   <input type="password" class="form-control input-sm" id="inputPassword" placeholder="Password">
+                </div>
+              </td>
+              <td>
+                  <a href="#" class="btn btn-primary btn-sm editbot-btn-open">Изменить</a>
+                  <div class="editbot-btn-close">
+                    <a href="#" class="btn btn-primary btn-sm editbot-btn editbot-btn-save">Сохранить</a>
+                    <a href="#" class="btn btn-default btn-sm editbot-btn">Удалить</a>
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </form>
       </table>
       <div class="add">
         <a href="#" class="btn btn-success btn-sm">
