@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>Magic Service</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -31,7 +31,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-top_link">
-					<li><a href="#">О компании</a></li>
+					<li><a href="about-company.html">О компании</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Сервис</a></li>
@@ -49,15 +49,15 @@
 <nav class="navbar-bottom">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="logo left col-md-4 col-sm-5">
-				<a href="/">
+			<div class="logo left col-md-4 col-sm-5 col-xs-12">
+				<a href="index.html">
 					<img src="img/logo.png" alt="magic service" class="left">
 					<h3>Всё для уборки<br>и соблюдения<br>норм гигиены</h3>
 				</a>
 			</div>
-			<div class="navbar-bottom_btn-group col-md-8 col-sm-7">
-				<a href="#" class="navbar-bottom_btn-blue feedback_btn"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>Обратная связь</span></a>
-				<a href="#" class="navbar-bottom_btn-blue request-a-call_btn"><i class="fa fa-phone" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>Заказать звонок</span></a>
+			<div class="navbar-bottom_btn-group col-md-8 col-sm-7 col-xs-12">
+				<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-envelope-o" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Обратная связь</span><span class="btn-bg"></span></a>
+				<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-phone" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Заказать звонок</span><span class="btn-bg"></span></a>
 				<a href="#" class="navbar-bottom_btn basket_btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Корзина</span></a>
 				<a href="#" class="navbar-bottom_btn entrance_btn"><i class="fa fa-user" aria-hidden="true"></i><span>Вход</span></a>
 				<form class="navbar-bottom_search right">
@@ -65,12 +65,12 @@
 						<span class="tcon-search__item" aria-hidden="true"></span>
 						<span class="tcon-visuallyhidden">toggle search</span>
 					</label>
-				    <input id="search" type="text" class="form-control" name="search" placeholder="search">
-				    <!-- <label for="search" class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></label> -->
+				    <input id="search" type="text" class="form-control" name="search" placeholder="Поиск">
 				</form>
 			</div>
 		</div>
 	</div>
+	<div class="bg-nav"></div>
 </nav>
 <div class="container-fluid hidden-xs">
 	<div class="row">
@@ -98,10 +98,10 @@
 				</ol>
 			</div><!-- Хлебные крошки -->
 			<div class="col-md-5 col-xs-12">
-				<div id='carousel-custom' class='carousel slide card-product_slide' data-ride='carousel'>
+				<div id='carousel-custom' class='carousel slide carousel-fade card-product_slide' data-ride='carousel'>
 				    <div class='carousel-outer'>
 				        <!-- me art lab slider -->
-				        <div class='carousel-inner '>
+				        <div class='carousel-inner'>
 				            <div class='item active'>
 				                <img src="img/product.jpg" alt=''>
 				            </div>
@@ -137,11 +137,13 @@
 					<div class="col-md-10 col-xs-12">
 						<div class="number">
 							<p>Количество</p>
-		                    <span class="minus">-</span>
-		                    <input type="text" value="2" size="2">
-		                    <span class="plus">+</span>
+							<div class="btn-group btn-group-justified">
+			                    <span class="minus">-</span>
+			                    <input type="text" value="1" size="2">
+			                    <span class="plus">+</span>
+			                </div>
 						</div>
-						<a href="#" class="btn-basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
+						<a href="basket.html" class="btn-basket btn-green"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
 					</div>
 					<div class="download-doc col-xs-12">
 						<a href="svedenija_o_produkcii.rar"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>сведения о продукции</a>
@@ -156,20 +158,171 @@
 					<li><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">Отзывы<span>(3)</span></a></li>
 				</ul>
 			</div>
-			<div class="col-md-8 col-xs-12">
+			<div class="card-product_tabs-content col-md-8 col-xs-12">
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="description">
 						<p>Диспенсеры серии Tork Image Design обладают уникальными характеристиками: 1) Сочетание нержавеющей стали и пластика обеспечивает надежность и легкость диспенсеров. 2) На поверхности не остается отпечатков пальцев и мыльных разводов. 3) Два режима работы замка: закрывается на ключ или работает как кнопка. 4) Смотровые окошки для быстрого контроля наличия расходного материала.</p>
+						<ul>
+							<li><span>Полистовой отбор обеспечивает высокий уровень гигиены и экономичное использование</span></li>
+							<li><span>Высокая вместимость и индикатор расхода рулона гарантируют, что полотенца всегда будут в наличии</span></li>
+							<li><span>Возможность настроить автоматическую подачу после отбора предыдущего листа или сенсорную подачу</span></li>
+							<li><span>Индикатор расхода элементов питания вовремя сообщит о необходимости замены</span></li>
+						</ul>
 					</div>
-					<div role="tabpanel" class="tab-pane" id="characteristics">2</div>
-					<div role="tabpanel" class="tab-pane" id="reviews">3</div>
+					<div role="tabpanel" class="tab-pane" id="characteristics">
+						<table class="table table-hover">
+							<tr>
+								<th colspan="2">Характеристика 1</th>
+							</tr>
+							<tr>
+								<td>Тип</td>
+								<td>Диспенсер для полотенец</td>
+							</tr>
+							<tr>
+								<td>Модель</td>
+								<td>Huawei Honor 5A</td>
+							</tr>
+							<tr>
+								<td>Год релиза</td>
+								<td>2016</td>
+							</tr>
+							<tr>
+								<th colspan="2">Характеристика 2</th>
+							</tr>
+							<tr>
+								<td>Тип</td>
+								<td>Диспенсер для полотенец</td>
+							</tr>
+							<tr>
+								<td>Модель</td>
+								<td>Huawei Honor 5A</td>
+							</tr>
+							<tr>
+								<td>Год релиза</td>
+								<td>2016</td>
+							</tr>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="reviews">
+						<div class="row">
+							<div class="reviews col-xs-12">
+								<div class="row">
+									<div class="col-xs-12 header-reviews">
+										<div class="user-reviews"><span><i class="fa fa-user" aria-hidden="true"></i>Иванов Иван</span></div>
+									</div>
+									<div class="col-xs-12">
+										<h4>Достоинства:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus, cum ipsa dignissimos fugit veritatis, nulla in animi dolorem ipsum repellendus perferendis? Inventore eum consequatur voluptatem rerum itaque velit quos.</p>
+									</div>
+									<div class="col-xs-12">
+										<h4>Недостатки:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudia</p>
+									</div>
+									<div class="col-xs-12">
+										<h4>Комментарий:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudis? Inventore eum consequatur voluptatem rerum itaque velit quos.</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews col-xs-12">
+								<div class="row">
+									<div class="col-xs-12 header-reviews">
+										<div class="user-reviews"><span><i class="fa fa-user" aria-hidden="true"></i>Петров Петр</span></div>
+									</div>
+									<div class="col-xs-12">
+										<h4>Достоинства:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus, cum ipsa dignissimos fugit veritatis, nulla in animi dolorem ipsum repellendus perferendis? Inventore eum consequatur voluptatem rerum itaque velit quos.</p>
+									</div>
+									<div class="col-xs-12">
+										<h4>Недостатки:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minus, cum ipsa dignissimos fugit veritatis, nulla in animi dolorem ipsum repellendus perferendis? Inventore eum consequatur voluptatem rerum itaque velit quos.</p>
+									</div>
+									<div class="col-xs-12">
+										<h4>Комментарий:</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudis? Inventore eum consequatur voluptatem rerum itaque velit quos.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 show-all">
+								<a href="#" class="btn btn-default btn-lg btn-block">Показать все</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<section class="compatible-products">
+				<div class="col-xs-12">
+					<h2 class="section-title">Совместимые продукты</h2>
+				</div>
+				<div class="col-xs-12">
+					<div class="wrapper">
+						<div class="wrapper_content">
+							<div class="product">
+								<figure>
+									<a href="">
+										<img src="img/product.jpg" alt="">
+									</a>
+									<figcaption>
+										<a href="">Tork Matic® диспенсер для полотенец в рулонах с сенсором Intuition®, 551100</a>
+										<div class="price"><p><span>16 197</span>руб.</p></div>
+										<div class="btn-basket-block">
+											<a href="basket.html" class="btn-basket btn-green"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="product">
+								<figure>
+									<a href="">
+										<img src="img/product.jpg" alt="">
+									</a>
+									<figcaption>
+										<a href="">Tork Matic® диспенсер для полотенец в рулонах с сенсором Intuition®, 551100</a>
+										<div class="price"><p><span>16 197</span>руб.</p></div>
+										<div class="btn-basket-block">
+											<a href="basket.html" class="btn-basket btn-green"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="product">
+								<figure>
+									<a href="">
+										<img src="img/product.jpg" alt="">
+									</a>
+									<figcaption>
+										<a href="">Tork Matic® диспенсер для полотенец в рулонах с сенсором Intuition®, 551100</a>
+										<div class="price"><p><span>16 197</span>руб.</p></div>
+										<div class="btn-basket-block">
+											<a href="basket.html" class="btn-basket btn-green"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="product">
+								<figure>
+									<a href="">
+										<img src="img/product.jpg" alt="">
+									</a>
+									<figcaption>
+										<a href="">Tork Matic® диспенсер для полотенец в рулонах с сенсором Intuition®, 551100</a>
+										<div class="price"><p><span>16 197</span>руб.</p></div>
+										<div class="btn-basket-block">
+											<a href="basket.html" class="btn-basket btn-green"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>В корзину</span></a>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 </article>
 
 <footer class="footer">
+	<div class="bg-footer"></div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-sm-4 col-xs-12">
@@ -184,7 +337,7 @@
 			<div class="col-md-2 col-sm-2 col-xs-5 section">
 				<h4>Разделы</h4>
 				<ul>
-					<li><a href="" class="section_link">О компании</a></li>
+					<li><a href="about-company.html" class="section_link">О компании</a></li>
 					<li><a href="" class="section_link">Сервис</a></li>
 					<li><a href="" class="section_link">Доставка</a></li>
 					<li><a href="" class="section_link">Оплата</a></li>

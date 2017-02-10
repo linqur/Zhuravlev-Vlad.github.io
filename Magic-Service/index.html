@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>Magic Service</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -31,7 +31,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-top_link">
-					<li><a href="#">О компании</a></li>
+					<li><a href="about-company.html">О компании</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Сервис</a></li>
@@ -49,15 +49,19 @@
 <nav class="navbar-bottom">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="logo left col-md-4 col-sm-5">
+			<div class="logo left col-md-4 col-sm-5 col-xs-12">
 				<a href="index.html">
 					<img src="img/logo.png" alt="magic service" class="left">
 					<h3>Всё для уборки<br>и соблюдения<br>норм гигиены</h3>
 				</a>
 			</div>
-			<div class="navbar-bottom_btn-group col-md-8 col-sm-7">
-				<a href="#" class="navbar-bottom_btn-blue feedback_btn"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>Обратная связь</span></a>
-				<a href="#" class="navbar-bottom_btn-blue request-a-call_btn"><i class="fa fa-phone" aria-hidden="true"></i><span class="navbar-bottom_btn--pipe">|</span><span>Заказать звонок</span></a>
+			<div class="navbar-bottom_btn-group col-md-8 col-sm-7 col-xs-12">
+
+
+				<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-envelope-o" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Обратная связь</span><span class="btn-bg"></span></a>
+
+				<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-phone" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Заказать звонок</span><span class="btn-bg"></span></a>
+
 				<a href="#" class="navbar-bottom_btn basket_btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Корзина</span></a>
 				<a href="#" class="navbar-bottom_btn entrance_btn"><i class="fa fa-user" aria-hidden="true"></i><span>Вход</span></a>
 				<form class="navbar-bottom_search right">
@@ -65,12 +69,12 @@
 						<span class="tcon-search__item" aria-hidden="true"></span>
 						<span class="tcon-visuallyhidden">toggle search</span>
 					</label>
-				    <input id="search" type="text" class="form-control" name="search" placeholder="search">
-				    <!-- <label for="search" class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></label> -->
+				    <input id="search" type="text" class="form-control" name="search" placeholder="Поиск">
 				</form>
 			</div>
 		</div>
 	</div>
+	<div class="bg-nav"></div>
 </nav>
 <div class="container-fluid">
 	<div class="row">
@@ -86,7 +90,7 @@
 	</div>
 </div>
 <header class="header">
-	<div id="carousel" class="carousel slide header-carusel" data-ride="carousel" data-interval="false">
+	<div id="carousel" class="carousel slide carousel-fade header-carusel" data-ride="carousel" data-interval="false">
 		<ol class="carousel-indicators header-indicators">
 			<li data-target="#carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel" data-slide-to="1"></li>
@@ -97,7 +101,7 @@
 			<div class="header-item header-item-1 item active">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-7">
+						<div class="col-md-7 col-xs-12">
 							<div class="header-item_title">
 								<hgroup>
 									<h2>Сушилка для рук</h2>
@@ -106,16 +110,17 @@
 								</hgroup>
 							</div>
 						</div>
-						<div class="col-md-7">
+						<div class="col-md-7 col-xs-12">
 							<div class="price left"><span>7 100</span>Руб.</div>
-							<a href="#" class="navbar-bottom_btn-blue more_btn"><span>Подробнее</span></a>
+							<!-- <a href="#" class="navbar-bottom_btn-blue more_btn"><span>Подробнее</span></a> -->
+							<a href="#" class="btn-ms btn-blue-green more_btn"><span class="btn-text">Подробнее</span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="header-item header-item-1 item">
 				<div class="container-fluid">
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="header-item_title">
 							<hgroup>
 								<h2>Сушилка для рук</h2>
@@ -124,15 +129,15 @@
 							</hgroup>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="price left"><span>7 100</span>Руб.</div>
-						<a href="#" class="navbar-bottom_btn-blue more_btn"><span>Подробнее</span></a>
+						<a href="#" class="btn-ms btn-blue-green more_btn"><span class="btn-text">Подробнее</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="header-item header-item-1 item">
 				<div class="container-fluid">
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="header-item_title">
 							<hgroup>
 								<h2>Сушилка для рук</h2>
@@ -141,15 +146,15 @@
 							</hgroup>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="price left"><span>7 100</span>Руб.</div>
-						<a href="#" class="navbar-bottom_btn-blue more_btn"><span>Подробнее</span></a>
+						<a href="#" class="btn-ms btn-blue-green more_btn"><span class="btn-text">Подробнее</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="header-item header-item-1 item">
 				<div class="container-fluid">
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="header-item_title">
 							<hgroup>
 								<h2>Сушилка для рук</h2>
@@ -158,9 +163,9 @@
 							</hgroup>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-12">
 						<div class="price left"><span>7 100</span>Руб.</div>
-						<a href="#" class="navbar-bottom_btn-blue more_btn"><span>Подробнее</span></a>
+						<a href="#" class="btn-ms btn-blue-green more_btn"><span class="btn-text">Подробнее</span></a>
 					</div>
 				</div>
 			</div>
@@ -257,6 +262,7 @@
 </aside>
 
 <footer class="footer">
+	<div class="bg-footer"></div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-sm-4 col-xs-12">
@@ -271,7 +277,7 @@
 			<div class="col-md-2 col-sm-2 col-xs-5 section">
 				<h4>Разделы</h4>
 				<ul>
-					<li><a href="" class="section_link">О компании</a></li>
+					<li><a href="about-company.html" class="section_link">О компании</a></li>
 					<li><a href="" class="section_link">Сервис</a></li>
 					<li><a href="" class="section_link">Доставка</a></li>
 					<li><a href="" class="section_link">Оплата</a></li>
