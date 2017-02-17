@@ -51,11 +51,12 @@ var StickyElement = function(node){
   
   $(window).on('scroll', onScroll);
 };
+var stickyNavbar = new StickyElement($('#sticky-navbar'));
 //END Фиксирует сайдбар
 
 
 // Не скрывать раскрывающееся мень при нажатии во внутрь
-$('ul.dropdown-menu.subcategory').on('click', function(event){
+$('.dropdown-menu.subcategory').on('click', function(event){
     var events = $._data(document, 'events') || {};
     events = events.click || [];
     for(var i = 0; i < events.length; i++) {
