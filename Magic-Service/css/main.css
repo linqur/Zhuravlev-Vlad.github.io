@@ -111,8 +111,8 @@ h5 {
   font-size: 14px;
   font-family: 'OpenSans-Bold';
   position: relative;
-  -webkit-box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.5);
-          box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.5);
+  -webkit-box-shadow: 4px 4px 7px rgba(160, 160, 160, 0.5);
+          box-shadow: 4px 4px 7px rgba(160, 160, 160, 0.5);
   -webkit-transition: 0s;
   transition: 0s; }
   .btn-ms:hover {
@@ -367,7 +367,7 @@ a:hover {
   .navbar-bottom_search {
     position: absolute !important;
     right: 0;
-    top: -14px;
+    top: -11px;
     padding-right: 0; }
     .navbar-bottom_search input {
       width: 0px !important;
