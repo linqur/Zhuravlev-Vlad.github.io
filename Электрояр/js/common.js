@@ -64,10 +64,15 @@ $('#select-product').on('rendered.bs.select', function (e) {
   $('#select-product a[data-tokens="reference"]').click(function(){
     $('#reference-form').css('display', 'block');
     $('#normal-form').css('display', 'none');
+    $('#product-etalon-form').css('display', 'none');
   });
   $('#select-product a[data-tokens="normal"]').click(function(){
     $('#normal-form').css('display', 'block');
     $('#reference-form').css('display', 'none');
+    $('#product-etalon-form').css('display', 'none');
   });
-
+  $('#select-product--etalon a').click(function(){
+    $('#product-etalon-form').css('display', 'block');
+    $('#Name-product').val($(this).text());
+  });
 });

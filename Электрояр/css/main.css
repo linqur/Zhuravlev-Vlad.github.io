@@ -19,11 +19,17 @@ button, button:active, button:focus {
   position: relative;
   margin: 0 auto; }
 
+.right {
+  float: right; }
+
 .container-absolute {
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0; }
+
+img.logo-company {
+  width: 60px; }
 
 .sticky-content.fixed {
   position: fixed;
@@ -503,6 +509,10 @@ table {
   margin-top: 30px;
   margin-bottom: 0; }
 
+.modifications {
+  color: #aaa;
+  font-size: 20px; }
+
 .price {
   font-size: 18px;
   font-weight: bold;
@@ -788,7 +798,8 @@ table {
           box-shadow: none; }
 
 #normal-form,
-#reference-form {
+#reference-form,
+#product-etalon-form {
   display: none; }
 
 @media only screen and (min-width: 580px) {
