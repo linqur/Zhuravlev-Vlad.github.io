@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>NewsMaker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container-fluid container-fluid_navbar">
+		<!-- Навигация -->
+		<nav class="navbar-top navbar navbar-default">
+			<div class="container-fluid">
+				<div class=" col-md-7 col-sm-12">
+					<div class="row">
+						<div class="navbar-header col-md-8 col-sm-9 col-xs-7">
+							<a class="navbar-brand logo" href="#">News <span>Maker</span></a>
+						</div>
+
+						<div class="all-private--p col-sm-4 col-sm-3 col-xs-5">
+							<div class="all-private">
+								<a href="#" class="all"><span></span>все</a>
+								<a href="#" class="private active"><span></span>личное</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<div class="col-md-5 col-sm-12 col-xs-12">
+					<div class="">
+						<div class="nav navbar-nav_search col-md-5 col-sm-5 col-xs-12">
+							<div class="input-group search search--p">
+								<span class="input-group-btn">
+								<button class="btn" type="button"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+								</span>
+								<input type="text" class="form-control search_input">
+							</div>
+						</div>
+
+						<div class="nav navbar-nav_user col-md-7 col-sm-7 col-xs-12">
+							<a href="#" class="add-new add-new--p">
+								<i class="fa fa-plus" aria-hidden="true"></i>Добавить новость
+							</a>
+							<div class="user">
+								<a href="#" class="user-ava dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="user-caret"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><span>Win: </span>37%</a></li>
+									<li><a href="#" class="money-icon"><span></span>16.6k</a></li>
+									<li><a href="#">больше</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<nav class="navbar navbar-bottom navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bottom" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-bottom">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Все</a></li>
+						<li><a href="#">Спорт</a></li>
+						<li class="active"><a href="#">Наука</a></li>
+						<li><a href="#">Общество</a></li>
+						<li><a href="#">Шоу-бизнес</a></li>
+						<li><a href="#">Политика</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav><!-- Навигация -->
+	</div>
+	
+	<header>
+		<div class="container-fluid carousel-header">
+			<!-- Слайдер -->
+			<div id="carousel-header" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<!-- <ol class="carousel-indicators">
+					<li data-target="carousel-header" data-slide-to="0" class="active"></li>
+					<li data-target="carousel-header" data-slide-to="1"></li>
+					<li data-target="carousel-header" data-slide-to="2"></li>
+					<li data-target="carousel-header" data-slide-to="3"></li>
+				</ol> -->
+			
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-1.jpg) no-repeat 100% 0">
+					 	<div class="row">
+					 		<div class="col-md-4 col-sm-9 col-xs-12">
+					 			<h3>Solutions by design</h3>
+					 			<p>What a difference. They look likecompletely different sneakers. When it comes to footwear, I’m not against velvet slippers.</p>
+					 			<a href="" class="btn btn-create btn-create--p">Создать пари</a>
+					 		</div>
+					 	</div>
+					</div>
+					
+					<div class="item" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-2.png) no-repeat 100% 0">
+					 	<div class="row">
+					 		<div class="col-md-4 col-sm-9 col-xs-12">
+					 			<h3>Solutions by design</h3>
+					 			<p>What a difference. They look likecompletely different sneakers. When it comes to footwear, I’m not against velvet slippers.</p>
+					 			<a href="" class="btn btn-create btn-create--p">Создать пари</a>
+					 		</div>
+					 	</div>
+					</div>
+
+					<div class="item" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-3.jpg) no-repeat 100% 0">
+					 	<div class="row">
+					 		<div class="col-md-4 col-sm-9 col-xs-12">
+					 			<h3>Solutions by design</h3>
+					 			<p>What a difference. They look likecompletely different sneakers. When it comes to footwear, I’m not against velvet slippers.</p>
+					 			<a href="" class="btn btn-create btn-create--p">Создать пари</a>
+					 		</div>
+					 	</div>
+					</div>
+				</div>
+			
+				<!-- Left and right controls -->
+				<!-- <a class="left carousel-control" href="#carousel-header" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a> -->
+			</div><!-- Слайдер -->
+		</div>
+	</header>
+
+	<article>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 title">
+					<h2>Проголосуй сейчас</h2>
+				</div>
+				<div class="col-md-5 col-xs-12 vote-left">
+					<div id="collapse-group">
+						<div class="panel js--vote-panel active">
+							<div class="panel-heading">
+								<h4 class="panel-title vote-title js--vote-title">
+									<a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Отнимут ли квартиру за перепланировку</a>
+								</h4>
+								<ul class="vote-info">
+									<li class="vote-chips"><span></span>10</li>
+									<li class="vote-time"><span></span>26ч</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-users"><span></span>300</li>
+								</ul>
+							</div>
+							<div id="el1" class="vote-content panel-collapse collapse in">
+								<div class="panel-body">Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры в доме, в которой была сделана незаконная перепланировка. Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры.
+									<p class="author">автор: <span class="name">Scott Nash</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="panel js--vote-panel">
+							<div class="panel-heading">
+								<h4 class="panel-title vote-title js--vote-title">
+									<a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Отнимут ли квартиру за перепланировку</a>
+								</h4>
+								<ul class="vote-info">
+									<li class="vote-chips"><span></span>10</li>
+									<li class="vote-time"><span></span>26ч</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-users"><span></span>300</li>
+								</ul>
+							</div>
+							<div id="el2" class="vote-content panel-collapse collapse">
+								<div class="panel-body">Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры в доме, в которой была сделана незаконная перепланировка. Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры.
+									<p class="author">автор: <span class="name">Scott Nash</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="panel js--vote-panel">
+							<div class="panel-heading">
+								<h4 class="panel-title vote-title js--vote-title">
+									<a data-toggle="collapse" data-parent="#collapse-group" href="#el3">Отнимут ли квартиру за перепланировку</a>
+								</h4>
+								<ul class="vote-info">
+									<li class="vote-chips"><span></span>10</li>
+									<li class="vote-time"><span></span>26ч</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-users"><span></span>300</li>
+								</ul>
+							</div>
+							<div id="el3" class="vote-content panel-collapse collapse">
+								<div class="panel-body">Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры в доме, в которой была сделана незаконная перепланировка. Головинский районный суд Москвы удовлетворил иск Мосжилинспекции о продаже с торгов квартиры.
+									<p class="author">автор: <span class="name">Scott Nash</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-xs-12">
+					<div class="vote-right active">
+						<div class="what-happens col-md-6 col-sm-8 col-xs-12">
+							<div class="what-happens_title">
+								<h5>Что произойдет за неделю?</h5>
+							</div>
+							<div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<div class="what-happens_content">
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+								</div>
+							</div>
+							<div class="what-happens_all-variant">
+								<p>показано <span>3</span> варианта из <span>9</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="vote-right">
+						<div class="what-happens col-md-6 col-sm-8 col-xs-12">
+							<div class="what-happens_title">
+								<h5>Что произойдет за неделю?</h5>
+							</div>
+							<div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<div class="what-happens_content">
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+								</div>
+							</div>
+							<div class="what-happens_all-variant">
+								<p>показано <span>3</span> варианта из <span>9</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="vote-right">
+						<div class="what-happens col-md-6 col-sm-8 col-xs-12">
+							<div class="what-happens_title">
+								<h5>Что произойдет за неделю?</h5>
+							</div>
+							<div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+								<div class="what-happens_content">
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+									<div class="variant grey">
+										<p>Создается прецедент чтобы легче и быстрее отнимать квартиры</p>
+									</div>
+									<div class="variant blue">
+										<p>Дело остановят из-за шумихи в прессе и пойдут на мировую</p>
+									</div>
+									<div class="variant grey">
+										<p>Хозяин договорится и вернёт как было</p>
+									</div>
+								</div>
+							</div>
+							<div class="what-happens_all-variant">
+								<p>показано <span>3</span> варианта из <span>9</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<article>
+		<div class="container-fluid">
+			<div class="bet-slider">
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+				<div class="bet-slider-itm">
+					<div class="bet-slider-itm_bg"></div>
+					<div class="bet-slider-itm_content"></div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer class="footer">
+		<div class="footer-content container-fluid">
+			<div class="footer-col">
+				<h4>Приложение</h4>
+				<ul>
+					<li><a href="#">iOS</a></li>
+					<li><a href="#">Android</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Меню</h4>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Реклама</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">MeduzaCare</a></li>
+					<li><a href="#">Об Атласе</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Подписка</h4>
+				<form action="">
+					<div class="input-group">
+						<input type="email" class="form-control" required placeholder="Ваш e-mail">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer-bottom">
+		<p class="copyright">&copy; 2016. Все права защищены.</p>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	</body>
+</html>
