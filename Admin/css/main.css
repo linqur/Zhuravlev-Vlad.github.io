@@ -327,9 +327,9 @@ table {
     padding-left: 15px; }
   .sorting input {
     float: right; }
-  .sorting .form-control {
-    height: 25px;
-    width: 185px; }
+  .sorting .form-control,
+  .sorting .add-btn {
+    height: 25px; }
   .sorting-btn {
     margin-top: -7px; }
     .sorting-btn a {
@@ -341,6 +341,14 @@ table {
       .sorting-btn a i {
         width: 15px;
         height: 15px; }
+
+.input-group-add {
+  margin-top: -22px;
+  padding-left: 15px; }
+  .input-group-add .add-btn {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px; }
 
 .select-time {
   width: 200px; }
