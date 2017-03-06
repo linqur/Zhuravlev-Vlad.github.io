@@ -22,6 +22,10 @@ button, button:active, button:focus {
 .right {
   float: right; }
 
+.nav-tabs {
+  background: inherit;
+  border: none; }
+
 .container-absolute {
   position: absolute;
   bottom: 0;
@@ -31,6 +35,13 @@ button, button:active, button:focus {
 img.logo-company {
   width: 60px; }
 
+#sidebar {
+  position: fixed;
+  top: 80px;
+  left: inherit;
+  right: inherit;
+  z-index: 2; }
+
 .sticky-content.fixed {
   position: fixed !important;
   top: 0;
@@ -38,6 +49,8 @@ img.logo-company {
   right: 0;
   z-index: 3; }
 
+#aside1,
+.sticky-sidebar.sidebar.fixed,
 .sticky-content.sidebar.fixed {
   position: fixed;
   top: 80px;
@@ -463,11 +476,12 @@ table {
 .table-top {
   padding-bottom: 20px; }
   .table-top i {
-    font-size: 35px; }
-  .table-top .active {
-    color: #009688; }
-  .table-top a {
+    font-size: 35px;
+    color: #2c3987; }
+  .table-top li {
     margin-right: 10px; }
+  .table-top .active i {
+    color: #009688; }
 
 .sorting {
   float: right; }
@@ -841,7 +855,9 @@ table {
   .navbar-top .navbar-nav > li:first-child {
     border-top: none; }
   .navbar .navbar-form {
-    width: 100%; } }
+    width: 100%; }
+  .wrapper_content .block {
+    width: 46%; } }
 
 @media screen and (max-width: 550px) {
   .modal-footer_button-bottom {
@@ -856,3 +872,10 @@ table {
       float: left; }
       .modal-footer_button-bottom--social a {
         margin: 0 4%; } }
+
+@media screen and (max-width: 480px) {
+  .wrapper_content .block {
+    width: 100%;
+    margin-left: 0; }
+  .wrapper_content {
+    margin-left: 0; } }

@@ -11,34 +11,61 @@ $.material.init()
 // 		$(".navbar-fixed-top").removeClass("top-nav-collapse");
 // 	}
 // });//Навигация
+
+// $(document).scroll(function() {
+//     checkOffset();
+// });
+// function checkOffset() {
+//     if($('.sidebar').offset().top + $('.sidebar').height() 
+//                                            >= $('.footer-top').offset().top - 10)
+//         $('.sidebar').removeClass('fixed');
+//     if($(document).scrollTop() + window.innerHeight < $('.footer-top').offset().top)
+//         $('.sidebar').addClass('fixed'); // restore when you scroll up
+// }
 var StickyElement = function(node){
   var doc = $(document), 
       fixed = false,
       anchor = node.find('.sticky-anchor'),
-      content = node.find('.sticky-content');
-  
+      content = node.find('.sticky-content'),
+      sidebar = node.find('.sticky-sidebar');
   var onScroll = function(e){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
     if(docTop > anchorTop){
+
       if(!fixed){
         anchor.height(content.outerHeight());
         content.addClass('fixed');        
+        sidebar.addClass('fixed');        
         fixed = true;
       }
-    }  else   {
+
+    }  else {
+
       if(fixed){
         anchor.height(0);
         content.removeClass('fixed'); 
+        sidebar.removeClass('fixed'); 
         fixed = false;
       }
     }
+    if($('.sidebar').offset().top + $('.sidebar').height() 
+                                  >= $('.footer-top').offset().top - 10){
+      sidebar.removeClass('fixed');
+      sidebar.css('bottom', 0)
+      fixed = false;
+    } else {
+      sidebar.css('bottom', '');
+    }
+    // console.log(saidbar)
   };
   
   $(window).on('scroll', onScroll);
 };
 var demo = new StickyElement($('#sticky'));
+// 
 
+// 
 
 $(document).ready(function() {
 
