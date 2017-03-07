@@ -27,9 +27,26 @@ $('.js--vote-title a').on('click', function(){
 })(jQuery);
 // END Скроллбар
 
-
+// Slick Слайдер
 $('.bet-slider').slick({
   lazyLoad: 'ondemand',
-  slidesToShow: 3,
-  slidesToScroll: 1
+  // slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  infinite: false
 });
+// END Slick Слайдер
+
+// Тач для bootstrap слайдера
+$("#carousel-header").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+// END Тач для bootstrap слайдера
