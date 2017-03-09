@@ -49,7 +49,6 @@ img.logo-company {
   right: 0;
   z-index: 3; }
 
-#aside1,
 .sticky-sidebar.sidebar.fixed,
 .sticky-content.sidebar.fixed {
   position: fixed;

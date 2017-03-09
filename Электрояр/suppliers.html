@@ -19,6 +19,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    	/*#search-company .block{
+			width: 46%;
+			min-height: 200px;
+    	}*/
+    	.search-company_map .fixed{
+			right: 0 !important;
+    	}
+    	.sticky {
+		  position: fixed;
+		}
+		.stop {
+		  position: relative;
+		}
+    </style>
   </head>
   <body class="product">
 <div class="container-fluid">
@@ -166,119 +181,18 @@
 		</div>
 	</nav>
 </div>
-<div class="container content">
+<div class="container-fluid content">
 	<div class="row">
-		<div class="col-xs-12">
-			<h1>Результатов по запросу <span>"segsegseg"</span></h1>
-			<h4>Найдено производителей: <span>5</span></h4>
-			<div class="col-md-9 category_right">
-			<!-- <style>
-				.search .wrapper_content .block{
-					width: 21%;
-				}
-				@media screen and (max-width: 991px){
-					.search .wrapper_content .block{
-						width: 30%;
-					}
-				}
-			</style> -->
-				<div class="wrapper search">
-					<div class="wrapper_content">
-						<div class="block">
-							<a href="product_barhan.html"><img src="img/IBM-logo-blue.png" alt=""></a>
-							<div class="description">
-								<p>Бархан</p>
-								<a href="">Редактировать</a>
-							</div>
-						</div>
-						<div class="block">
-							<a href="product_barhan.html"><img src="img/IBM-logo-blue.png" alt=""></a>
-							<div class="description">
-								<p>Бархан</p>
-								<a href="">Редактировать</a>
-							</div>
-						</div>
-						<div class="block">
-							<a href="product_barhan.html"><img src="img/IBM-logo-blue.png" alt=""></a>
-							<div class="description">
-								<p>Бархан</p>
-								<a href="">Редактировать</a>
-							</div>
-						</div>
-						<div class="block">
-							<a href="product_barhan.html"><img src="img/IBM-logo-blue.png" alt=""></a>
-							<div class="description">
-								<p>Бархан</p>
-								<a href="">Редактировать</a>
-							</div>
-						</div>
-						<div class="block">
-							<a href="product_barhan.html"><img src="img/IBM-logo-blue.png" alt=""></a>
-							<div class="description">
-								<p>Бархан</p>
-								<a href="">Редактировать</a>
-							</div>
-						</div>
-					</div>
+		<div class="col-md-5" id="search-company">
+			<div class="wrapper">
+				<div class="wrapper_content">
+					
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
-			<h4>Найдено товаров: <span>3</span></h4>
-			<div class="col-md-9 category_right">
-				<div class="wrapper search">
-					<div class="wrapper_content">
-						<div class="block">
-							<a href="list-tovara-jetalon.html">
-								<img src="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg">
-							</a>
-							<div class="description">
-								<a href="list-tovara-jetalon.html">ВА МОД 4п 6А С SH204L 4.5кА</a>
-								<a href="company.html">Компания 1</a><span>36 000 руб</span>
-							</div>
-						</div>
-						<div class="block">
-							<a href="list-tovara-jetalon.html">
-								<img src="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg">
-							</a>
-							<div class="description">
-								<a href="list-tovara-jetalon.html">ВА МОД 4п 6А С SH204L 4.5кА</a>
-								<a href="company.html">Компания 1</a><span>36 000 руб</span>
-							</div>
-						</div>
-						<div class="block">
-							<a href="list-tovara-jetalon.html">
-								<img src="img/c0a8f827-5017-11e6-b6ea-005056a53f37.jpg">
-							</a>
-							<div class="description">
-								<a href="list-tovara-jetalon.html">ВА МОД 4п 6А С SH204L 4.5кА</a>
-								<a href="company.html">Компания 1</a><span>36 000 руб</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="col-md-7" id="aside1">
+			<div id="map" style="width: 100%; height: 600px"></div>
 		</div>
-		<div class="col-xs-12">
-			<h4>Найдено категорий: <span>4</span></h4>
-			<div class="product_category col-md-9">
-				<div class="product_category--link col-md-4">
-					<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-					<a href="modulnaya-aparatura.html">Кабель и провод</a>
-				</div>
-				<div class="product_category--link col-md-4">
-					<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-					<a href="modulnaya-aparatura.html">Кабель и провод</a>
-				</div>
-				<div class="product_category--link col-md-4">
-					<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-					<a href="modulnaya-aparatura.html">Кабель и провод</a>
-				</div>
-				<div class="product_category--link col-md-4">
-					<div class="icon"><img src="img/kabel-provod.png" alt=""></div>
-					<a href="modulnaya-aparatura.html">Кабель и провод</a>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -333,9 +247,144 @@
 		</div>
 	</div>
 </footer>
-
+	<script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+    	var myMap, collection, searchControl, objectManager;
+        
+        ymaps.ready(init);
 
+        function init () {
+		
+			SearchControl = new ymaps.control.SearchControl({noPlacemark:true});	
+		
+            myMap = new ymaps.Map("map", {
+                    center: [55.75629,37.618655], 
+                    zoom: 16,
+					type: 'yandex#map',
+					behaviors: ['default', 'scrollZoom'],
+					controls: ['zoomControl', SearchControl, 'typeSelector',  'fullscreenControl']
+                }, {
+                    balloonMaxWidth: 600
+                });
+				
+		    objectManager = new ymaps.ObjectManager({
+				clusterize: false,
+				gridSize: 32
+			});
+            
+	        objectManager.add({
+	            type: 'Feature',	
+	            id: 10,
+	            geometry: {
+	                type: 'Point',
+	                coordinates: [55.754329,37.681272]
+	            },
+	            properties: {
+	            	companyName: 'Company10',
+	                hintContent: '1',
+	                balloonContent: '1'
+	            }
+	        });
+
+	        objectManager.add({
+	            type: 'Feature',	
+	            id: 11,
+	            geometry: {
+	                type: 'Point',
+	                coordinates: [55.754329,37.685272]
+	            },
+	            properties: {
+	            	companyName: 'Company11',
+	                hintContent: '1',
+	                balloonContent: '1'
+	            }
+	        });
+
+			for(var i = 0; i < 15; i ++){
+        	
+	        	 objectManager.add({
+	                type: 'Feature',	
+	                id: i,
+	                geometry: {
+	                    type: 'Point',
+	                    coordinates: [55.754329,37.621272]
+	                },
+	                properties: {
+	                	companyName: 'Company' + i,
+	                    hintContent: '1',
+	                    balloonContent: '1'
+	                }
+	            });
+	        }          
+
+
+            myMap.geoObjects.add(objectManager); 
+            
+
+            var searchCompany = $('#search-company .wrapper_content');
+            
+            function contentGenerator(){
+	            ymaps.geoQuery(objectManager.objects).searchInside(myMap).each(function (object) {
+
+	                    var objectCompany = object.properties._data.companyName;
+	                    searchCompany.append('<div class="block"><img src="img/IBM-logo-blue.png"><div class="description"><a href="#">' + objectCompany +'</a></div></div>');
+
+				});
+			}
+			contentGenerator();
+            myMap.events.add(['boundschange','datachange','objecttypeschange'], function(e){
+
+            	searchCompany.find('.block').remove();
+
+                contentGenerator();
+			});
+        }
+    </script>
+	<script>
+	(function(){
+		var a = document.querySelector('#aside1'), b = null, P = 80;
+		window.addEventListener('scroll', Ascroll, false);
+		document.body.addEventListener('scroll', Ascroll, false);
+		function Ascroll() {
+		  if (b == null) {
+		    var Sa = getComputedStyle(a, ''), s = '';
+		    for (var i = 0; i < Sa.length; i++) {
+		      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+		        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+		      }
+		    }
+		    b = document.createElement('div');
+		    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+		    a.insertBefore(b, a.firstChild);
+		    var l = a.childNodes.length;
+		    for (var i = 1; i < l; i++) {
+		      b.appendChild(a.childNodes[1]);
+		    }
+		    a.style.height = b.getBoundingClientRect().height + 'px';
+		    a.style.padding = '0';
+		    a.style.border = '0';
+		  }
+		  var Ra = a.getBoundingClientRect(),
+		      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 25);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
+		  if ((Ra.top - P) <= 0) {
+		    if ((Ra.top - P) <= R) {
+		      b.className = 'stop';
+		      b.style.top = - R +'px';
+		    } else {
+		      b.className = 'sticky';
+		      b.style.top = P + 'px';
+		    }
+		  } else {
+		    b.className = '';
+		    b.style.top = '';
+		  }
+		  window.addEventListener('resize', function() {
+		    a.children[0].style.width = getComputedStyle(a, '').width
+		  }, false);
+		}
+		})()
+	</script>
   </body>
 </html>
