@@ -261,7 +261,7 @@
 		
             myMap = new ymaps.Map("map", {
                     center: [55.75629,37.618655], 
-                    zoom: 16,
+                    zoom: 12,
 					type: 'yandex#map',
 					behaviors: ['default', 'scrollZoom'],
 					controls: ['zoomControl', SearchControl, 'typeSelector',  'fullscreenControl']
@@ -270,41 +270,43 @@
                 });
 				
 		    objectManager = new ymaps.ObjectManager({
-				clusterize: false,
-				gridSize: 32
+				clusterize: true,
+				gridSize: 50,
 			});
             
 	        objectManager.add({
 	            type: 'Feature',	
-	            id: 10,
+	            id: 16,
 	            geometry: {
 	                type: 'Point',
 	                coordinates: [55.754329,37.681272]
 	            },
 	            properties: {
-	            	companyName: 'Company10',
-	                hintContent: '1',
-	                balloonContent: '1'
+	            	hintContent: '1',
+                    balloonContent: '1',
+                    clusterCaption: 'Company16',
+					balloonContentBody: 'Текст Company16'
 	            }
 	        });
 
 	        objectManager.add({
 	            type: 'Feature',	
-	            id: 11,
+	            id: 17,
 	            geometry: {
 	                type: 'Point',
 	                coordinates: [55.754329,37.685272]
 	            },
 	            properties: {
-	            	companyName: 'Company11',
-	                hintContent: '1',
-	                balloonContent: '1'
+	            	hintContent: '1',
+                    balloonContent: '1',
+                    clusterCaption: 'Company17',
+					balloonContentBody: 'Текст Company17'
 	            }
 	        });
 
-			for(var i = 0; i < 15; i ++){
+			for(var i = 1; i < 16; i ++){
         	
-	        	 objectManager.add({
+	        	objectManager.add({
 	                type: 'Feature',	
 	                id: i,
 	                geometry: {
@@ -312,15 +314,22 @@
 	                    coordinates: [55.754329,37.621272]
 	                },
 	                properties: {
-	                	companyName: 'Company' + i,
 	                    hintContent: '1',
-	                    balloonContent: '1'
-	                }
+	                    balloonContent: '1',
+	                    clusterCaption: 'Company' + i,
+						balloonContentBody: 'Текст Company' + i
+	                }, 
 	            });
-	        }          
+				objectManager.objects.options.set({
+		            iconLayout: 'default#image',
+		            iconImageHref: 'img/location-icon-shadow.png',
+		            iconImageSize: [60, 60]
+		            // iconImageOffset: [-3, -42]
+			    });
+	        }
 
-
-            myMap.geoObjects.add(objectManager); 
+	        objectManager.clusters.options.set('preset', 'islands#blueClusterIcons');
+            myMap.geoObjects.add(objectManager);
             
 
             var searchCompany = $('#search-company .wrapper_content');
@@ -328,7 +337,8 @@
             function contentGenerator(){
 	            ymaps.geoQuery(objectManager.objects).searchInside(myMap).each(function (object) {
 
-	                    var objectCompany = object.properties._data.companyName;
+	                    var objectCompany = object.properties._data.clusterCaption;
+
 	                    searchCompany.append('<div class="block"><img src="img/IBM-logo-blue.png"><div class="description"><a href="#">' + objectCompany +'</a></div></div>');
 
 				});
