@@ -95,19 +95,119 @@
 	</div>
 	
 
-	<article class="authorization">
+	<article class="create-bet">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 title">
-					<h2>Вход</h2>
+					<h2>Создать пари</h2>
+				</div>
+				<div class="col-xs-12 progressBar">
+					<div class="progressBar-content">
+						<ul class="progressbar">
+							<li class="active">Шаг 1</li>
+							<li>Шаг 2</li>
+							<li>Шаг 3</li>
+							<li>Шаг 4</li>
+						</ul>
+					</div>
 				</div>
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-					<form action="">
-						<input type="text" class="form-control" required placeholder="Телефон">
-						<input type="password" class="form-control" required placeholder="Пароль">
+					<form class="create-bet-form" id="SignupForm">
+						<fieldset>
+							<div class="form-group">
+								<label for="typeBet">Выберите тип пари</label>
+								<select class="selectpicker form-control ms-input" title="Тип пари" id="typeBet">
+									<option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="typeCategory">Выберите тип категории</label>
+								<select class="selectpicker form-control ms-input" title="Выберите тип категории" id="typeCategory">
+									<option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div class="form-group">
+								<label for="Name">Название</label>
+								<input type="text" class="form-control ms-input" id="Name" required placeholder="Введите название">
+							</div>
+							<div class="form-group">
+								<label for="description">Описание</label>
+								<textarea class="form-control ms-input" rows="3" id="description"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="Date">Дата окончания</label>
+								<input type='text' class="datepicker-here form-control ms-input" data-position="right top" id="Date" placeholder="Выберите дату окончания пари">
+							</div>
+						</fieldset>
+						<fieldset>
+							<div class="form-group form-group--variant">
+								<label for="variant1">
+									<input type="radio" name="variant" class="radio" id="variant1" />
+									<label for="variant1"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elsam esse voluptate ducimus.
+								</label>
+							</div>
+							<div class="form-group form-group--variant">
+								<label for="variant2">
+									<input type="radio" name="variant" class="radio" id="variant2" />
+									<label for="variant2"></label>Вариант 2
+								</label>
+							</div>
+							<div class="form-group form-group--variant">
+								<label for="variant3">
+									<input type="radio" name="variant" class="radio" id="variant3" />
+									<label for="variant3"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam beatae ad unde expedita officiis harum rem magnam debitis illum tempora.
+								</label>
+							</div>
+							<div class="form-group form-group--variant">
+								<label for="variant4">
+									<input type="radio" name="variant" class="radio" id="variant4" />
+									<label for="variant4"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam beatae ad unde expedita officiis harum rem magnam debitis illum tempora.
+								</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div class="form-group">
+								<label for="Sum">Сумма ставки</label>
+								<input type="number" class="form-control ms-input" id="Sum" placeholder="Введите сумму">
+							</div>
+							<div class="form-group">
+								<label for="file">Фотография</label>
+								<input type="file" class="form-control ms-input ms-input--file" id="file" title="Выберите фотографию">
+							</div>
+							<div class="form-group">
+								<label for="">Ключевые слова</label>
+								<div class="keywords">
+									<span class="keywords-itm">123 <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">esgd5yr5u <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">123 <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">esgd5yr5u <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">123 <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">esgd5yr5u <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">123 <button class="fa fa-times" aria-hidden="true"></button></span>
+									<span class="keywords-itm">esgd5yr5u <button class="fa fa-times" aria-hidden="true"></button></span>
+									<div class="inline-table">
+										<input type="text" list="tegList" class="tegList">
+										<button class = "input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></button>
+										<datalist id="tegList">
+											<option>teg 1</option>
+											<option>teg 2</option>
+											<option>teg 3</option>
+											<option>teg 4</option>
+										</datalist>
+									</div>
+								</div>
+							</div>
+							<div class="btn-next--center btn-create--position"><button type="button" class="btn btn-next">Создать</button></div>
+						</fieldset>
 					</form>
 				</div>
-				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12"><button type="button" class="btn btn-authorization">Войти</button></div>
+				<!-- <div class="col-xs-12 btn-next--center"><button type="button" class="btn btn-next">Далее</button></div> -->
 			</div>
 		</div>
 	</article>
@@ -148,7 +248,6 @@
 	<footer class="footer-bottom">
 		<p class="copyright">&copy; 2016. Все права защищены.</p>
 	</footer>
-	<!-- Trigger the modal with a button -->
 	
 	<!-- Modal authorization -->
 	<div id="authorization-modal" class="modal fade" role="dialog">
@@ -173,5 +272,6 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>$("#SignupForm").formToWizard();</script>
 	</body>
 </html>

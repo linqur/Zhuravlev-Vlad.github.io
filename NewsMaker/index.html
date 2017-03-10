@@ -47,11 +47,11 @@
 								<input type="text" class="form-control search_input">
 							</div>
 						</div>
-						<div class="authorization col-md-7 col-sm-7 col-xs-12">
+						<!-- <div class="authorization col-md-7 col-sm-7 col-xs-12">
 							<button type="button" class="btn btn-authorization" data-toggle="modal" data-target="#authorization-modal">Войти</button>
-						</div>
-						<!-- <div class="nav navbar-nav_user col-md-7 col-sm-7 col-xs-12">
-							<a href="#" class="add-new add-new--p">
+						</div> -->
+						<div class="nav navbar-nav_user col-md-7 col-sm-7 col-xs-12">
+							<a href="create-bet.html" class="add-new add-new--p">
 								<i class="fa fa-plus" aria-hidden="true"></i>Добавить новость
 							</a>
 							<div class="user">
@@ -64,7 +64,7 @@
 									<li><a href="#">больше</a></li>
 								</ul>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 
@@ -98,17 +98,8 @@
 		<div class="container-fluid carousel-header">
 			<!-- Слайдер -->
 			<div id="carousel-header" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<!-- <ol class="carousel-indicators">
-					<li data-target="carousel-header" data-slide-to="0" class="active"></li>
-					<li data-target="carousel-header" data-slide-to="1"></li>
-					<li data-target="carousel-header" data-slide-to="2"></li>
-					<li data-target="carousel-header" data-slide-to="3"></li>
-				</ol> -->
-			
-				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-					<div class="item active" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-1.jpg) no-repeat 100% 0">
+					<div class="item active">
 					 	<div class="row">
 					 		<div class="col-md-4 col-sm-9 col-xs-12">
 					 			<h3>Solutions by design</h3>
@@ -118,7 +109,7 @@
 					 	</div>
 					</div>
 					
-					<div class="item" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-2.png) no-repeat 100% 0">
+					<div class="item">
 					 	<div class="row">
 					 		<div class="col-md-4 col-sm-9 col-xs-12">
 					 			<h3>Solutions by design</h3>
@@ -128,7 +119,7 @@
 					 	</div>
 					</div>
 
-					<div class="item" style="background: linear-gradient(to bottom right,  rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-3.jpg) no-repeat 100% 0">
+					<div class="item">
 					 	<div class="row">
 					 		<div class="col-md-4 col-sm-9 col-xs-12">
 					 			<h3>Solutions by design</h3>
@@ -138,16 +129,6 @@
 					 	</div>
 					</div>
 				</div>
-			
-				<!-- Left and right controls -->
-				<!-- <a class="left carousel-control" href="#carousel-header" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a> -->
 			</div><!-- Слайдер -->
 		</div>
 	</header>
@@ -524,7 +505,7 @@
 				</div>
 				<div class="modal-body">
 					<form action="">
-						<input type="number" class="form-control" required placeholder="Телефон">
+						<input type="text" class="form-control" required placeholder="Телефон">
 						<input type="password" class="form-control" required placeholder="Пароль">
 					</form>
 				</div>
@@ -533,13 +514,8 @@
 				</div>
 			</div>
 		</div>
-	<!-- 
-		jquery
-		bootstrap
-		mCustomScrollbar
-		slick carousel
-		jquery.touchSwipe
-	-->
+	<!--bootstrap|mCustomScrollbar|slick carousel|jquery.touchSwipe|air datepicker|bootstrap.file-input|bootstrap-select-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	</body>

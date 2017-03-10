@@ -44,6 +44,27 @@ li {
 .what-happens-week {
   padding-left: 0; }
 
+.ms-input {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center; }
+  .ms-input .btn {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding-top: 11px;
+    padding-bottom: 11px; }
+
+.bootstrap-select.ms-input {
+  margin-bottom: 15px !important; }
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none; }
+
+.prev {
+  float: left; }
+
 .title {
   text-align: center;
   padding-top: 80px;
@@ -151,7 +172,8 @@ nav .container-fluid {
 .authorization {
   padding: 0; }
 
-.btn-authorization {
+.btn-authorization,
+.btn-next {
   color: #26272d;
   font-size: 13px;
   font-weight: 600;
@@ -161,9 +183,15 @@ nav .container-fluid {
   -webkit-border-radius: 22px;
           border-radius: 22px;
   float: right; }
-  .btn-authorization:hover {
+  .btn-authorization:hover,
+  .btn-next:hover {
     background: #3967fa;
     color: #fff; }
+
+.btn-next {
+  float: none; }
+  .btn-next--center {
+    text-align: center; }
 
 .search--p {
   margin-top: 8px; }
@@ -258,6 +286,18 @@ nav .container-fluid {
   .carousel-header .item p {
     font-size: 22px;
     margin-top: 45px; }
+  .carousel-header .item:nth-of-type(1) {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(205, 210, 227, 0.8)), to(rgba(238, 224, 223, 0.8))), url(../img/carousel-item-1.jpg) no-repeat 100% 0;
+    background: -webkit-linear-gradient(top left, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-1.jpg) no-repeat 100% 0;
+    background: linear-gradient(to bottom right, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-1.jpg) no-repeat 100% 0; }
+  .carousel-header .item:nth-of-type(2) {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(205, 210, 227, 0.8)), to(rgba(238, 224, 223, 0.8))), url(../img/carousel-item-2.png) no-repeat 100% 0;
+    background: -webkit-linear-gradient(top left, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-2.png) no-repeat 100% 0;
+    background: linear-gradient(to bottom right, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-2.png) no-repeat 100% 0; }
+  .carousel-header .item:nth-of-type(3) {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(205, 210, 227, 0.8)), to(rgba(238, 224, 223, 0.8))), url(../img/carousel-item-3.jpg) no-repeat 100% 0;
+    background: -webkit-linear-gradient(top left, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-3.jpg) no-repeat 100% 0;
+    background: linear-gradient(to bottom right, rgba(205, 210, 227, 0.8), rgba(238, 224, 223, 0.8)), url(../img/carousel-item-3.jpg) no-repeat 100% 0; }
 
 .btn-create--p {
   margin-top: 45px; }
@@ -592,6 +632,174 @@ nav .container-fluid {
     background: inherit !important; }
   .slick-disabled.slick-next:before, .slick-disabled.slick-prev:before {
     color: #dee1e7; }
+
+.progressBar-content {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: -70px;
+  height: 115px; }
+
+.progressbar {
+  counter-reset: step; }
+
+.progressbar li {
+  width: 25%;
+  float: left;
+  font-size: 16px;
+  color: #26272d;
+  position: relative;
+  text-align: center;
+  font-weight: 600; }
+
+.progressbar li:before {
+  width: 30px;
+  height: 30px;
+  content: '';
+  counter-increment: step;
+  line-height: 30px;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 70px; }
+
+.progressbar li:after {
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background-color: #f6f6f6;
+  top: 83px;
+  left: -50%;
+  z-index: -1; }
+
+.progressbar li:first-child:after {
+  content: none; }
+
+.progressbar li.active {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.progressbar li.active:before,
+.progressbar li.active:after {
+  border-color: #3967fa; }
+
+.progressbar li.active + li:after {
+  background-color: #3967fa; }
+
+.keywords {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 70px; }
+  .keywords-itm {
+    border: 1px solid #f1f1f1;
+    padding: 4px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin-bottom: 5px;
+    display: inline-block; }
+    .keywords-itm:hover {
+      border-color: #5b5b5b; }
+    .keywords-itm button {
+      border: none;
+      background: inherit; }
+
+.inline-table {
+  display: inline-table;
+  max-width: 200px; }
+
+.tegList {
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 4px; }
+  .tegList + button {
+    border: none;
+    background: inherit; }
+
+.create-bet-form {
+  text-align: center;
+  padding: 40px 0; }
+  .create-bet-form .btn-next {
+    position: absolute;
+    bottom: 0;
+    left: -webkit-calc(50% - 80px);
+    left: calc(50% - 80px);
+    z-index: 2; }
+  .create-bet-form fieldset {
+    min-height: 380px;
+    position: relative; }
+  .create-bet-form .commands {
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.btn-create--position .btn-next {
+  bottom: 10px; }
+
+.ms-input--file {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.form-group--variant {
+  text-align: left; }
+  .form-group--variant .radio + label {
+    float: left; }
+
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0; }
+
+.radio + label {
+  cursor: pointer; }
+
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.radio:not(checked) + label {
+  position: relative;
+  padding: 8px 0 0 35px; }
+
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #CDD1DA;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #FFF; }
+
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #3967fa;
+  opacity: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+
+.radio:checked + label:after {
+  opacity: 1; }
 
 footer {
   position: absolute;
