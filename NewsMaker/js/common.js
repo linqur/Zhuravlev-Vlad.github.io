@@ -20,7 +20,11 @@ $('input[type=file]').bootstrapFileInput();
 // Скроллбар
 (function($){
     $(window).on("load",function(){
-        $(".what-happens_content").mCustomScrollbar();
+        $(".scroll").mCustomScrollbar();
+
+        $(".scroll-x").mCustomScrollbar({
+          axis: 'x'
+        });
     });
 })(jQuery);
 // END Скроллбар

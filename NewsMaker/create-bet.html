@@ -147,31 +147,30 @@
 						</fieldset>
 						<fieldset>
 							<div class="form-group form-group--variant">
-								<label for="variant1">
-									<input type="radio" name="variant" class="radio" id="variant1" />
-									<label for="variant1"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elsam esse voluptate ducimus.
-								</label>
-							</div>
-							<div class="form-group form-group--variant">
-								<label for="variant2">
-									<input type="radio" name="variant" class="radio" id="variant2" />
-									<label for="variant2"></label>Вариант 2
-								</label>
-							</div>
-							<div class="form-group form-group--variant">
-								<label for="variant3">
-									<input type="radio" name="variant" class="radio" id="variant3" />
-									<label for="variant3"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam beatae ad unde expedita officiis harum rem magnam debitis illum tempora.
-								</label>
-							</div>
-							<div class="form-group form-group--variant">
-								<label for="variant4">
-									<input type="radio" name="variant" class="radio" id="variant4" />
-									<label for="variant4"></label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam beatae ad unde expedita officiis harum rem magnam debitis illum tempora.
-								</label>
+								<ol type="1">
+									<li>Вариант 1 <button class="fa fa-times delete-variant" aria-hidden="true"></button></li>
+									<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non earum nesciunt eos, in quidem possimus, ratione, odio iste debitis assumenda obcaecati? Odio molestias perferendis architecto odit nulla. Sit, impedit, odio? <button class="fa fa-times delete-variant" aria-hidden="true"></button></li>
+									<li>Вариант 3 <button class="fa fa-times delete-variant" aria-hidden="true"></button></li>
+								</ol>
+								<div class="input-group">
+									<input type="text" class="form-control ms-input" placeholder="Добавить вариант">
+									<span class = "input-group-btn">
+					                  	<button class = "btn btn-default" type = "button">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+					                  	</button>
+					               </span>
+								</div>
 							</div>
 						</fieldset>
 						<fieldset>
+							<div class="form-group">
+								<label for="variantSelect">Выберите вариант</label>
+								<select class="selectpicker form-control ms-input" title="Выберите вариант" id="variantSelect">
+									<option>Вариант 1</option>
+									<option>Вариант 2</option>
+									<option>Вариант 3</option>
+								</select>
+							</div>
 							<div class="form-group">
 								<label for="Sum">Сумма ставки</label>
 								<input type="number" class="form-control ms-input" id="Sum" placeholder="Введите сумму">
@@ -193,7 +192,11 @@
 									<span class="keywords-itm">esgd5yr5u <button class="fa fa-times" aria-hidden="true"></button></span>
 									<div class="inline-table">
 										<input type="text" list="tegList" class="tegList">
-										<button class = "input-group-addon"><i class="fa fa-plus" aria-hidden="true"></i></button>
+										<span class = "input-group-btn">
+						                  	<button class = "btn btn-default" type = "button">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+						                  	</button>
+						               </span>
 										<datalist id="tegList">
 											<option>teg 1</option>
 											<option>teg 2</option>
