@@ -124,8 +124,7 @@ nav .container-fluid {
 
 .logo {
   font-size: 40px;
-  color: #8c8f94;
-  padding-left: 0; }
+  color: #8c8f94; }
   .logo span {
     color: #26272d;
     font-family: 'ComfortaaBold'; }
@@ -517,7 +516,7 @@ nav .container-fluid {
 .answered .variant.active:hover {
   background: url(../img/eye-blue.png) no-repeat 0 50%; }
 
-#slider-stiky .slick-arrow {
+#stop-stiky .slick-arrow {
   top: 510px; }
 
 .bet-slider-itm {
@@ -738,8 +737,10 @@ nav .container-fluid {
 .progressbar li.active + li:after {
   background-color: #3967fa; }
 
-.filter .keywords {
-  margin-bottom: 20px; }
+.filter {
+  padding-left: 15px; }
+  .filter .keywords {
+    margin-bottom: 20px; }
 
 .keywords {
   border: 1px solid #e8e8e8;
@@ -1179,7 +1180,8 @@ footer {
     float: right; }
 
 .search-bet {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-left: 15px; }
 
 .modal-content {
   background: #fff;
@@ -1468,7 +1470,15 @@ footer {
   .what-happens-week {
     padding-right: 0; }
   .profile-inform {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .search-stiky {
+    position: static !important; }
+    .search-stiky .stop {
+      position: static; }
+    .search-stiky .sticky {
+      position: static; }
+    .search-stiky .filter {
+      padding: 15px; } }
 
 @media (max-width: 768px) {
   .container-fluid_navbar {
@@ -1519,9 +1529,9 @@ footer {
     height: 450px; }
   .variant {
     margin-left: 5px; }
-  #slider-stiky .slick-arrow {
+  #stop-stiky .slick-arrow {
     top: 470px; }
-  #slider-stiky .btn-start {
+  #stop-stiky .btn-start {
     padding: 15px 25px; }
   .social-group_profile {
     position: static;
@@ -1566,7 +1576,9 @@ footer {
       text-align: left; }
       .social-group_profile .social-group ul li {
         display: block;
-        margin-bottom: 15px; } }
+        margin-bottom: 15px; }
+  .logo {
+    padding-left: 0; } }
 
 @media (max-width: 480px) {
   .logo {

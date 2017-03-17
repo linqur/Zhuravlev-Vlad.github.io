@@ -78,7 +78,7 @@
 				<div class="col-xs-12 title">
 					<h2>Все пари</h2>
 				</div>
-				<div class="col-md-3 col-sm-12 col-xs-12" id="aside-stiky">
+				<div class="col-md-3 col-sm-12 col-xs-12 search-stiky" id="aside-stiky">
 					<div class="search-bet">
 						<div class="input-group search">
 							<input type="text" class="form-control search_input">
@@ -88,87 +88,89 @@
 						</div>
 					</div>
 					<form action="" class="filter">
-						<div class="form-group">
-							<label for="typeBet">Тип пари</label>
-							<select class="form-control ms-input" id="typeBet">
-								<option>Тип 1</option>
-								<option>Тип 2</option>
-								<option>Тип 3</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="typeCategory">Тип категории</label>
-							<select class="form-control ms-input" id="typeCategory">
-								<option>Тип 1</option>
-								<option>Тип 2</option>
-								<option>Тип 3</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="">Ключевые слова</label>
-							<div class="keywords">
-								<span class="keywords-itm">
-									123 
-									<button class="fa fa-times" aria-hidden="true"></button>
-								</span>
-								<span class="keywords-itm">
-									esgd5yr5u 
-									<button class="fa fa-times" aria-hidden="true"></button>
-								</span>
-								<span class="keywords-itm">
-									123 
-									<button class="fa fa-times" aria-hidden="true"></button>
-								</span>
-								<div class="inline-table">
-									<input 	type="text" 
-											list="tegList" 
-											class="tegList">
-									<span class = "input-group-btn">
-					                  	<button class = "btn btn-default" type = "button">
-											<i class="fa fa-plus" aria-hidden="true"></i>
-					                  	</button>
-					               </span>
-									<datalist id="tegList">
-										<option>teg 1</option>
-										<option>teg 2</option>
-										<option>teg 3</option>
-										<option>teg 4</option>
-									</datalist>
+						<div class="row">
+							<div class="form-group col-md-12 col-sm-6 col-xs-12">
+								<label for="typeBet">Тип пари</label>
+								<select class="form-control ms-input" id="typeBet">
+									<option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select>
+							</div>
+							<div class="form-group col-md-12 col-sm-6 col-xs-12">
+								<label for="typeCategory">Тип категории</label>
+								<select class="form-control ms-input" id="typeCategory">
+									<option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-12">
+								<label for="">Ключевые слова</label>
+								<div class="keywords">
+									<span class="keywords-itm">
+										123 
+										<button class="fa fa-times" aria-hidden="true"></button>
+									</span>
+									<span class="keywords-itm">
+										esgd5yr5u 
+										<button class="fa fa-times" aria-hidden="true"></button>
+									</span>
+									<span class="keywords-itm">
+										123 
+										<button class="fa fa-times" aria-hidden="true"></button>
+									</span>
+									<div class="inline-table">
+										<input 	type="text" 
+												list="tegList" 
+												class="tegList">
+										<span class = "input-group-btn">
+						                  	<button class = "btn btn-default" type = "button">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+						                  	</button>
+						               </span>
+										<datalist id="tegList">
+											<option>teg 1</option>
+											<option>teg 2</option>
+											<option>teg 3</option>
+											<option>teg 4</option>
+										</datalist>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group ">
-							<label for="quantity">Количество участников</label>
-							<div class="inline-table inline-table-range">
-								<input 	type="range"
-										id="quantity" 
-										min="0" 
-										max="100">
-								<span class = "input-group-btn">
-				                  	<input type="text" class="form-control">
-				               </span>
-				            </div>
-						</div>
-						<div class="form-group ">
-							<label for="minimumLot">Минимальная партия</label>
-							<div class="inline-table inline-table-range">
-								<input 	type="range"
-										id="minimumLot" 
-										min="0" 
-										max="100">
-								<span class = "input-group-btn">
-				                  	<input type="text" class="form-control">
-				               </span>
-				            </div>
-						</div>
-						<div class="form-group">
-							<label for="over">
-								Оконченные
-								<input 	type="checkbox"
-										class="radio" 
-										id="over">
-								<label for="over"></label>
-							</label>
+							<div class="form-group col-md-12 col-sm-6 col-xs-12">
+								<label for="quantity">Количество участников</label>
+								<div class="inline-table inline-table-range">
+									<input 	type="range"
+											id="quantity" 
+											min="0" 
+											max="100">
+									<span class = "input-group-btn">
+					                  	<input type="text" class="form-control">
+					               </span>
+					            </div>
+							</div>
+							<div class="form-group col-md-12 col-sm-6 col-xs-12">
+								<label for="minimumLot">Минимальная партия</label>
+								<div class="inline-table inline-table-range">
+									<input 	type="range"
+											id="minimumLot" 
+											min="0" 
+											max="100">
+									<span class = "input-group-btn">
+					                  	<input type="text" class="form-control">
+					               </span>
+					            </div>
+							</div>
+							<div class="form-group col-xs-12">
+								<label for="over">
+									Оконченные
+									<input 	type="checkbox"
+											class="radio" 
+											id="over">
+									<label for="over"></label>
+								</label>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -404,7 +406,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 	<script>
