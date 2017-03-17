@@ -75,14 +75,249 @@
 	<article>
 		<div class="container-fluid">
 			<div class="row">
-				
+				<div class="col-xs-12 title">
+					<h2>Все пари</h2>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12" id="aside-stiky">
+					<div class="search-bet">
+						<div class="input-group search">
+							<input type="text" class="form-control search_input">
+							<span class="input-group-btn">
+								<button class="btn" type="button"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+							</span>
+						</div>
+					</div>
+					<form action="" class="filter">
+						<div class="form-group">
+							<label for="typeBet">Тип пари</label>
+							<select class="form-control ms-input" id="typeBet">
+								<option>Тип 1</option>
+								<option>Тип 2</option>
+								<option>Тип 3</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="typeCategory">Тип категории</label>
+							<select class="form-control ms-input" id="typeCategory">
+								<option>Тип 1</option>
+								<option>Тип 2</option>
+								<option>Тип 3</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="">Ключевые слова</label>
+							<div class="keywords">
+								<span class="keywords-itm">
+									123 
+									<button class="fa fa-times" aria-hidden="true"></button>
+								</span>
+								<span class="keywords-itm">
+									esgd5yr5u 
+									<button class="fa fa-times" aria-hidden="true"></button>
+								</span>
+								<span class="keywords-itm">
+									123 
+									<button class="fa fa-times" aria-hidden="true"></button>
+								</span>
+								<div class="inline-table">
+									<input 	type="text" 
+											list="tegList" 
+											class="tegList">
+									<span class = "input-group-btn">
+					                  	<button class = "btn btn-default" type = "button">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+					                  	</button>
+					               </span>
+									<datalist id="tegList">
+										<option>teg 1</option>
+										<option>teg 2</option>
+										<option>teg 3</option>
+										<option>teg 4</option>
+									</datalist>
+								</div>
+							</div>
+						</div>
+						<div class="form-group ">
+							<label for="quantity">Количество участников</label>
+							<div class="inline-table inline-table-range">
+								<input 	type="range"
+										id="quantity" 
+										min="0" 
+										max="100">
+								<span class = "input-group-btn">
+				                  	<input type="text" class="form-control">
+				               </span>
+				            </div>
+						</div>
+						<div class="form-group ">
+							<label for="minimumLot">Минимальная партия</label>
+							<div class="inline-table inline-table-range">
+								<input 	type="range"
+										id="minimumLot" 
+										min="0" 
+										max="100">
+								<span class = "input-group-btn">
+				                  	<input type="text" class="form-control">
+				               </span>
+				            </div>
+						</div>
+						<div class="form-group">
+							<label for="over">
+								Оконченные
+								<input 	type="checkbox"
+										class="radio" 
+										id="over">
+								<label for="over"></label>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-9 col-sm-12 col-xs-12 bet-all" id="article-stiky">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<div class="card-bet-slider-item">
+								<div class="card-author">
+									<ul class="card-time_rate">
+										<li class="card-rate"><span></span>10</li>
+									</ul>
+									<div class="author-bet" style="background-image: url(img/ava.jpg)">
+									</div>
+									<p class="card-slider-title">Отнимут ли квартиру за перепланировку</p>
+								</div>
+								<div id="collapse-slide-1" class="collapse in">
+									<div class="card-bet-slider-item_bg" style="background-image: url(img/vote-item1.jpg);">
+										<div class="bg--gradient"></div>
+									</div>
+								</div>
+								<ul class="vote-info">
+									<li class="vote-users"><span></span>300</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-time"><span></span>26ч</li>
+								</ul>
+
+								<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
+								<div class="slide-open">
+									<a href="#collapse-slide-1" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="card-bet-slider-item">
+								<div class="card-author">
+									<ul class="card-time_rate">
+										<li class="card-rate"><span></span>10</li>
+									</ul>
+									<div class="author-bet" style="background-image: url(img/ava.jpg)">
+									</div>
+									<p class="card-slider-title">Отнимут ли квартиру за перепланировку</p>
+								</div>
+								<div id="collapse-slide-2" class="collapse in">
+									<div class="card-bet-slider-item_bg" style="background-image: url(img/vote-item1.jpg);">
+										<div class="bg--gradient"></div>
+									</div>
+								</div>
+								<ul class="vote-info">
+									<li class="vote-users"><span></span>300</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-time"><span></span>26ч</li>
+								</ul>
+
+								<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
+								<div class="slide-open">
+									<a href="#collapse-slide-2" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="card-bet-slider-item">
+								<div class="card-author">
+									<ul class="card-time_rate">
+										<li class="card-rate"><span></span>10</li>
+									</ul>
+									<div class="author-bet" style="background-image: url(img/ava.jpg)">
+									</div>
+									<p class="card-slider-title">Отнимут ли квартиру за перепланировку</p>
+								</div>
+								<div id="collapse-slide-3" class="collapse in">
+									<div class="card-bet-slider-item_bg" style="background-image: url(img/vote-item1.jpg);">
+										<div class="bg--gradient"></div>
+									</div>
+								</div>
+								<ul class="vote-info">
+									<li class="vote-users"><span></span>300</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-time"><span></span>26ч</li>
+								</ul>
+
+								<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
+								<div class="slide-open">
+									<a href="#collapse-slide-3" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="card-bet-slider-item">
+								<div class="card-author">
+									<ul class="card-time_rate">
+										<li class="card-rate"><span></span>10</li>
+									</ul>
+									<div class="author-bet" style="background-image: url(img/ava.jpg)">
+									</div>
+									<p class="card-slider-title">Отнимут ли квартиру за перепланировку</p>
+								</div>
+								<div id="collapse-slide-4" class="collapse in">
+									<div class="card-bet-slider-item_bg" style="background-image: url(img/vote-item1.jpg);">
+										<div class="bg--gradient"></div>
+									</div>
+								</div>
+								<ul class="vote-info">
+									<li class="vote-users"><span></span>300</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-time"><span></span>26ч</li>
+								</ul>
+
+								<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
+								<div class="slide-open">
+									<a href="#collapse-slide-4" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="card-bet-slider-item">
+								<div class="card-author">
+									<ul class="card-time_rate">
+										<li class="card-rate"><span></span>10</li>
+									</ul>
+									<div class="author-bet" style="background-image: url(img/ava.jpg)">
+									</div>
+									<p class="card-slider-title">Отнимут ли квартиру за перепланировку</p>
+								</div>
+								<div id="collapse-slide-5" class="collapse in">
+									<div class="card-bet-slider-item_bg" style="background-image: url(img/vote-item1.jpg);">
+										<div class="bg--gradient"></div>
+									</div>
+								</div>
+								<ul class="vote-info">
+									<li class="vote-users"><span></span>300</li>
+									<li class="vote-money"><span></span>10k</li>
+									<li class="vote-time"><span></span>26ч</li>
+								</ul>
+
+								<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
+								<div class="slide-open">
+									<a href="#collapse-slide-5" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</article>
 
 
 
-	<footer class="footer">
+	<footer class="footer" id="stop-stiky">
 		<div class="footer-content container-fluid">
 			<div class="footer-col">
 				<h4>Приложение</h4>
@@ -143,22 +378,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<select class="modal-header_dropdown modal-header_dropdown--left" title="Ставлю">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="modal-header_dropdown modal-header_dropdown--right" title="100">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="modal-header_dropdown modal-header_dropdown--right" title="дол">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-
+					<input type="text" class="ms-input ms-input-sm" placeholder="Введите ставку">
 				</div>
 				<div class="modal-body">
 					<div class="bet-img" style="background-image: url(../img/vote-item1.jpg)"><div class="bg--gradient"></div></div>
@@ -184,9 +404,47 @@
 			</div>
 		</div>
 	</div>
-	<!--bootstrap|mCustomScrollbar|slick carousel|jquery.touchSwipe|air datepicker|bootstrap.file-input|bootstrap-select-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+	(function(){
+		var a = document.querySelector('#aside-stiky'), b = null, P = 20;
+		window.addEventListener('scroll', Ascroll, false);
+		document.body.addEventListener('scroll', Ascroll, false);
+		function Ascroll() {
+		  if (b == null) {
+		    var Sa = getComputedStyle(a, ''), s = '';
+		    b = document.createElement('div');
+		    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+		    a.insertBefore(b, a.firstChild);
+		    var l = a.childNodes.length;
+		    for (var i = 1; i < l; i++) {
+		      b.appendChild(a.childNodes[1]);
+		    }
+		    a.style.height = b.getBoundingClientRect().height + 'px';
+		    a.style.padding = '0';
+		    a.style.border = '0';
+		  }
+		  var Ra = a.getBoundingClientRect(),
+		      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.getElementById('stop-stiky').getBoundingClientRect().top + 50);
+		  if ((Ra.top - P) <= 0) {
+		    if ((Ra.top - P) <= R) {
+		      b.className = 'stop';
+		      b.style.top = - R +'px';
+		    } else {
+		      b.className = 'sticky';
+		      b.style.top = P + 'px';
+		    }
+		  } else {
+		    b.className = '';
+		    b.style.top = '';
+		  }
+		  window.addEventListener('resize', function() {
+		    a.children[0].style.width = getComputedStyle(a, '').width
+		  }, false);
+		}
+	})()
+	</script>
 	</body>
 </html>

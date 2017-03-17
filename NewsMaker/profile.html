@@ -70,28 +70,6 @@
 
 		  	</div><!-- /.container-fluid -->
 		</nav>
-		<!-- <nav class="navbar navbar-bottom navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-bottom" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-bottom">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Все</a></li>
-						<li><a href="#">Спорт</a></li>
-						<li class="active"><a href="#">Наука</a></li>
-						<li><a href="#">Общество</a></li>
-						<li><a href="#">Шоу-бизнес</a></li>
-						<li><a href="#">Политика</a></li>
-					</ul>
-				</div>
-		  	</div>
-		</nav> -->
 	</div>
 
 	<article>
@@ -99,12 +77,16 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="row relative">
-						<div class="col-sm-6">
-							<div class="profile-img" style="background-image: url(img/vote-item1.jpg);">
+						<div class="col-sm-6 col-xs-8">
+							<!-- <div class="profile-img" style="background-image: url(img/ava.jpg);"> -->
+							<div class="profile-img">
+								<img src="img/vote-item1.jpg" alt="">
 								<div class="bg--gradient"></div>
+								<div class="photo-upload"><a href="#">Загрузить фото</a></div>
+								<a href="" class="edit-profile" data-toggle="modal" data-target="#edit-profile" tabindex="0">Редактировать</a>
 							</div>
 						</div>
-						<div class="col-sm-6 social-group_profile">
+						<div class="col-sm-6 col-xs-4 social-group_profile">
 							<div class="social-group">
 								<ul>
 									<li><a href="#" class="btn-circle"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -136,7 +118,7 @@
 				<div class="col-xs-12 profile-statistics--title">
 					<div class="row">
 						<div class="col-sm-4 col-xs-12">
-							<h3>Мои</h3>
+							<h3>Пари</h3>
 						</div>
 						<div class="col-sm-4 col-xs-12">
 							<h3>Результаты</h3>
@@ -240,53 +222,81 @@
 		</div>
 	</div>
 
-	<div id="modalBet" class="modal fade" role="dialog">
+	<div id="edit-profile" class="modal fade" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<select class="modal-header_dropdown modal-header_dropdown--left" title="Ставлю">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="modal-header_dropdown modal-header_dropdown--right" title="100">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="modal-header_dropdown modal-header_dropdown--right" title="дол">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-
+					<h4>Редактирование профиля</h4>
 				</div>
 				<div class="modal-body">
-					<div class="bet-img" style="background-image: url(../img/vote-item1.jpg)"><div class="bg--gradient"></div></div>
-					<!-- <img src="img/vote-item1.jpg" alt=""> -->
+					<form action="">
+						<div class="form-group">
+							<label for="Name">Имя</label>
+							<input 
+								type="text" 
+								id="Name" 
+								class="form-control ms-input" 
+								placeholder="Введите имя"
+								required="">
+						</div>
+						<div class="form-group">
+							<label for="lastName">Фамилия</label>
+							<input 
+								type="text" 
+								class="form-control ms-input" 
+								id="lastName" 
+								required="" 
+								placeholder="Введите фамилию">
+						</div>
+						<div class="form-group">
+							<label for="dateProfile">Дата рождения</label>
+							<input 
+								type="text" 
+								id="dateProfile" 
+								class="form-control ms-input datepicker-here" 
+								data-position="right top"
+								placeholder="Введите дату рождения"
+								required="">
+						</div>
+						<div class="form-group">
+							<label for="tel">Номер телефона</label>
+							<input 
+								type="tel" 
+								class="form-control ms-input" 
+								id="tel" 
+								required="" 
+								placeholder="Введите номер телефона">
+						</div>
+						<div class="form-group gender">
+							<label for="male">
+								<input 
+									type="radio"
+									class="radio"
+									id="male"
+									name="gender">
+								<label for="male"></label>
+								Мужской
+							</label>
+							<label for="feminine">
+								<input 
+									type="radio"
+									class="radio"
+									id="feminine"
+									name="gender">
+								<label for="feminine"></label>
+								Женский
+							</label>
+						</div>
+						<button type="button" class="btn btn-save">Сохранить</button>
+					</form>
 				</div>
 				<div class="modal-footer">
-					<h4>Отнимут ли квартиру за перепланировку </h4>
-					<div class="social-group">
-						<ul>
-							<li><a href="#" class="btn-circle"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="btn-circle"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="btn-circle"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="btn-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="btn-circle"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="bet-slider-itm_content--bottom">
-						<a href="#" class="btn-circle shield"><i class="fa fa-shield" aria-hidden="true"></i></a>
-						<a href="#" class="btn btn-start">MAKE BET</a>
-						<a href="#" class="btn-circle factor">x2</a>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--bootstrap|mCustomScrollbar|slick carousel|jquery.touchSwipe|air datepicker|bootstrap.file-input|bootstrap-select-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>

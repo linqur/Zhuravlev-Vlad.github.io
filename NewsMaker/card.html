@@ -243,7 +243,7 @@
 		</div>
 	</article>
 	
-	<article class="" id="slider-stiky">
+	<article class="" id="stop-stiky">
 		<div class="container-fluid">
 			<div class="bet-slider">
 
@@ -269,8 +269,8 @@
 					</ul>
 
 					<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
-					<div class="col-xs-12">
-						<a href="#collapse-slide-1" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-90" aria-hidden="true"></i></a>
+					<div class="slide-open">
+						<a href="#collapse-slide-1" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
@@ -295,8 +295,8 @@
 					</ul>
 
 					<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
-					<div class="col-xs-12">
-						<a href="#collapse-slide-2" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-90" aria-hidden="true"></i></a>
+					<div class="slide-open">
+						<a href="#collapse-slide-2" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
@@ -321,8 +321,8 @@
 					</ul>
 
 					<button type="button" class="btn btn-start" data-toggle="modal" data-target="#modalBet" tabindex="0">START</button>
-					<div class="col-xs-12">
-						<a href="#collapse-slide-3" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-90" aria-hidden="true"></i></a>
+					<div class="slide-open">
+						<a href="#collapse-slide-3" class="slide-open-btn" data-toggle="collapse"><i class="fa fa-angle-double-left fa-rotate-270" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
@@ -391,22 +391,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<select class="selectpicker modal-header_dropdown modal-header_dropdown--left" title="Ставлю">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="selectpicker modal-header_dropdown modal-header_dropdown--right" title="100">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-					<select class="selectpicker modal-header_dropdown modal-header_dropdown--right" title="дол">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					</select>
-
+					<input type="text" class="ms-input ms-input-sm" placeholder="Введите ставку">
 				</div>
 				<div class="modal-body">
 					<div class="bet-img" style="background-image: url(../img/vote-item1.jpg)"><div class="bg--gradient"></div></div>
@@ -432,7 +417,6 @@
 			</div>
 		</div>
 	</div>
-	<!--bootstrap|mCustomScrollbar|slick carousel|jquery.touchSwipe|air datepicker|bootstrap.file-input|bootstrap-select-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
@@ -444,11 +428,6 @@
 		function Ascroll() {
 		  if (b == null) {
 		    var Sa = getComputedStyle(a, ''), s = '';
-		    // for (var i = 0; i < Sa.length; i++) {
-		    //   // if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
-		    //   //   s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
-		    //   // }
-		    // }
 		    b = document.createElement('div');
 		    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
 		    a.insertBefore(b, a.firstChild);
@@ -461,7 +440,7 @@
 		    a.style.border = '0';
 		  }
 		  var Ra = a.getBoundingClientRect(),
-		      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.getElementById('slider-stiky').getBoundingClientRect().top + 50);
+		      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.getElementById('stop-stiky').getBoundingClientRect().top + 50);
 		  if ((Ra.top - P) <= 0) {
 		    if ((Ra.top - P) <= R) {
 		      b.className = 'stop';

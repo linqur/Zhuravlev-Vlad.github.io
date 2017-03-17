@@ -14,6 +14,13 @@ $('.js--vote-title a').on('click', function(){
 
 });
 // END Расскрытое пари
+// Календарь
+$('#dateProfile').datepicker({
+  view: 'years'
+});
+// END Календарь
+
+$("#tel").mask("+7(999) 999-9999");//Маска для телефона
 
 $('input[type=file]').bootstrapFileInput();
 
