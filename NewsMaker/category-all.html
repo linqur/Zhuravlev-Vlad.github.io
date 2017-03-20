@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>NewsMaker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Навигация -->
+	<nav class="navbar-top navbar navbar-default">
+		<div class="container-fluid">
+			<div class=" col-md-7 col-sm-12">
+				<div class="row">
+					<div class="navbar-header col-md-8 col-sm-9 col-xs-7">
+						<a class="navbar-brand logo" href="index.html">News <span>Maker</span></a>
+					</div>
+
+					<div class="all-private--p col-sm-4 col-sm-3 col-xs-5">
+						<div class="all-private">
+							<a href="#" class="all"><span></span>все</a>
+							<a href="#" class="private active"><span></span>личное</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="col-md-5 col-sm-12 col-xs-12">
+				<div class="">
+					<div class="nav navbar-nav_search col-md-5 col-sm-5 col-xs-12">
+						<div class="input-group search search--p">
+							<span class="input-group-btn">
+							<button class="btn" type="button"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
+							</span>
+							<input type="text" class="form-control search_input">
+						</div>
+					</div>
+					<!-- <div class="authorization col-md-7 col-sm-7 col-xs-12">
+						<button type="button" class="btn btn-authorization" data-toggle="modal" data-target="#authorization-modal">Войти</button>
+					</div> -->
+					<div class="nav navbar-nav_user col-md-7 col-sm-7 col-xs-12">
+						<a href="create-bet.html" class="add-new add-new--p">
+							<i class="fa fa-plus" aria-hidden="true"></i>Добавить новость
+						</a>
+						<div class="user">
+							<a href="#" class="user-ava dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<span class="user-caret"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span>Win: </span>37%</a></li>
+								<li><a href="#" class="money-icon"><span></span>16.6k</a></li>
+								<li><a href="#">больше</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- /.container-fluid -->
+	</nav>
+	<article>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 title">
+					<h2>Все категории</h2>
+				</div>
+			</div>
+			<div class="masonry-layout">
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Спорт</a>
+							<a href="" class="subcategory-title">Подкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Наука</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Общество</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Шоу-бизнес</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Политика</a>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+							<a href="" class="subcategory-title">Подподкатегория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Просто категория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">Очень длинная категория</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="masonry-layout__panel">
+					<div class="masonry-layout__panel-content">
+						<div class="category-itm">
+							<a href="#" class="category-title">И не очень</a>
+							<ul class="subcategory-itm">
+								<li><a href="#">Подподкатегория 1</a></li>
+								<li><a href="#">Подподкатегория 2</a></li>
+								<li><a href="#">Подподкатегория 3</a></li>
+								<li><a href="#">Подподкатегория 4</a></li>
+								<li><a href="#">Подподкатегория 5</a></li>
+								<li><a href="#">Подподкатегория 6</a></li>
+								<li><a href="#">Подподкатегория 7</a></li>
+								<li><a href="#">Подподкатегория 8</a></li>
+								<li><a href="#">Подподкатегория 9</a></li>
+								<li><a href="#">Подподкатегория 10</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+	<footer class="footer" id="stop-stiky">
+		<div class="footer-content container-fluid">
+			<div class="footer-col">
+				<h4>Приложение</h4>
+				<ul>
+					<li><a href="#">iOS</a></li>
+					<li><a href="#">Android</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Меню</h4>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Реклама</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">MeduzaCare</a></li>
+					<li><a href="#">Об Атласе</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Подписка</h4>
+				<form action="">
+					<div class="input-group">
+						<input type="email" class="form-control" required placeholder="Ваш e-mail">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<footer class="footer-bottom">
+		<p class="copyright">&copy; 2016. Все права защищены.</p>
+	</footer>
+	
+	<div id="authorization-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Вход</h4>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<input type="text" class="form-control" required placeholder="Телефон">
+						<input type="password" class="form-control" required placeholder="Пароль">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-authorization">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalBet" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<input type="text" class="ms-input ms-input-sm" placeholder="Введите ставку">
+				</div>
+				<div class="modal-body">
+					<div class="bet-img" style="background-image: url(../img/vote-item1.jpg)"><div class="bg--gradient"></div></div>
+					<!-- <img src="img/vote-item1.jpg" alt=""> -->
+				</div>
+				<div class="modal-footer">
+					<h4>Отнимут ли квартиру за перепланировку </h4>
+					<div class="social-group">
+						<ul>
+							<li><a href="#" class="btn-circle"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="btn-circle"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="btn-circle"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="btn-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="btn-circle"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="bet-slider-itm_content--bottom">
+						<a href="#" class="btn-circle shield"><i class="fa fa-shield" aria-hidden="true"></i></a>
+						<a href="#" class="btn btn-start">MAKE BET</a>
+						<a href="#" class="btn-circle factor">x2</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	</body>
+</html>
