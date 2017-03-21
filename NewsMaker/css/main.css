@@ -14,7 +14,7 @@
   bottom: 0;
   height: 100vh;
   margin: auto;
-  background-color: rgba(3, 169, 244, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 3; }
 
 .loader {
@@ -34,7 +34,7 @@
     height: 40px;
     width: 4px;
     margin: 0 2px;
-    background-color: #ffffff; }
+    background-color: #03a9f4; }
     .loader .loader-item:nth-child(1) {
       -webkit-animation: loader-item-1 2s linear infinite;
               animation: loader-item-1 2s linear infinite; }
@@ -69,7 +69,7 @@
     content: 'Loading...';
     font-size: 16px;
     font-family: "Arial";
-    color: #ffffff;
+    color: #03a9f4;
     text-align: center;
     position: absolute;
     left: 0;
