@@ -6,6 +6,20 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Segoe-UI';
+  src: url("../fonts/SegoeUI/SegoeUI.eot");
+  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI/SegoeUI.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe-UI';
+  src: url("../fonts/SegoeUI-Light/SegoeUI-Light.eot");
+  src: url("../fonts/SegoeUI-Light/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI-Light/SegoeUI-Light.woff2") format("woff2"), url("../fonts/SegoeUI-Light/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light/SegoeUI-Light.ttf") format("truetype"), url("../fonts/SegoeUI-Light/SegoeUI-Light.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
 .loader-wrap {
   position: fixed;
   left: 0;
@@ -358,7 +372,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Segoe-UI", sans-serif !important;
   background: #fcfcfc;
   position: relative;
   min-height: 100%;
@@ -392,6 +406,13 @@ textarea.ms-input {
   max-width: 330px;
   width: 100%;
   height: inherit; }
+
+.form-group-date {
+  margin-bottom: 70px; }
+
+.create-bet-form textarea.ms-input {
+  max-width: 100%;
+  min-width: 100%; }
 
 .warning {
   background: rgba(243, 134, 126, 0.7);
@@ -443,6 +464,14 @@ textarea.ms-input {
 .error {
   color: #f3867e;
   font-size: 16px; }
+  .error__ol {
+    padding-left: 25px; }
+    .error__ol li {
+      list-style-type: decimal !important; }
+  .error__ul {
+    padding-left: 25px; }
+    .error__ul li {
+      list-style-type: disc !important; }
 
 .sticky {
   position: fixed; }
@@ -936,8 +965,6 @@ nav .container-fluid {
     position: absolute;
     top: 0;
     left: 0; }
-    .bet-slider-itm_bg:hover {
-      z-index: 1; }
     .bet-slider-itm_bg-gradient {
       background: -webkit-gradient(linear, left top, right bottom, from(rgba(198, 190, 206, 0.5)), to(rgba(198, 190, 206, 0.5)));
       background: -webkit-linear-gradient(top left, rgba(198, 190, 206, 0.5), rgba(198, 190, 206, 0.5));
@@ -1248,9 +1275,7 @@ nav .container-fluid {
     .form-group--variant li:hover > .delete-variant {
       color: #000; }
   .form-group--variant .ms-input {
-    text-align: left;
-    padding-top: 16px;
-    padding-bottom: 16px; }
+    text-align: left; }
     .form-group--variant .ms-input + span button {
       -webkit-border-radius: 0;
               border-radius: 0;
