@@ -59,10 +59,10 @@
 						</a>
 					</div>
 					<div class="navbar-bottom_btn-group col-md-8 col-sm-7 col-xs-12">
-						<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-envelope-o" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Обратная связь</span><span class="btn-bg"></span></a>
+						<a href="#" class="btn-ms btn-blue" data-toggle="modal" data-target="#feedback"><i class="btn-text fa fa-envelope-o" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Обратная связь</span><span class="btn-bg"></span></a>
 						<a href="#" class="btn-ms btn-blue"><i class="btn-text fa fa-phone" aria-hidden="true"></i><span class="hidden-sm hidden-xs btn-text">|</span><span class="hidden-sm hidden-xs btn-text">Заказать звонок</span><span class="btn-bg"></span></a>
 						<a href="basket.html" class="navbar-bottom_btn basket_btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Корзина</span></a>
-						<a href="#" class="navbar-bottom_btn entrance_btn"><i class="fa fa-user" aria-hidden="true"></i><span>Вход</span></a>
+						<a href="#" class="navbar-bottom_btn entrance_btn" data-toggle="modal" data-target="#authorization"><i class="fa fa-user" aria-hidden="true"></i><span>Вход</span></a>
 						<form class="navbar-bottom_search right">
 						  	<label class="tcon tcon-search--xcross right" aria-label="toggle search">
 								<span class="tcon-search__item" aria-hidden="true"></span>
@@ -81,7 +81,7 @@
 	<div class="row">
 		<div class="col-xs-12 menu">
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Гигиенические расходные материалы</a>
+				<a href="catalog.html" class="menu_link">Гигиенические расходные материалы</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -89,22 +89,8 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Диспенсеры/дозаторы/оборудования</a>
+				<a href="catalog.html" class="menu_link">Диспенсеры/дозаторы/оборудования</a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Подкатегория 1</a></li>
-					<li><a href="#">Подкатегория 2</a></li>
-					<li><a href="#">Подкатегория 3</a></li>
-					<li><a href="#">Подкатегория 1</a></li>
-					<li><a href="#">Подкатегория 2</a></li>
-					<li><a href="#">Подкатегория 3</a></li>
-				</ul>
-			</div>
-			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Моющие средства</a>
-				<ul class="dropdown-menu">
-					<li><a href="#">Подкатегория 1</a></li>
-					<li><a href="#">Подкатегория 2</a></li>
-					<li><a href="#">Подкатегория 3</a></li>
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
 					<li><a href="#">Подкатегория 3</a></li>
@@ -114,11 +100,8 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Инвентарь для уборки</a>
+				<a href="catalog.html" class="menu_link">Моющие средства</a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Подкатегория 1</a></li>
-					<li><a href="#">Подкатегория 2</a></li>
-					<li><a href="#">Подкатегория 3</a></li>
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
 					<li><a href="#">Подкатегория 3</a></li>
@@ -131,7 +114,24 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Хранение и утилизация мусора</a>
+				<a href="catalog.html" class="menu_link">Инвентарь для уборки</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Подкатегория 1</a></li>
+					<li><a href="#">Подкатегория 2</a></li>
+					<li><a href="#">Подкатегория 3</a></li>
+					<li><a href="#">Подкатегория 1</a></li>
+					<li><a href="#">Подкатегория 2</a></li>
+					<li><a href="#">Подкатегория 3</a></li>
+					<li><a href="#">Подкатегория 1</a></li>
+					<li><a href="#">Подкатегория 2</a></li>
+					<li><a href="#">Подкатегория 3</a></li>
+					<li><a href="#">Подкатегория 1</a></li>
+					<li><a href="#">Подкатегория 2</a></li>
+					<li><a href="#">Подкатегория 3</a></li>
+				</ul>
+			</div>
+			<div class="dropdown menu-itm">
+				<a href="catalog.html" class="menu_link">Хранение и утилизация мусора</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -139,7 +139,7 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Протирочные материалы</a>
+				<a href="catalog.html" class="menu_link">Протирочные материалы</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -147,7 +147,7 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Спецодежда и СИЗ</a>
+				<a href="catalog.html" class="menu_link">Спецодежда и СИЗ</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -155,7 +155,7 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Оборудование для уборки</a>
+				<a href="catalog.html" class="menu_link">Оборудование для уборки</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -163,7 +163,7 @@
 				</ul>
 			</div>
 			<div class="dropdown menu-itm">
-				<a href="catalog.html" class="menu_link" data-toggle="dropdown">Специальные предложения</a>
+				<a href="catalog.html" class="menu_link">Специальные предложения</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">Подкатегория 1</a></li>
 					<li><a href="#">Подкатегория 2</a></li>
@@ -391,6 +391,54 @@
 		</div>
 	</div>
 </footer>
+<!--Обратная связь-->
+<div id="feedback" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h2 class="modal-title">Оставте заявку</h2>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control input-ms" id="name" required="">
+				<label class="label animate">Имя</label>
+				<input type="text" class="form-control input-ms" id="phoneNumber" required="">
+				<label class="label animate">Телефон</label>
+			</div>
+			<div class="modal-footer">
+				<a  href="#" class="btn-ms btn-blue">
+					<span class="hidden-sm hidden-xs btn-text">Отправить</span>
+					<span class="btn-bg"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Обратная связь-->
+<!--Авторизация-->
+<div id="authorization" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h2 class="modal-title">Вход</h2>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control input-ms" id="login" required="">
+				<label class="label animate">Логин</label>
+				<input type="password" class="form-control input-ms" id="password" required="">
+				<label class="label animate">Пароль</label>
+			</div>
+			<div class="modal-footer">
+				<a  href="#" class="btn-ms btn-blue">
+					<span class="hidden-sm hidden-xs btn-text">Отправить</span>
+					<span class="btn-bg"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Авторизация-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
