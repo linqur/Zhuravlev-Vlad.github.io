@@ -492,6 +492,7 @@ textarea.ms-input {
   .ms-input .btn {
     -webkit-border-radius: 0;
             border-radius: 0;
+    border-color: #e8e8e8;
     padding-top: 11px;
     padding-bottom: 11px; }
 
@@ -1529,6 +1530,8 @@ footer {
   .profile-img:hover .edit-profile,
   .profile-img:hover .photo-upload {
     opacity: 1; }
+  .profile-img:hover .edit-profile--icon {
+    opacity: 0; }
   .profile-img:hover .bg--gradient {
     background: rgba(38, 39, 45, 0.5); }
   .profile-img .bg--gradient {
@@ -1556,6 +1559,7 @@ footer {
 .edit-profile {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: rgba(210, 243, 125, 0.7);
   padding: 10px;
@@ -1566,6 +1570,13 @@ footer {
   font-size: 16px; }
   .edit-profile:hover {
     color: #26272d; }
+  .edit-profile--icon {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 .datepickers-container {
   z-index: 10050; }
