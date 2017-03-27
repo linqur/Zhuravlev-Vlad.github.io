@@ -18,6 +18,9 @@ $('.js--vote-title a').on('click', function(){
 $('#dateProfile').datepicker({
   view: 'years'
 });
+$('#dateCreateBet').datepicker({
+    minDate: new Date()
+});
 // END Календарь
 
 $("#tel").mask("+7(999) 999-9999");//Маска для телефона
