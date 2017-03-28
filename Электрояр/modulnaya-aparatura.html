@@ -7,13 +7,23 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title></title>
 
-    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
-
+	<style>
+		#testA{
+			width: 100%;
+			height: 400px;
+		}
+		.webix_header>div{
+			background: #fff;
+			color: #000;
+		}
+		
+	</style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -213,6 +223,10 @@
 				</div>
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active col-md-9 col-md-offset-3 col-xs-12 category_right" id="list">
+						<div id="testA">
+							
+						</div>
+<!--
 						<table class="table table-striped table-hover">
 						  <thead>
 							  <tr>
@@ -315,6 +329,7 @@
 							  </tr>
 						  </tbody>
 						 </table>
+-->
 						 <div class="product_category--next col-xs-12">
 						 	<button class="btn">Показать еще 15<div class="ripple-container"></div></button>
 						 </div>
@@ -438,9 +453,54 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script>
+	webix.ready(function(){
+		var HeaderTable = [
+			{ id:1, title:"Название"},
+			{ id:2, title:"Поставщик"},
+			{ id:3, title:"Цена"}		
+		];
+		
+		grid = webix.ui({
+			container:"testA",
+			rows:[
+				{cols:[
+					{ type: 'header', template:"Название"},
+					{ type: 'header', template:"Поставщик"},
+					{ type: 'header', template:"Цена"},
+					{ type: 'header', template:" "},
+					{ type: 'header', template:" "}
+				]},
+				{cols:[
+					{ template:"<a href='#'>Кабель ВВГ 2х1.5 плоский 0.66кВ Ч</a>"},
+					{ template:"<a href='#'>Monahan Inc</a>"},
+					{ template:"13.000 руб"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Купить</a>"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Удалить</a>"}
+				]},
+				{cols:[
+					{ template:"<a href='#'>Кабель ВВГ 2х1.5 плоский 0.66кВ Ч</a>"},
+					{ template:"<a href='#'>Monahan Inc</a>"},
+					{ template:"13.000 руб"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Купить</a>"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Удалить</a>"}
+				]},
+				{cols:[
+					{ template:"<a href='#'>Кабель ВВГ 2х1.5 плоский 0.66кВ Ч</a>"},
+					{ template:"<a href='#'>Monahan Inc</a>"},
+					{ template:"13.000 руб"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Купить</a>"},
+					{ template: "<a href='http://vladil.tomat.agency/products/kolichestvo-zhil-2-13/kabel-avvg-2h16-kruglyy-0-66kv-ch/companies' class='btn btn-raised btn-sm'>Удалить</a>"}
+				]},
+				
+			]
+		});
+	});
+	</script>
     <script>var demo = new StickyElement($('#sticky2'));</script>
   </body>
 </html>

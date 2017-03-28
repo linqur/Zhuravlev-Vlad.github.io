@@ -33,6 +33,31 @@
 		.stop {
 		  position: relative;
 		}
+		#aside1{
+			float: right;
+		}
+		@media screen and (max-width: 1600px){
+			#search-company .wrapper_content .block{
+				width: 47%;
+			}
+		}
+		@media screen and (max-width: 1366px){
+			#map{
+				height: 400px !important;
+			}
+		}
+		@media screen and (max-width: 991px){
+			.sticky {
+				position: static;
+			}
+			.stop {
+			  position: static;
+			}
+			#aside1{
+				float: left;
+				margin-bottom: 30px;
+			}
+		}
     </style>
   </head>
   <body class="product">
@@ -183,16 +208,15 @@
 </div>
 <div class="container-fluid content">
 	<div class="row">
-		<div class="col-md-5" id="search-company">
+		<div class="col-md-7 col-xs-12" id="aside1">
+			<div id="map" style="width: 100%; height: 600px"></div>
+		</div>
+		<div class="col-md-5 col-xs-12" id="search-company">
 			<div class="wrapper">
 				<div class="wrapper_content">
 					
 				</div>
 			</div>
-		</div>
-		<div class="col-md-7" id="aside1">
-			<div id="map" style="width: 100%; height: 600px"></div>
-		</div>
 		</div>
 	</div>
 </div>
