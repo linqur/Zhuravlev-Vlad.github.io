@@ -44,7 +44,7 @@ li {
 
 .sticky {
   position: fixed;
-  z-index: 999; }
+  z-index: 10; }
 
 .stop,
 .relative {
@@ -312,7 +312,7 @@ input:focus {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999; }
+  z-index: 10; }
 
 .navbar {
   min-height: initial; }
@@ -477,12 +477,19 @@ a:hover {
         color: #fff; }
 
 .menu-subcategory {
-  font-size: 16px !important; }
+  margin-bottom: 5px;
+  display: inline-block; }
 
 .menu-subcategory-list {
   margin-bottom: 15px; }
-  .menu-subcategory-list li {
-    padding-left: 15px; }
+  .menu-subcategory-list a {
+    font-family: 'OpenSans-Regular';
+    font-size: 12px !important;
+    color: #444 !important;
+    line-height: 2; }
+    .menu-subcategory-list a:hover {
+      font-family: 'OpenSans-Bold';
+      color: #0b3856; }
 
 .masonry-layout {
   -webkit-column-count: 4;
