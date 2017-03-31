@@ -251,4 +251,5 @@ function formLabel(){
 	    else if($(this).val().length>0 && !label.hasClass('valid')) label.addClass('valid');
 	}
 };
+formLabel();
 //END formLabel
