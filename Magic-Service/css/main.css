@@ -454,13 +454,13 @@ a:hover {
   .menu_link {
     font-family: 'OpenSans-Semibold';
     font-size: 11px;
+    text-align: center;
     line-height: 1.2;
     border: 1px solid #cddfec;
     height: 80px;
     background: #e6edf2;
     border-collapse: collapse;
-    padding-top: 15px;
-    text-align: center;
+    padding: 15px;
     display: inline-block;
     z-index: 1; }
     .menu_link:hover {
@@ -476,7 +476,8 @@ a:hover {
 
 .menu-subcategory {
   margin-bottom: 5px;
-  display: inline-block; }
+  display: inline-block;
+  color: #016fb5 !important; }
 
 .menu-subcategory-list {
   margin-bottom: 15px; }
