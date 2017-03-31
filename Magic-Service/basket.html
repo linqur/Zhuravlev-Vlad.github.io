@@ -264,7 +264,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="order-form col-xs-12">
+				<div class="order-form col-xs-12 labelFormJs">
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="contacts">
 							<div class="col-md-8 col-xs-12">
@@ -316,19 +316,19 @@
 										<div class="form-group">
 											<div class="col-md-6">
 												<input type="text" class="form-control input-ms" id="FIO" required>
-												<label class="label animate">ФИО</label>
+												<label class="label">ФИО</label>
 											</div>
 											<div class="col-md-6">
 												<input type="tel" class="form-control input-ms" id="phon-number" required>
-												<label class="label animate">Телефон</label>
+												<label class="label">Телефон</label>
 											</div>
 											<div class="col-md-6">
 												<input type="email" class="form-control input-ms" id="email" required>
-												<label class="label animate">E-mail</label>
+												<label class="label">E-mail</label>
 											</div>
 											<div class="col-md-6">
 												<input type="text" class="form-control input-ms" id="city" required>
-												<label class="label animate">Город</label>
+												<label class="label">Город</label>
 											</div>
 										</div>
 									</fieldset>
@@ -477,25 +477,7 @@
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-	$(document).ready(function() {
-	  $(form0).find('input').each(function() {
-	    var input = $(this);
-	    var label = input.parent().children('label'); if(label.length==0) return;
-	    
-	    if(label.hasClass('valid')) label.removeClass('valid');
-	    if(!label.hasClass('animate')) label.addClass('animate');
-	    
-	    label.click(function() { input.focus(); });
-	    input.on('keyup focus blur', event);
-	  });
-
-	  function event(e) {
-	    e = e || window.event;
-	    var label = $(this).parent().children('label'); if(label.length==0) return;
-	    if($(this).val().length==0 && label.hasClass('valid')) label.removeClass('valid');
-	    else if($(this).val().length>0 && !label.hasClass('valid')) label.addClass('valid');
-	  }
-	});
+	formLabel();
 </script>
 </body>
 </html>

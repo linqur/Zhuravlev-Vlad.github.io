@@ -185,7 +185,7 @@ input:focus {
 
 .sidebar-content {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   color: #fff; }
   .sidebar-content .btn-group .dropdown-toggle {
     background: #268fd2;
@@ -439,8 +439,7 @@ a:hover {
     -webkit-border-radius: 0;
             border-radius: 0;
     margin-top: 0;
-    padding-left: 10px;
-    z-index: 10; }
+    padding-left: 10px; }
     .menu-itm .dropdown-menu a {
       font-family: 'OpenSans-Semibold';
       font-size: 14px;
@@ -479,6 +478,8 @@ a:hover {
   margin-bottom: 5px;
   display: inline-block;
   color: #016fb5 !important; }
+  .menu-subcategory:hover {
+    color: #045b91 !important; }
 
 .menu-subcategory-list {
   margin-bottom: 15px; }
