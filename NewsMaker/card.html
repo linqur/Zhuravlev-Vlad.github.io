@@ -280,6 +280,14 @@
 									</div>
 								</div>
 							</div>
+							<div class="complete-bet">
+								<button type="button" 
+										class="btn btn-start" 
+										data-toggle="modal" 
+										data-target="#modalComplete">
+										ЗАВЕРШИТЬ
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -470,14 +478,53 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h4>Сообщение</h4>
-				    <button type="button" class="close" data-dismiss="modal">&times;</button
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
 					<textarea name="" id="" class="ms-input" cols="30" rows="5"></textarea>
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-start">Отправить</a>
-					
+					<a href="#" class="btn btn-start">ОТПРАВИТЬ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="modalComplete" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Выберите правильный вариант</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<label for="variant1">
+						<input  type="radio" 
+								name="true-variant" 
+								class="radio" 
+								id="variant1">
+						<label for="variant1"></label>
+						Создается прецедент чтобы легче и быстрее отнимать квартиры
+					</label>
+					<label for="variant2">
+						<input  type="radio" 
+								name="true-variant" 
+								class="radio" 
+								id="variant2">
+						<label for="variant2"></label>
+						Дело остановят из-за шумихи в прессе и пойдут на мировую
+					</label>
+					<label for="variant3">
+						<input  type="radio" 
+								name="true-variant" 
+								class="radio" 
+								id="variant3">
+						<label for="variant3"></label>
+						Хозяин договорится и вернёт как было
+					</label>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn btn-start">ОТПРАВИТЬ</a>
 				</div>
 			</div>
 		</div>

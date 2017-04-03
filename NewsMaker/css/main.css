@@ -410,7 +410,8 @@ li {
 .sr-only {
   color: #5b5b5b;
   font-size: 16px;
-  position: static; }
+  position: static;
+  margin: 0; }
   .sr-only--percent {
     color: #5b5b5b;
     font-weight: bold;
@@ -976,6 +977,10 @@ nav .container-fluid {
 .answered .variant.active:hover {
   background: url(../img/eye-blue.png) no-repeat 0 50%; }
 
+.complete-bet {
+  padding-top: 20px;
+  text-align: center; }
+
 .bet-slider-card .slick-arrow {
   top: 510px; }
 
@@ -1004,7 +1009,7 @@ nav .container-fluid {
     padding: 10px 20px 20px 20px;
     background: #fff;
     width: 270px;
-    height: 310px;
+    height: 325px;
     position: absolute;
     bottom: 0;
     right: 0; }
@@ -1730,7 +1735,7 @@ footer {
     height: 22px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    padding-bottom: 1px; }
+    padding-bottom: 3px; }
 
 .modal-header,
 .modal-footer {
@@ -1967,6 +1972,15 @@ footer {
 
 .modal-header_dropdown--right {
   float: right !important; }
+
+#modalComplete .modal-dialog {
+  width: 100%;
+  max-width: 600px; }
+
+#modalComplete .modal-body > label {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px; }
 
 .masonry-layout {
   -webkit-column-count: 4;
