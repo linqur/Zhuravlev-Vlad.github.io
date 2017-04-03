@@ -396,6 +396,31 @@ ul {
 li {
   list-style-type: none; }
 
+.progress {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 20px;
+  margin-bottom: 0;
+  margin-left: 60px; }
+  .progress-bar {
+    background: #dae1e8;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.sr-only {
+  color: #5b5b5b;
+  font-size: 16px;
+  position: static; }
+  .sr-only--percent {
+    color: #5b5b5b;
+    font-weight: bold;
+    padding-left: 20px;
+    overflow: visible;
+    height: inherit;
+    width: inherit;
+    position: static;
+    float: left; }
+
 .navbar-block {
   background: #fff;
   -webkit-box-shadow: 1px 1px 1px #000;
@@ -2098,7 +2123,11 @@ footer {
   .masonry-layout {
     -webkit-column-count: 2;
        -moz-column-count: 2;
-            column-count: 2; } }
+            column-count: 2; }
+  .progress {
+    background: rgba(245, 245, 245, 0.3); }
+    .progress-bar {
+      background: rgba(218, 225, 232, 0.9); } }
 
 @media (max-width: 480px) {
   .logo {
