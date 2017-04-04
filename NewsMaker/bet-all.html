@@ -89,22 +89,22 @@
 							<div class="form-group col-xs-12">
 								<label for="bet">
 									Пари
-									<input 	type="checkbox"
-											class="radio" 
-											id="bet">
+									<input type="checkbox"
+										   class="radio" 
+										   id="bet">
 									<label for="bet"></label>
 								</label>
 								<label for="interview">
 									Опрос
-									<input 	type="checkbox"
-											class="radio" 
-											id="interview">
+									<input type="checkbox"
+										   class="radio" 
+										   id="interview">
 									<label for="interview"></label>
 								</label>
 							</div>
 							<div class="form-group col-md-12 col-sm-6 col-xs-12">
 								<label for="typeBet">Тип пари</label>
-								<select class="form-control ms-input" id="typeBet">
+								<select class="form-control ms-input js-select" id="typeBet" style="width: 100%">
 									<option>Тип 1</option>
 									<option>Тип 2</option>
 									<option>Тип 3</option>
@@ -112,7 +112,7 @@
 							</div>
 							<div class="form-group col-md-12 col-sm-6 col-xs-12">
 								<label for="typeCategory">Тип категории</label>
-								<select class="form-control ms-input" id="typeCategory">
+								<select class="form-control ms-input js-select" id="typeCategory" style="width: 100%">
 									<option>Тип 1</option>
 									<option>Тип 2</option>
 									<option>Тип 3</option>
@@ -134,20 +134,24 @@
 										<button class="fa fa-times" aria-hidden="true"></button>
 									</span>
 									<div class="inline-table">
-										<input 	type="text" 
-												list="tegList" 
-												class="tegList">
+										<select class="tegList js-select-teg" style="width: 100%">
+											<option value=""></option>
+											<option>teg3teg3teg3teg3teg3teg3</option>
+											<option>teg1</option>
+											<option>teg2</option>
+											<option>teg4</option>
+											<option>teg5</option>
+											<option>teg6</option>
+											<option>teg7</option>
+											<option>teg8</option>
+											<option>teg9</option>
+											<option>teg10</option>
+										</select>
 										<span class = "input-group-btn">
 						                  	<button class = "btn btn-default" type = "button">
 												<i class="fa fa-plus" aria-hidden="true"></i>
 						                  	</button>
 						               </span>
-										<datalist id="tegList">
-											<option>teg 1</option>
-											<option>teg 2</option>
-											<option>teg 3</option>
-											<option>teg 4</option>
-										</datalist>
 									</div>
 								</div>
 							</div>

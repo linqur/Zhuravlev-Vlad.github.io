@@ -14,6 +14,22 @@ $('.js--vote-title a').on('click', function(){
 
 });
 // END Расскрытое пари
+//select2
+$(document).ready(function() {
+	$(".js-select").select2({
+		minimumResultsForSearch: -1
+	});
+});
+$('.js-select-teg').select2({
+	multiple: true,
+	allowClear: true,
+	maximumSelectionLength: 2,
+	theme      : "classic"
+}).on('select2:select', function (e) {
+	$(this).val([]).trigger('change');
+	$(this).val([e.params.data.id]).trigger("change");
+});
+//END select2
 // Календарь
 $('#dateProfile').datepicker({
   view: 'years'
