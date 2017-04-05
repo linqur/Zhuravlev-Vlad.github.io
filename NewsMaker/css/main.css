@@ -447,12 +447,12 @@ li {
   .sr-only--percent {
     color: #5b5b5b;
     font-weight: bold;
-    padding-left: 20px;
     overflow: visible;
-    height: inherit;
-    width: inherit;
-    position: static;
-    float: left; }
+    height: 20px;
+    width: 50px;
+    clip: inherit;
+    position: absolute;
+    left: 0; }
 
 .navbar-block {
   background: #fff;
@@ -685,7 +685,10 @@ nav .container-fluid {
 
 .btn-authorization,
 .btn-next,
-.btn-save {
+.btn-save,
+.btn-complete,
+.btn-cancel,
+.btn-delete {
   color: #26272d;
   font-size: 13px;
   font-weight: 600;
@@ -697,16 +700,40 @@ nav .container-fluid {
   float: right; }
   .btn-authorization:hover,
   .btn-next:hover,
-  .btn-save:hover {
+  .btn-save:hover,
+  .btn-complete:hover,
+  .btn-cancel:hover,
+  .btn-delete:hover {
     background: #3967fa;
     color: #fff; }
 
 .btn-next,
-.btn-save {
+.btn-save,
+.btn-complete,
+.btn-cancel,
+.btn-delete {
   float: none; }
   .btn-next--center,
-  .btn-save--center {
+  .btn-save--center,
+  .btn-complete--center,
+  .btn-cancel--center,
+  .btn-delete--center {
     text-align: center; }
+
+.btn-complete,
+.btn-cancel,
+.btn-delete {
+  padding: 12px 30px; }
+
+.btn-complete {
+  border-color: #2dbc49; }
+  .btn-complete:hover {
+    background: #2dbc49; }
+
+.btn-delete {
+  border-color: #f3867e; }
+  .btn-delete:hover {
+    background: #f3867e; }
 
 .search--p {
   margin-top: 8px; }
@@ -991,7 +1018,10 @@ nav .container-fluid {
     line-height: 50px; }
 
 .variant {
-  background: url(../img/eye-grey.png) no-repeat 0 50%; }
+  background: url(../img/eye-grey.png) no-repeat 0 50%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 100%; }
   .variant:hover, .variant.active {
     background: url(../img/eye-blue.png) no-repeat 0 50%; }
   .variant a {
@@ -1009,7 +1039,8 @@ nav .container-fluid {
 .answered .variant.active:hover {
   background: url(../img/eye-blue.png) no-repeat 0 50%; }
 
-.complete-bet {
+.complete-bet,
+.cancel-bet {
   padding-top: 20px;
   text-align: center; }
 
@@ -2096,6 +2127,8 @@ footer {
   .card-bet-slider-item {
     padding: 10px;
     width: 325px; }
+  .card-bet-inform {
+    margin-top: 75px; }
   .card-bet-inform,
   .card-description,
   .card-participants {
@@ -2173,7 +2206,9 @@ footer {
   .progress {
     background: rgba(245, 245, 245, 0.3); }
     .progress-bar {
-      background: rgba(218, 225, 232, 0.9); } }
+      background: rgba(218, 225, 232, 0.9); }
+  .complete-bet {
+    text-align: center; } }
 
 @media (max-width: 480px) {
   .logo {
