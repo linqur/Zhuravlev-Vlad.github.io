@@ -1032,6 +1032,8 @@ nav .container-fluid {
     margin-top: 40px;
     margin-bottom: 40px;
     display: inline-block; }
+  .variant.variant-true {
+    background: url(../img/eye-green.png) no-repeat 0 50%; }
 
 .answered .variant:hover {
   background: url(../img/eye-grey.png) no-repeat 0 50%; }
@@ -1812,23 +1814,23 @@ footer {
   .modal-footer .btn-authorization {
     float: none; }
 
-#modalBet .modal-dialog {
+.modalBet .modal-dialog {
   max-width: 470px;
   width: 100%; }
 
-#modalBet .modal-content {
+.modalBet .modal-content {
   padding: 5px; }
 
-#modalBet .modal-body {
+.modalBet .modal-body {
   height: 200px;
   padding-top: 0;
   padding-bottom: 0; }
 
-#modalBet h4 {
+.modalBet h4 {
   color: #26272d;
   font-size: 16px; }
 
-#modalBet .btn-start {
+.modalBet .btn-start {
   display: inline-block;
   margin: 0 20px; }
 
@@ -2036,11 +2038,11 @@ footer {
 .modal-header_dropdown--right {
   float: right !important; }
 
-#modalComplete .modal-dialog {
+.modalComplete .modal-dialog {
   width: 100%;
   max-width: 600px; }
 
-#modalComplete .modal-body > label {
+.modalComplete .modal-body > label {
   display: block;
   text-align: left;
   margin-bottom: 20px; }
@@ -2135,7 +2137,7 @@ footer {
     padding: 5px; }
   .modal-dialog {
     margin: 10px auto; }
-  #modalBet {
+  .modalBet {
     padding: 0 10px; }
   .sticky {
     position: static; }
@@ -2227,7 +2229,7 @@ footer {
     height: 120px; }
   .bet-slider-itm {
     width: 310px !important; }
-  #modalBet .btn-start {
+  .modalBet .btn-start {
     margin: 0 10px; }
   .card-date {
     float: left;
