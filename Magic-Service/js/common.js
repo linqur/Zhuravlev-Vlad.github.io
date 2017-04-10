@@ -15,10 +15,10 @@ $('.navbar-bottom .tcon').on('click',function(){
 });
 //END  Раскрывает поле поиска при клиике на иконку
 // Кнопка "Купить" при ховере на продукт
-$('.product').hover(function(){
-  $(this).find('.price').toggle();
-  $(this).find('.btn-basket-block').toggle();
-});
+//$('.product').hover(function(){
+//  $(this).find('.price').toggle();
+//  $(this).find('.btn-basket-block').toggle();
+//});
 // Кнопка "Купить" при ховере на продукт
 // $(function () {
 //     $("[rel='tooltip']").tooltip();
