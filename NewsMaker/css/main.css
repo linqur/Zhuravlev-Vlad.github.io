@@ -396,6 +396,10 @@ ul {
 li {
   list-style-type: none; }
 
+.registration-link {
+  margin-top: 20px;
+  text-align: center; }
+
 .select2-container--default .select2-selection--single {
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -413,13 +417,10 @@ li {
 
 .select2-selection.select2-selection--multiple {
   border-color: #ccc;
-  height: 34px;
   -webkit-border-top-right-radius: 0;
           border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 0;
           border-bottom-right-radius: 0; }
-  .select2-selection.select2-selection--multiple .select2-search__field {
-    width: 100% !important; }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__choice {
   background: #fff;
@@ -427,6 +428,9 @@ li {
 
 .select2-selection__choice__remove {
   display: none !important; }
+
+.btn-add-teg {
+  padding: 5px 12px; }
 
 .progress {
   -webkit-box-shadow: none;
@@ -438,6 +442,15 @@ li {
     background: #dae1e8;
     -webkit-box-shadow: none;
             box-shadow: none; }
+
+.nav-tabs-nm {
+  border-bottom-color: #f1f1f1; }
+  .nav-tabs-nm a {
+    color: #8c8f94; }
+  .nav-tabs-nm > li.active > a, .nav-tabs-nm > li.focus > a, .nav-tabs-nm > li.hover > a {
+    border-color: #f1f1f1 !important;
+    border-bottom-color: transparent !important;
+    background: #fcfcfc !important; }
 
 .sr-only {
   color: #5b5b5b;
@@ -645,10 +658,10 @@ nav .container-fluid {
   right: 0; }
   .user .dropdown-menu a {
     color: #9ea1a5; }
-  .user .dropdown-menu li:last-child {
+  .user .dropdown-menu li.more, .user .dropdown-menu li.exit {
     text-align: right;
     text-decoration: underline; }
-    .user .dropdown-menu li:last-child a {
+    .user .dropdown-menu li.more a, .user .dropdown-menu li.exit a {
       color: #26272d !important; }
   .user .dropdown-menu span {
     width: 40px;
@@ -1040,6 +1053,9 @@ nav .container-fluid {
 
 .answered .variant.active:hover {
   background: url(../img/eye-blue.png) no-repeat 0 50%; }
+
+.answered .variant.variant-true:hover {
+  background: url(../img/eye-green.png) no-repeat 0 50%; }
 
 .complete-bet,
 .cancel-bet {
@@ -1608,8 +1624,7 @@ footer {
   -webkit-border-radius: 0;
           border-radius: 0;
   margin-bottom: 10px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  height: 42px;
   text-align: center; }
   .authorization input:last-child {
     margin-bottom: 0; }
@@ -1976,7 +1991,18 @@ footer {
   color: #5b5b5b;
   font-size: 16px;
   font-weight: 600;
-  padding-left: 70px; }
+  padding-left: 5px;
+  padding-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.my-bet .card-slider-title {
+  padding-top: 0; }
+
+.my-bet--green {
+  color: #2dbc49;
+  display: block; }
 
 .bg--gradient {
   position: absolute;

@@ -23,6 +23,7 @@ $(document).ready(function() {
 $('.js-select-teg').select2({
 	multiple: true,
 	allowClear: true,
+	placeholder: "",
 	maximumSelectionLength: 2,
 	theme      : "classic"
 }).on('select2:select', function (e) {
