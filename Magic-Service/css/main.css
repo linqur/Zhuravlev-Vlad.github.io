@@ -315,7 +315,7 @@ input:focus {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10; }
+  z-index: 11; }
 
 .navbar {
   min-height: initial; }
@@ -710,17 +710,6 @@ a:hover {
         -webkit-box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.5);
                 box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.5);
         background-size: 100%; }
-      .wrapper_content .product figure {
-        background: #fff;
-        height: 195px;
-        overflow: hidden; }
-      .wrapper_content .product figcaption {
-        border-top: 1px solid #eaeaea;
-        padding: 20px;
-        height: 200px;
-        position: absolute;
-        bottom: 0;
-        width: 100%; }
       .wrapper_content .product .price {
         position: absolute;
         bottom: 10px;
@@ -774,8 +763,8 @@ a:hover {
   -webkit-transition: .5s;
   transition: .5s; }
   .product:hover .product-description {
-    height: 400px;
-    margin-top: -200px;
+    height: 397px;
+    margin-top: -196px;
     background: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -788,6 +777,9 @@ a:hover {
   background: #fff;
   display: block; }
 
+.product-bottom {
+  border-top: 1px solid #eaeaea; }
+
 .product-img {
   height: 195px;
   max-width: 215px;
@@ -796,10 +788,8 @@ a:hover {
 
 .product-description {
   padding: 20px 10px 0 10px;
-  height: 110px;
+  height: 122px;
   overflow: hidden;
-  -webkit-box-shadow: inset 0px -2px 5px 0px #f4f4f4;
-          box-shadow: inset 0px -2px 5px 0px #f4f4f4;
   -webkit-transition: .2s;
   transition: .2s; }
   .product-description-drop {
@@ -809,6 +799,24 @@ a:hover {
       color: #222;
       font-size: 14px;
       padding-top: 20px; }
+
+.product-description-drop--content {
+  height: 280px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden; }
+
+.product-description-drop--content:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, white));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%); }
 
 .show-all a {
   color: #999999;
