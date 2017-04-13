@@ -397,7 +397,6 @@ li {
   list-style-type: none; }
 
 .registration-link {
-  margin-top: 20px;
   text-align: center; }
 
 .select2-container--default .select2-selection--single {
@@ -913,7 +912,7 @@ nav .container-fluid {
     display: inline-block;
     float: right;
     margin-left: 15px; }
-    .vote-info li:first-child {
+    .vote-info li.vote-info--first {
       margin-left: 0; }
   .vote-info .vote-chips {
     float: left; }
@@ -1665,6 +1664,9 @@ footer {
       margin-bottom: 0; }
   .social-group_profile a {
     text-align: center; }
+
+.social-group--center {
+  text-align: center; }
 
 .edit-profile {
   position: absolute;
