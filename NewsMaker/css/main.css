@@ -457,6 +457,35 @@ li {
   .vote-content--share:focus {
     text-decoration: none; }
 
+.sorting {
+  position: absolute;
+  top: 12px;
+  right: 30px; }
+  .sorting__itm {
+    display: inline-block; }
+    .sorting__itm.disabled {
+      opacity: .4; }
+    .sorting__itm--popularity {
+      width: 19px;
+      height: 12px;
+      margin-right: 15px;
+      background: url(../img/sorting-popularity.png) no-repeat 0 0; }
+      .sorting__itm--popularity.desc {
+        background-position: 0 -12px; }
+    .sorting__itm--time {
+      width: 12px;
+      height: 16px;
+      background: url(../img/sorting-time.png) no-repeat 0 0; }
+      .sorting__itm--time.desc {
+        background-position: 0 -16px; }
+
+.card-share-btn {
+  float: right;
+  margin-top: -45px;
+  border: none;
+  color: #5b5b5b;
+  font-weight: 600; }
+
 .sr-only {
   color: #5b5b5b;
   font-size: 16px;
@@ -645,8 +674,11 @@ header .container-fluid,
 nav .container-fluid {
   max-width: 1750px !important; }
 
+.navbar-bottom .container-fluid,
 .container-fluid {
-  max-width: 1200px; }
+  max-width: 1200px !important;
+  position: relative; }
+  .navbar-bottom .container-fluid_navbar,
   .container-fluid_navbar {
     padding-left: 0;
     padding-right: 0; }
@@ -812,8 +844,6 @@ nav .container-fluid {
   margin-top: 12px;
   position: absolute;
   z-index: 10;
-  max-height: 370px;
-  overflow-y: scroll;
   display: none; }
   .live-search--itm {
     position: relative;
@@ -852,6 +882,11 @@ nav .container-fluid {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
+  .live-search--show-all {
+    padding: 10px;
+    text-align: center; }
+    .live-search--show-all a {
+      color: #3b3c42; }
   .live-search .vote-info {
     margin-top: 10px;
     margin-bottom: 22px; }
@@ -1898,9 +1933,7 @@ footer {
   .modal-content input {
     -webkit-border-radius: 0;
             border-radius: 0;
-    margin-bottom: 10px;
-    padding-top: 21px;
-    padding-bottom: 21px; }
+    margin-bottom: 10px; }
     .modal-content input:last-child {
       margin-bottom: 0; }
   .modal-content .close {

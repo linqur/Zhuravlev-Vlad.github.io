@@ -14,6 +14,13 @@ $('.js--vote-title a').on('click', function(){
 
 });
 // END Расскрытое пари
+
+// Tooltip
+$(document).ready(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+//END Tooltip
+
 //select2
 $(document).ready(function() {
 	$(".js-select").select2({
@@ -35,6 +42,7 @@ $('.js-select-teg').select2({
 	$(this).val([e.params.data.id]).trigger("change");
 });
 //END select2
+
 // Календарь
 $('#dateProfile').datepicker({
   view: 'years'
