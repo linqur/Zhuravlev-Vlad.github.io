@@ -841,9 +841,9 @@ li {
     border-bottom: 1px solid #f1f1f1;
     -webkit-box-shadow: none;
             box-shadow: none;
-    height: 30px; }
+    height: 33px; }
   .modalBet-select + .select2-container .select2-selection__rendered {
-    padding-top: 0;
+    padding-top: 3px;
     color: #757575; }
   .modalBet-select + .select2-container .select2-selection__arrow {
     top: 3px !important; }
@@ -1163,8 +1163,15 @@ nav .container-fluid {
     color: #0a79ed; }
     .search-load:hover, .search-load:focus {
       color: #0a79ed !important; }
+    .search-load-block {
+      display: none; }
 
-.live-search-active + .live-search,
+.loading .search-load-block {
+  display: table-cell; }
+
+.live-search-active + .live-search {
+  display: block; }
+
 .live-search {
   background: #fff;
   border: 1px solid #f1f1f1;
@@ -1173,7 +1180,6 @@ nav .container-fluid {
   position: absolute;
   z-index: 10;
   display: none; }
-  .live-search-active + .live-search--itm,
   .live-search--itm {
     position: relative;
     display: block;
@@ -1181,13 +1187,10 @@ nav .container-fluid {
     padding-bottom: 34px;
     padding-left: 79px;
     border-bottom: 1px solid #f1f1f1; }
-    .live-search-active + .live-search--itm:hover,
     .live-search--itm:hover {
       background: #eee; }
-      .live-search-active + .live-search--itm:hover .vote-info span,
       .live-search--itm:hover .vote-info span {
         background-position: 0 0; }
-  .live-search-active + .live-search--img,
   .live-search--img {
     position: absolute;
     top: 19px;
@@ -1196,7 +1199,6 @@ nav .container-fluid {
     height: 55px;
     border: 1px solid #f1f1f1;
     background-color: #fff; }
-    .live-search-active + .live-search--img img,
     .live-search--img img {
       position: absolute;
       top: 0;
@@ -1206,7 +1208,6 @@ nav .container-fluid {
       max-width: 95%;
       max-height: 95%;
       margin: auto; }
-  .live-search-active + .live-search--title,
   .live-search--title {
     color: #000;
     font-size: 16px;
@@ -1216,14 +1217,11 @@ nav .container-fluid {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
-  .live-search-active + .live-search--show-all,
   .live-search--show-all {
     padding: 10px;
     text-align: center; }
-    .live-search-active + .live-search--show-all a,
     .live-search--show-all a {
       color: #3b3c42; }
-  .live-search-active + .live-search .vote-info,
   .live-search .vote-info {
     margin-top: 10px;
     margin-bottom: 22px; }
@@ -1583,7 +1581,9 @@ nav .container-fluid {
         float: right;
         margin-top: -10px; }
     .bet-slider-itm_content--middle {
-      height: 140px; }
+      height: 140px;
+      word-break: break-word;
+      overflow-wrap: break-word; }
       .bet-slider-itm_content--middle .vote-info {
         margin: 0;
         margin-right: -20px;
