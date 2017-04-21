@@ -1159,11 +1159,12 @@ nav .container-fluid {
     border-color: #0a79ed; }
   .search .btn {
     background: inherit; }
+  .search-load {
+    color: #0a79ed; }
+    .search-load:hover, .search-load:focus {
+      color: #0a79ed !important; }
 
 .live-search-active + .live-search,
-.loading + .live-search .live-search--loading {
-  display: block; }
-
 .live-search {
   background: #fff;
   border: 1px solid #f1f1f1;
@@ -1172,6 +1173,7 @@ nav .container-fluid {
   position: absolute;
   z-index: 10;
   display: none; }
+  .live-search-active + .live-search--itm,
   .live-search--itm {
     position: relative;
     display: block;
@@ -1179,10 +1181,13 @@ nav .container-fluid {
     padding-bottom: 34px;
     padding-left: 79px;
     border-bottom: 1px solid #f1f1f1; }
+    .live-search-active + .live-search--itm:hover,
     .live-search--itm:hover {
       background: #eee; }
+      .live-search-active + .live-search--itm:hover .vote-info span,
       .live-search--itm:hover .vote-info span {
         background-position: 0 0; }
+  .live-search-active + .live-search--img,
   .live-search--img {
     position: absolute;
     top: 19px;
@@ -1191,6 +1196,7 @@ nav .container-fluid {
     height: 55px;
     border: 1px solid #f1f1f1;
     background-color: #fff; }
+    .live-search-active + .live-search--img img,
     .live-search--img img {
       position: absolute;
       top: 0;
@@ -1200,6 +1206,7 @@ nav .container-fluid {
       max-width: 95%;
       max-height: 95%;
       margin: auto; }
+  .live-search-active + .live-search--title,
   .live-search--title {
     color: #000;
     font-size: 16px;
@@ -1209,27 +1216,14 @@ nav .container-fluid {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
+  .live-search-active + .live-search--show-all,
   .live-search--show-all {
     padding: 10px;
     text-align: center; }
+    .live-search-active + .live-search--show-all a,
     .live-search--show-all a {
       color: #3b3c42; }
-  .live-search--loading {
-    color: #0a79ed;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 400px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.8);
-    display: none; }
-    .live-search--loading .loader {
-      width: 48px; }
-      .live-search--loading .loader .loader-item {
-        height: 20px; }
+  .live-search-active + .live-search .vote-info,
   .live-search .vote-info {
     margin-top: 10px;
     margin-bottom: 22px; }
