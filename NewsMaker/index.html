@@ -39,7 +39,7 @@
             <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="">
                     <div class="nav navbar-nav_search col-md-5 col-sm-5 col-xs-12">
-                        <div class="input-group search search--p live-search-active loading">
+                        <div class="input-group search search--p loading">
                             <span class="input-group-btn">
                             <button class="btn" type="button"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></button>
                             </span>
@@ -102,9 +102,11 @@
                         	</div>
                         </div>
                     </div>
-                    <!-- <div class="authorization col-md-7 col-sm-7 col-xs-12">
+<!--
+                     <div class="authorization col-md-7 col-sm-7 col-xs-12">
                         <button type="button" class="btn btn-authorization" data-toggle="modal" data-target="#authorization-modal">Войти</button>
-                    </div> -->
+                    </div> 
+-->
                     <div class="nav navbar-nav_user col-md-7 col-sm-7 col-xs-12">
                         <a href="create-bet.html" class="add-new add-new--p">
                             <i class="fa fa-plus" aria-hidden="true"></i>Добавить новость
@@ -126,9 +128,9 @@
         </div><!-- /.container-fluid -->
     </nav>
 	
-	<header>
+<!--
+	<header class="hidden-sm-down">
 		<div class="container-fluid carousel-header">
-			<!-- Слайдер -->
 			<div id="carousel-header" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner" role="listbox">
 					<div class="item active" style="background-image: url(img/carousel-item-1.jpg)">
@@ -164,11 +166,12 @@
 					 	<div class="bg--gradient bg--gradient-header"></div>
 					</div>
 				</div>
-			</div><!-- Слайдер -->
+			</div>
 		</div>
 	</header>
+-->
 
-	<article class="vote-now">
+	<article class="vote-now hidden-sm-down">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 title">
@@ -424,7 +427,7 @@
 		</div>
 	</article>
 	
-	<article class="">
+	<article class="hidden-sm-down">
 		<div class="container-fluid">
 			<div class="bet-slider">
 				<div class="bet-slider-itm">
@@ -605,17 +608,17 @@
 									<li><a href="#">Шоу-бизнес</a></li>
 									<li><a href="#">Политика</a></li>
 								</ul>
-								<div class="sorting">
-									<a href="#" data-toggle="tooltip" title="Сортировать по популярности" data-placement="bottom" class="sorting__itm sorting__itm--popularity desc disabled"></a>
-									<a href="#" data-toggle="tooltip" title="Сортировать по дате" data-placement="bottom" class="sorting__itm sorting__itm--time"></a>
-								</div>
+							</div>
+							<div class="sorting">
+								<a href="#" data-toggle="tooltip" title="Сортировать по популярности" data-placement="bottom" class="sorting__itm sorting__itm--popularity desc disabled"></a>
+								<a href="#" data-toggle="tooltip" title="Сортировать по дате" data-placement="bottom" class="sorting__itm sorting__itm--time"></a>
 							</div>
 						</div>
 					</nav>
 				</div>
 			</div>
 		<div class="container-fluid">
-			<div class="col-xs-12">
+			<div class="col-xs-12 no-slider">
 				<div class="row">
 					<div class="col-sm-6 col-xs-12">
 						<div class="card-bet-slider-item my-bet">
@@ -636,7 +639,7 @@
 								</div>
 							</div>
 							<ul class="vote-info">
-								<li class="vote-users"><span></span>300</li>
+								<li class="vote-users vote-info--first"><span></span>300</li>
 								<li class="vote-money"><span></span>10k</li>
 								<li class="vote-time"><span></span>26ч</li>
 							</ul>
@@ -663,7 +666,7 @@
 								</div>
 							</div>
 							<ul class="vote-info">
-								<li class="vote-users"><span></span>300</li>
+								<li class="vote-users vote-info--first"><span></span>300</li>
 								<li class="vote-money"><span></span>10k</li>
 								<li class="vote-time"><span></span>26ч</li>
 							</ul>
@@ -690,7 +693,7 @@
 								</div>
 							</div>
 							<ul class="vote-info">
-								<li class="vote-users"><span></span>300</li>
+								<li class="vote-users vote-info--first"><span></span>300</li>
 								<li class="vote-money"><span></span>10k</li>
 								<li class="vote-time"><span></span>26ч</li>
 							</ul>
@@ -717,7 +720,7 @@
 								</div>
 							</div>
 							<ul class="vote-info">
-								<li class="vote-users"><span></span>300</li>
+								<li class="vote-users vote-info--first"><span></span>300</li>
 								<li class="vote-money"><span></span>10k</li>
 								<li class="vote-time"><span></span>26ч</li>
 							</ul>
@@ -744,7 +747,7 @@
 								</div>
 							</div>
 							<ul class="vote-info">
-								<li class="vote-users"><span></span>300</li>
+								<li class="vote-users vote-info--first"><span></span>300</li>
 								<li class="vote-money"><span></span>10k</li>
 								<li class="vote-time"><span></span>26ч</li>
 							</ul>
@@ -814,7 +817,7 @@
 		<p class="copyright">&copy; 2016. Все права защищены.</p>
 	</footer>
 	
-	<div id="authorization-modal" class="modal fade" role="dialog">
+	<div id="authorization-modal" class="modal fade authorization-modal" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">

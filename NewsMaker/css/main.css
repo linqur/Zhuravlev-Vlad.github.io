@@ -861,7 +861,7 @@ html input[disabled] {
     .sorting__itm--popularity {
       width: 19px;
       height: 12px;
-      margin-right: 15px;
+      margin-right: 10px;
       background: url(../img/sorting-popularity.png) no-repeat 0 0; }
       .sorting__itm--popularity.desc {
         background-position: 0 -12px; }
@@ -1340,7 +1340,9 @@ nav .container-fluid {
 
 .navbar-bottom .navbar-nav {
   text-align: center;
-  float: none; }
+  float: none;
+  padding-left: 15px;
+  padding-right: 15px; }
   .navbar-bottom .navbar-nav li {
     float: none;
     display: inline-block;
@@ -2179,8 +2181,7 @@ footer {
 .authorization .btn-authorization {
   float: none;
   display: block;
-  margin: 0 auto;
-  margin-top: 30px; }
+  margin: 0 auto; }
 
 .profile-img {
   position: relative; }
@@ -2371,7 +2372,7 @@ footer {
   border: none; }
 
 .modal-dialog {
-  width: 400px; }
+  max-width: 400px; }
 
 .modal-footer {
   text-align: center; }
@@ -2648,8 +2649,8 @@ footer {
   .search--p {
     margin-top: 30px;
     float: right; }
-  .btn-authorization {
-    margin-top: 20px; }
+  .authorization .btn-authorization {
+    margin-top: 30px; }
   .all-private {
     text-align: right; }
   .navbar-bottom .navbar-nav li {
@@ -2678,7 +2679,17 @@ footer {
        -moz-column-count: 3;
             column-count: 3; }
   .live-search {
-    margin-top: 70px; } }
+    margin-top: 70px; }
+  .sorting {
+    top: 60px;
+    right: 10px; }
+    .sorting__itm {
+      display: block; }
+      .sorting__itm--popularity {
+        margin-right: 0; }
+      .sorting__itm--time {
+        margin-top: 15px;
+        margin-left: 4px; } }
 
 @media (max-width: 768px) {
   .container-fluid_navbar {
@@ -2708,7 +2719,15 @@ footer {
     margin-bottom: 0; }
   .card-bet-slider-item {
     padding: 10px;
-    width: 325px; }
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+    .card-bet-slider-item .vote-info {
+      text-align: center; }
+      .card-bet-slider-item .vote-info li {
+        float: none; }
+  .no-slider .card-bet-slider-item {
+    width: 100%; }
   .card-bet-inform {
     margin-top: 75px; }
   .card-bet-inform,
@@ -2717,7 +2736,11 @@ footer {
     padding: 5px; }
   .modal-dialog {
     margin: 10px auto; }
-  .modalBet {
+  .modalBet,
+  .authorization-modal,
+  .modalComplete,
+  .modalMessage,
+  .edit-profile {
     padding: 0 10px; }
   .sticky {
     position: static; }
@@ -2790,7 +2813,25 @@ footer {
     .progress-bar {
       background: rgba(218, 225, 232, 0.9); }
   .complete-bet {
-    text-align: center; } }
+    text-align: center;
+    margin-left: -25px;
+    margin-right: -25px; }
+  .hidden-sm-down {
+    display: none; }
+  .sorting {
+    top: 0;
+    right: 80px; }
+    .sorting__itm {
+      display: inline-block; }
+      .sorting__itm--popularity {
+        margin-right: 10px; }
+  .card-bet-slider-item .slide-open {
+    margin-top: 20px; }
+  .card-bet-slider-item .btn-start {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    float: none; } }
 
 @media (max-width: 480px) {
   .logo {
