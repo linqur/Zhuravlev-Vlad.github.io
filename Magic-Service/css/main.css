@@ -730,10 +730,19 @@ a:hover {
         .wrapper_content .product .price p {
           font-family: 'OpenSans-Semibold';
           font-size: 18px;
-          color: #0171b8; }
+          color: #0171b8;
+          display: inline-block;
+          position: relative; }
           .wrapper_content .product .price p span {
             font-size: 24px;
             font-family: 'OpenSans-ExtraBold'; }
+        .wrapper_content .product .price-old {
+          position: absolute;
+          top: 28px;
+          right: -27px;
+          color: #0b3856 !important;
+          font-size: 15px !important;
+          text-decoration: line-through; }
       .wrapper_content .product a {
         font-family: 'OpenSans-Bold';
         color: #222;
