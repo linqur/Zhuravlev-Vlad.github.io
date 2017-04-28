@@ -356,6 +356,18 @@ a:hover {
     font-family: 'OpenSans-Bold';
     font-size: 17px; }
 
+.basket-quantity {
+  width: 30px;
+  text-align: center;
+  position: absolute;
+  top: -5px;
+  left: -10px; }
+
+.basket-icon {
+  position: relative;
+  top: 7px;
+  left: -3px; }
+
 .navbar-bottom {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -369,7 +381,8 @@ a:hover {
     color: #0171b8;
     font-family: 'OpenSans-Bold';
     margin-left: 15px;
-    margin-right: 15px; }
+    margin-right: 15px;
+    position: relative; }
     .navbar-bottom_btn:hover {
       color: #0b3856; }
     .navbar-bottom_btn i {
