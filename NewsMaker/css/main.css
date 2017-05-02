@@ -710,25 +710,16 @@
       font-family: "Segoe UI", "Segoe-UI", sans-serif !important;
       color: #26272d; }
     .onoffswitch-inner:before {
-      background-color: #FFFFFF;
-      position: absolute;
-      right: 95px; }
+      background-color: #FFFFFF; }
     .onoffswitch-inner:after {
-      background-color: #FFFFFF;
-      text-align: right;
-      position: absolute;
-      left: 80px; }
-  .onoffswitch-bet .onoffswitch-inner:before {
-    content: "Пари"; }
-  .onoffswitch-bet .onoffswitch-inner:after {
-    content: "Опрос"; }
+      background-color: #FFFFFF; }
   .onoffswitch-switch {
     display: block;
     width: 29px;
+    height: 27px;
     margin: 2.5px;
     background: #3967FA;
     position: absolute;
-    top: 0;
     bottom: 0;
     right: 22px;
     border: 2px solid #f1f1f1;
@@ -736,6 +727,14 @@
             border-radius: 22px;
     -webkit-transition: all 0.3s ease-in 0s;
     transition: all 0.3s ease-in 0s; }
+  .onoffswitch-textLeft, .onoffswitch-textRight {
+    position: absolute;
+    top: 5px;
+    font-size: 16px; }
+  .onoffswitch-textLeft {
+    right: 70px; }
+  .onoffswitch-textRight {
+    left: 70px; }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: 0; }
