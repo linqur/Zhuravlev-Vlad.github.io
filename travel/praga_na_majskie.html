@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title></title>	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/libs.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-content">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header col-lg-3 col-md-4">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="logo" href="index.html">
+							<img src="img/logo.png" alt="Travelдискаунтер">
+							<h1 class="logo-text">Travel<span>дискаунтер</span></h1>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar">
+
+						<ul class="nav navbar-nav col-lg-4 col-md-3">
+							<form class="navbar-left">
+								<div class="input-group search">
+									<input type="text" class="form-control search-input" placeholder="Поиск">
+									<div class="input-group-btn">
+										<button class="btn btn-default search-btn" type="submit">
+											<i class="fa fa-search search-icon" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</ul>
+
+						<ul class="navLink nav navbar-nav navbar-right col-lg-5 col-md-5">
+							<li class="social">
+								<a href="#" class="social-link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								<a href="#" class="social-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#" class="social-link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+								<a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="about_us.html" class="navLink-itm">О нас</a></li>
+							<li><a href="help.html" class="navLink-itm">Помощь</a></li>
+							<li><a href="contacts.html" class="navLink-itm">Контакты</a></li>
+							<li><a href="#" class="navLink-itm navLink-itm--hidden sidebar--open">Популярные теги</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		
+			<div class="container-fluid tours">
+				<div class="row">
+					<div class="filter col-md-3">
+						<div class="filterSection">
+							<p class="filterTitle">Курорт</p>
+							<div class="resort filterScroll">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Все курорты
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Карловы вары
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Марианские Лазне
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Прага
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Цветенко значко
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Ветровы Виллы
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Бероун
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Градец кралове
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Кутна-гора
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Все курорты
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Карловы вары
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Марианские Лазне
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Прага
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Цветенко значко
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Ветровы Виллы
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Бероун
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Градец кралове
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Кутна-гора
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filterSection">
+							<p class="filterTitle">Категория отеля</p>
+							<div class="btn-group hotelCategory">
+								<a href="javascript:void(0)" class="btn btn-default hotelCategory-itm hotelCategory-itm--js active">2
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn btn-default hotelCategory-itm hotelCategory-itm--js">3
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn btn-default hotelCategory-itm hotelCategory-itm--js">4
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</a>
+								<a href="javascript:void(0)" class="btn btn-default hotelCategory-itm hotelCategory-itm--js">5
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="btn-group hotelCategory">
+								<a href="javascript:void(0)" class="btn hotelCategory-itm hotelCategory-itm--js">Apts</a>
+								<a href="javascript:void(0)" class="btn hotelCategory-itm hotelCategory-itm--js">Villas</a>
+								<a href="javascript:void(0)" class="btn hotelCategory-itm hotelCategory-itm--js">HV-1</a>
+								<a href="javascript:void(0)" class="btn hotelCategory-itm hotelCategory-itm--js">HV-2</a>
+							</div>
+						</div>
+						<div class="filterSection">
+							<p class="filterTitle">Отель</p>
+							<div class="hotel filterScroll">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Все курорты
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Карловы вары
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Марианские Лазне
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Прага
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Цветенко значко
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Ветровы Виллы
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Бероун
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Градец кралове
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Кутна-гора
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Все курорты
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Карловы вары
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Марианские Лазне
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Прага
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Цветенко значко
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Ветровы Виллы
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Бероун
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Градец кралове
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Кутна-гора
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filterSection--last">
+							<p class="filterTitle">Питание</p>
+							<div class="btn-group-vertical hotelFood">
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">AI
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">BB
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">FB
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">FB+
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+							</div>
+							<div class="btn-group-vertical hotelFood">
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">HB
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">HB+
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">RO
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+								<a href="javascript:void(0)" class="btn hotelFood-itm hotelFood-itm--js">UAI
+									<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 duration">
+						<div class="">
+							<p>Продолжительность отпуска <span>(дней)</span>
+								<input 
+									type="text" 
+									id="minCost"
+									class="amountDays noText" 
+									placeholder="&ndash;"
+									maxlength="2"
+									value="1"/>
+									<i class="input-dash">&mdash;</i>
+								<input 
+									type="text" 
+									id="maxCost"
+									class="amountDays noText" 
+									placeholder="&ndash;"
+									maxlength="2"
+									value="7"/>
+							</p>
+						</div>
+						<ul class="sliderStep">
+							<li><span>От</span></li>
+							<li><span>5</span></li>
+							<li><span>10</span></li>
+							<li><span>15</span></li>
+							<li><span>20</span></li>
+							<li><span>25</span></li>
+							<li><span>До</span></li>
+						</ul>
+						<div id="slider"></div>
+						<div class="people">
+							<div class="adult">
+								<p>Взрослых</p>
+								<div class="btn-group adult-group">
+									<a href="javascript:void(0)" class="btn adult-itm">1</a>
+									<a href="javascript:void(0)" class="btn adult-itm">2</a>
+									<a href="javascript:void(0)" class="btn adult-itm">3</a>
+									<a href="javascript:void(0)" class="btn adult-itm">4</a>
+								</div>
+							</div>
+							<div class="child">
+								<p>Детей</p>
+								<div class="btn-group child-group">
+									<a href="javascript:void(0)" class="btn child-itm">0</a>
+									<a href="javascript:void(0)" class="btn child-itm">1</a>
+									<a href="javascript:void(0)" class="btn child-itm">2</a>
+									<a href="javascript:void(0)" class="btn child-itm">3</a>
+								</div>
+							</div>
+							<i class="input-dash">&mdash;</i>
+							<div class="ageChild">
+								<p>Возраст детей</p>
+								<div class="btn-group ageChildGroup">
+									<input 
+										type="text"
+										class="ageChildInput noText"
+										disabled
+										maxlength="2"
+										placeholder="&ndash;"/>
+									<input 
+										type="text"
+										class="ageChildInput noText"
+										disabled
+										maxlength="2"
+										placeholder="&ndash;"/>
+									<input 
+										type="text"
+										class="ageChildInput noText"
+										disabled
+										maxlength="2"
+										placeholder="&ndash;"/>
+								</div>
+							</div>
+							<a href="#" class="btn-blue btn-search">Найти</a>
+						</div>
+					</div>
+					<div class="col-md-9 allTours">
+						<div id="collapse-group">
+							<div class="">
+								<div class="allTours-price">
+									<p class="dollar"><span>$</span>259</p>
+									<p class="rub"><span>&#8381;</span>19 433</p>
+								</div>
+								<a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый элемент</a>
+							</div>
+							<div id="el1" class="collapse">
+								<div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer class="footer container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-5 textAlCentr-xs">
+					<a class="logo" href="index.html">
+						<img src="img/logo-footer.png" alt="Travelдискаунтер">
+						<h1 class="logo-text">Travel<span>дискаунтер</span></h1>
+					</a>
+					<div class="copy">
+						<p>&copy; XXXX-XXXX</p>
+						<p>Traveldiscouter - другие путешествия</p>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 textAlCentr-xs">
+					<h4>Меню</h4>
+					<ul class="footer-menu">
+						<li><a href="about_us.html">О нас</a></li>
+						<li><a href="help.html">Помощь</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-4 textAlCentr-xs">
+					<h4>Соц. сети</h4>
+					<ul class="footer-social">
+						<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a></li>
+						<li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>Одноклассники</a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+					</ul>
+				</div>
+				<address class="col-lg-3 col-md-4 textAlCentr-sm">
+					<h4>Контакты</h4>
+					<ul class="footer-contacts">
+						<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Г. Набережные  Челны, пр.Мира, д.33Б</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@traveldiscounter.ru</a></li>
+						<li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>+7 8552 78 36 88</a></li>
+					</ul>
+				</address>
+			</div>	
+		</footer>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
