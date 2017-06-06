@@ -75,6 +75,20 @@ $('.dropdown-menu.subcategory').on('click', function(event){
 });
 //END Не скрывать раскрывающееся мень при нажатии во внутрь
 
+
+$(document).ready(function(){
+	$("#carousel").swipe( {
+		swipeLeft: function() {
+			$(this).carousel("next");
+		},
+		swipeRight: function() {
+			$(this).carousel("prev");
+		},
+		allowPageScroll: "vertical"
+	});
+});
+    
+
  $(document).ready(function() {
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
