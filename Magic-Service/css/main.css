@@ -811,6 +811,9 @@ a:hover {
 .product:hover .btn-basket-block {
   z-index: 1; }
 
+.product:hover .price-old {
+  display: none; }
+
 .product-top {
   background: #fff;
   display: block; }
@@ -1112,7 +1115,9 @@ a:hover {
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
-  transition-property: opacity; }
+  transition-property: opacity;
+  -webkit-transition: .5s;
+  transition: .5s; }
 
 .carousel-fade .carousel-inner .active {
   opacity: 1; }
@@ -1482,6 +1487,8 @@ section {
   font-family: OpenSans-Regular; }
 
 @media (max-width: 1200px) {
+  .header-item {
+    background-size: 163% !important; }
   .navbar-bottom_btn, .navbar-bottom_btn-blue {
     margin-left: 5px;
     margin-right: 5px; }
