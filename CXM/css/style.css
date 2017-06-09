@@ -1,0 +1,119 @@
+#allrecords h2 a {
+	color: #4674B7 !important;
+}
+
+.product-block .descr {
+	height: 190px;
+}
+
+.product-block-lg {
+	position: relative;	
+}
+
+.product-block-lg img {
+	width: unset;
+	height: unset;
+	float: left;
+	margin-right: 25px;
+}
+
+.product-block-lg .textwrapper {
+/*	padding-left: 260px;*/
+	width: unset;
+}
+
+.product-block-lg .textwrapper h5 {
+	height: 50px;
+}
+
+.product-block-lg hr {
+	margin: 30px 0;
+}
+
+.price {
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #4674B7;
+    font-weight: bold;
+}
+
+.btn {
+	font-size: 14px;
+	height: 45px;
+}
+
+.product-block-lg .btn {
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+}
+
+.product-block-lg .descr {
+	height: unset;
+	margin-bottom: 50px;
+}
+
+#workSlider {
+	overflow: hidden;
+	height: 400px;
+}
+
+.slider-itm {
+/*	width: 100%;*/
+	float: left;
+}
+
+.slider-itm img {
+	width: unset;
+	height: unset;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.slick-next {
+	position: absolute;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1;
+	border: none;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	cursor: pointer;
+}
+
+.arrow-down {
+	position: absolute;
+	top: 50%;
+	right: 45px;
+	margin-top: -20px;
+	border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 15px;
+	-webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.workSlider-wrapper {
+	position: relative;
+}
+
+.map {
+	margin-top: 90px;	
+}
+
+#map {
+	margin-top: 45px;
+}
+
+.requisites td:first-child {
+	padding-right: 25px;
+	opacity: .5;
+}
+
+.requisites td:last-child {
+}
