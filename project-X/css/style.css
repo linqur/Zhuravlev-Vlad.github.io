@@ -309,9 +309,9 @@ select {
 
 .intro {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/19.jpg);
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/19.jpg);
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/19.jpg); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/19.JPG);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/19.JPG);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/19.JPG); }
 
 .welcome {
   color: #fff;
@@ -326,9 +326,9 @@ select {
     font-size: 3em; } }
 
 .career {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/1.jpg);
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/1.jpg);
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/1.JPG);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/1.JPG);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/1.JPG);
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
@@ -357,9 +357,9 @@ select {
       font-size: 1.65em; } }
 
 .aboutMe {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/2.jpg);
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/2.jpg);
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/2.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/2.JPG);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/2.JPG);
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)), url(../img/2.JPG);
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
