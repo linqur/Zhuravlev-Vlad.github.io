@@ -838,6 +838,10 @@ textarea {
   .aboutMe.animation .info {
     -webkit-transform: translateZ(0);
             transform: translateZ(0); }
+  .work.animation .btn-form {
+    opacity: 1;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s; }
   .work.animation .work-gallery--itm {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -852,6 +856,10 @@ textarea {
     .work.animation .work-gallery--itm:nth-child(5), .work.animation .work-gallery--itm:nth-child(6) {
       -webkit-transition-delay: 0.15s;
               transition-delay: 0.15s; }
+  .work .btn-form {
+    opacity: 0;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s; }
   .work-gallery--itm {
     opacity: 0;
     -webkit-transition: opacity 1s ease,  -webkit-transform 1s ease;
