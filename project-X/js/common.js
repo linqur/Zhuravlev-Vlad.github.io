@@ -584,7 +584,7 @@ var main = (function ($) {
 
 							// Set background image.
 							newSlide.$slideImage
-								.append('<img src ="' + newSlide.url + '" />');
+								.css('background-image', 'url(' + newSlide.url + ')');
 
 							// Mark as loaded.
 							newSlide.loaded = true;
@@ -767,9 +767,9 @@ var main = (function ($) {
 		},
 
 	};
-	$('.thumbnail').on('click', function(){
-		_.$viewer.css('display', 'block');
-	});
+//	$('.thumbnail').on('click', function(){
+//		_.$viewer.css('display', 'block');
+//	});
 	return _;
 })(jQuery);
 
