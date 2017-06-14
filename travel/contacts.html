@@ -207,11 +207,35 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script type="text/javascript">
-
-    </script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap, 
+			myPlacemark;
+
+		function init(){ 
+			myMap = new ymaps.Map("map", {
+				center: [55.73290454400355,52.397859160000024],
+				zoom: 14,
+				controls: []
+			}); 
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			},{
+				iconLayout: 'default#image',
+				iconImageHref:'img/mark-black.png',
+				iconImageSize:[38, 55],
+				iconImageOffset:[-3,-42]							  
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom');
+			if(doc_w < 768){
+				myMap.behaviors.disable('drag');
+			}
+		}
+	</script>
 </body>
 
 </html>

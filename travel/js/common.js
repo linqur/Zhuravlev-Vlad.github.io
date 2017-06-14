@@ -71,28 +71,28 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		
 		
-		$('.ageChildGroup .ageChildInput').attr('disabled', true);//Блокирует поля для ввода возраста детей
+		$('.ageChildGroup .ageChildSelect--js').attr('disabled', true);//Блокирует поля для ввода возраста детей
 		
 		var i = index;
 		while (i != 0) {//Разблокирует поля для ввода возраста детей
-			$('.ageChildGroup .ageChildInput:nth-child(' + (i) + ')').attr('disabled', false);
+			$('.ageChildGroup .ageChildSelect--js:nth-child(' + (i) + ')').attr('disabled', false);
 			i--;
 		};
-		var m = index;
-		while (m < 3) {//Отчищает блокированные поля
-			$('.ageChildGroup .ageChildInput:nth-child(' + (m + 1) + ')').val('');
-			m++;
-		};//END
+//		var m = index;
+//		while (m < 3) {//Отчищает блокированные поля
+//			$('.ageChildGroup .ageChildSelect--js:nth-child(' + (m + 1) + ')').val('');
+//			m++;
+//		};//END
 		
 	});
 	
-	//Лимит на возраст ( <= 18)
-	function isright(obj) {
-		if (obj.value>18) obj.value=18;  
-	}
-	$('.ageChildInput').keyup(function(){
-		this.value=this.value.replace(/[^0-9]+/g,''); isright(this);
-	})//END
+//	//Лимит на возраст ( <= 18)
+//	function isright(obj) {
+//		if (obj.value>18) obj.value=18;  
+//	}
+//	$('.ageChildInput').keyup(function(){
+//		this.value=this.value.replace(/[^0-9]+/g,''); isright(this);
+//	})//END
 	
 //////
 //range
@@ -250,33 +250,6 @@ $(document).ready(function() {
 		}
 	});
 })(jQuery);
-
-
-ymaps.ready(init);
-var myMap, 
-	myPlacemark;
-
-function init(){ 
-	myMap = new ymaps.Map("map", {
-		center: [55.73290454400355,52.397859160000024],
-		zoom: 14,
-		controls: []
-	}); 
-
-	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-	},{
-		iconLayout: 'default#image',
-		iconImageHref:'../img/mark.png',
-		iconImageSize:[38, 55],
-		iconImageOffset:[-3,-42]							  
-	});
-
-	myMap.geoObjects.add(myPlacemark);
-	myMap.behaviors.disable('scrollZoom');
-	if(doc_w < 768){
-		myMap.behaviors.disable('drag');
-	}
-}
 
 
 

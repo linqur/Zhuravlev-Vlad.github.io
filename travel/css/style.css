@@ -238,8 +238,9 @@ input[type="checkbox"]:checked:before,
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.inputFilter, input.amountDays, input.ageChildInput {
-  width: 65px;
+.inputFilter, input.amountDays, input.ageChildInput,
+.ageChildSelect {
+  width: 65px !important;
   background: #fff;
   border: 2px solid #e1e1e1;
   -webkit-border-radius: 2px;
@@ -254,8 +255,21 @@ input.amountDays {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); }
 
-input.ageChildInput {
+input.ageChildInput,
+.ageChildSelect {
   height: 50px; }
+
+.ageChildSelect {
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  -moz-text-align-last: center;
+       text-align-last: center; }
+  .ageChildSelect[disabled] {
+    background: #f6f5f5;
+    color: #ededed; }
+  .ageChildSelect option {
+    color: #666;
+    font-size: 16px; }
 
 input:disabled.ageChildInput {
   background: #f6f5f5;
@@ -274,17 +288,39 @@ input:-moz-placeholder {
 input:-ms-input-placeholder {
   color: #d9d9d9; }
 
+.breadcrumb {
+  background: inherit; }
+
+.breadcrumb > li,
+.breadcrumb > li > a {
+  color: #27201e;
+  font-size: 14px; }
+
+.breadcrumb > li + li:before {
+  content: none; }
+
+.breadcrumb li:after {
+  content: "\B7";
+  font-size: 30px;
+  color: #375ec0;
+  vertical-align: middle;
+  padding: 0 5px; }
+
+.breadcrumb li:last-child:after {
+  content: none; }
+
 .btn:focus {
   outline: none !important;
   outline-offset: 0 !important; }
 
-.button, .btn-yellow, .btn-green, .btn-blue, .btn-black {
+.button, .btn-yellow, .btn-green, .btn-blue, .btn-black, .btn-lightBlue {
   display: inline-block;
   padding: 10px 20px;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   font-size: 14px;
-  font-family: "OpenSansBold", sans-serif; }
+  font-family: "OpenSansBold", sans-serif;
+  color: #fff; }
 
 .btn-icon {
   font-size: 12px;
@@ -307,8 +343,7 @@ input:-ms-input-placeholder {
   background: -webkit-linear-gradient(bottom, #2aa105, #36d704);
   background: linear-gradient(to top, #2aa105, #36d704);
   -webkit-box-shadow: 0 2px 5px rgba(46, 192, 0, 0.4);
-          box-shadow: 0 2px 5px rgba(46, 192, 0, 0.4);
-  color: #fff; }
+          box-shadow: 0 2px 5px rgba(46, 192, 0, 0.4); }
 
 .btn-green:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#2aa105), to(#36d704));
@@ -323,8 +358,7 @@ input:-ms-input-placeholder {
   background: -webkit-linear-gradient(bottom, #255cef, #5281ff);
   background: linear-gradient(to top, #255cef, #5281ff);
   -webkit-box-shadow: 0 2px 5px rgba(0, 64, 236, 0.4);
-          box-shadow: 0 2px 5px rgba(0, 64, 236, 0.4);
-  color: #fff; }
+          box-shadow: 0 2px 5px rgba(0, 64, 236, 0.4); }
 
 .btn-blue:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#255cef), to(#5281ff));
@@ -333,7 +367,14 @@ input:-ms-input-placeholder {
   color: #fff; }
 
 .btn-black {
-  background: #0f0f0f;
+  background: #0f0f0f; }
+
+.btn-lightBlue {
+  background: #b3e8f8;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3); }
+
+.btn-lightBlue:hover {
   color: #fff; }
 
 .ui-widget.ui-widget-content {
@@ -595,7 +636,9 @@ html .ui-button.ui-state-disabled:active {
 .share,
 .temperatureDay,
 .temperatureEvening,
-.reviews {
+.reviews,
+.departure-icon,
+.return-icon {
   padding-left: 20px;
   margin-right: 15px;
   background-repeat: no-repeat;
@@ -637,6 +680,12 @@ html .ui-button.ui-state-disabled:active {
 
 .reviews {
   background-image: url(../img/review.png); }
+
+.departure-icon {
+  background-image: url(../img/departure.png); }
+
+.return-icon {
+  background-image: url(../img/return.png); }
 
 .tourPrice {
   font-family: "RobotoSlabBold", sans-serif;
@@ -1337,9 +1386,9 @@ html .ui-button.ui-state-disabled:active {
 .child-group {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); }
-  .ageChildGroup .ageChildInput,
-  .adult-group .ageChildInput,
-  .child-group .ageChildInput {
+  .ageChildGroup .ageChildSelect,
+  .adult-group .ageChildSelect,
+  .child-group .ageChildSelect {
     margin-right: -6px; }
 
 .people {
@@ -1879,6 +1928,13 @@ html .ui-button.ui-state-disabled:active {
   .contacts .title {
     font-size: 54px !important; } }
 
+.reservation-img {
+  overflow: hidden;
+  max-height: 380px; }
+  .reservation-img img {
+    min-width: 100%;
+    min-height: 100%; }
+
 .footer {
   width: 100%;
   padding: 35px;
@@ -1999,6 +2055,94 @@ html .ui-button.ui-state-disabled:active {
   position: absolute;
   top: 50%;
   margin-top: -0.625em; }
+
+.modalHotelDescr {
+  padding: 30px; }
+
+.modalTable {
+  line-height: 2; }
+  .modalTable td {
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px;
+    color: #27201e; }
+    .modalTable td:first-child {
+      font-family: "OpenSansBold", sans-serif;
+      color: #666;
+      padding-right: 25px; }
+
+.reservation {
+  padding-right: 0 !important; }
+  .reservation .modal-dialog {
+    width: 100%;
+    margin: 0;
+    min-width: unset; }
+  .reservation .reservation-modal-content {
+    padding: 60px 45px; }
+  .reservation .reservation-modal-info {
+    padding: 20px 30px; }
+  .reservation .breadcrumb {
+    padding: 8px 0; }
+  .reservation .flight {
+    line-height: 1;
+    padding: 30px;
+    height: 240px; }
+    .reservation .flight strong {
+      font-family: "OpenSansBold", sans-serif;
+      font-size: 16px;
+      color: #27201e; }
+    .reservation .flight .departure-icon,
+    .reservation .flight .return-icon {
+      padding-left: 30px;
+      margin-right: 0;
+      margin-bottom: 20px;
+      display: inline-block; }
+  .reservation .title {
+    margin-top: 0;
+    font-size: 44px; }
+  .reservation .reviews {
+    margin-bottom: 20px; }
+  .reservation .dollar,
+  .reservation .rub {
+    display: inline-block;
+    font-family: "RobotoSlabBold", sans-serif;
+    font-size: 40px;
+    color: #375ec0; }
+    .reservation .dollar span,
+    .reservation .rub span {
+      font-size: 30px; }
+  .reservation .dollar:after {
+    content: "|";
+    color: #bdc3c6;
+    font-size: 40px;
+    padding: 0 20px;
+    font-family: "RobotoSlabRegular", sans-serif; }
+  .reservation .tourCardContent-inf {
+    text-align: center; }
+  .reservation .tourPrice {
+    font-size: 70px; }
+  .reservation .map-container {
+    padding: 0; }
+
+.reservation-borderblock,
+.flight {
+  border: 1px solid #e9eef0; }
+
+.departure-icon,
+.return-icon {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 20px;
+  color: #27201e; }
+
+.reservation-img {
+  position: relative;
+  padding: 0; }
+  .reservation-img .descriptionHotel {
+    position: absolute;
+    top: unset;
+    right: 15px;
+    left: unset;
+    bottom: 15px;
+    font-size: 14px; }
 
 .sidebar--show {
   z-index: 2;

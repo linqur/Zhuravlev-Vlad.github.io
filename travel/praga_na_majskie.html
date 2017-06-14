@@ -416,9 +416,54 @@
 									<div class="ageChild">
 										<p>Возраст детей</p>
 										<div class="btn-group ageChildGroup">
+											<select class="ageChildSelect ageChildSelect--js noText" disabled>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+											<select class="ageChildSelect ageChildSelect--js noText" disabled>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+											<select class="ageChildSelect ageChildSelect--js noText" disabled>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+
+<!--
 											<input type="text" class="ageChildInput noText" disabled maxlength="2" placeholder="&ndash;" />
 											<input type="text" class="ageChildInput noText" disabled maxlength="2" placeholder="&ndash;" />
 											<input type="text" class="ageChildInput noText" disabled maxlength="2" placeholder="&ndash;" />
+-->
 										</div>
 									</div>
 									<a href="#" class="btn-yellow btn-search">Найти</a>
@@ -462,7 +507,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-black" data-toggle="modal" data-target="#reservation">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -795,12 +840,14 @@
 				<div class="modal-body">
 					<div class="tabNavigation-center">
 						<ul class="tabNavigation" role="tablist">
-							<li class="active"><a href="#tours" aria-controls="tours" role="tab" data-toggle="tab">Туры</a></li>
-							<li><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Описание</a></li>
-							<li><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Комментарии</a></li>
+							<li class="active"><a href="#description-modal" aria-controls="description-modal" role="tab" data-toggle="tab">Описание</a></li>
+							<li><a href="#services" aria-controls="services" role="tab" data-toggle="tab">Услуги</a></li>
+							<li><a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="modalSlider-wrapper">
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="description-modal">
+							<div class="modalSlider-wrapper">
 						<div id="modalSlider" class="modalSlider">
 							<div class="modalSlider-itm">
 								<img src="img/hotelPhoto6.jpg" alt="">
@@ -812,14 +859,189 @@
 						<div class="modalSlider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
 						<div class="modalSlider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 					</div>
+							<div class="modalHotelDescr">
+							<h2>Отдых на Гоа</h2>
+							<p>
+								4-звездочный отель Hotel Mignon располагается в Карловых Варах, в 500 м от его центра, в 300 м от курортной колоннады, в 30 минутах езды от железнодорожного вокзала. Отель размещается в здании, оформленном в стиле ар-нуво. Отель предлагает забронировать номер, оснащенный проекционным ТВ и спутниковым телевидением, мини-баром, холодильником, бесплатным Wi-Fi, оборудованной ванной комнатой и гостиным уголком. Гости могут посетить оздоровительный центр, в котором предлагаются различные процедуры – массаж, термальные ванны, иглоукалывание. Каждое утро гости могут насладиться аппетитным завтраком в отеле. На территории отеля располагается просторный ресторан, в котором гостям предлагается отведать блюда чешской и интернациональной кухни. В 1 км от Hotel Mignon располагается музей Яна Бехера.
+							</p>
+							<table class="modalTable">
+								<tbody>
+									<tr>
+										<td>Расстояние до центра города:</td>
+										<td>500 м до центра</td>
+									</tr>
+									<tr>
+										<td>Сайт отеля:</td>
+										<td><a href="#">www.mignon.cz</a></td>
+									</tr>
+									<tr>
+										<td>E-mail:</td>
+										<td><a href="#">mignon@volny.cz</a></td>
+									</tr>
+									<tr>
+										<td>Телефон:</td>
+										<td>+ 420 355 312 111</td>
+									</tr>
+									<tr>
+										<td>Дата реконструкции:</td>
+										<td>2001 г.</td>
+									</tr>
+									<tr>
+										<td>Количество номеров:</td>
+										<td>14</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="services">
+							<div class="modalHotelDescr">
+								<h2>Отдых на Гоа</h2>
+								<p>
+									4-звездочный отель Hotel Mignon располагается в Карловых Варах, в 500 м от его центра, в 300 м от курортной колоннады, в 30 минутах езды от железнодорожного вокзала. Отель размещается в здании, оформленном в стиле ар-нуво. Отель предлагает забронировать номер, оснащенный проекционным ТВ и спутниковым телевидением, мини-баром, холодильником, бесплатным Wi-Fi, оборудованной ванной комнатой и гостиным уголком. Гости могут посетить оздоровительный центр, в котором предлагаются различные процедуры – массаж, термальные ванны, иглоукалывание. Каждое утро гости могут насладиться аппетитным завтраком в отеле. На территории отеля располагается просторный ресторан, в котором гостям предлагается отведать блюда чешской и интернациональной кухни. В 1 км от Hotel Mignon располагается музей Яна Бехера.
+								</p>
+								<table class="modalTable">
+									<tbody>
+										<tr>
+											<td>Расстояние до центра города:</td>
+											<td>500 м до центра</td>
+										</tr>
+										<tr>
+											<td>Сайт отеля:</td>
+											<td><a href="#">www.mignon.cz</a></td>
+										</tr>
+										<tr>
+											<td>E-mail:</td>
+											<td><a href="#">mignon@volny.cz</a></td>
+										</tr>
+										<tr>
+											<td>Телефон:</td>
+											<td>+ 420 355 312 111</td>
+										</tr>
+										<tr>
+											<td>Дата реконструкции:</td>
+											<td>2001 г.</td>
+										</tr>
+										<tr>
+											<td>Количество номеров:</td>
+											<td>14</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="contacts">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="reservation" class="reservation modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title descriptionHotel-title">Бронирование</h4>
+				</div>
+				<div class="reservation-modal-content">
+					<div class="row">
+					<div class="col-md-8 reservation-borderblock">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-8 col-sm-7 reservation-modal-info">
+										<ul class="breadcrumb">
+											<li><a href="#">Москва</a></li>
+											<li><a href="#">Чехия, Карловы Вары</a></li>
+											<li><a href="#">С 21.04.2017 на 7 ночей</a></li>
+											<li><a href="#">1 взрослый</a></li>
+										</ul>
+										<h2 class="title">Hotel Mignon</h2>
+										<div class="reviews">
+											<span></span>
+											<span></span>
+											<span></span>
+											<span></span>
+											<span></span> 17 отзывов
+										</div>
+										<p class="food">Только завтрак — <span>BB</span></p>
+										<p class="Apartment">Apartment — <span>DBL + 1EXB + 2CHL (2-9)</span></p>
+										<p class="dollar"><span>$</span>259</p>
+										<p class="rub"><span>₽</span>19 433</p>
+									</div>
+									<div class="col-md-4 col-sm-5 reservation-img">
+										<img src="img/hotelPhoto7.jpg" alt="">
+										<a href="#" class="descriptionHotel" data-toggle="modal" data-target="#descriptionHotel" data-dismiss="modal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-sm-6 flight">
+										<span class="departure-icon">14 апреля в 14:21</span>
+										<p><strong>U6 1025</strong></p>
+										<p><strong>Moscow - Praga</strong></p>
+										<p>02:05:00 → 06:05:00
+										<p>Airbus-321 Charter</p>
+										<p>Ural Airlines</p>
+									</div>
+									<div class="col-sm-6 flight">
+										<span class="return-icon">14 апреля в 14:21</span>
+										<p><strong>U6 1025</strong></p>
+										<p><strong>Moscow - Praga</strong></p>
+										<p>02:05:00 → 06:05:00
+										<p>Airbus-321 Charter</p>
+										<p>Ural Airlines</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 map-container">
+						<div id="modal-map" style="width: 100%; height: 635px"></div>
+						<div class="tourCardContent-inf">
+							<p class="tourPrice"><span>$</span>259</p>
+							<a href="praga_na_majskie.html" class="btn-lightBlue">Посмотреть<i class="fa fa-arrow-right btn-icon" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap, 
+			myPlacemark;
+
+		function init(){ 
+			myMap = new ymaps.Map("modal-map", {
+				center: [55.73290454400355,52.397859160000024],
+				zoom: 8,
+				controls: []
+			}); 
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			},{
+				iconLayout: 'default#image',
+				iconImageHref:'img/mark-green.png',
+				iconImageSize:[38, 55],
+				iconImageOffset:[-3,-42]							  
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom');
+			if(doc_w < 768){
+				myMap.behaviors.disable('drag');
+			}
+		}
+	</script>
 </body>
 
 </html>
