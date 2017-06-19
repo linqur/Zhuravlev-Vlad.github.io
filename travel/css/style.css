@@ -99,7 +99,7 @@ ol, ul {
 .right {
   float: right; }
 
-.clearfix, .allTours-collapse:after, .mainSlider-description:after, .help:after {
+.clearfix, .tourCardBottom, .allTours-collapse:after, .mainSlider-description:after, .help:after {
   content: "";
   display: table;
   clear: both; }
@@ -344,7 +344,8 @@ input:-ms-input-placeholder {
 .btn-yellow, .btn-yellow--lg {
   background: #fbfe14;
   -webkit-box-shadow: inset 0 -3px 0 #afb10e;
-          box-shadow: inset 0 -3px 0 #afb10e; }
+          box-shadow: inset 0 -3px 0 #afb10e;
+  color: #000; }
 
 .btn-yellow--lg {
   padding: 15px 20px;
@@ -459,6 +460,9 @@ html .ui-button.ui-state-disabled:active {
   .logo-text span {
     font-family: "OpenSansLight", sans-serif; }
 
+.logo img {
+  margin-top: -10px; }
+
 .navLink {
   text-align: right; }
   .navLink li {
@@ -485,12 +489,34 @@ html .ui-button.ui-state-disabled:active {
 .navbar-default .navbar-toggle {
   border-color: #2b3034; }
 
+.navbar-left--search {
+  width: 100%; }
+
+.navbar-fixed {
+  padding: 10px 0; }
+
+.wrapper-content {
+  padding-top: 122px; }
+
 @media (max-width: 1180px) {
   .navLink-itm {
     padding-left: 5px !important;
     padding-right: 5px !important; } }
 
 @media (max-width: 991px) {
+  .navbar-fixed .navbar-left--search {
+    display: none; }
+  .navbar-fixed .navLink {
+    float: right !important;
+    margin-top: 0; }
+  .navbar-fixed .navLink-itm {
+    font-size: 13px; }
+  .navbar-fixed .logo-text {
+    display: none; }
+  .navbar-fixed .logo img {
+    margin-top: 0px !important; }
+  .wrapper-content {
+    padding-top: 210px; }
   .navLink {
     float: left !important;
     margin-top: 15px; }
@@ -498,6 +524,10 @@ html .ui-button.ui-state-disabled:active {
       display: inline-block !important; } }
 
 @media (max-width: 768px) {
+  .navbar-fixed .logo-text {
+    display: inline-block; }
+  .wrapper-content {
+    padding-top: 100px; }
   .navLink {
     float: none !important;
     margin-bottom: 0;
@@ -548,6 +578,12 @@ html .ui-button.ui-state-disabled:active {
 .tourCardBottom {
   background: #fff;
   padding: 15px 30px; }
+
+.tourCardBottom {
+  width: 100%; }
+
+.dropdown.tourCardTag {
+  margin-top: 5px; }
 
 .tourCardContent {
   overflow: hidden;
@@ -616,7 +652,8 @@ html .ui-button.ui-state-disabled:active {
   .tourCardTag:after {
     clear: both; }
   .tourCardTag li {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 10px; }
   .tourCardTag-itm, .tourCardTag-itm--last {
     padding: 4px 10px;
     background: #ebebeb;

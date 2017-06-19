@@ -292,6 +292,14 @@ $(document).ready(function() {
 })(jQuery);
 
 
+$(window).scroll(function() {
+	if ($(".navbar").offset().top > 100) {
+		$(".navbar-default").addClass("navbar-fixed");
+	} else {
+		$(".navbar-default").removeClass("navbar-fixed");
+	}
+});
+
 
 //(function(){
 //var a = document.querySelector('#aside1'), b = null, K = null, Z = 0, P = 0, N = 0;  // если у P ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента, если у N — нижний край дойдёт до нижнего края элемента. Может быть отрицательным числом

@@ -20,7 +20,7 @@
 <body>
 	<div class="wrapper">
 		<div class="wrapper-content">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
 					<div class="navbar-header col-lg-3 col-md-4">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -36,7 +36,7 @@
 					<div class="collapse navbar-collapse" id="navbar">
 
 						<ul class="nav navbar-nav col-lg-4 col-md-3">
-							<form class="navbar-left">
+							<form class="navbar-left navbar-left--search">
 								<div class="input-group search">
 									<input type="text" class="form-control search-input" placeholder="Поиск">
 									<div class="input-group-btn">
@@ -111,25 +111,23 @@
 								<div class="col-xs-12">
 									<h2>Регион вылета</h2>
 								</div>
-								<div class="col-sm-8 col-xs-12 dropdown">
+								<div class="col-sm-8 col-xs-12">
 									<ul class="tag">
 										<li class="tag-itm"><a href="#" class="tag-link active">Все</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Челябинская обл.</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
-										<li class="tag-itm--last">
-											<a href="#" class="tag-link" type="button" data-toggle="dropdown">...</a>
-											<ul class="dropdown-menu">
-												<li><a href="#">Москва</a></li>
-												<li><a href="#">Татарстан</a></li>
-												<li><a href="#">Санкт-Петербург</a></li>
-												<li><a href="#">Москва</a></li>
-												<li><a href="#">Татарстан</a></li>
-												<li><a href="#">Санкт-Петербург</a></li>
-												<li><a href="#">Марс</a></li>
-											</ul>
-										</li>
+										<li class="tag-itm--last"><a href="javascript:void(0)" class="tag-link" type="button" data-toggle="collapse" data-target="#tag1">...</a></li>
+									</ul>
+									<ul id="tag1" class="collapse tag dropdown">
+										<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
+										<li class="tag-itm"><a href="#" class="tag-link">Марс</a></li>
 									</ul>
 								</div>
 								<div class="col-xs-12">
@@ -171,23 +169,21 @@
 													<span class="comments">44</span>
 													<span class="share">10</span>
 
-													<ul class="tourCardTag dropdown">
+													<ul class="tourCardTag">
 														<li><a href="#" class="tourCardTag-itm">Город</a></li>
 														<li><a href="#" class="tourCardTag-itm">Прага</a></li>
 														<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
 														<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-														<li>
-															<a href="#" class="tourCardTag-itm--last" type="button" data-toggle="dropdown">...</a>
-															<ul class="dropdown-menu">
-																<li><a href="#">Москва</a></li>
-																<li><a href="#">Татарстан</a></li>
-																<li><a href="#">Санкт-Петербург</a></li>
-																<li><a href="#">Москва</a></li>
-																<li><a href="#">Татарстан</a></li>
-																<li><a href="#">Санкт-Петербург</a></li>
-																<li><a href="#">Марс</a></li>
-															</ul>
-														</li>
+														<li><a href="javascript:void(0)" class="tourCardTag-itm--last" type="button" data-toggle="collapse" data-target="#tag2">...</a></li>
+													</ul>
+													<ul id="tag2" class="collapse tourCardTag dropdown">
+														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
+														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
+														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
+														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
+														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
+														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
+														<li><a href="#" class="tourCardTag-itm">Марс</a></li>
 													</ul>
 												</div>
 											</div>
@@ -228,25 +224,23 @@
 													<span class="comments">44</span>
 													<span class="share">10</span>
 													
-													<ul class="tourCardTag dropdown">
+													<ul class="tourCardTag">
 														<li><a href="#" class="tourCardTag-itm">Город</a></li>
 														<li><a href="#" class="tourCardTag-itm">Прага</a></li>
 														<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
 														<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-														<li>
-															<a href="#" class="tourCardTag-itm--last" type="button" data-toggle="dropdown">...</a>
-															<ul class="dropdown-menu">
-																<li><a href="#">Москва</a></li>
-																<li><a href="#">Татарстан</a></li>
-																<li><a href="#">Санкт-Петербург</a></li>
-																<li><a href="#">Москва</a></li>
-																<li><a href="#">Татарстан</a></li>
-																<li><a href="#">Санкт-Петербург</a></li>
-																<li><a href="#">Марс</a></li>
-															</ul>
-														</li>
+														<li><a href="javascript:void(0)" class="tourCardTag-itm--last" type="button" data-toggle="collapse" data-target="#tag3">...</a></li>
 													</ul>
-												</div>
+													<ul id="tag3" class="collapse tourCardTag dropdown">
+														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
+														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
+														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
+														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
+														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
+														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
+														<li><a href="#" class="tourCardTag-itm">Марс</a></li>
+													</ul>
+												</div>	
 											</div>
 
 										</div>
