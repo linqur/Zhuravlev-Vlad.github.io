@@ -1,10 +1,16 @@
 var doc_w = $(document).width();
 $(document).ready(function() {
-
+	
 	$('[data-toggle="tooltip"]').tooltip({html:true});
+	
+	$(document).on('hidden.bs.modal', '.modal', function () {
+		$('.modal:visible').length && $(document.body).addClass('modal-open');
+	});
 	
 	if (doc_w > 768){
 		$('#sidebarSticky').stick_in_parent({sticky_class: 'stickSidebar'});
+		
+		$('#bannerSidebarSticky').stick_in_parent();
 	}
 	
 	var sidebarOpen   = $('.sidebar--open'),
@@ -13,7 +19,8 @@ $(document).ready(function() {
 		hotelCategory = $('.hotelCategory-itm--js'),
 		hotelFood	  = $('.hotelFood-itm--js'),
 		adult 		  = $('.adult-itm'),
-		child 		  = $('.child-itm');
+		child 		  = $('.child-itm'),
+		gender 		  = $('.gender-itm');
 
 	sidebarOpen.click(function(){
 		sidebar.addClass('sidebar--show');
@@ -61,6 +68,11 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 	
+	gender.on('click', function(){
+		gender.removeClass('active');
+		$(this).addClass('active');
+	});
+	
 //////
 	child.on('click', function(){
 		
@@ -95,6 +107,7 @@ $(document).ready(function() {
 //	})//END
 	
 //////
+	
 //range
 	$( function() {
 		$("#slider").slider({
@@ -152,6 +165,7 @@ $(document).ready(function() {
 	});
 //END range
 	
+	//Слайдер
 	$('#mainSlider').slick({
 		infinite: true,
 		slidesToShow: 2,  
@@ -167,16 +181,32 @@ $(document).ready(function() {
 			slidesToScroll: 1,
 			}
 		}] 
-	});
+	});//END
 	
-	$('#modalSlider').slick({
-		infinite: false,
-		slidesToShow: 1,  
-		slidesToScroll: 1,
-		prevArrow: $('.modalSlider-prev'),
-      	nextArrow: $('.modalSlider-next'),
-	});
+	
+	//Вызывает модальное окно с описанием отеля
+	$('.descriptionHotel-openModal').click(function(){
+		$('#descriptionHotel').modal('show');
+	});//END
+	
+	//Вызывает слайдер в модалке
+	$('#descriptionHotel').on('shown.bs.modal', function (){
+		$('#modalSlider').slick({
+			infinite: true,
+			slidesToShow: 1,  
+			slidesToScroll: 1,
+			prevArrow: $('.modalSlider-prev'),
+			nextArrow: $('.modalSlider-next'),
+		});	
+	});//END
 
+//	$('#modalSlider').slick({
+//			infinite: true,
+//			slidesToShow: 1,  
+//			slidesToScroll: 1,
+//			prevArrow: $('.modalSlider-prev'),
+//			nextArrow: $('.modalSlider-next'),
+//		});
 	
 	function resizeSlider(){
 		var widthSlider = $('.mainSlider').width(),
@@ -196,6 +226,16 @@ $(document).ready(function() {
 	
 	$( window ).resize(resizeSlider);
 	$( document ).ready(resizeSlider);
+	
+	
+	$('.open-form--js').on('click', function(){
+		$('.reservation-info--js').toggle();
+		$('.reservation-form--js').toggle();
+	});
+	$('.close-form--js').on('click', function(){
+		$('.reservation-info--js').toggle();
+		$('.reservation-form--js').toggle();
+	});
 	
 //	$('.tabNavigation a').click(function(){
 //		$('.tabNavigation a').removeClass('active');
