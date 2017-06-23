@@ -448,7 +448,7 @@ html .ui-button.ui-state-disabled:active {
           border-radius: 0;
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.6);
-  z-index: 1; }
+  z-index: 5; }
 
 .logo-text {
   display: inline-block;
@@ -528,10 +528,12 @@ html .ui-button.ui-state-disabled:active {
     display: inline-block; }
   .wrapper-content {
     padding-top: 100px; }
+  .navbar-fixed .navLink,
   .navLink {
     float: none !important;
     margin-bottom: 0;
     text-align: center; }
+    .navbar-fixed .navLink li,
     .navLink li {
       display: block; } }
 
@@ -553,12 +555,17 @@ html .ui-button.ui-state-disabled:active {
 
 .sidebarTag-sticky {
   padding-bottom: 60px; }
+  .sidebarTag-sticky.stickSidebar {
+    padding-top: 70px; }
 
 .banner {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 25px; }
+
+.is_stuck {
+  padding-top: 90px; }
 
 @media (max-width: 991px) {
   .sidebarTag {
@@ -838,7 +845,7 @@ html .ui-button.ui-state-disabled:active {
 
 @media (max-width: 768px) {
   .tourCardContent {
-    height: 575px; }
+    height: 560px; }
     .tourCardContent--right, .tourCardContent--left {
       text-align: center; }
     .tourCardContent--right {
@@ -1798,9 +1805,11 @@ html .ui-button.ui-state-disabled:active {
   .aboutUsWorth-itm:nth-child(5) {
     width: 100%; }
   .aboutUsWelcome {
-    min-height: 800px; } }
+    min-height: 700px; } }
 
 @media (max-width: 480px) {
+  .aboutUsWelcome {
+    min-height: 780px; }
   .aboutUsWorth-itm {
     width: 100% !important;
     border: none;
