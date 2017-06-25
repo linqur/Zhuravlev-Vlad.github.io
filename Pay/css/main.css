@@ -428,6 +428,8 @@ address {
 .body-content {
   max-width: 560px;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   line-height: 2; }
   .body-content .title {
@@ -556,11 +558,17 @@ address {
     text-align: center;
     line-height: 1.5; }
   .second .body-content.sms {
-    background: none; } }
+    background: none; }
+  .third {
+    background: none; }
+    .third .body-content {
+      background: none; } }
 
 @media screen and (max-width: 480px) {
   .first .body-content,
   .third .body-content {
     background: none; }
   .second {
+    background: none; }
+  .first {
     background: none; } }
