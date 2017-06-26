@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -169,7 +168,7 @@ select {
   padding: 0 0 0 35px; }
 
 .radio:not(checked) + label:before {
-  content: 'Я согласен';
+  content: '';
   color: #888;
   padding-left: 20px;
   position: absolute;
@@ -205,6 +204,15 @@ select {
   background: -webkit-gradient(linear, left top, right top, from(#1bb9ef), to(#1982dd));
   background: -webkit-linear-gradient(left, #1bb9ef, #1982dd);
   background: linear-gradient(to right, #1bb9ef, #1982dd);
+  color: #fff; }
+
+.checkbox-label {
+  position: absolute;
+  top: 43px;
+  left: -55px;
+  width: 170px; }
+
+.radio:checked + label .checkbox-label {
   color: #fff; }
 
 p, a, label {
@@ -455,12 +463,11 @@ address {
     .second .body-content.sms .btn-blue {
       margin-top: 32px; }
   .second .input {
-    width: 150px;
-    letter-spacing: 27px;
     background: inherit;
-    margin-top: 35px; }
-  .second .btn {
-    margin-top: 40px; }
+    margin-top: 35px;
+    margin-bottom: -30px;
+    width: 150px;
+    letter-spacing: 27px; }
   .second .error {
     -webkit-animation: 1s ease-in-out 0s normal none running trambling-animation;
             animation: 1s ease-in-out 0s normal none running trambling-animation;
@@ -472,7 +479,8 @@ address {
         background: #ff6d00; }
   .second .input-border {
     height: 1px;
-    margin-top: -20px; }
+    line-height: 1px;
+    margin-bottom: 15px; }
     .second .input-border li {
       width: 30px;
       height: 1px;
@@ -490,8 +498,10 @@ address {
     margin-top: 32px; }
 
 .error-label {
-  margin-top: 30px;
-  margin-bottom: -30px; }
+  margin-top: 11px; }
+
+.time {
+  font-size: 18px; }
 
 .check-tel {
   font-size: 13px;

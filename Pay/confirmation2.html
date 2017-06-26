@@ -41,7 +41,7 @@
 				<div class="body-content cod">
 					<h2 class="title">Подтверждение</h2>
 					<p>Введите полученый код:</p>
-					<input type="text" id="input" class="input error" placeholder="Введите СМС код" maxlength="4">
+					<input type="text" id="input" class="input error" placeholder="Введите СМС код" maxlength="4" autofocus>
 					<ul class="input-border">
 						<li></li>
 						<li></li>
@@ -49,6 +49,7 @@
 						<li></li>
 					</ul>
 					<p class="error-label">Неверный код</p>
+					<p class="time">0:30</p>
 					<a href="#" class="btn">Послать код повторно</a>
 				</div>
 			</div>
@@ -62,8 +63,8 @@
 <script src="js/libs.min.js"></script>
 <script>
 	
+//Сбрасывает фокус, когда 4 символа
 $('#input').on('input', function(){
-	
 	if($('#input').val().length==4){
 		$('#input').blur();
 	}	
