@@ -83,11 +83,14 @@ table {
   border: 1px solid #dedede !important;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  padding: 8px 7px;
+  padding: 8px 20px;
   font-size: 14px;
   font-family: "OpenSansRegular", sans-serif;
   color: #888;
   line-height: 1.4 !important; }
+  .btn:hover {
+    background: #92da72;
+    color: #fff; }
 
 .btn-green,
 .btn-blue {
@@ -106,12 +109,18 @@ table {
   background: -webkit-gradient(linear, left top, right top, from(#1bb9ef), to(#1982dd));
   background: -webkit-linear-gradient(left, #1bb9ef, #1982dd);
   background: linear-gradient(to right, #1bb9ef, #1982dd); }
+  .btn-blue:hover {
+    -webkit-box-shadow: inset 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 2px 4px rgba(0, 0, 0, 0.1); }
 
 .btn-green {
   padding: 18px 43px;
   background: -webkit-gradient(linear, left top, right top, from(#01c49a), to(#00c767));
   background: -webkit-linear-gradient(left, #01c49a, #00c767);
   background: linear-gradient(to right, #01c49a, #00c767); }
+  .btn-green:hover {
+    -webkit-box-shadow: inset 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 2px 4px rgba(0, 0, 0, 0.1); }
 
 .input {
   border: none;
@@ -187,6 +196,20 @@ select {
           border-radius: 30px;
   background: #fafafa; }
 
+.radio:not(checked) + label:hover:before {
+  background: -webkit-gradient(linear, left top, right top, from(#1bb9ef), to(#1982dd));
+  background: -webkit-linear-gradient(left, #1bb9ef, #1982dd);
+  background: linear-gradient(to right, #1bb9ef, #1982dd); }
+
+.radio:not(checked) + label:hover:after {
+  background-image: url(../img/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff; }
+
+.radio:not(checked) + label:hover .checkbox-label {
+  color: #fff; }
+
 .radio:not(checked) + label:after {
   content: '';
   position: absolute;
@@ -234,7 +257,7 @@ address {
   display: inline; }
 
 .title {
-  font-family: "MyriadPro", sans-serif;
+  font-family: "Myriad Pro", "MyriadPro", sans-serif;
   font-size: 24px;
   color: #222; }
 
