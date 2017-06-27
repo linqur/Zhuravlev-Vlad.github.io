@@ -70,6 +70,12 @@ table {
   src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype"), url("../fonts/OpenSansRegular/OpenSansRegular.svg") format("svg");
   font-weight: normal; }
 
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro/MyriadPro.eot");
+  src: url("../fonts/MyriadPro/MyriadPro.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro.svg") format("svg");
+  font-weight: normal; }
+
 .btn {
   border: none;
   display: inline-block;
@@ -228,7 +234,7 @@ address {
   display: inline; }
 
 .title {
-  font-family: "Myriad Pro";
+  font-family: "MyriadPro", sans-serif;
   font-size: 24px;
   color: #222; }
 
@@ -271,6 +277,8 @@ address {
 
 .header-left {
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -324,14 +332,15 @@ address {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  padding-right: 10px; }
 
 .header-pay {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 13px 0;
+  padding: 13px 0 13px 10px;
   border-left: 1px solid #ffa612;
   font-family: "OpenSansLight", sans-serif;
   font-size: 44px;
@@ -578,4 +587,10 @@ address {
   .second {
     background: none; }
   .first {
-    background: none; } }
+    background: none; }
+  .header-pay {
+    font-size: 36px; } }
+
+@media screen and (max-width: 390px) {
+  .logo img {
+    width: 100%; } }
