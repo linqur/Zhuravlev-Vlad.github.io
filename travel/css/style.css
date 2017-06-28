@@ -2252,83 +2252,6 @@ html .ui-button.ui-state-disabled:active {
     bottom: 15px;
     font-size: 14px; }
 
-.tourists {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0;
-  background: #e5ecff; }
-  .tourists .close {
-    height: 69px;
-    width: 69px;
-    background: #000;
-    text-align: center;
-    margin-top: -3px; }
-    .tourists .close a {
-      padding: 0;
-      color: #fff;
-      font-family: "OpenSansLight", sans-serif;
-      font-weight: 100;
-      font-size: 45px; }
-  .tourists li {
-    display: inline-block;
-    max-width: 290px;
-    height: 67px;
-    margin-left: -30px;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    background: red;
-    position: relative;
-    z-index: 2;
-    background: url(../img/tourist.png) no-repeat center right;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden; }
-    .tourists li:first-child {
-      margin-left: 0 !important; }
-      .tourists li:first-child:before {
-        content: none; }
-    .tourists li.last {
-      background: #e5ecff;
-      z-index: 1; }
-      .tourists li.last a {
-        background: none;
-        padding-left: 40px; }
-  .tourists .active {
-    background: url(../img/tourist-active.png) no-repeat center right;
-    z-index: 3; }
-    .tourists .active:before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 32px 0 35px 20px;
-      border-color: transparent transparent transparent #d6e1fe; }
-    .tourists .active a {
-      background-image: url(../img/user-active.png);
-      color: #fff; }
-  .tourists a {
-    background-repeat: no-repeat;
-    background-position: 30px center;
-    background-image: url(../img/user.png);
-    display: inline-block;
-    padding: 20px 0;
-    padding-left: 70px;
-    width: 100%;
-    font-family: "OpenSansBold", sans-serif;
-    font-size: 18px;
-    color: #27201e; }
-
 .reservation-form--js {
   display: none; }
 
@@ -2360,6 +2283,113 @@ html .ui-button.ui-state-disabled:active {
     font-size: 16px; }
   .reservation-form .btn-yellow, .reservation-form .btn-yellow--lg {
     margin-top: 30px; }
+  .reservation-form .input-sm {
+    padding: 0;
+    text-align: center; }
+
+.tourist-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 68px; }
+
+.client {
+  min-width: 200px;
+  padding-left: 15px;
+  background: #e5ecff;
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 18px;
+  color: #27201e;
+  line-height: 68px;
+  vertical-align: middle;
+  position: relative;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  z-index: 9; }
+  .client:after, .client:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    left: -20px; }
+  .client:after {
+    border-width: 0 20px 34px 0;
+    border-color: transparent #e5ecff transparent transparent;
+    top: 0; }
+  .client:before {
+    border-width: 0 0 34px 20px;
+    border-color: transparent transparent #e5ecff transparent;
+    bottom: 0; }
+
+.tourists {
+  background: #d6e1fe;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 300px; }
+
+.tourist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 68px;
+  margin-bottom: 0;
+  min-width: 400px; }
+  .tourist li {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    min-width: 200px;
+    vertical-align: middle;
+    line-height: 68px; }
+  .tourist .active {
+    background: url(../img/tourist-active.png) no-repeat center right; }
+    .tourist .active a {
+      color: #fff;
+      background: url(../img/user-active.png) 10px center no-repeat; }
+  .tourist a {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 18px;
+    color: #27201e;
+    background: url(../img/user.png) 10px center no-repeat;
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+  .tourist .mCSB_draggerRail,
+  .tourist .mCSB_dragger_bar {
+    margin: 0 auto !important;
+    margin-top: 12px !important; }
+
+.close-form {
+  display: inline-block;
+  height: 68px;
+  min-width: 68px;
+  line-height: 68px;
+  vertical-align: middle;
+  background: #000;
+  font-family: "OpenSansLight", sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  color: #fff;
+  text-align: center; }
+
+@media screen and (max-width: 1335px) {
+  .reservation-form label {
+    font-size: 15px; }
+  .tourists a {
+    font-size: 16px; } }
 
 @media screen and (max-width: 991px) {
   .reservation .map-container {
@@ -2388,7 +2418,15 @@ html .ui-button.ui-state-disabled:active {
   .reservation-modal-content {
     padding: 15px 10px !important; }
   .reservation-input {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .tourist-list {
+    -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse; } }
+
+@media screen and (max-width: 480px) {
+  .modal-header .descriptionHotel-title {
+    font-size: 28px; } }
 
 .sidebar--show {
   z-index: 2;

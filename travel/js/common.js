@@ -281,6 +281,12 @@ $(document).ready(function() {
 			scrollbarPosition: 'outside'
 		});
 		
+		$('.tourist-scroll').mCustomScrollbar({
+			axis: 'x',
+			autoExpandScrollbar:true,
+			advanced:{autoExpandHorizontalScroll:true}
+		});
+		
 		if (doc_w > 768){
 			$('.scroll').mCustomScrollbar({
 				scrollButtons: {enable: false},
