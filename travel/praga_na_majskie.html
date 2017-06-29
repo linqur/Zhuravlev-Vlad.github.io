@@ -92,9 +92,9 @@
 						<p class="arrival-date">17 Апреля<span>7 ночей из Москвы</span></p>
 					</div>
 					<div class="col-lg-1 col-md-3 col-xs-12">
-						<div class="temperature">
-							<span class="temperatureDay">+15</span>
+						<div class="temperature mainSlider-temperature">
 							<span class="temperatureEvening">+7</span>
+							<span class="temperatureDay">+15</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-xs-12 mainSlider-description--price">
@@ -115,7 +115,7 @@
 			<div class="container-fluid container-fluid-mw1475 tours">
 				<div class="row">
 
-						<div id="sidebarSticky" class="col-md-3 filterSticky noPadding">
+						<div id="filterStiky" class="col-md-3 noPadding">
 							<div class="filter sidebar">
 								<a href="javascript:void(0)" class="fa fa-times sidebar--close" aria-hidden="true"></a>
 								<div class="filterSection">
@@ -377,7 +377,7 @@
 							</div>
 						</div>
 
-						<div id="article" class="col-md-9 col-md-offset-3 noPadding">
+						<div id="article" class="col-md-9 noPadding">
 							<div class="duration">
 								<div class="">
 									<p class="duration-title">Продолжительность отпуска <span>(дней)</span>
@@ -1025,117 +1025,174 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-8 reservation-borderblock reservation-form--js">
-							<div class="row">
-								<div class="col-xs-12 noPadding tourist-list">
-<!--
-									<ul class="tourists">
-										<li class="active tourist-itm"><a href="#"><span>Турист 1</span></a></li>
-										<li class="tourist-itm"><a href="#"><span>Турист 2</span></a></li>
-										<li class="tourist-itm"><a href="#"><span>Турист 3</span></a></li>
-										<li class="last"><a hrsef="#">Данные заказчика</a></li>
-										<li class="close close-form--js"><a href="#">×</a></li>
-									</ul>
--->
-									<div class="tourists">
-										<div class="mCustomScrollbar" data-mcs-theme="minimal">
-											<ul class="tourist tourist-scroll">
-												<li class="active"><a href="#">Турист №1</a></li>
-												<li><a href="#">Турист №2</a></li>
-												<li><a href="#">Турист №3</a></li>
-												<li><a href="#">Турист №4</a></li>
-												<li><a href="#">Турист №5</a></li>
-												<li><a href="#">Турист №6</a></li>
-												<li><a href="#">Турист №7</a></li>
-												<li><a href="#">Турист №8</a></li>
-											</ul>
+						<div class="col-md-8 reservation-borderblock form-overflow reservation-form--js">
+							<div class="form-header">
+								<h2>Пожалуста введите точные данные туристов</h2>
+								<a href="#" class="close-form close-form--js">×</a>
+							</div>
+							<div class="formScroll">
+								<div class="row">
+									<div class="col-xs-12 reservation-form">
+										<p>Данные заказчика</p>
+										<div class="row">
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Фамилия</label>
+												<input type="text" class="reservation-input" placeholder="Имя">
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Серия и номер паспорта</label>
+												<div class="row">
+													<div class="col-md-6">
+														<input type="text" class="reservation-input" placeholder="Серия">
+													</div>
+													<div class="col-md-6">
+														<input type="text" class="reservation-input" placeholder="Номер">
+													</div>	
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="">Пол</label>
+												<div class="btn-group gender-group">
+													<a href="javascript:void(0)" class="btn gender-itm">М</a>
+													<a href="javascript:void(0)" class="btn gender-itm">Ж</a>
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Имя и Отчество</label>
+												<input type="text" class="reservation-input" placeholder="Имя Отчество">
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Дата и выдача паспорта</label>
+												<div class="row">
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+													</div>
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+													</div>	
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>	
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<div class="row">
+													<div class="col-xs-6">
+														<label for="name">Страна</label>
+														<select name="" id="">
+															<option value="1">Россия</option>
+															<option value="2">Другие страны</option>
+														</select>
+													</div>
+													<div class="col-xs-6">
+														<label for="name">Гражданство</label>
+														<select name="" id="">
+															<option value="1">Монголия</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Дата рождения</label>
+												<div class="row">
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+													</div>
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+													</div>	
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>	
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Кем выдан паспорт</label>
+												<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
+											</div>
 										</div>
 									</div>
-									<a href="#" class="client">
-										Данные заказчика
-									</a>
-									<a href="#" class="close-form close-form--js">×</a>
-								</div>
-								<div class="col-xs-12 reservation-form">
-									<p>Пожалуста введите точные данные туристов</p>
-									<div class="row">
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Фамилия</label>
-											<input type="text" class="reservation-input" placeholder="Имя">
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Серия и номер паспорта</label>
-											<div class="row">
-												<div class="col-md-6">
-													<input type="text" class="reservation-input" placeholder="Серия">
-												</div>
-												<div class="col-md-6">
-													<input type="text" class="reservation-input" placeholder="Номер">
-												</div>	
+									<div class="col-xs-12 reservation-form">
+										<p>Турист №1</p>
+										<div class="row">
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Фамилия</label>
+												<input type="text" class="reservation-input" placeholder="Имя">
 											</div>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="">Пол</label>
-											<div class="btn-group gender-group">
-												<a href="javascript:void(0)" class="btn gender-itm">М</a>
-												<a href="javascript:void(0)" class="btn gender-itm">Ж</a>
-											</div>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Имя и Отчество</label>
-											<input type="text" class="reservation-input" placeholder="Имя Отчество">
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Дата и выдача паспорта</label>
-											<div class="row">
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ДД">
-												</div>
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ММ">
-												</div>	
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-												</div>	
-											</div>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<div class="row">
-												<div class="col-xs-6">
-													<label for="name">Страна</label>
-													<select name="" id="">
-														<option value="1">Россия</option>
-														<option value="2">Другие страны</option>
-													</select>
-												</div>
-												<div class="col-xs-6">
-													<label for="name">Гражданство</label>
-													<select name="" id="">
-														<option value="1">Монголия</option>
-													</select>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Серия и номер паспорта</label>
+												<div class="row">
+													<div class="col-md-6">
+														<input type="text" class="reservation-input" placeholder="Серия">
+													</div>
+													<div class="col-md-6">
+														<input type="text" class="reservation-input" placeholder="Номер">
+													</div>	
 												</div>
 											</div>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Дата рождения</label>
-											<div class="row">
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ДД">
+											<div class="col-lg-4 col-sm-6">
+												<label for="">Пол</label>
+												<div class="btn-group gender-group">
+													<a href="javascript:void(0)" class="btn gender-itm">М</a>
+													<a href="javascript:void(0)" class="btn gender-itm">Ж</a>
 												</div>
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ММ">
-												</div>	
-												<div class="col-xs-4">
-													<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-												</div>	
 											</div>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-											<label for="name">Кем выдан паспорт</label>
-											<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-										</div>
-										<div class="col-xs-12">
-											<a href="#" class="btn-yellow">Далее<i class="fa fa-arrow-right btn-icon" aria-hidden="true"></i></a>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Имя и Отчество</label>
+												<input type="text" class="reservation-input" placeholder="Имя Отчество">
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Дата и выдача паспорта</label>
+												<div class="row">
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+													</div>
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+													</div>	
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>	
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<div class="row">
+													<div class="col-xs-6">
+														<label for="name">Страна</label>
+														<select name="" id="">
+															<option value="1">Россия</option>
+															<option value="2">Другие страны</option>
+														</select>
+													</div>
+													<div class="col-xs-6">
+														<label for="name">Гражданство</label>
+														<select name="" id="">
+															<option value="1">Монголия</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Дата рождения</label>
+												<div class="row">
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+													</div>
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+													</div>	
+													<div class="col-xs-4">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>	
+												</div>
+											</div>
+											<div class="col-lg-4 col-sm-6">
+												<label for="name">Кем выдан паспорт</label>
+												<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
+											</div>
+											<div class="col-xs-12">
+												<a href="#" class="btn-yellow">Далее<i class="fa fa-arrow-right btn-icon" aria-hidden="true"></i></a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1144,8 +1201,8 @@
 						<div class="col-md-4 map-container">
 							<div id="modal-map" style="width: 100%; height: 635px"></div>
 							<div class="tourCardContent-inf">
-								<p class="tourPrice"><span>$</span>259</p>
-								<a href="#" class="btn-lightBlue open-form--js">Бронировать</a>
+								<p class="tourPrice"><span>&#8381;</span>19 433</p>
+								<a href="#" class="btn-lightBlue--lg open-form--js">Бронировать</a>
 							</div>
 						</div>
 					</div>
@@ -1158,6 +1215,9 @@
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+		leftStiky();
+	</script>
 	<script>
 		ymaps.ready(init);
 		var myMap, 

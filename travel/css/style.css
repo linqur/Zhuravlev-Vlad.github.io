@@ -328,7 +328,7 @@ input:-ms-input-placeholder {
   outline: none !important;
   outline-offset: 0 !important; }
 
-.button, .btn-yellow, .btn-yellow--lg, .btn-green, .btn-blue, .btn-black, .btn-lightBlue {
+.button, .btn-yellow, .btn-yellow--lg, .btn-green, .btn-blue, .btn-black, .btn-lightBlue, .btn-lightBlue--lg {
   display: inline-block;
   padding: 10px 20px;
   -webkit-border-radius: 20px;
@@ -392,12 +392,18 @@ input:-ms-input-placeholder {
 .btn-black:hover {
   color: #fff; }
 
-.btn-lightBlue {
+.btn-lightBlue, .btn-lightBlue--lg {
   background: #b3e8f8;
   -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
           box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3); }
 
-.btn-lightBlue:hover {
+.btn-lightBlue--lg {
+  padding: 13px 42px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  font-size: 24px; }
+
+.btn-lightBlue:hover, .btn-lightBlue--lg:hover {
   color: #fff; }
 
 .ui-widget.ui-widget-content {
@@ -527,7 +533,7 @@ html .ui-button.ui-state-disabled:active {
   .navbar-fixed .logo-text {
     display: inline-block; }
   .wrapper-content {
-    padding-top: 100px; }
+    padding-top: 128px; }
   .navbar-fixed .navLink,
   .navLink {
     float: none !important;
@@ -543,7 +549,6 @@ html .ui-button.ui-state-disabled:active {
   bottom: 0;
   padding-top: 120px;
   padding-left: 30px;
-  overflow: auto;
   background: #171a1d;
   color: #fff; }
   .sidebarTag a {
@@ -556,7 +561,7 @@ html .ui-button.ui-state-disabled:active {
 .sidebarTag-sticky {
   padding-bottom: 60px; }
   .sidebarTag-sticky.stickSidebar {
-    padding-top: 70px; }
+    margin-top: 70px; }
 
 .banner {
   position: absolute;
@@ -575,7 +580,12 @@ html .ui-button.ui-state-disabled:active {
 
 @media (max-width: 768px) {
   .sidebarTag {
-    text-align: center; } }
+    text-align: center;
+    overflow: auto;
+    z-index: 10 !important;
+    padding-left: 15px; }
+  .sidebarTag-sticky {
+    padding-bottom: 0; } }
 
 .tourCard {
   margin-bottom: 25px; }
@@ -725,7 +735,7 @@ html .ui-button.ui-state-disabled:active {
 
 .temperatureDay,
 .temperatureEvening {
-  padding-left: 30px;
+  padding-left: 35px;
   font-family: "RobotoSlabRegular", sans-serif;
   font-size: 20px;
   color: #fff; }
@@ -752,7 +762,8 @@ html .ui-button.ui-state-disabled:active {
   background-image: url(../img/temperature-day.png); }
 
 .temperatureEvening {
-  background-image: url(../img/temperature-evening.png); }
+  background-image: url(../img/temperature-evening.png);
+  background-position: 3px center; }
 
 .reviews {
   background-image: url(../img/review.png); }
@@ -792,6 +803,12 @@ html .ui-button.ui-state-disabled:active {
     float: right;
     min-width: 100%;
     min-height: 100%; }
+  .suggestedTours-img .check {
+    position: absolute;
+    bottom: 10px;
+    right: 4%;
+    padding: 10px 12px;
+    font-size: 13px; }
 
 .suggestedTours-desc {
   padding: 15px 0;
@@ -818,6 +835,9 @@ html .ui-button.ui-state-disabled:active {
   z-index: 1;
   background: url(../img/angle2.png) no-repeat;
   background-size: 100% 100%; }
+
+.bannerSidebarSticky {
+  margin-top: 20px; }
 
 .dropdown-menu {
   width: 100%;
@@ -885,7 +905,7 @@ html .ui-button.ui-state-disabled:active {
   -webkit-box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.1);
   padding: 35px;
-  min-height: 602px; }
+  min-height: 1100px; }
 
 .allTours-price {
   float: left;
@@ -1230,7 +1250,7 @@ html .ui-button.ui-state-disabled:active {
     font-size: 24px;
     position: fixed;
     top: 35px;
-    right: 40px; }
+    right: 15px; }
 
 .filterTitle {
   margin-bottom: 20px; }
@@ -1427,7 +1447,7 @@ html .ui-button.ui-state-disabled:active {
     padding: 25px 15px; }
 
 .duration {
-  padding: 35px 40px 76px 40px;
+  padding: 35px 40px 69px 40px;
   background: #fafafa; }
   .duration p {
     font-family: "OpenSansBold", sans-serif;
@@ -1539,18 +1559,24 @@ html .ui-button.ui-state-disabled:active {
     width: 100%; }
   .filter {
     position: absolute;
+    width: 50%;
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
     -webkit-transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s;
-    transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s; } }
+    transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s;
+    -webkit-box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.3); }
+    .filter.sidebar--show {
+      position: relative; } }
 
 @media (max-width: 768px) {
   .filter {
     width: 100%;
     position: fixed;
     top: 0;
-    overflow: scroll; }
+    overflow: scroll;
+    height: 100vh; }
   .btn-search {
     margin-left: 0;
     margin-top: 30px !important;
@@ -1569,7 +1595,9 @@ html .ui-button.ui-state-disabled:active {
   .duration {
     text-align: center; }
     .duration p span {
-      padding-right: 0; } }
+      padding-right: 0; }
+  .filter.sidebar--show {
+    position: fixed; } }
 
 #mainSlider {
   overflow: hidden; }
@@ -1585,7 +1613,8 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
   text-align: center;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 25px; }
   .mainSlider-description--title {
     font-family: "RobotoSlabBold", sans-serif;
     font-size: 50px;
@@ -1597,7 +1626,7 @@ html .ui-button.ui-state-disabled:active {
       font-size: 22px; }
   .mainSlider-description .temperature {
     display: inline-block;
-    padding-top: 35px; }
+    padding-top: 25px; }
     .mainSlider-description .temperature .temperatureDay,
     .mainSlider-description .temperature .temperatureEvening {
       display: block;
@@ -1632,6 +1661,9 @@ html .ui-button.ui-state-disabled:active {
     font-size: 50px;
     display: table-cell;
     vertical-align: middle; }
+
+.mainSlider-description .mainSlider-temperature .temperatureEvening {
+  margin-bottom: 20px !important; }
 
 @media (max-width: 991px) {
   .mainSlider-description .temperature {
@@ -1669,6 +1701,7 @@ html .ui-button.ui-state-disabled:active {
   z-index: 2;
   background-color: #b4c8ff; }
 
+.form-overflow .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
 .filterSection .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .filterSection--last .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: #4e7cf5 !important; }
 
@@ -2127,14 +2160,15 @@ html .ui-button.ui-state-disabled:active {
 
 .modalSlider {
   overflow: hidden;
-  max-height: 500px; }
+  max-height: 490px; }
 
 .modalSlider-itm {
   display: inline-block;
   max-height: 500px;
   overflow: hidden; }
   .modalSlider-itm img {
-    width: 100%; }
+    width: 100%;
+    max-height: 490px; }
 
 .modal-body {
   padding: 0; }
@@ -2252,11 +2286,19 @@ html .ui-button.ui-state-disabled:active {
     bottom: 15px;
     font-size: 14px; }
 
+.form-overflow {
+  padding-left: 0;
+  padding-right: 0; }
+
+.formScroll {
+  height: 567px; }
+
 .reservation-form--js {
   display: none; }
 
 .reservation-form {
-  padding: 50px 40px; }
+  padding: 50px 40px;
+  border-bottom: 2px solid #e9eef0; }
   .reservation-form label {
     display: block;
     margin-top: 30px;
@@ -2325,52 +2367,18 @@ html .ui-button.ui-state-disabled:active {
     border-color: transparent transparent #e5ecff transparent;
     bottom: 0; }
 
-.tourists {
-  background: #d6e1fe;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 300px; }
-
-.tourist {
+.form-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  height: 68px;
-  margin-bottom: 0;
-  min-width: 400px; }
-  .tourist li {
-    display: inline-block;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    min-width: 200px;
-    vertical-align: middle;
-    line-height: 68px; }
-  .tourist .active {
-    background: url(../img/tourist-active.png) no-repeat center right; }
-    .tourist .active a {
-      color: #fff;
-      background: url(../img/user-active.png) 10px center no-repeat; }
-  .tourist a {
-    font-family: "OpenSansBold", sans-serif;
-    font-size: 18px;
-    color: #27201e;
-    background: url(../img/user.png) 10px center no-repeat;
-    padding-left: 40px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-  .tourist .mCSB_draggerRail,
-  .tourist .mCSB_dragger_bar {
-    margin: 0 auto !important;
-    margin-top: 12px !important; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .form-header h2 {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .close-form {
   display: inline-block;
@@ -2422,11 +2430,13 @@ html .ui-button.ui-state-disabled:active {
   .tourist-list {
     -webkit-flex-wrap: wrap-reverse;
         -ms-flex-wrap: wrap-reverse;
-            flex-wrap: wrap-reverse; } }
+            flex-wrap: wrap-reverse; }
+  .modalSlider-itm img {
+    width: unset; } }
 
 @media screen and (max-width: 480px) {
   .modal-header .descriptionHotel-title {
-    font-size: 28px; } }
+    font-size: 25px; } }
 
 .sidebar--show {
   z-index: 2;
@@ -2441,11 +2451,11 @@ html .ui-button.ui-state-disabled:active {
 
 .sticky {
   position: fixed;
-  z-index: 101; }
+  z-index: 4; }
 
 .stop {
   position: relative;
-  z-index: 101; }
+  z-index: 4; }
 
 @media (min-width: 991px) {
   .sidebar--show {
@@ -2456,8 +2466,14 @@ html .ui-button.ui-state-disabled:active {
 
 @media (max-width: 991px) {
   .sidebar {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%);
     -webkit-transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s;
     transition: cubic-bezier(0.52, 0.26, 0, 0.92) 0.5s; } }
+
+@media (max-width: 768px) {
+  .sticky {
+    z-index: 5; }
+  .stop {
+    z-index: 5; } }

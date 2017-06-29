@@ -11,6 +11,9 @@ $(document).ready(function() {
 		$('#sidebarSticky').stick_in_parent({sticky_class: 'stickSidebar'});
 		
 		$('#bannerSidebarSticky').stick_in_parent();
+		
+		
+		$('#sidebarSticky2').stick_in_parent();
 	}
 	
 	var sidebarOpen   = $('.sidebar--open'),
@@ -20,13 +23,17 @@ $(document).ready(function() {
 		hotelFood	  = $('.hotelFood-itm--js'),
 		adult 		  = $('.adult-itm'),
 		child 		  = $('.child-itm'),
-		gender 		  = $('.gender-itm');
+		gender 		  = $('.gender-itm'),
+		body 		  = $('body');
 
 	sidebarOpen.click(function(){
 		sidebar.addClass('sidebar--show');
+		if(doc_w < 768)
+			body.css('overflow', 'hidden');
 	});
 	sidebarClose.on('click', function(){
 		sidebar.removeClass('sidebar--show');
+		body.css('overflow', '');
 	});
 
 
@@ -281,6 +288,11 @@ $(document).ready(function() {
 			scrollbarPosition: 'outside'
 		});
 		
+		$('.formScroll').mCustomScrollbar({
+			scrollButtons: {enable: true},
+			theme: 'dark-thick'
+		});
+		
 		$('.tourist-scroll').mCustomScrollbar({
 			axis: 'x',
 			autoExpandScrollbar:true,
@@ -307,83 +319,83 @@ $(window).scroll(function() {
 });
 
 
-//(function(){
-//var a = document.querySelector('#aside1'), b = null, K = null, Z = 0, P = 0, N = 0;  // если у P ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента, если у N — нижний край дойдёт до нижнего края элемента. Может быть отрицательным числом
-//window.addEventListener('scroll', Ascroll, false);
-//document.body.addEventListener('scroll', Ascroll, false);
-//function Ascroll() {
-//  var Ra = a.getBoundingClientRect(),
-//      R1bottom = document.querySelector('#article').getBoundingClientRect().bottom;
-//  if (Ra.bottom < R1bottom) {
-//    if (b == null) {
-//      var Sa = getComputedStyle(a, ''), s = '';
-//      b = document.createElement('div');
-//      b.className = "stop";
-//      b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-//      a.insertBefore(b, a.firstChild);
-//      var l = a.childNodes.length;
-//      for (var i = 1; i < l; i++) {
-//        b.appendChild(a.childNodes[1]);
-//      }
-//      a.style.height = b.getBoundingClientRect().height + 'px';
-//      a.style.padding = '0';
-//      a.style.border = '0';
-//    }
-//    var Rb = b.getBoundingClientRect(),
-//        Rh = Ra.top + Rb.height,
-//        W = document.documentElement.clientHeight,
-//        R1 = Math.round(Rh - R1bottom),
-//        R2 = Math.round(Rh - W);
-//    if (Rb.height > W) {
-//      if (Ra.top < K) {  // скролл вниз
-//        if (R2 + N > R1) {  // не дойти до низа
-//          if (Rb.bottom - W + N <= 0) {  // подцепиться
-//            b.className = 'sticky';
-//            b.style.top = W - Rb.height - N + 'px';
-//            Z = N + Ra.top + Rb.height - W;
-//          } else {
-//            b.className = 'stop';
-//            b.style.top = - Z + 'px';
-//          }
-//        } else {
-//          b.className = 'stop';
-//          b.style.top = - R1 +'px';
-//          Z = R1;
-//        }
-//      } else {  // скролл вверх
-//        if (Ra.top - P < 0) {  // не дойти до верха
-//          if (Rb.top - P >= 0) {  // подцепиться
-//            b.className = 'sticky';
-//            b.style.top = P + 'px';
-//            Z = Ra.top - P;
-//          } else {
-//            b.className = 'stop';
-//            b.style.top = - Z + 'px';
-//          }
-//        } else {
-//          b.className = '';
-//          b.style.top = '';
-//          Z = 0;
-//        }
-//      }
-//      K = Ra.top;
-//    } else {
-//      if ((Ra.top - P) <= 0) {
-//        if ((Ra.top - P) <= R1) {
-//          b.className = 'stop';
-//          b.style.top = - R1 +'px';
-//        } else {
-//          b.className = 'sticky';
-//          b.style.top = P + 'px';
-//        }
-//      } else {
-//        b.className = '';
-//        b.style.top = '';
-//      }
-//    }
-//    window.addEventListener('resize', function() {
-//      a.children[0].style.width = getComputedStyle(a, '').width
-//    }, false);
-//  }
-//}
-//})()
+function leftStiky(){
+	var a = document.querySelector('#filterStiky'), b = null, K = null, Z = 0, P = 50, N = 0; 
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);
+function Ascroll() {
+  var Ra = a.getBoundingClientRect(),
+      R1bottom = document.querySelector('#article').getBoundingClientRect().bottom;
+  if (Ra.bottom < R1bottom) {
+    if (b == null) {
+      var Sa = getComputedStyle(a, ''), s = '';
+      b = document.createElement('div');
+      b.className = "stop";
+      b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+      a.insertBefore(b, a.firstChild);
+      var l = a.childNodes.length;
+      for (var i = 1; i < l; i++) {
+        b.appendChild(a.childNodes[1]);
+      }
+      a.style.height = b.getBoundingClientRect().height + 'px';
+      a.style.padding = '0';
+      a.style.border = '0';
+    }
+    var Rb = b.getBoundingClientRect(),
+        Rh = Ra.top + Rb.height,
+        W = document.documentElement.clientHeight,
+        R1 = Math.round(Rh - R1bottom),
+        R2 = Math.round(Rh - W);
+    if (Rb.height > W) {
+      if (Ra.top < K) {  // скролл вниз
+        if (R2 + N > R1) {  // не дойти до низа
+          if (Rb.bottom - W + N <= 0) {  // подцепиться
+            b.className = 'sticky';
+            b.style.top = W - Rb.height - N + 'px';
+            Z = N + Ra.top + Rb.height - W;
+          } else {
+            b.className = 'stop';
+            b.style.top = - Z + 'px';
+          }
+        } else {
+          b.className = 'stop';
+          b.style.top = - R1 +'px';
+          Z = R1;
+        }
+      } else {  // скролл вверх
+        if (Ra.top - P < 0) {  // не дойти до верха
+          if (Rb.top - P >= 0) {  // подцепиться
+            b.className = 'sticky';
+            b.style.top = P + 'px';
+            Z = Ra.top - P;
+          } else {
+            b.className = 'stop';
+            b.style.top = - Z + 'px';
+          }
+        } else {
+          b.className = '';
+          b.style.top = '';
+          Z = 0;
+        }
+      }
+      K = Ra.top;
+    } else {
+      if ((Ra.top - P) <= 0) {
+        if ((Ra.top - P) <= R1) {
+          b.className = 'stop';
+          b.style.top = - R1 +'px';
+        } else {
+          b.className = 'sticky';
+          b.style.top = P + 'px';
+        }
+      } else {
+        b.className = '';
+        b.style.top = '';
+      }
+    }
+    window.addEventListener('resize', function() {
+      a.children[0].style.width = getComputedStyle(a, '').width
+    }, false);
+  }
+}
+};
