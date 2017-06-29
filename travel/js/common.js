@@ -19,23 +19,39 @@ $(document).ready(function() {
 	var sidebarOpen   = $('.sidebar--open'),
 		sidebarClose  = $('.sidebar--close'),
 		sidebar    	  = $('.sidebar'),
-		hotelCategory = $('.hotelCategory-itm--js'),
-		hotelFood	  = $('.hotelFood-itm--js'),
-		adult 		  = $('.adult-itm'),
 		child 		  = $('.child-itm'),
-		gender 		  = $('.gender-itm'),
-		body 		  = $('body');
+		body 		  = $('body'),
+		hotel 		  = $('.hotel--js'),
+		hotelAll 	  = $('.hotelAll--js'),
+		food 		  = $('.food--js'),
+		foodAll 	  = $('.foodAll--js');
 
 	sidebarOpen.click(function(){
 		sidebar.addClass('sidebar--show');
 		if(doc_w < 768)
 			body.css('overflow', 'hidden');
 	});
+	
 	sidebarClose.on('click', function(){
 		sidebar.removeClass('sidebar--show');
 		body.css('overflow', '');
 	});
 
+	hotel.find('label').on('click', function(){
+		hotelAll.find('input').removeAttr('checked');
+	});
+	
+	hotelAll.find('label').on('click', function(){
+		hotel.find('input').removeAttr('checked');
+	});
+	
+	food.find('label').on('click', function(){
+		foodAll.find('input').removeAttr('checked');
+	});
+	
+	foodAll.find('label').on('click', function(){
+		food.find('input').removeAttr('checked');
+	});
 
 //	$('.imgCenter').css({
 //		marginTop: -0.5*$('img').height()+'px',
@@ -43,42 +59,42 @@ $(document).ready(function() {
 //	});
 
 
-	hotelCategory.on('click', function(){
-		if($(this).hasClass('active') === true){
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-		$('.hotelCategory-itm--lg--js').removeClass('active');
-	});
-	$('.hotelCategory-itm--lg--js').on('click', function(){
-		$(this).addClass('active');
-		hotelCategory.removeClass('active')
-	});
+//	hotelCategory.on('click', function(){
+//		if($(this).hasClass('active') === true){
+//			$(this).removeClass('active');
+//		} else {
+//			$(this).addClass('active');
+//		}
+//		$('.hotelCategory-itm--lg--js').removeClass('active');
+//	});
+//	$('.hotelCategory-itm--lg--js').on('click', function(){
+//		$(this).addClass('active');
+//		hotelCategory.removeClass('active')
+//	});
+//	
+//	hotelFood.on('click', function(){
+//		if($(this).hasClass('active') === true){
+//			$(this).removeClass('active');
+//		} else {
+//			$(this).addClass('active');
+//		}
+//		$('.hotelFood-itm--lg--js').removeClass('active');
+//	});
 	
-	hotelFood.on('click', function(){
-		if($(this).hasClass('active') === true){
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-		$('.hotelFood-itm--lg--js').removeClass('active');
-	});
+//	$('.hotelFood-itm--lg--js').on('click', function(){
+//		$(this).addClass('active');
+//		hotelFood.removeClass('active')
+//	});
 	
-	$('.hotelFood-itm--lg--js').on('click', function(){
-		$(this).addClass('active');
-		hotelFood.removeClass('active')
-	});
-	
-	adult.on('click', function(){
-		adult.removeClass('active');
-		$(this).addClass('active');
-	});
-	
-	gender.on('click', function(){
-		gender.removeClass('active');
-		$(this).addClass('active');
-	});
+//	adult.on('click', function(){
+//		adult.removeClass('active');
+//		$(this).addClass('active');
+//	});
+//	
+//	gender.on('click', function(){
+//		gender.removeClass('active');
+//		$(this).addClass('active');
+//	});
 	
 //////
 	child.on('click', function(){
@@ -86,8 +102,8 @@ $(document).ready(function() {
 		var number = $(this).parents('.child').find(".child-itm"),
 	    index = $.inArray( this, number );
 		
-		child.removeClass('active');
-		$(this).addClass('active');
+//		child.removeClass('active');
+//		$(this).addClass('active');
 		
 		
 		$('.ageChildGroup .ageChildSelect--js').attr('disabled', true);//Блокирует поля для ввода возраста детей
