@@ -1,20 +1,43 @@
 var doc_w = $(document).width();
 $(document).ready(function() {
 	
-	$('[data-toggle="tooltip"]').tooltip({html:true});
+	$('[data-toggle="tooltip"]').tooltip({html:true}); //Подсказки при наведении (bootstrap)
 	
+	//Открытие модального окна (bootstrap) в модальном окне
 	$(document).on('hidden.bs.modal', '.modal', function () {
 		$('.modal:visible').length && $(document.body).addClass('modal-open');
-	});
+	});//END
 	
-	if (doc_w > 768){
-		$('#sidebarSticky').stick_in_parent({sticky_class: 'stickSidebar'});
+	//Фиксирование сайтбара при скролле 
+	if (doc_w > 991){
+		jQuery('.contentSticky, .sidebarSticky').theiaStickySidebar({
+		  additionalMarginTop: 85
+		});
+		jQuery('.sidebarSticky-left, .contentSticky2, .sidebarSticky-right').theiaStickySidebar({
+		  additionalMarginTop: 85
+		});
+	};//END
+	
+	//Прокручивает страницу вверх при клике на "бронировать" для телефонов
+	if (doc_w < 991){
+		$('#up').click(function() {
+			$('#reservation').animate({scrollTop: 0},500);
+			return false;
+		})	
+	};
+	
+	$(document).on('click', '.tag-link--js', function(){
+		var _$ = $(this),
+		tagHeight =_$.parent().height();
 		
-		$('#bannerSidebarSticky').stick_in_parent();
-		
-		
-		$('#sidebarSticky2').stick_in_parent();
-	}
+		if(_$.hasClass('tagOpen') != false){
+			_$.removeClass('tagOpen');
+			_$.parents('.tagJs').css('height', '40px');
+		} else {
+			_$.addClass('tagOpen');
+			_$.parents('.tagJs').css('height', + tagHeight + 'px');
+		}
+	});
 	
 	var sidebarOpen   = $('.sidebar--open'),
 		sidebarClose  = $('.sidebar--close'),
@@ -25,18 +48,20 @@ $(document).ready(function() {
 		hotelAll 	  = $('.hotelAll--js'),
 		food 		  = $('.food--js'),
 		foodAll 	  = $('.foodAll--js');
-
+	
+	
+	//Раскрытие сайтбара при клике на кнопку для телефонов
 	sidebarOpen.click(function(){
 		sidebar.addClass('sidebar--show');
-		if(doc_w < 768)
+		if(doc_w < 991)
 			body.css('overflow', 'hidden');
 	});
-	
 	sidebarClose.on('click', function(){
 		sidebar.removeClass('sidebar--show');
 		body.css('overflow', '');
-	});
+	});//END
 
+	
 	hotel.find('label').on('click', function(){
 		hotelAll.find('input').removeAttr('checked');
 	});
@@ -52,59 +77,13 @@ $(document).ready(function() {
 	foodAll.find('label').on('click', function(){
 		food.find('input').removeAttr('checked');
 	});
-
-//	$('.imgCenter').css({
-//		marginTop: -0.5*$('img').height()+'px',
-//		marginLeft: -0.5*$('img').width()+'px'
-//	});
-
-
-//	hotelCategory.on('click', function(){
-//		if($(this).hasClass('active') === true){
-//			$(this).removeClass('active');
-//		} else {
-//			$(this).addClass('active');
-//		}
-//		$('.hotelCategory-itm--lg--js').removeClass('active');
-//	});
-//	$('.hotelCategory-itm--lg--js').on('click', function(){
-//		$(this).addClass('active');
-//		hotelCategory.removeClass('active')
-//	});
-//	
-//	hotelFood.on('click', function(){
-//		if($(this).hasClass('active') === true){
-//			$(this).removeClass('active');
-//		} else {
-//			$(this).addClass('active');
-//		}
-//		$('.hotelFood-itm--lg--js').removeClass('active');
-//	});
-	
-//	$('.hotelFood-itm--lg--js').on('click', function(){
-//		$(this).addClass('active');
-//		hotelFood.removeClass('active')
-//	});
-	
-//	adult.on('click', function(){
-//		adult.removeClass('active');
-//		$(this).addClass('active');
-//	});
-//	
-//	gender.on('click', function(){
-//		gender.removeClass('active');
-//		$(this).addClass('active');
-//	});
-	
 //////
+	
+	//Разблокирует select выбора возраста ребенка
 	child.on('click', function(){
 		
 		var number = $(this).parents('.child').find(".child-itm"),
 	    index = $.inArray( this, number );
-		
-//		child.removeClass('active');
-//		$(this).addClass('active');
-		
 		
 		$('.ageChildGroup .ageChildSelect--js').attr('disabled', true);//Блокирует поля для ввода возраста детей
 		
@@ -113,25 +92,10 @@ $(document).ready(function() {
 			$('.ageChildGroup .ageChildSelect--js:nth-child(' + (i) + ')').attr('disabled', false);
 			i--;
 		};
-//		var m = index;
-//		while (m < 3) {//Отчищает блокированные поля
-//			$('.ageChildGroup .ageChildSelect--js:nth-child(' + (m + 1) + ')').val('');
-//			m++;
-//		};//END
-		
-	});
-	
-//	//Лимит на возраст ( <= 18)
-//	function isright(obj) {
-//		if (obj.value>18) obj.value=18;  
-//	}
-//	$('.ageChildInput').keyup(function(){
-//		this.value=this.value.replace(/[^0-9]+/g,''); isright(this);
-//	})//END
-	
+	});//END
 //////
 	
-//range
+//Range
 	$( function() {
 		$("#slider").slider({
 			min: 0,
@@ -185,8 +149,7 @@ $(document).ready(function() {
 		
 		if(!/\d/.test(keyChar))	return false;
 	
-	});
-//END range
+	});//END range
 	
 	//Слайдер
 	$('#mainSlider').slick({
@@ -222,14 +185,6 @@ $(document).ready(function() {
 			nextArrow: $('.modalSlider-next'),
 		});	
 	});//END
-
-//	$('#modalSlider').slick({
-//			infinite: true,
-//			slidesToShow: 1,  
-//			slidesToScroll: 1,
-//			prevArrow: $('.modalSlider-prev'),
-//			nextArrow: $('.modalSlider-next'),
-//		});
 	
 	function resizeSlider(){
 		var widthSlider = $('.mainSlider').width(),
@@ -325,7 +280,6 @@ $(document).ready(function() {
 	});
 })(jQuery);
 
-
 $(window).scroll(function() {
 	if ($(".navbar").offset().top > 100) {
 		$(".navbar-default").addClass("navbar-fixed");
@@ -333,85 +287,3 @@ $(window).scroll(function() {
 		$(".navbar-default").removeClass("navbar-fixed");
 	}
 });
-
-
-function leftStiky(){
-	var a = document.querySelector('#filterStiky'), b = null, K = null, Z = 0, P = 50, N = 0; 
-window.addEventListener('scroll', Ascroll, false);
-document.body.addEventListener('scroll', Ascroll, false);
-function Ascroll() {
-  var Ra = a.getBoundingClientRect(),
-      R1bottom = document.querySelector('#article').getBoundingClientRect().bottom;
-  if (Ra.bottom < R1bottom) {
-    if (b == null) {
-      var Sa = getComputedStyle(a, ''), s = '';
-      b = document.createElement('div');
-      b.className = "stop";
-      b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-      a.insertBefore(b, a.firstChild);
-      var l = a.childNodes.length;
-      for (var i = 1; i < l; i++) {
-        b.appendChild(a.childNodes[1]);
-      }
-      a.style.height = b.getBoundingClientRect().height + 'px';
-      a.style.padding = '0';
-      a.style.border = '0';
-    }
-    var Rb = b.getBoundingClientRect(),
-        Rh = Ra.top + Rb.height,
-        W = document.documentElement.clientHeight,
-        R1 = Math.round(Rh - R1bottom),
-        R2 = Math.round(Rh - W);
-    if (Rb.height > W) {
-      if (Ra.top < K) {  // скролл вниз
-        if (R2 + N > R1) {  // не дойти до низа
-          if (Rb.bottom - W + N <= 0) {  // подцепиться
-            b.className = 'sticky';
-            b.style.top = W - Rb.height - N + 'px';
-            Z = N + Ra.top + Rb.height - W;
-          } else {
-            b.className = 'stop';
-            b.style.top = - Z + 'px';
-          }
-        } else {
-          b.className = 'stop';
-          b.style.top = - R1 +'px';
-          Z = R1;
-        }
-      } else {  // скролл вверх
-        if (Ra.top - P < 0) {  // не дойти до верха
-          if (Rb.top - P >= 0) {  // подцепиться
-            b.className = 'sticky';
-            b.style.top = P + 'px';
-            Z = Ra.top - P;
-          } else {
-            b.className = 'stop';
-            b.style.top = - Z + 'px';
-          }
-        } else {
-          b.className = '';
-          b.style.top = '';
-          Z = 0;
-        }
-      }
-      K = Ra.top;
-    } else {
-      if ((Ra.top - P) <= 0) {
-        if ((Ra.top - P) <= R1) {
-          b.className = 'stop';
-          b.style.top = - R1 +'px';
-        } else {
-          b.className = 'sticky';
-          b.style.top = P + 'px';
-        }
-      } else {
-        b.className = '';
-        b.style.top = '';
-      }
-    }
-    window.addEventListener('resize', function() {
-      a.children[0].style.width = getComputedStyle(a, '').width
-    }, false);
-  }
-}
-};

@@ -37,7 +37,7 @@
 
 						<ul class="nav navbar-nav col-lg-4 col-md-3">
 							<form class="navbar-left navbar-left--search">
-								<div class="input-group search">
+								<div class="input-group search live-search-active">
 									<input type="text" class="form-control search-input" placeholder="Поиск">
 									<div class="input-group-btn">
 										<button class="btn btn-default search-btn" type="submit">
@@ -45,6 +45,44 @@
 										</button>
 									</div>
 								</div>
+								<div class="live-search">
+										<a href="#" class="live-search-category">Новость</a>
+										<a href="#" class="live-search--itm">
+											<span class="live-search--img">
+												<img src="img/cardTour.jpg" alt="">
+											</span>
+											<h3 class="live-search--title">Прага на майскиеееееееееееееееееее</h3>
+											<span class="likes">27</span>
+											<span class="comments">44</span>
+											<span class="share">10</span>
+											<span class="views">300</span>
+											<p class="live-price"><span>$</span>259</p>
+										</a>
+										<a href="#" class="live-search-category">Горячие предложения</a>
+										<a href="#" class="live-search--itm">
+											<span class="live-search--img">
+												<img src="img/cardTour2.jpg" alt="">
+											</span>
+											<h3 class="live-search--title">Прага на майские</h3>
+											<span class="likes">27</span>
+											<span class="comments">44</span>
+											<span class="share">10</span>
+											<span class="views">300</span>
+											<p class="live-price"><span>$</span>259</p>
+										</a>
+										<a href="#" class="live-search--itm">
+											<span class="live-search--img">
+												<img src="img/cardTour4.jpg" alt="">
+											</span>
+											<h3 class="live-search--title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptas aut aliquid quibusdam porro facere repudiandae assumenda molestiae dicta, cumque nam incidunt illo voluptatem obcaecati illum consectetur inventore nemo laboriosam.</h3>
+											<span class="likes">27</span>
+											<span class="comments">44</span>
+											<span class="share">10</span>
+											<span class="views">300</span>
+											<p class="live-price"><span>$</span>259</p>
+										</a>
+										<a href="#" class="live-search--show-all">Показать все результаты (18)</a>
+									</div>
 							</form>
 						</ul>
 
@@ -67,8 +105,8 @@
 		
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sidebarTag sidebar">
-						<div id="sidebarSticky" class="sidebarTag-sticky">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 sidebarTag sidebar sidebarSticky-left">
+						<div class="">
 							<h2>Популярные теги<a href="#" class="fa fa-times sidebar--close" aria-hidden="true"></a></h2>
 							<ul>
 								<li><a href="#">Чехия</a></li>
@@ -106,21 +144,32 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-9 col-lg-offset-3 col-md-9 col-md-offset-3">
+					<div class="col-lg-9 col-md-9 contentSticky2">
 						<div class="row">
 							<div class="content">
 								<div class="col-xs-12">
 									<h2>Регион вылета</h2>
 								</div>
 								<div class="col-sm-8 col-xs-12">
-									<ul class="tag">
-										<li class="tag-itm"><a href="#" class="tag-link active">Все</a></li>
-										<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
-										<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
-										<li class="tag-itm"><a href="#" class="tag-link">Челябинская обл.</a></li>
-										<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
-										<li class="tag-itm--last"><a href="javascript:void(0)" class="tag-link" type="button" data-toggle="collapse" data-target="#tag1">...</a></li>
-									</ul>
+									<div class="tag tagJs">
+										<ul class="tagList">
+											<a href="#" class="tag-link tag-link--open tag-link--js">...</a>
+											<li class="tag-itm"><a href="#" class="tag-link active">Все</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Челябинская обл.</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Марс</a></li>
+											<li class="tag-itm"><a href="#" class="tag-link">Все</a></li>
+										</ul>
+									</div>
+<!--
 									<ul id="tag1" class="collapse tag dropdown">
 										<li class="tag-itm"><a href="#" class="tag-link">Москва</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Татарстан</a></li>
@@ -130,6 +179,7 @@
 										<li class="tag-itm"><a href="#" class="tag-link">Санкт-Петербург</a></li>
 										<li class="tag-itm"><a href="#" class="tag-link">Марс</a></li>
 									</ul>
+-->
 								</div>
 								<div class="col-xs-12">
 									<div class="row">
@@ -169,23 +219,23 @@
 													<span class="likes">27</span>
 													<span class="comments">44</span>
 													<span class="share">10</span>
-
-													<ul class="tourCardTag">
-														<li><a href="#" class="tourCardTag-itm">Город</a></li>
-														<li><a href="#" class="tourCardTag-itm">Прага</a></li>
-														<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
-														<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-														<li><a href="javascript:void(0)" class="tourCardTag-itm--last" type="button" data-toggle="collapse" data-target="#tag2">...</a></li>
-													</ul>
-													<ul id="tag2" class="collapse tourCardTag dropdown">
-														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
-														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
-														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
-														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
-														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
-														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
-														<li><a href="#" class="tourCardTag-itm">Марс</a></li>
-													</ul>
+													<div class="tourCardTag tagJs">
+														<ul class="tagList">
+															<a href="javascript:void(0)" class="tourCardTag-itm tag-link--open tag-link--js">...</a>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+														</ul>	
+													</div>
 												</div>
 											</div>
 
@@ -225,32 +275,31 @@
 													<span class="comments">44</span>
 													<span class="share">10</span>
 													
-													<ul class="tourCardTag">
-														<li><a href="#" class="tourCardTag-itm">Город</a></li>
-														<li><a href="#" class="tourCardTag-itm">Прага</a></li>
-														<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
-														<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-														<li><a href="javascript:void(0)" class="tourCardTag-itm--last" type="button" data-toggle="collapse" data-target="#tag3">...</a></li>
-													</ul>
-													<ul id="tag3" class="collapse tourCardTag dropdown">
-														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
-														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
-														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
-														<li><a href="#" class="tourCardTag-itm">Москва</a></li>
-														<li><a href="#" class="tourCardTag-itm">Татарстан</a></li>
-														<li><a href="#" class="tourCardTag-itm">Санкт-Петербург</a></li>
-														<li><a href="#" class="tourCardTag-itm">Марс</a></li>
-													</ul>
+													<div class="tourCardTag tagJs">
+														<ul class="tagList">
+															<a href="javascript:void(0)" class="tourCardTag-itm tag-link--open tag-link--js">...</a>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+															<li><a href="#" class="tourCardTag-itm">Город</a></li>
+															<li><a href="#" class="tourCardTag-itm">Прага</a></li>
+															<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
+															<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
+														</ul>	
+													</div>
 												</div>	
 											</div>
 
 										</div>
-										<div class="col-sm-4 banner">
-											<div id="bannerSidebarSticky">
-												<a href="#">
-													<img src="img/baner1.jpg" alt="">
-												</a>
-											</div>
+										<div class="col-sm-4 banner sidebarSticky-right">
+											<a href="#">
+												<img src="img/baner1.jpg" alt="">
+											</a>
 										</div>
 									</div>
 								</div>
