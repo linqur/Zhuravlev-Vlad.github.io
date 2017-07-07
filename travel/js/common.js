@@ -16,6 +16,11 @@ $(document).ready(function() {
 		jQuery('.sidebarSticky-left, .contentSticky2, .sidebarSticky-right').theiaStickySidebar({
 		  additionalMarginTop: 85
 		});
+	};
+	if (doc_w > 768 && doc_w < 991){
+		jQuery('.contentSticky2, .sidebarSticky-right').theiaStickySidebar({
+		  additionalMarginTop: 85
+		});
 	};//END
 	
 	//Прокручивает страницу вверх при клике на "бронировать" для телефонов
@@ -36,6 +41,18 @@ $(document).ready(function() {
 		} else {
 			_$.addClass('tagOpen');
 			_$.parents('.tagJs').css('height', + tagHeight + 'px');
+		}
+	});
+	
+	$('.tagJs').each(function() {
+		
+		var _$ = $(this);
+		
+		_$.find('.tagList').height();
+
+		if(_$.find('.tagList').height() == 40){
+			_$.find('.tag-link--js').css('display', 'none');
+			_$.css('padding-right', '0')
 		}
 	});
 	
@@ -60,7 +77,17 @@ $(document).ready(function() {
 		sidebar.removeClass('sidebar--show');
 		body.css('overflow', '');
 	});//END
-
+	$(document).mouseup(function (e) {
+		var container = $('.sidebar'),
+			body = $('body');
+		if(e.target!=container[0]&&!container.has(e.target).length){
+			container.removeClass('sidebar--show');
+			
+			if(container.hasClass('sidebar--show') != true){
+				body.css('overflow', '');
+			}
+		}
+	});
 	
 	hotel.find('label').on('click', function(){
 		hotelAll.find('input').removeAttr('checked');
@@ -98,17 +125,41 @@ $(document).ready(function() {
 //Range
 	$( function() {
 		$("#slider").slider({
-			min: 0,
+			min: 1,
 			max: 30,
 			values: [ 1, 7 ],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
 				jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+				
+				var opt = $(this).data().uiSlider.options,
+					vals = opt.max - opt.min,
+					difference = opt.values['1'] - opt.values['0'];
+				$('.sliderStep').css('color', '#bcbcbc');
+				for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
+					$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
+				}		
 			},
 			slide: function(event, ui){
 				jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
 				jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
+				
+				var opt = $(this).data().uiSlider.options,
+					vals = opt.max - opt.min,
+					difference = opt.values['1'] - opt.values['0'];
+				$('.sliderStep').css('color', '#bcbcbc');
+				for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
+					$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
+				}
+			}
+		})
+		.each(function() {
+			var opt = $(this).data().uiSlider.options;
+			var vals = opt.max - opt.min;
+			for (var i = 0; i <= vals; i++) {
+			var el = $('<label class="sliderStep">'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+			$( "#slider" ).append(el);
 			}
 		});
 	});
@@ -120,7 +171,15 @@ $(document).ready(function() {
 			value1 = value2;
 			jQuery("input#minCost").val(value1);
 		}
-		jQuery("#slider").slider("values",0,value1);	
+		jQuery("#slider").slider("values",0,value1);
+		
+		var opt = $('#slider').data().uiSlider.options,
+		vals = opt.max - opt.min,
+		difference = opt.values['1'] - opt.values['0'];
+		$('.sliderStep').css('color', '#bcbcbc');
+		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
+			$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
+		}	
 	});
 
 
@@ -135,6 +194,13 @@ $(document).ready(function() {
 			jQuery("input#maxCost").val(value2);
 		}
 		jQuery("#slider").slider("values",1,value2);
+		var opt = $('#slider').data().uiSlider.options,
+		vals = opt.max - opt.min,
+		difference = opt.values['1'] - opt.values['0'];
+		$('.sliderStep').css('color', '#bcbcbc');
+		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
+			$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
+		}	
 	});
 	
 	jQuery('.noText').keypress(function(event){
