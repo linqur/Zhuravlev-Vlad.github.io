@@ -450,6 +450,15 @@ address {
   position: relative;
   z-index: 1; }
 
+.no-step.progressbar li:first-child:before {
+  background-color: #cccac8;
+  border-color: #cccac8;
+  color: #fff; }
+
+.no-step.progressbar li {
+  font-family: "OpenSansLight", sans-serif;
+  color: rgba(0, 0, 0, 0.5); }
+
 .body {
   min-height: 430px;
   display: -webkit-box;
@@ -529,6 +538,11 @@ address {
   .third .btn-green {
     margin-top: 32px; }
 
+.welcome {
+  background: url(../img/plane.png) no-repeat -85px center, url(../img/money.jpg) no-repeat right center; }
+  .welcome .title {
+    line-height: 1.3; }
+
 .error-label {
   margin-top: 11px; }
 
@@ -558,7 +572,7 @@ address {
   font-family: "OpenSansRegular", sans-serif;
   color: #888;
   font-size: 16px; }
-  .tel span {
+  .tel a {
     font-family: "OpenSansBold", sans-serif;
     color: #222;
     font-size: 20px;
@@ -601,18 +615,23 @@ address {
   .third {
     background: none; }
     .third .body-content {
-      background: none; } }
+      background: none; }
+  .welcome {
+    background: url(../img/plane.png) no-repeat -85px center; } }
 
 @media screen and (max-width: 480px) {
   .first .body-content,
   .third .body-content {
     background: none; }
-  .second {
-    background: none; }
-  .first {
+  .second,
+  .first,
+  .welcome {
     background: none; }
   .header-pay {
-    font-size: 36px; } }
+    font-size: 36px; }
+  .tel a {
+    display: block;
+    margin-top: 10px; } }
 
 @media screen and (max-width: 390px) {
   .logo img {
