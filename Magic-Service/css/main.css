@@ -188,7 +188,7 @@ input:focus {
 
 .sidebar-content {
   position: relative;
-  z-index: 4;
+  z-index: 2;
   color: #fff; }
   .sidebar-content .btn-group .dropdown-toggle {
     background: #268fd2;
@@ -356,6 +356,9 @@ a:hover {
   .navbar-top_number a {
     font-family: 'OpenSans-Bold';
     font-size: 17px; }
+
+.navbar-top + .sticky-element .sidebar-content {
+  z-index: 4; }
 
 .basket-quantity {
   width: 30px;
