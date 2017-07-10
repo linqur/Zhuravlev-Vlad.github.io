@@ -1570,6 +1570,20 @@ section {
 .modal-title {
   font-family: OpenSans-Regular; }
 
+.tomat-agency {
+  font-size: 15px;
+  color: #888;
+  font-family: 'OpenSans-Regular', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .tomat-agency a {
+    color: #222;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    border-bottom: 2px solid #ddd; }
+  .tomat-agency img {
+    padding-left: 5px;
+    padding-right: 5px; }
+
 @media (max-width: 1200px) {
   .header-item {
     background-size: 163% !important; }
