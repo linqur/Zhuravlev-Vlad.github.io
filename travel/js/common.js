@@ -24,12 +24,21 @@ $(document).ready(function() {
 	};//END
 	
 	//Прокручивает страницу вверх при клике на "бронировать" для телефонов
-	if (doc_w < 991){
-		$('#up').click(function() {
-			$('#reservation').animate({scrollTop: 0},500);
-			return false;
-		})	
-	};
+//	if (doc_w < 991){
+//		$('a[href="#open-form"]').click(function() {
+//			
+//			if ($('#open-form').hasClass('in') != true){
+//				setTimeout (function(){
+//					$('#reservation').animate({ scrollTop: $('#scrollForm').offset().top }, 100)
+////					var viewportOffset = document.getElementById('open-form').getBoundingClientRect();
+////					var top = viewportOffset.top;
+////					var scrollTop = $('#reservation').scrollTop($('#open-form').offset().top);
+////					console.log(top);
+////					$(document).scrollTop(top);
+//				}, 1000)
+//			}
+//		})	
+//	};
 	
 	$(document).on('click', '.tag-link--js', function(){
 		var _$ = $(this),
@@ -89,21 +98,46 @@ $(document).ready(function() {
 		}
 	});
 	
-	hotel.find('label').on('click', function(){
-		hotelAll.find('input').removeAttr('checked');
-	});
+	function removeChekedBtn(a, b){
+		a.find('label').on('click', function(){
+			if (!!$(this).parent().find('input').attr('disabled')){
+				return
+			}
+			b.find('input').removeAttr('checked');
+		});
+
+		b.find('label').on('click', function(){
+			a.find('input').removeAttr('checked');
+		});
+	};
+	function removeCheke(a, b){
+		a.find('label').on('click', function(){
+			$(this).parent(a).parent().find('input').removeAttr('checked');
+		});
+		b.find('label').on('click', function(){
+			a.find('input').removeAttr('checked');
+		});
+	};
+	removeChekedBtn(hotel, hotelAll);
+	removeChekedBtn(food, foodAll);
+	removeCheke($('.resortRemove--js'), $('.resortCheckbox--js'));
+	removeCheke($('.hotelRemove--js'), $('.hotelCheckbox--js'));
 	
-	hotelAll.find('label').on('click', function(){
-		hotel.find('input').removeAttr('checked');
-	});
-	
-	food.find('label').on('click', function(){
-		foodAll.find('input').removeAttr('checked');
-	});
-	
-	foodAll.find('label').on('click', function(){
-		food.find('input').removeAttr('checked');
-	});
+//	hotel.find('label').on('click', function(){
+//		hotelAll.find('input').removeAttr('checked');
+//	});
+//	
+//	hotelAll.find('label').on('click', function(){
+//		hotel.find('input').removeAttr('checked');
+//	});
+//	
+//	food.find('label').on('click', function(){
+//		foodAll.find('input').removeAttr('checked');
+//	});
+//	
+//	foodAll.find('label').on('click', function(){
+//		food.find('input').removeAttr('checked');
+//	});
 //////
 	
 	//Разблокирует select выбора возраста ребенка
@@ -240,7 +274,6 @@ $(document).ready(function() {
 	$('.descriptionHotel-openModal').click(function(){
 		$('#descriptionHotel').modal('show');
 	});//END
-	
 	//Вызывает слайдер в модалке
 	$('#descriptionHotel').on('shown.bs.modal', function (){
 		$('#modalSlider').slick({
@@ -248,10 +281,10 @@ $(document).ready(function() {
 			slidesToShow: 1,  
 			slidesToScroll: 1,
 			prevArrow: $('.modalSlider-prev'),
-			nextArrow: $('.modalSlider-next'),
+			nextArrow: $('.modalSlider-next')
 		});	
+		return
 	});//END
-	
 	function resizeSlider(){
 		var widthSlider = $('.mainSlider').width(),
 			mainSliderItm = $('.mainSlider-itm');
@@ -270,51 +303,6 @@ $(document).ready(function() {
 	
 	$( window ).resize(resizeSlider);
 	$( document ).ready(resizeSlider);
-	
-	
-	$('.open-form--js').on('click', function(){
-		$('.reservation-info--js').toggle();
-		$('.reservation-form--js').toggle();
-	});
-	$('.close-form--js').on('click', function(){
-		$('.reservation-info--js').toggle();
-		$('.reservation-form--js').toggle();
-	});
-	
-//	$('.tabNavigation a').click(function(){
-//		$('.tabNavigation a').removeClass('active');
-//		$(this).addClass('active');
-//	});
-	
-//	var countType = $('.tabNavigation a').size(),
-//    	step = 100 / countType;
-	
-//	var widthListPr = 0;
-//	$('.tabNavigation li').each(function(){ 
-//		widthListPr = widthListPr + $(this).width() 
-//	});
-//	console.log(widthListPr);
-
-//	var summ=0;
-//	$('tabNavigation li').each(function(){
-//		summ += 1*$(this).width();
-//	});
-
-//	$('.tabNavigation li').click(function () {
-//		var widthLink = $(this).width(),
-//			summ = 0,
-//			step = $(this).prevAll().each(function () {
-//				summ += 4 + 1 * $(this).outerWidth(true);
-//			});
-//
-//		$('.tabNavigation a')
-//			.parents('.tabNavigation')
-//			.find('hr')
-//			.css('margin-left', summ + 'px');
-//
-//		$('.tabNavigation hr').css('width', widthLink + 'px')
-//	});
-
 });
 
 (function($){

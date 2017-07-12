@@ -118,10 +118,10 @@
 						<div class="col-md-3 noPadding sidebarSticky">
 							<div class="filter sidebar">
 								<a href="javascript:void(0)" class="fa fa-times sidebar--close" aria-hidden="true"></a>
-								<div class="filterSection">
+								<div class="filterSection ">
 									<p class="filterTitle">Курорт</p>
-									<div class="resort filterScroll">
-										<div class="check-itm"><input type="checkbox" id="check1" class="checkbox"><label for="check1">Все курорты</label></div>
+									<div class="resort filterScroll resortCheckbox--js">
+										<div class="check-itm resortRemove--js"><input type="checkbox" id="check1" class="checkbox "><label for="check1">Все курорты</label></div>
 										<div class="check-itm"><input type="checkbox" id="check2" class="checkbox"><label for="check2">Карловы вары</label></div>
 										<div class="check-itm"><input type="checkbox" id="check3" class="checkbox"><label for="check3">Марианские Лазне</label></div>
 										<div class="check-itm"><input type="checkbox" id="check4" class="checkbox"><label for="check4">Прага</label></div>
@@ -145,7 +145,7 @@
 									
 									<div class="checkbox-group hotel--js">
 										<div class="checkbox-block--resp">
-											<input type="checkbox" class="radio-btn" name="adult" id="hotel1"/>
+											<input type="checkbox" class="radio-btn" name="adult" id="hotel1" disabled/>
 											<label for="hotel1">
 												<i>2</i>
 												<i class="fa fa-star-o star" aria-hidden="true"></i>
@@ -154,7 +154,7 @@
 											</label>
 										</div>
 										<div class="checkbox-block--resp">
-											<input type="checkbox" class="radio-btn" name="adult" id="hotel2"/>
+											<input type="checkbox" class="radio-btn" name="adult" id="hotel2" disabled/>
 											<label for="hotel2">
 												<i>3</i>
 												<i class="fa fa-star-o star" aria-hidden="true"></i>
@@ -237,8 +237,8 @@
 								</div>
 								<div class="filterSection">
 									<p class="filterTitle">Отель</p>
-									<div class="hotel filterScroll">
-										<div class="check-itm"><input type="checkbox" id="check14" class="checkbox"><label for="check14">Все</label></div>
+									<div class="hotel filterScroll checkbox--js hotelCheckbox--js">
+										<div class="check-itm hotelRemove--js"><input type="checkbox" id="check14" class="checkbox"><label for="check14">Все</label></div>
 										<div class="check-itm"><input type="checkbox" id="check15" class="checkbox"><label for="check15">Lazenska lecebna Manes</label></div>
 										<div class="check-itm"><input type="checkbox" id="check16" class="checkbox"><label for="check16">EA Hotel Esplanade</label></div>
 										<div class="check-itm"><input type="checkbox" id="check17" class="checkbox"><label for="check17">Jizera</label></div>
@@ -256,7 +256,7 @@
 									
 									<div class="checkbox-group food--js">
 										<div class="checkbox-block--resp">
-											<input type="checkbox" class="radio-btn" name="adult" id="food1"/>
+											<input type="checkbox" class="radio-btn" name="adult" id="food1" disabled/>
 											<label for="food1">
 												<i>AI</i>
 												<span class="filter-tooltipe" data-toggle="tooltip" title="Бесплатное двухразовое питание – <strong>завтрак и ужин</strong>">i</span>
@@ -493,7 +493,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black" data-toggle="modal" data-target="#reservation">Проверить цену</a>
+											<a href="#" class="btn-green" data-toggle="modal" data-target="#reservation">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -507,7 +507,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -521,7 +521,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -535,7 +535,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -583,7 +583,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -597,7 +597,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -611,7 +611,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -625,7 +625,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -677,7 +677,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -691,7 +691,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -705,7 +705,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -719,7 +719,7 @@
 									<div class="allTours-collapse">
 										<div class="allTours-tourPrice">
 											<p><span>&#8381;</span>19 433</p>
-											<a href="#" class="btn-black">Проверить цену</a>
+											<a href="#" class="btn-green">Проверить цену</a>
 										</div>
 										<div class="allTours-tourDate">
 											<p class="tourDate-day">7 дней</p>
@@ -731,45 +731,10 @@
 										</div>
 									</div>
 								</div>
-
-
 							</div>
-						</div </div>
+						</div 
 					</div>
-<!--
-				<div role="tabpanel" class="tab-pane fade" id="description">
-					<div class="tab-description">
-						<h2>Прага на майские</h2>
-						<p>Прага на майские от 278 €</p>
-						<p>вылет 3 мая на 6 дней из Москвы</p>
-						<p>PENSION EUROPA 278 eur</p>
-						<p>OTAKAR 304 eur</p>
-						<p>OLYMPIK TRISTAR 309 eur</p>
-						<p>и множество других, доплаты виза</p>
-						<p>В стоимость входит перелет,страховка, проживание в отеле, трансфер,питание по программе. Подробности, как и где купить уточняйте у менеджеров в офисах и по тел. /8552/78-36-88</p>
-					</div>
-					<div class="description-bottom">
-						<span class="date">14 апреля в 14:21</span>
-						<span class="views">300</span>
-						<span class="likes">27</span>
-						<span class="comments">44</span>
-						<span class="share">10</span>
-						<ul class="tourCardTag">
-							<li><a href="#" class="tourCardTag-itm">Город</a></li>
-							<li><a href="#" class="tourCardTag-itm">Прага</a></li>
-							<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
-							<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-							<li><a href="#" class="tourCardTag-itm">Город</a></li>
-							<li><a href="#" class="tourCardTag-itm">Прага</a></li>
-							<li><a href="#" class="tourCardTag-itm">Чехия</a></li>
-							<li><a href="#" class="tourCardTag-itm">Отдых с семьей</a></li>
-							<li><a href="#" class="tourCardTag-itm--last">...</a></li>
-						</ul>
-					</div>
-			
 				</div>
--->
-<!--			<div role="tabpanel" class="tab-pane fade" id="comments">3</div>-->
 			</div>
 		</div>
 		<footer class="footer container-fluid">
@@ -975,10 +940,10 @@
 				</div>
 				<div class="reservation-modal-content">
 					<div class="row">
-						<div class="col-md-8 reservation-borderblock reservation-info--js">
+						<div class="col-xs-12 reservation-borderblock reservation-info--js">
 							<div class="row">
 								<div class="col-xs-12">
-									<div class="row">
+									<div class="row reservation-flex">
 										<div class="col-md-8 col-sm-7 reservation-modal-info">
 											<ul class="breadcrumb">
 												<li><a href="#">Москва</a></li>
@@ -998,10 +963,107 @@
 											<p class="Apartment">Apartment — <span>DBL + 1EXB + 2CHL (2-9)</span></p>
 											<p class="dollar"><span>$</span>259</p>
 											<p class="rub"><span>₽</span>19 433</p>
+											<div>
+												<a href="#open-form" class="btn-lightBlue--lg" data-toggle="collapse" aria-expanded="false">Бронировать</a>
+											</div>
 										</div>
 										<div class="col-md-4 col-sm-5 reservation-img">
 											<img src="img/hotelPhoto7.jpg" alt="">
 											<a href="#" class="descriptionHotel descriptionHotel-openModal" data-dismiss="modal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
+										</div>
+									</div>
+								</div>
+								<div id="open-form" class="col-xs-12 reservation-borderblock form-overflow collapse" aria-expanded="false">
+									<div class="form-header">
+										<h2>Пожалуста введите точные данные туристов</h2>
+									</div>
+									<div class="col-xs-12 reservation-form">
+										<p>Данные заказчика (турист №1)</p>
+										<div class="form-flex">
+											<div class="form-flex--itm">
+												<div>
+													<label for="name">Фамилия</label>
+													<input type="text" class="reservation-input" placeholder="Фамилия">
+												</div>
+												<div>
+													<label for="name">Имя и Отчество</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input" placeholder="Имя">
+														<input type="text" class="reservation-input" placeholder="Отчество">
+													</div>
+												</div>
+												<div>
+													<label for="name">Дата рождения</label>
+													<div class="input-group-flex">
+														<div>
+															<input type="text" class="reservation-input input-sm" placeholder="ДД">
+														</div>
+														<div>
+															<input type="text" class="reservation-input input-sm" placeholder="ММ">
+														</div>	
+														<div>
+															<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+														</div>	
+													</div>
+												</div>
+											</div>
+											<div class="form-flex--itm">
+												<div>
+													<label for="name">Серия и номер паспорта</label>
+													<div class="input-group-flex">
+														<div>
+															<input type="text" class="reservation-input" placeholder="Серия">
+														</div>
+														<div>
+															<input type="text" class="reservation-input" placeholder="Номер">
+														</div>	
+													</div>
+												</div>
+												<div>
+													<label for="name">Дата и выдача паспорта</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>
+												</div>
+												<div>
+													<label for="name">Кем выдан паспорт</label>
+													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
+												</div>
+											</div>
+											<div class="form-flex--itm">
+												<div>
+													<label for="">Пол</label>
+													<div class="input-group-flex">
+														<div class="checkbox-block">
+															<input type="radio" class="radio-btn" name="gender" id="men"/>
+															<label for="men"><i>М</i></label>
+														</div>
+														<div class="checkbox-block">
+															<input type="radio" class="radio-btn" name="gender" id="women"/>
+															<label for="women"><i>Ж</i></label>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="input-group-flex input-group-select">
+														<div>
+															<label for="name">Страна</label>
+															<select name="" id="">
+																<option value="1">Россия</option>
+																<option value="2">Другие страны</option>
+															</select>
+														</div>
+														<div>
+															<label for="name">Гражданство</label>
+															<select name="" id="">
+																<option value="1">Монголия</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1027,188 +1089,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-8 reservation-borderblock form-overflow reservation-form--js">
-							<div class="form-header">
-								<h2>Пожалуста введите точные данные туристов</h2>
-								<a href="#" class="close-form close-form--js">×</a>
-							</div>
-							<div class="formScroll">
-								<div class="row">
-									<div class="col-xs-12 reservation-form">
-										<p>Данные заказчика (турист №1)</p>
-										<div class="row">
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Фамилия</label>
-												<input type="text" class="reservation-input" placeholder="Фамилия">
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Серия и номер паспорта</label>
-												<div class="row">
-													<div class="col-md-6">
-														<input type="text" class="reservation-input" placeholder="Серия">
-													</div>
-													<div class="col-md-6">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="">Пол</label>
-<!--<a href="javascript:void(0)" class="btn gender-itm">М</a>-->
-												<div class="checkbox-block">
-													<input type="radio" class="radio-btn" name="gender" id="men"/>
-													<label for="men"><i>М</i></label>
-												</div>
-												<div class="checkbox-block">
-													<input type="radio" class="radio-btn" name="gender" id="women"/>
-													<label for="women"><i>Ж</i></label>
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Имя и Отчество</label>
-												<input type="text" class="reservation-input" placeholder="Имя Отчество">
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Дата и выдача паспорта</label>
-												<div class="row">
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-													</div>
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-													</div>	
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<div class="row">
-													<div class="col-xs-6">
-														<label for="name">Страна</label>
-														<select name="" id="">
-															<option value="1">Россия</option>
-															<option value="2">Другие страны</option>
-														</select>
-													</div>
-													<div class="col-xs-6">
-														<label for="name">Гражданство</label>
-														<select name="" id="">
-															<option value="1">Монголия</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Дата рождения</label>
-												<div class="row">
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-													</div>
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-													</div>	
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Кем выдан паспорт</label>
-												<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 reservation-form">
-										<p>Турист №2</p>
-										<div class="row">
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Фамилия</label>
-												<input type="text" class="reservation-input" placeholder="Фамилия">
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Серия и номер паспорта</label>
-												<div class="row">
-													<div class="col-md-6">
-														<input type="text" class="reservation-input" placeholder="Серия">
-													</div>
-													<div class="col-md-6">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="">Пол</label>
-												<div class="checkbox-block">
-													<input type="radio" class="radio-btn" name="gender2" id="men2"/>
-													<label for="men2"><i>М</i></label>
-												</div>
-												<div class="checkbox-block">
-													<input type="radio" class="radio-btn" name="gender2" id="women2"/>
-													<label for="women2"><i>Ж</i></label>
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Имя и Отчество</label>
-												<input type="text" class="reservation-input" placeholder="Имя Отчество">
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Дата и выдача паспорта</label>
-												<div class="row">
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-													</div>
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-													</div>	
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<div class="row">
-													<div class="col-xs-6">
-														<label for="name">Страна</label>
-														<select name="" id="">
-															<option value="1">Россия</option>
-															<option value="2">Другие страны</option>
-														</select>
-													</div>
-													<div class="col-xs-6">
-														<label for="name">Гражданство</label>
-														<select name="" id="">
-															<option value="1">Монголия</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Дата рождения</label>
-												<div class="row">
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-													</div>
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-													</div>	
-													<div class="col-xs-4">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>	
-												</div>
-											</div>
-											<div class="col-lg-4 col-sm-6">
-												<label for="name">Кем выдан паспорт</label>
-												<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-											</div>
-											<div class="col-xs-12">
-												<a href="#" class="btn-yellow">Далее<i class="fa fa-arrow-right btn-icon" aria-hidden="true"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+<!--
 						<div class="col-md-4 map-container">
 							<div id="modal-map" style="width: 100%; height: 635px"></div>
 							<div class="tourCardContent-inf">
@@ -1216,6 +1097,7 @@
 								<a href="#" class="btn-lightBlue--lg open-form--js" id="up">Бронировать</a>
 							</div>
 						</div>
+-->
 					</div>
 				</div>
 			</div>
@@ -1226,6 +1108,7 @@
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+<!--
 	<script>
 		ymaps.ready(init);
 		var myMap, 
@@ -1253,6 +1136,7 @@
 			}
 		}
 	</script>
+-->
 </body>
 
 </html>

@@ -37,7 +37,7 @@
 
 						<ul class="nav navbar-nav col-lg-4 col-md-3">
 							<form class="navbar-left navbar-left--search">
-								<div class="input-group search live-search-active">
+								<div class="input-group search">
 									<input type="text" class="form-control search-input" placeholder="Поиск">
 									<div class="input-group-btn">
 										<button class="btn btn-default search-btn" type="submit">
@@ -217,7 +217,7 @@
 												</div>
 												<div class="tourCardBottom">
 													<span class="likes">27</span>
-													<span class="comments">44</span>
+													<span class="comments" data-toggle="modal" data-target="#comments">44</span>
 													<span class="share">10</span>
 													<div class="tourCardTag tagJs">
 														<ul class="tagList">
@@ -272,7 +272,7 @@
 												</div>
 												<div class="tourCardBottom">
 													<span class="likes">27</span>
-													<span class="comments">44</span>
+													<span class="comments" data-toggle="modal" data-target="#comments">44</span>
 													<span class="share">10</span>
 													
 													<div class="tourCardTag tagJs">
@@ -312,7 +312,7 @@
 		</div>
 		<footer class="footer container-fluid">
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-5 textAlCentr-xs">
+				<div class="col-md-3 col-sm-5 textAlCentr-xs">
 					<a class="logo" href="index.html">
 						<img src="img/logo-footer.png" alt="Travelдискаунтер">
 						<h1 class="logo-text">Travel<span>дискаунтер</span></h1>
@@ -339,7 +339,7 @@
 						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
 					</ul>
 				</div>
-				<address class="col-lg-3 col-md-4 textAlCentr-sm">
+				<address class="col-md-3 textAlCentr-sm">
 					<h4>Контакты</h4>
 					<ul class="footer-contacts">
 						<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Г. Набережные  Челны, пр.Мира, д.33Б</a></li>
@@ -347,8 +347,24 @@
 						<li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>+7 8552 78 36 88</a></li>
 					</ul>
 				</address>
+				<div class="col-md-2 textAlCentr-sm">
+					<p class="tomat-agency">Сделано в <img src="img/tomat.png" alt=""><a href="http://tomat.agency/">tomat.agency</a></p>
+				</div>
 			</div>	
 		</footer>
+	</div>
+   	<div id="comments" class="modal fade modal-comments" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title descriptionHotel-title">Комментарии</h4>
+				</div>
+				<div class="modal-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eveniet assumenda repudiandae odit dolore, provident autem. Quos ipsam dolores iste fugiat nulla ab tempora, temporibus voluptas, commodi dolore odit accusamus facilis eveniet, incidunt velit delectus repudiandae eligendi blanditiis. Adipisci officia, molestias mollitia voluptate nesciunt quam qui, inventore assumenda, pariatur provident ad nam iste harum doloribus et omnis deleniti optio! Vel explicabo expedita dolorum voluptate id inventore optio, ad aspernatur nesciunt quasi natus voluptatum ipsa cumque perspiciatis deserunt aut facere similique quaerat esse modi soluta dicta iste maiores sunt! Aliquam inventore hic labore magni deleniti vero distinctio excepturi. Exercitationem, repellendus, corporis?
+				</div>
+			</div>
+		</div>
 	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
