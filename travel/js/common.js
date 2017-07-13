@@ -113,11 +113,29 @@ $(document).ready(function() {
 	function removeCheke(a, b){
 		a.find('label').on('click', function(){
 			$(this).parent(a).parent().find('input').removeAttr('checked');
+			
 		});
 		b.find('label').on('click', function(){
 			a.find('input').removeAttr('checked');
+			
+			//console.log($('.resortCheckbox--js input').is(':checked'))
 		});
 	};
+	$('.hotelCheckbox--js input').on('click', function(){
+		console.log($(this).is(':checked'));
+		console.log($('.hotelCheckbox--js input[type=checkbox]:checked').length);
+		if ($('.hotelCheckbox--js input[type=checkbox]:checked').length > 10){
+			$(this).removeAttr('checked');
+			$('#info').modal('show');
+			
+			setTimeout (function(){
+				$('#info').modal('hide');
+			}, 2000);
+		}
+	});
+	
+	
+	
 	removeChekedBtn(hotel, hotelAll);
 	removeChekedBtn(food, foodAll);
 	removeCheke($('.resortRemove--js'), $('.resortCheckbox--js'));

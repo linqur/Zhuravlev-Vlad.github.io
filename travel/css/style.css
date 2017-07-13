@@ -40,6 +40,10 @@
   font-weight: normal;
   font-style: normal; }
 
+* {
+  min-height: 0;
+  min-width: 0; }
+
 html,
 body {
   height: 100%;
@@ -897,8 +901,6 @@ html .ui-button.ui-state-disabled:active {
     margin-bottom: 0; }
 
 .tourCardTag {
-  float: right;
-  clear: right;
   position: relative;
   height: 40px;
   overflow: hidden;
@@ -945,7 +947,7 @@ html .ui-button.ui-state-disabled:active {
 
 .pageTour-stat {
   margin-top: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 #vk_comments {
   margin-bottom: 80px; }
@@ -1069,7 +1071,7 @@ html .ui-button.ui-state-disabled:active {
   right: -70px;
   top: 0;
   z-index: 1;
-  background: url(../img/angle2.png) no-repeat;
+  background: url(../img/angle3.png) no-repeat;
   background-size: 100% 100%; }
 
 .bannerSidebarSticky {
@@ -2602,30 +2604,17 @@ html .ui-button.ui-state-disabled:active {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .form-flex--itm {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 33%;
-    min-width: 210px;
-    width: 100%; }
+    display: flex; }
     .form-flex--itm > div {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2635,17 +2624,29 @@ html .ui-button.ui-state-disabled:active {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .form-flex--itm > div:last-child {
+        margin-right: 0; }
+      .form-flex--itm > div:first-child {
+        margin-left: 0; }
+
+.form-flex--last > div {
+  width: unset; }
 
 .input-group-flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  display: flex; }
+  .input-group-flex input {
+    margin-right: 10px; }
+  .input-group-flex input:last-child {
+    margin-right: 0; }
+  .input-group-flex input {
+    margin-right: 10px; }
 
 .input-group-select div {
   width: 100%; }
@@ -2771,6 +2772,14 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
   text-align: center; }
 
+.modal-info .modal-dialog {
+  max-width: 400px !important;
+  min-width: 0; }
+  .modal-info .modal-dialog h4 {
+    font-size: 30px; }
+  .modal-info .modal-dialog .modal-body {
+    padding: 15px; }
+
 @media screen and (max-width: 1335px) {
   .reservation-form label {
     font-size: 15px; }
@@ -2797,7 +2806,13 @@ html .ui-button.ui-state-disabled:active {
       min-height: 100%;
       min-width: 100%; }
   .modalSlider {
-    height: 400px; } }
+    height: 400px; }
+  .form-flex--itm {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .form-flex--itm > div {
+      width: unset; } }
 
 @media screen and (max-width: 768px) {
   .reservation-form,
@@ -2812,7 +2827,9 @@ html .ui-button.ui-state-disabled:active {
   .form-flex--itm {
     max-width: 100%; }
   .modalSlider-prev {
-    display: none !important; } }
+    display: none !important; }
+  .form-flex--itm > div {
+    width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .modal-header .descriptionHotel-title {
