@@ -121,7 +121,7 @@ $(document).ready(function() {
 			//console.log($('.resortCheckbox--js input').is(':checked'))
 		});
 	};
-	$('.hotelCheckbox--js input').on('click', function(){
+	$(document).on('click', '.hotelCheckbox--js input', function(){
 		console.log($(this).is(':checked'));
 		console.log($('.hotelCheckbox--js input[type=checkbox]:checked').length);
 		if ($('.hotelCheckbox--js input[type=checkbox]:checked').length > 10){
