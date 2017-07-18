@@ -27,7 +27,7 @@
           <h3 class="contacts_tel">+7 987 548 57 57</h3>
           <a href="" class="contacts_email">cofe89.ru@yandex.ru</a>
         </div>
-        <button class="btn-store"></button>
+        <button class="btn-store">Магазин</button>
       </nav><!--Навигация-->
       <div class="container container-header">
         <div class="row">
@@ -38,7 +38,7 @@
           <div class="col-md-8 col-md-offset-1 col-sm-7 buy">
             <div class="order">
               <div class="price">2' 990<i class="fa fa-rub" aria-hidden="true"></i></div>
-              <button class="order-btn"></button>
+              <button class="order-btn" data-toggle="modal" data-target="#order">Купить</button>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
               </div>
             </div>
             <div class="col-xs-12">
-              <button class="btn-store order"></button>
+              <button class="btn-store order" data-toggle="modal" data-target="#order">Заказать</button>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@
             <h4>Почувствуй атмосферу Ирландии</h4>
           </div>
           <div class="col-xs-12 col-md-8 col-md-offset-1">
-            <button class="order-btn blue"></button>
+            <button class="order-btn blue">Вперед</button>
           </div>
         </div>
       </div>
@@ -272,6 +272,24 @@
         </div>
       </footer>
     </section>
+	<div id="order" class="modal fade modal-order" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span></span><span></span></button>
+					<h4 class="modal-title">Заказ кофе</h4>
+				</div>
+				<div class="modal-body">
+					<input type="text" placeholder="Ваш e-mail или телефон">
+					<p class="modal-info">Далеко-далеко за словесными горами в стране, <a href="#">гласных и согласных</a> живут рыбные тексты.</p>
+					<button class="order-btn">Заказать</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

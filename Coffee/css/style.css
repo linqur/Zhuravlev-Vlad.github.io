@@ -104,6 +104,7 @@ svg,
 	color: #fff;
 	font-size: 22px;
 	border: none;
+	text-transform: uppercase;
 }
 .order-btn.blue{
 	background: #0297d4;
@@ -125,6 +126,7 @@ svg,
 	margin-top: 20px;
 	margin-right: 40px;
 	float: right;
+	text-transform: uppercase;
 
 }
 .btn-store.order{
@@ -147,18 +149,6 @@ svg,
 .order-btn.blue:hover{
 	background: #007bad;
 	box-shadow: 0 0 0 13px rgba(77, 182, 225, 1);   
-}
-.btn-store:before{
-	content: 'МАГАЗИН';
-}
-.order-btn:before{
-	content: 'КУПИТЬ';
-}
-.btn-store.order:before{
-	content: 'ЗАКАЗАТЬ';
-}
-.order-btn.blue:before{
-	content: 'ВПЕРЕД';
 }
 .logo{
 	padding-top: 40px;
@@ -389,6 +379,98 @@ nav:after{
 .vk svg:hover{
 	fill: #fff;
 	color: #fff;
+}
+.modal-order{
+	text-align: center;
+}
+.modal-order .modal-dialog{
+	max-width: 780px;
+	width: 100%;
+}
+
+.modal-order .modal-content{
+	background: #30211c;
+	border-radius: 0;
+	-webkit-box-shadow: 1px 15px 100px 0px rgba(0, 0, 0, .5);
+	box-shadow: 1px 15px 100px 0px rgba(0, 0, 0, .5);
+}
+.modal-order .modal-header{
+	border: none;
+	padding-top: 50px;
+}
+.modal-order .modal-title{
+	font-family: 'FlangeBQ' !important;
+	font-size: 26px !important;
+	color: #fff !important;
+}
+.modal-order .close{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	opacity: 1;
+}
+.modal-order .close:hover{
+	opacity: 1;
+}
+.modal-order .close span{
+	display: inline-block;
+	width: 23px;
+	height: 2px;
+	background: #bababa;
+	position: absolute;
+	right: 0;
+	transform-origin: center;
+	transform: rotate(45deg);
+}
+.modal-order .close span:last-child{
+	transform: rotate(-45deg);
+}
+.modal-order .close:hover span{
+	background: #fff;
+}
+.modal-order input{
+	height: 50px;
+	width: 100%;
+	max-width: 320px;
+	
+	background: inherit;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	
+	font-family: 'FiraSans-Regular';
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	text-align: center;
+	transition: .2s;
+}
+.modal-order input:focus{
+	outline: none;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.modal-order .order-btn{
+	display: block;
+	margin: 65px auto;
+}
+.modal-backdrop.in{
+	opacity: 0.8 !important;
+}
+.modal-backdrop{
+	background: #fff !important;
+}
+.modal-info{
+	margin-top: 40px;
+	color: #ccc;
+	font-family: 'MyriadPro-Regular', sans-serif;
+}
+.modal-info a{
+	color: #ccc;
+	text-decoration: underline;
+}
+.modal-info a:hover{
+	color: #ccc;
 }
 @media (max-width: 1200px){
 	.new{
