@@ -35,7 +35,7 @@
   font-style: normal; }
 
 .loader-wrap {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -1856,7 +1856,11 @@ nav .container-fluid {
   height: 115px; }
 
 .progressbar {
-  counter-reset: step; }
+  counter-reset: step;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .progressbar li {
   width: 25%;
@@ -2394,12 +2398,18 @@ footer {
   font-size: 16px;
   font-weight: 600; }
 
-.results {
+.message {
+  text-align: left; }
+
+.results,
+.message {
   font-size: 16px;
   font-weight: 600; }
-  .results.win p {
+  .results.win p,
+  .message.win p {
     color: #2dbc49; }
-  .results.loss p {
+  .results.loss p,
+  .message.loss p {
     color: #f3867e; }
 
 .gender {
@@ -2717,6 +2727,9 @@ footer {
 .masonry-layout__panel-content {
   padding: 10px; }
 
+.typeBet-info {
+  color: #828282; }
+
 @media (max-width: 991px) {
   .navbar-nav_user {
     margin-top: 25px; }
@@ -2845,13 +2858,15 @@ footer {
       display: none; }
     .profile-statistics .my,
     .profile-statistics .results,
-    .profile-statistics .statistics {
+    .profile-statistics .statistics,
+    .profile-statistics .message {
       position: relative;
       padding-left: 30%;
       margin-bottom: 10px; }
     .profile-statistics .my:before,
     .profile-statistics .results:before,
-    .profile-statistics .statistics:before {
+    .profile-statistics .statistics:before,
+    .profile-statistics .message:before {
       position: absolute;
       width: 25%;
       padding-right: 10px;
@@ -2866,6 +2881,10 @@ footer {
       content: 'Результаты'; }
     .profile-statistics .statistics:before {
       content: 'Статистика'; }
+    .profile-statistics .message:before {
+      content: 'Сообщение'; }
+    .profile-statistics .notice .my:before {
+      content: 'Дата'; }
   .bet-all .card-bet-slider-item {
     width: 100%;
     margin: 0 auto; }
