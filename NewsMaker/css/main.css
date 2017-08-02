@@ -2331,17 +2331,15 @@ footer {
     font-size: 26px;
     color: #fff; }
 
-.profile-inform--other {
-  max-width: 100% !important; }
-  .profile-inform--other h2 {
-    font-size: 28px;
-    font-weight: 400;
-    color: #777;
-    margin-top: 0; }
-    .profile-inform--other h2 span {
-      color: #26272d;
-      font-family: 'ComfortaaBold';
-      width: inherit; }
+.profile-inform--other h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #777;
+  margin-top: 0; }
+  .profile-inform--other h2 span {
+    color: #26272d;
+    font-family: 'ComfortaaBold';
+    width: inherit; }
 
 .profile-inform {
   max-width: 420px;
