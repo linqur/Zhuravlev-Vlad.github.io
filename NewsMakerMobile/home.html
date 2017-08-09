@@ -1,0 +1,98 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#8c8f94">
+		<title>NewsMaker</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	
+		<link href="css/main.css" rel="stylesheet">	
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="wrapper-content">
+		
+			<div id="nav-top" class="fixed">
+				<nav class="nav-top fixed-top">
+					<a class="logo logo--mini" href="#">News <span>Maker</span></a>
+<!--					<a href="index.html" class="logo-mini"></a>-->
+					<input class="burger modal-open" type="checkbox" id="burger">
+					<label class="burger" for="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<!--Модалка шаринга-->
+					<label class="modal modal-share" for="burger">
+						<div class="share-link">
+							<ul>
+								<li><a href="edit_profile.html">Редактировать профиль</a></li>
+								<li><a href="index.html">Выйти</a></li>
+							</ul>
+						</div>
+					</label>
+					<!--END Модалка шаринга-->
+				</nav>
+				<div class="tag-list fixed-tag-list-top">
+					<ul>
+						<li class="active"><a href="#">Все</a></li>
+						<li><a href="#">Спорт</a></li>
+						<li><a href="#">Наука</a></li>
+						<li><a href="#">Общество</a></li>
+						<li><a href="#">Шоу-бизнес</a></li>
+						<li><a href="#">Политика</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="bet-list">
+				<div class="no-bet">
+					<h1 class="title">Нет пари</h1>
+					<a href="creat_bet_step1.html" class="creat-bet">
+						<span class="icon"><i>+</i></span>
+						<span>Создать пари</span>
+					</a>
+				</div>
+<!--
+				<div class="bet-itm">
+					<a href="card-bet.html" class="bet-title">Отнимут ли квартиру за перепланировку</a>
+					<div class="bet-img" style="background-image: url(img/vote-item1.jpg)"><i class="bg"></i></div>
+					<div class="bet-footer">
+						<div>
+							<span class="people">200</span>
+							<span class="chips">10k</span>
+							<span class="time">26ч</span>
+						</div>
+						<a href="card-bet.html" class="bet-run">Участвовать</a>
+					</div>
+				</div>
+-->
+		</div>
+	</div>
+	<nav class="nav-footer">
+		<a href="creat_bet_step1.html">+</a>
+		<a href="global.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
+		<a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i></a>
+	</nav>
+	<script>
+		var oldScrollY = 0;
+		var nav = document.getElementById('nav-top');
+
+		window.onscroll = function() {
+			var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+			var dY = scrolled - oldScrollY;
+			
+			if (scrolled > 90) {
+				if ( dY > 0 ){
+					nav.className = 'fixed fixed-scroll';
+				} else {
+					nav.className = 'fixed fixed-top';
+				}
+			}
+			oldScrollY = scrolled;
+		}
+	</script>
+	<script src="js/main.js"></script>
+	</body>
+	</html>

@@ -1,0 +1,141 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#8c8f94">
+		<title>NewsMaker</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	
+		<link href="css/main.css" rel="stylesheet">	
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="wrapper-content">
+		
+			<div class="fixed">
+				<nav class="nav-top fixed-top">
+					<a href="profile.html" class="author">
+						<div class="ava" style="background-image: url(img/ava.jpg)"></div>
+						<h2 class="author-name">Габдулла тукай</h2>
+					</a>
+					<!--<a href="index.html" class="logo-mini"></a>-->
+					<input class="share modal-open" type="checkbox" id="share">
+					<label class="share" for="share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></label>
+					<!--Модалка шаринга-->
+					<label class="modal modal-share" for="share">
+						<div class="share-link">
+							<ul>
+								<li><a href="#">Вконтакте</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">instagram</a></li>
+							</ul>
+						</div>
+					</label>
+					<!--END Модалка шаринга-->
+				</nav>
+			</div>
+			
+			<div class="bet-card">
+				<div class="bet-card-header">
+					<div class="bet-img" style="background-image: url(img/vote-item1.jpg)"><i class="bg"></i></div>
+					<h2 class="bet-title">Отнимут ли квартиру за перепланировку</h2>
+					<p class="description">Просочилась информация о том, что готовится законопроект о мерах, предпринимаемых к владельцам квартир в которых сделана незаконная перепланировка. Это инициировано тем, что квартиры в многоэтажках подвергаются перепланировке в 90% случаев и только в 15-20% с согласованиями.</p>
+				</div>
+				<div class="answer-list">
+					<ul>
+						<li>
+							<input type="radio" class="radio" id="radio1" name="answer"/>
+							<label class="radio-btn" for="radio1"></label>
+							<label class="answer-text" for="radio1">Создается прецедент чтобы легче и быстрее отнимать квартиры.</label>
+							<div class="progress-wrapper">
+								<span class="sr-only sr-only--percent">70%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										<span class="sr-only">2340</span>
+									</div>
+								</div>
+							</div>
+						 </li>
+						<li>
+							<input type="radio" class="radio" id="radio2" name="answer"/>
+							<label class="radio-btn" for="radio2"></label>
+							<label class="answer-text" for="radio2">Дело остановят из-за шумихи в прессе и пойдут на мировую</label>
+							<div class="progress-wrapper">
+								<span class="sr-only sr-only--percent">20%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width:20%">
+										<span class="sr-only">340</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<input type="radio" class="radio" id="radio3" name="answer"/>
+							<label class="radio-btn" for="radio3"></label>
+							<label class="answer-text" for="radio3">Хозяин договорится и вернёт как было.</label>
+							<div class="progress-wrapper">
+								<span class="sr-only sr-only--percent">5%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width:5%">
+										<span class="sr-only">40</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<input type="radio" class="radio" id="radio4" name="answer"/>
+							<label class="radio-btn" for="radio4"></label>
+							<label class="answer-text" for="radio4">Создается прецедент чтобы легче и быстрее отнимать квартиры.</label>
+							<div class="progress-wrapper">
+								<span class="sr-only sr-only--percent">2%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width:2%">
+										<span class="sr-only">15</span>
+									</div>
+								</div>
+							</div>
+						 </li>
+						 <li>
+							<input type="radio" class="radio" id="radio5" name="answer"/>
+							<label class="radio-btn" for="radio5"></label>
+							<label class="answer-text" for="radio5">Дело остановят из-за шумихи в прессе и пойдут на мировую</label>
+							<div class="progress-wrapper">
+								<span class="sr-only sr-only--percent">3%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width:3%">
+										<span class="sr-only">25</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+<!--
+				<a href="" class="author">
+					<div class="ava" style="background-image: url(img/ava.jpg)"></div>
+					<h2 class="author-name">Габдулла тукай</h2>
+				</a>
+-->
+				<nav class="bet-card-footer">
+					<p>Создано:<span>28-го июля, 2017 11:25</span></p>
+					<a href="#" class="bet-run">Голосовать</a>
+				</nav>
+				<nav class="nav-footer">
+					<a href="creat_bet_step1.html">+</a>
+					<a href="global.html" class="active"><i class="fa fa-globe" aria-hidden="true"></i></a>
+					<a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+				</nav>
+			</div>
+	</div>
+<!--
+	<nav class="nav-footer">
+		<a href="creat_bet_step1.html">+</a>
+		<a href="#" class="active"><i class="fa fa-globe" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+	</nav>
+-->
+	<script src="js/main.js"></script>
+	</body>
+	</html>

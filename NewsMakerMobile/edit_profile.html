@@ -1,0 +1,81 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#8c8f94">
+		<title>NewsMaker</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	
+		<link href="css/main.css" rel="stylesheet">	
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="wrapper-content">
+			<a class="logo" href="#">News <span>Maker</span></a>
+			<h1 class="title">Редактирование профиля</h1>
+			<div class="download-photo" style="background-image: url(img/ava.jpg)"></div>
+			<div class="form">
+				<input 
+					type="file" 
+					name="file" 
+					id="file" 
+					class="input-file input" 
+					data-multiple-caption="{count} files selected" 
+					multiple>
+				<label for="file"><span>Загрузить фото</span></label>
+				<input type="text" class="input" placeholder="Имя">
+				<input type="text" class="input" placeholder="Фамилия">
+				<input type="text" onfocus="(this.type='datetime-local')" class="input" placeholder="Дата рождения">
+				<!--onfocus="(this.type='datetime-local')" переключает type="text" на datetime-local т.к. placeholder не работает при type="datetime-local"-->
+				<input type="text" class="input" placeholder="Номер телефона">
+				<div class="onoffswitch-group">
+					<label for="type-bet" class="type-bet">М</label>
+					<div class="onoffswitch">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="type-bet">
+						<label class="onoffswitch-label" for="type-bet">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+					</div>
+					<label for="type-bet" class="type-bet">Ж</label>
+				</div>
+			</div>
+		</div>
+		<a href="creat_bet_step2.html" class="next unblock"><i class="arrow-ok"></i></a>
+	</div>
+	<nav class="nav-footer">
+		<a href="#" class="active">+</a>
+		<a href="global.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+	</nav>
+	<script>
+		// Стилизирует input file
+		var inputs = document.querySelectorAll( '.input-file' );
+		
+		Array.prototype.forEach.call( inputs, function( input ){
+			
+			var label	 	 = input.nextElementSibling,
+					labelVal = label.innerHTML;
+
+			input.addEventListener( 'change', function(e){
+				
+				var fileName = '';
+				
+				if( this.files && this.files.length > 1 ){
+					fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+				} else {
+					fileName = e.target.value.split( '\\' ).pop();
+				}
+				
+				if(fileName){
+					label.querySelector( 'span' ).innerHTML = fileName;
+				} else {
+					label.innerHTML = labelVal;
+				}
+			});
+		});// END Стилизирует input file
+	</script>
+	<script src="js/main.js"></script>
+	</body>
+	</html>
