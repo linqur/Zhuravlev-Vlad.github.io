@@ -1,3 +1,19 @@
+//Обновление даты в футере
+document.getElementById('newDate').innerHTML = (new Date()).getFullYear()
+//END Обновление даты в футере
+
+//Разделение чисел по разрядам
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+$('.bit').each(function() {
+  var after  = numberWithCommas($(this).text());
+	
+	$(this).text(after);
+});
+//END Разделение чисел по разрядам
+
+
 var doc_w = $(document).width();
 $(document).ready(function() {
 	
@@ -23,22 +39,19 @@ $(document).ready(function() {
 		});
 	};//END
 	
-	//Прокручивает страницу вверх при клике на "бронировать" для телефонов
-//	if (doc_w < 991){
-//		$('a[href="#open-form"]').click(function() {
-//			
-//			if ($('#open-form').hasClass('in') != true){
-//				setTimeout (function(){
-//					$('#reservation').animate({ scrollTop: $('#scrollForm').offset().top }, 100)
-////					var viewportOffset = document.getElementById('open-form').getBoundingClientRect();
-////					var top = viewportOffset.top;
-////					var scrollTop = $('#reservation').scrollTop($('#open-form').offset().top);
-////					console.log(top);
-////					$(document).scrollTop(top);
-//				}, 1000)
-//			}
-//		})	
-//	};
+//Прокручивает страницу вверх при клике на "бронировать"
+$('a[href="#open-form"]').click(function() {
+	
+	if($('#open-form').hasClass('in') != true) {
+		setTimeout (function(){
+			var beforeForm = $('.reservation-form').offset().top - $(window).scrollTop(),
+					positionForm = $('#reservation').scrollTop();
+					$('#reservation').scrollTop(positionForm + beforeForm);
+		}, 250)									
+	}
+
+})//END Прокручивает страницу вверх при клике на "бронировать"
+	
 	
 	$(document).on('click', '.tag-link--js', function(){
 		var _$ = $(this),
@@ -140,22 +153,6 @@ $(document).ready(function() {
 	removeChekedBtn(food, foodAll);
 	removeCheke($('.resortRemove--js'), $('.resortCheckbox--js'));
 	removeCheke($('.hotelRemove--js'), $('.hotelCheckbox--js'));
-	
-//	hotel.find('label').on('click', function(){
-//		hotelAll.find('input').removeAttr('checked');
-//	});
-//	
-//	hotelAll.find('label').on('click', function(){
-//		hotel.find('input').removeAttr('checked');
-//	});
-//	
-//	food.find('label').on('click', function(){
-//		foodAll.find('input').removeAttr('checked');
-//	});
-//	
-//	foodAll.find('label').on('click', function(){
-//		food.find('input').removeAttr('checked');
-//	});
 //////
 	
 	//Разблокирует select выбора возраста ребенка
@@ -175,44 +172,50 @@ $(document).ready(function() {
 //////
 	
 //Range
+	var minCost = $('#minCost').val();
+	var maxCost = $('#maxCost').val();
+	
+	//Меняет цвет шага
+	function rangeColor(){
+		var opt  			 = $("#slider").slider().data().uiSlider.options,
+				vals 			 = opt.max - opt.min,
+				difference = opt.values['1'] - opt.values['0'];
+		
+		$('.sliderStep').css('color', '#bcbcbc');
+		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
+			$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
+		}	
+	}//END Меняет цвет шага
+	
 	$( function() {
 		$("#slider").slider({
 			min: 1,
 			max: 30,
-			values: [ 1, 7 ],
+			values: [ minCost, maxCost ],
 			range: true,
 			stop: function(event, ui) {
 				jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
 				jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
-				
-				var opt = $(this).data().uiSlider.options,
-					vals = opt.max - opt.min,
-					difference = opt.values['1'] - opt.values['0'];
-				$('.sliderStep').css('color', '#bcbcbc');
-				for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
-					$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
-				}		
+
+				rangeColor();
 			},
 			slide: function(event, ui){
 				jQuery("input#minCost").val(jQuery("#slider").slider("values",0));
 				jQuery("input#maxCost").val(jQuery("#slider").slider("values",1));
-				
-				var opt = $(this).data().uiSlider.options,
-					vals = opt.max - opt.min,
-					difference = opt.values['1'] - opt.values['0'];
-				$('.sliderStep').css('color', '#bcbcbc');
-				for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
-					$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
-				}
+
+				rangeColor();
 			}
+			
 		})
 		.each(function() {
 			var opt = $(this).data().uiSlider.options;
 			var vals = opt.max - opt.min;
+			var difference = opt.values['1'] - opt.values['0'];
 			for (var i = 0; i <= vals; i++) {
 			var el = $('<label class="sliderStep">'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
-			$( "#slider" ).append(el);
+				$( "#slider" ).append(el);
 			}
+			rangeColor()
 		});
 	});
 	jQuery("input#minCost").change(function(){
@@ -224,14 +227,7 @@ $(document).ready(function() {
 			jQuery("input#minCost").val(value1);
 		}
 		jQuery("#slider").slider("values",0,value1);
-		
-		var opt = $('#slider').data().uiSlider.options,
-		vals = opt.max - opt.min,
-		difference = opt.values['1'] - opt.values['0'];
-		$('.sliderStep').css('color', '#bcbcbc');
-		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
-			$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
-		}	
+		rangeColor()
 	});
 
 
@@ -246,13 +242,8 @@ $(document).ready(function() {
 			jQuery("input#maxCost").val(value2);
 		}
 		jQuery("#slider").slider("values",1,value2);
-		var opt = $('#slider').data().uiSlider.options,
-		vals = opt.max - opt.min,
-		difference = opt.values['1'] - opt.values['0'];
-		$('.sliderStep').css('color', '#bcbcbc');
-		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
-			$('.sliderStep:nth-child(' + (i + 4) + ')').css('color', '#30cd00');
-		}	
+		
+		rangeColor()
 	});
 	
 	jQuery('.noText').keypress(function(event){
@@ -276,7 +267,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		variableWidth: true,
 		prevArrow: false,
-      	nextArrow: $('.slick-next'),
+    nextArrow: $('.slick-next'),
 		responsive: [
 		{
 		  breakpoint: 768,
@@ -285,24 +276,27 @@ $(document).ready(function() {
 			slidesToScroll: 1,
 			}
 		}] 
-	});//END
+	});
+	$('#modalSlider').slick({
+		infinite: true,
+		slidesToShow: 1,  
+		slidesToScroll: 1,
+		prevArrow: $('.modalSlider-prev'),
+		nextArrow: $('.modalSlider-next')
+	});	//END
 	
 	
 	//Вызывает модальное окно с описанием отеля
 	$('.descriptionHotel-openModal').click(function(){
 		$('#descriptionHotel').modal('show');
 	});//END
-	//Вызывает слайдер в модалке
+	//Поправляет слайдер в модалке
 	$('#descriptionHotel').on('shown.bs.modal', function (){
-		$('#modalSlider').slick({
-			infinite: true,
-			slidesToShow: 1,  
-			slidesToScroll: 1,
-			prevArrow: $('.modalSlider-prev'),
-			nextArrow: $('.modalSlider-next')
-		});	
-		return
+		$('#modalSlider').slick('setPosition');
 	});//END
+	$('#comments').on('hide.bs.modal', function (){
+		$('#vk_comments').html('');
+	});
 	function resizeSlider(){
 		var widthSlider = $('.mainSlider').width(),
 			mainSliderItm = $('.mainSlider-itm');
@@ -355,7 +349,9 @@ $(document).ready(function() {
 $(window).scroll(function() {
 	if ($(".navbar").offset().top > 100) {
 		$(".navbar-default").addClass("navbar-fixed");
+		//$('#menu').css('top', '70px')
 	} else {
 		$(".navbar-default").removeClass("navbar-fixed");
+		//$('#menu').css('top', '')
 	}
 });
