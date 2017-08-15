@@ -485,11 +485,11 @@
 										<a href="#" class="descriptionHotel descriptionHotel-openModal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 										<p class="allTours-time">10 - 20 ночей</p>
 										<div class="reviews">
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span> 17 отзывов
+											<span class="active"><i></i></span>
+											<span class="active"><i></i></span>
+											<span class="active half"><i></i></span> 17 отзывов
+											<span><i></i></span>
+											<span><i></i></span>
 										</div>
 										<a data-toggle="collapse" href="#el1" class="allTours-itm--open" aria-expanded="true">Туры
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -575,11 +575,11 @@
 										<a href="#" class="descriptionHotel descriptionHotel-openModal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 										<p class="allTours-time">10 - 20 ночей</p>
 										<div class="reviews">
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span>
-											<span></span> 17 отзывов
+											<span><i></i></span>
+											<span><i></i></span>
+											<span><i></i></span>
+											<span><i></i></span>
+											<span><i></i></span> 17 отзывов
 										</div>
 										<a data-toggle="collapse" href="#el2" class="allTours-itm--open">Туры
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -672,11 +672,11 @@
 										<div class="allTours-description--noPhoto">
 											<p class="allTours-time">10 - 20 ночей</p>
 											<div class="reviews">
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span>
-												<span></span> 17 отзывов
+												<span><i></i></span>
+												<span><i></i></span>
+												<span><i></i></span>
+												<span><i></i></span>
+												<span><i></i></span> 17 отзывов
 											</div>
 										</div>
 									</div>
@@ -804,6 +804,7 @@
 					</div>
 				</div>
 				<div class="modal-body">
+<!--
 					<div class="tabNavigation-center">
 						<ul class="tabNavigation" role="tablist">
 							<li class="active"><a href="#description-modal" aria-controls="description-modal" role="tab" data-toggle="tab">Описание</a></li>
@@ -811,30 +812,26 @@
 							<li><a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="description-modal">
-							<div class="modalSlider-wrapper">
+-->
+					<div class="modal-flex" id="description-modal">
+							<div class="modalSlider-wrapper col-sm-6">
 								<div id="modalSlider" class="modalSlider">
-									<div class="modalSlider-itm slick-active">
-										<img src="img/hotelPhoto6.jpg" alt="">
+									<div class="modalSlider-itm slick-active" style="background-image: url(img/hotelPhoto6.jpg)">
 									</div>
-									<div class="modalSlider-itm">
-										<img src="img/hotelPhoto5.jpg" alt="">
+									<div class="modalSlider-itm" style="background-image: url(img/hotelPhoto5.jpg)">
 									</div>
-									<div class="modalSlider-itm">
-										<img src="img/hotelPhoto4.jpg" alt="">
+									<div class="modalSlider-itm" style="background-image: url(img/hotelPhoto4.jpg)">
 									</div>
-									<div class="modalSlider-itm">
-										<img src="img/hotelPhoto3.jpg" alt="">
+									<div class="modalSlider-itm" style="background-image: url(img/hotelPhoto3.jpg)">
 									</div>
 								</div>
 								<div class="modalSlider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
 								<div class="modalSlider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 							</div>
-							<div class="modalHotelDescr">
+							<div class="modalHotelDescr col-sm-6">
 							<h2>Отдых на Гоа</h2>
 							<p>
-								4-звездочный отель Hotel Mignon располагается в Карловых Варах, в 500 м от его центра, в 300 м от курортной колоннады, в 30 минутах езды от железнодорожного вокзала. Отель размещается в здании, оформленном в стиле ар-нуво. Отель предлагает забронировать номер, оснащенный проекционным ТВ и спутниковым телевидением, мини-баром, холодильником, бесплатным Wi-Fi, оборудованной ванной комнатой и гостиным уголком. Гости могут посетить оздоровительный центр, в котором предлагаются различные процедуры – массаж, термальные ванны, иглоукалывание. Каждое утро гости могут насладиться аппетитным завтраком в отеле. На территории отеля располагается просторный ресторан, в котором гостям предлагается отведать блюда чешской и интернациональной кухни. В 1 км от Hotel Mignon располагается музей Яна Бехера.
+								Отель Possidonion расположен на центральной площади города Лутраки. В 10 минутах ходьбы от отеля находится центр бальнеологиче...
 							</p>
 							<table class="modalTable">
 								<tbody>
@@ -866,79 +863,7 @@
 							</table>
 						</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="services">
-							<div class="modalHotelDescr">
-								<h2>Отдых на Гоа</h2>
-								<p>
-									4-звездочный отель Hotel Mignon располагается в Карловых Варах, в 500 м от его центра, в 300 м от курортной колоннады, в 30 минутах езды от железнодорожного вокзала. Отель размещается в здании, оформленном в стиле ар-нуво. Отель предлагает забронировать номер, оснащенный проекционным ТВ и спутниковым телевидением, мини-баром, холодильником, бесплатным Wi-Fi, оборудованной ванной комнатой и гостиным уголком. Гости могут посетить оздоровительный центр, в котором предлагаются различные процедуры – массаж, термальные ванны, иглоукалывание. Каждое утро гости могут насладиться аппетитным завтраком в отеле. На территории отеля располагается просторный ресторан, в котором гостям предлагается отведать блюда чешской и интернациональной кухни. В 1 км от Hotel Mignon располагается музей Яна Бехера.
-								</p>
-								<table class="modalTable">
-									<tbody>
-										<tr>
-											<td>Расстояние до центра города:</td>
-											<td>500 м до центра</td>
-										</tr>
-										<tr>
-											<td>Сайт отеля:</td>
-											<td><a href="#">www.mignon.cz</a></td>
-										</tr>
-										<tr>
-											<td>E-mail:</td>
-											<td><a href="#">mignon@volny.cz</a></td>
-										</tr>
-										<tr>
-											<td>Телефон:</td>
-											<td>+ 420 355 312 111</td>
-										</tr>
-										<tr>
-											<td>Дата реконструкции:</td>
-											<td>2001 г.</td>
-										</tr>
-										<tr>
-											<td>Количество номеров:</td>
-											<td>14</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade" id="contacts">
-							<div class="modalHotelDescr">
-								<h2>Отдых на Гоа</h2>
-								<p>
-									4-звездочный отель Hotel Mignon располагается в Карловых Варах, в 500 м от его центра, в 300 м от курортной колоннады, в 30 минутах езды от железнодорожного вокзала. Отель размещается в здании, оформленном в стиле ар-нуво. Отель предлагает забронировать номер, оснащенный проекционным ТВ и спутниковым телевидением, мини-баром, холодильником, бесплатным Wi-Fi, оборудованной ванной комнатой и гостиным уголком. Гости могут посетить оздоровительный центр, в котором предлагаются различные процедуры – массаж, термальные ванны, иглоукалывание. Каждое утро гости могут насладиться аппетитным завтраком в отеле. На территории отеля располагается просторный ресторан, в котором гостям предлагается отведать блюда чешской и интернациональной кухни. В 1 км от Hotel Mignon располагается музей Яна Бехера.
-								</p>
-								<table class="modalTable">
-									<tbody>
-										<tr>
-											<td>Расстояние до центра города:</td>
-											<td>500 м до центра</td>
-										</tr>
-										<tr>
-											<td>Сайт отеля:</td>
-											<td><a href="#">www.mignon.cz</a></td>
-										</tr>
-										<tr>
-											<td>E-mail:</td>
-											<td><a href="#">mignon@volny.cz</a></td>
-										</tr>
-										<tr>
-											<td>Телефон:</td>
-											<td>+ 420 355 312 111</td>
-										</tr>
-										<tr>
-											<td>Дата реконструкции:</td>
-											<td>2001 г.</td>
-										</tr>
-										<tr>
-											<td>Количество номеров:</td>
-											<td>14</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>

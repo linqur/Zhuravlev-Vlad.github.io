@@ -1,3 +1,6 @@
+.drgdrgdrgdrgdrgdrgdrgdrgdrgdrgdrgdr {
+  background: #fff; }
+
 @font-face {
   font-family: 'OpenSansBold';
   src: url("../fonts/OpenSansBold/OpenSansBold.eot");
@@ -888,9 +891,7 @@ html .ui-button.ui-state-disabled:active {
   padding: 0 15px 30px 15px;
   position: absolute;
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#101213), to(#101214));
-  background: -webkit-linear-gradient(bottom, #101213, #101214);
-  background: linear-gradient(to top, #101213, #101214); }
+  background: #0b1115; }
 
 .tourCardContent-inf:after {
   content: '';
@@ -1260,18 +1261,34 @@ html .ui-button.ui-state-disabled:active {
 
 .reviews {
   padding-left: 30px; }
-  .reviews span {
+  .reviews i {
+    background: #fff;
+    -webkit-box-shadow: 0 0 0 1px #3a8e1b;
+            box-shadow: 0 0 0 1px #3a8e1b;
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #3a8e1b;
+    margin-left: 1px;
     border: 2px solid #fff;
     -webkit-border-radius: 50%;
-            border-radius: 50%;
+            border-radius: 50%; }
+  .reviews .active i {
+    background: #3a8e1b;
     -webkit-box-shadow: 0 0 0 1px #3a8e1b;
             box-shadow: 0 0 0 1px #3a8e1b; }
+  .reviews span {
+    width: 12px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 2px; }
+    .reviews span.half i {
+      background: #3a8e1b;
+      background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3a8e1b), color-stop(50%, #fff));
+      background: -webkit-linear-gradient(left, #3a8e1b 50%, #fff 50%);
+      background: linear-gradient(90deg, #3a8e1b 50%, #fff 50%); }
     .reviews span:last-child {
-      margin-right: 8px; }
+      margin-right: 6px; }
 
 .hotelPhoto {
   width: 340px;
@@ -2576,8 +2593,23 @@ html .ui-button.ui-state-disabled:active {
     .modal-dialog .tabNavigation a {
       font-size: 18px; }
 
+.modal-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
 .modal-descriptionHotel {
   padding-left: 0 !important; }
+  .modal-descriptionHotel .modal-header {
+    border-bottom: none; }
+
+.modalSlider-wrapper {
+  height: 470px; }
 
 .modal-header {
   background: -webkit-gradient(linear, left bottom, left top, from(#101213), to(#101214)) !important;
@@ -2594,20 +2626,21 @@ html .ui-button.ui-state-disabled:active {
 
 .modalSlider {
   overflow: hidden;
-  max-height: 490px; }
+  max-height: 470px; }
 
 .modalSlider-itm {
   display: inline-block;
-  max-height: 490px;
-  overflow: hidden; }
-  .modalSlider-itm img {
-    width: 100%; }
+  height: 470px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .modal-body {
   padding: 0; }
 
 .modalSlider-wrapper {
-  position: relative; }
+  position: relative;
+  padding: 0; }
 
 .modalSlider-btn, .modalSlider-prev, .modalSlider-next {
   position: absolute;
@@ -2633,7 +2666,10 @@ html .ui-button.ui-state-disabled:active {
   margin-top: -0.625em; }
 
 .modalHotelDescr {
-  padding: 30px; }
+  padding: 30px;
+  padding-top: 1px; }
+  .modalHotelDescr p {
+    line-height: 1.5; }
 
 .modalTable {
   line-height: 2; }
@@ -2937,13 +2973,9 @@ html .ui-button.ui-state-disabled:active {
   .modal-dialog {
     width: 100%;
     min-width: unset; }
-  .modalSlider-itm {
-    height: 400px; }
-    .modalSlider-itm img {
-      min-height: 100%;
-      min-width: 100%; }
-  .modalSlider {
-    height: 400px; }
+  .modalSlider-itm img {
+    min-height: 100%;
+    min-width: 100%; }
   .form-flex--itm {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2978,7 +3010,12 @@ html .ui-button.ui-state-disabled:active {
   .modalSlider-prev {
     display: none !important; }
   .form-flex--itm > div {
-    width: 100%; } }
+    width: 100%; }
+  .modal-flex {
+    display: block; }
+  .modalSlider-wrapper,
+  .modalSlider-itm {
+    height: 350px; } }
 
 @media screen and (max-width: 480px) {
   .modal-header .descriptionHotel-title {

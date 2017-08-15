@@ -6,11 +6,15 @@ document.getElementById('newDate').innerHTML = (new Date()).getFullYear()
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
-$('.bit').each(function() {
-  var after  = numberWithCommas($(this).text());
-	
-	$(this).text(after);
-});
+
+function bitNumber(){
+	$('.bit').each(function() {
+		var after  = numberWithCommas($(this).text());
+
+		$(this).text(after);
+	});
+}
+bitNumber()
 //END Разделение чисел по разрядам
 
 
@@ -66,17 +70,20 @@ $('a[href="#open-form"]').click(function() {
 		}
 	});
 	
-	$('.tagJs').each(function() {
-		
-		var _$ = $(this);
-		
-		_$.find('.tagList').height();
+	function btnTagOpenHidden(){
+		$('.tagJs').each(function() {
 
-		if(_$.find('.tagList').height() == 40){
-			_$.find('.tag-link--js').css('display', 'none');
-			_$.css('padding-right', '0')
-		}
-	});
+			var _$ = $(this);
+
+			_$.find('.tagList').height();
+
+			if(_$.find('.tagList').height() == 40){
+				_$.find('.tag-link--js').css('display', 'none');
+				_$.css('padding-right', '0')
+			}
+		});
+	};
+	btnTagOpenHidden()
 	
 	var sidebarOpen   = $('.sidebar--open'),
 		sidebarClose  = $('.sidebar--close'),
@@ -276,24 +283,32 @@ $('a[href="#open-form"]').click(function() {
 			slidesToScroll: 1,
 			}
 		}] 
-	});
-	$('#modalSlider').slick({
+	});	//END
+	
+	var modalSliderOpts = {
 		infinite: true,
 		slidesToShow: 1,  
 		slidesToScroll: 1,
 		prevArrow: $('.modalSlider-prev'),
 		nextArrow: $('.modalSlider-next')
-	});	//END
-	
+	}
 	
 	//Вызывает модальное окно с описанием отеля
-	$('.descriptionHotel-openModal').click(function(){
+	$(document).on('click', '.descriptionHotel-openModal', function(){
 		$('#descriptionHotel').modal('show');
 	});//END
+	
 	//Поправляет слайдер в модалке
 	$('#descriptionHotel').on('shown.bs.modal', function (){
+		$('#modalSlider').slick(modalSliderOpts);
 		$('#modalSlider').slick('setPosition');
 	});//END
+	
+	//Удаляет слайдер при закрытии модалки "Описание отеля"
+	$('#descriptionHotel').on('hidden.bs.modal', function (){
+		$('#modalSlider').slick('destroy');
+	});//END
+	
 	$('#comments').on('hide.bs.modal', function (){
 		$('#vk_comments').html('');
 	});
