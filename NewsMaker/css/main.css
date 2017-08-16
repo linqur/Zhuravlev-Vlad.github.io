@@ -35,7 +35,7 @@
   font-style: normal; }
 
 .loader-wrap {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -373,40 +373,42 @@
     -webkit-transform: scaleY(1);
             transform: scaleY(1); } }
 
-.modal--loading .loader {
-  width: 48px; }
-  .modal--loading .loader .loader-item {
-    height: 30px; }
-    .modal--loading .loader .loader-item:nth-child(1) {
-      -webkit-animation: loader-item-search-1 2s linear infinite;
-              animation: loader-item-search-1 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(2) {
-      -webkit-animation: loader-item-search-2 2s linear infinite;
-              animation: loader-item-search-2 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(3) {
-      -webkit-animation: loader-item-search-3 2s linear infinite;
-              animation: loader-item-search-3 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(4) {
-      -webkit-animation: loader-item-search-4 2s linear infinite;
-              animation: loader-item-search-4 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(5) {
-      -webkit-animation: loader-item-search-5 2s linear infinite;
-              animation: loader-item-search-5 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(6) {
-      -webkit-animation: loader-item-search-6 2s linear infinite;
-              animation: loader-item-search-6 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(7) {
-      -webkit-animation: loader-item-search-7 2s linear infinite;
-              animation: loader-item-search-7 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(8) {
-      -webkit-animation: loader-item-search-8 2s linear infinite;
-              animation: loader-item-search-8 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(9) {
-      -webkit-animation: loader-item-search-9 2s linear infinite;
-              animation: loader-item-search-9 2s linear infinite; }
-    .modal--loading .loader .loader-item:nth-child(10) {
-      -webkit-animation: loader-item-search-10 2s linear infinite;
-              animation: loader-item-search-10 2s linear infinite; }
+.modal--loading {
+  position: absolute; }
+  .modal--loading .loader {
+    width: 48px; }
+    .modal--loading .loader .loader-item {
+      height: 30px; }
+      .modal--loading .loader .loader-item:nth-child(1) {
+        -webkit-animation: loader-item-search-1 2s linear infinite;
+                animation: loader-item-search-1 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(2) {
+        -webkit-animation: loader-item-search-2 2s linear infinite;
+                animation: loader-item-search-2 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(3) {
+        -webkit-animation: loader-item-search-3 2s linear infinite;
+                animation: loader-item-search-3 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(4) {
+        -webkit-animation: loader-item-search-4 2s linear infinite;
+                animation: loader-item-search-4 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(5) {
+        -webkit-animation: loader-item-search-5 2s linear infinite;
+                animation: loader-item-search-5 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(6) {
+        -webkit-animation: loader-item-search-6 2s linear infinite;
+                animation: loader-item-search-6 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(7) {
+        -webkit-animation: loader-item-search-7 2s linear infinite;
+                animation: loader-item-search-7 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(8) {
+        -webkit-animation: loader-item-search-8 2s linear infinite;
+                animation: loader-item-search-8 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(9) {
+        -webkit-animation: loader-item-search-9 2s linear infinite;
+                animation: loader-item-search-9 2s linear infinite; }
+      .modal--loading .loader .loader-item:nth-child(10) {
+        -webkit-animation: loader-item-search-10 2s linear infinite;
+                animation: loader-item-search-10 2s linear infinite; }
 
 @-webkit-keyframes loader-item-search-1 {
   1% {
@@ -835,6 +837,9 @@ body {
 a {
   word-wrap: break-word;
   overflow-wrap: break-word; }
+
+a:focus {
+  text-decoration: none !important; }
 
 h2 {
   font-size: 48px;
@@ -2331,19 +2336,18 @@ footer {
     font-size: 26px;
     color: #fff; }
 
-.profile-inform--other h2 {
-  font-size: 28px;
-  font-weight: 400;
-  color: #777;
-  margin-top: 0; }
-  .profile-inform--other h2 span {
-    color: #26272d;
-    font-family: 'ComfortaaBold';
-    width: inherit; }
-
 .profile-inform {
   max-width: 420px;
   width: 100%; }
+  .profile-inform h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 0; }
+    .profile-inform h2 span {
+      color: #26272d;
+      font-family: 'ComfortaaBold';
+      width: inherit; }
   .profile-inform ul {
     display: inline-block;
     margin-top: 10px;
@@ -2859,7 +2863,7 @@ footer {
     .profile-statistics .statistics,
     .profile-statistics .message {
       position: relative;
-      padding-left: 30%;
+      padding-left: 35%;
       margin-bottom: 10px; }
     .profile-statistics .my:before,
     .profile-statistics .results:before,
@@ -2922,7 +2926,9 @@ footer {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    float: none; } }
+    float: none; }
+  .progressbar li {
+    color: #fcfcfc; } }
 
 @media (max-width: 480px) {
   .logo {
