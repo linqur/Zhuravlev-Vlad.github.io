@@ -17,6 +17,26 @@ function bitNumber(){
 bitNumber()
 //END Разделение чисел по разрядам
 
+//$(document).on('click', '.sidebarTag-more--open', function(){
+//	
+//	if ($(this).hasClass('more-active')){
+//		$(this).removeClass('more-active');
+//		$('.sidebarTag-more').css('display', 'none');
+//	} else {
+//		$(this).addClass('more-active');
+//		$('.sidebarTag-more').css('display', 'block');
+//	}
+//});
+//
+//$(document).mouseup(function (e) {
+//	var container = $('.sidebarTag-more'),
+//		body = $('body');
+//	if(e.target!=container[0]&&!container.has(e.target).length){
+//		container.css('display', 'none');
+//		$('.sidebarTag-more--open').removeClass('more-active');
+//	}
+//});
+
 
 var doc_w = $(document).width();
 $(document).ready(function() {
@@ -106,6 +126,7 @@ $('a[href="#open-form"]').click(function() {
 		sidebar.removeClass('sidebar--show');
 		body.css('overflow', '');
 	});//END
+	
 	$(document).mouseup(function (e) {
 		var container = $('.sidebar'),
 			body = $('body');
@@ -308,6 +329,10 @@ $('a[href="#open-form"]').click(function() {
 	$('#descriptionHotel').on('hidden.bs.modal', function (){
 		$('#modalSlider').slick('destroy');
 	});//END
+	
+	$('#reservation').on('hidden.bs.modal', function (){
+		$('#open-form').removeClass('in');
+	});
 	
 	$('#comments').on('hide.bs.modal', function (){
 		$('#vk_comments').html('');
