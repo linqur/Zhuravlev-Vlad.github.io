@@ -2370,6 +2370,18 @@ html .ui-button.ui-state-disabled:active {
     font-size: 14px;
     color: #444; }
 
+.error-wrapper {
+  min-height: 500px;
+  margin-top: 45px; }
+  .error-wrapper .error {
+    background: #fff;
+    padding: 35px 15px; }
+  .error-wrapper .title > * {
+    font-size: 44px;
+    font-family: "OpenSansBold", sans-serif;
+    margin: 0;
+    margin-bottom: 25px; }
+
 @media (max-width: 1230px) {
   .helpTab a {
     width: 226px;
@@ -2742,6 +2754,7 @@ html .ui-button.ui-state-disabled:active {
   .reservation .breadcrumb {
     padding: 8px 0; }
   .reservation .flight {
+    position: relative;
     line-height: 1;
     padding: 30px;
     height: 254px;
@@ -2871,6 +2884,10 @@ html .ui-button.ui-state-disabled:active {
 .reservation-form--js {
   display: none; }
 
+.reservation-modal-price {
+  position: relative;
+  min-height: 57px; }
+
 .reservation-form {
   padding: 50px 40px;
   border: 1px solid #e9eef0;
@@ -2896,8 +2913,9 @@ html .ui-button.ui-state-disabled:active {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .reservation-form select {
-    width: 100%;
+  .reservation-form select,
+  .reservation-form .bootstrap-select button {
+    width: 100% !important;
     background: -webkit-gradient(linear, left bottom, left top, from(#d4d4d4), to(#fff));
     background: -webkit-linear-gradient(bottom, #d4d4d4, #fff);
     background: linear-gradient(to top, #d4d4d4, #fff);
@@ -2914,6 +2932,10 @@ html .ui-button.ui-state-disabled:active {
     vertical-align: middle;
     font-family: "OpenSansRegular", sans-serif;
     font-size: 16px; }
+  .reservation-form .bootstrap-select {
+    width: 100% !important; }
+    .reservation-form .bootstrap-select .dropdown-menu li {
+      display: block; }
   .reservation-form .btn-yellow, .reservation-form .btn-yellow--lg {
     margin-top: 30px; }
   .reservation-form .input-sm {
@@ -3061,6 +3083,53 @@ html .ui-button.ui-state-disabled:active {
 @media screen and (max-width: 480px) {
   .modal-header .descriptionHotel-title {
     font-size: 25px; } }
+
+.cssload-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none; }
+  .cssload-container.visible {
+    display: block; }
+
+.cssload-speeding-wheel {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 3px solid rgba(0, 0, 0, 0.55);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-animation: cssload-spin 575ms infinite linear;
+          animation: cssload-spin 575ms infinite linear; }
+
+.reservation-modal-price .cssload-speeding-wheel {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px; }
+
+@keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 .sidebar--show {
   z-index: 2;

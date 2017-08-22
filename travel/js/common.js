@@ -1,7 +1,10 @@
 //Обновление даты в футере
 document.getElementById('newDate').innerHTML = (new Date()).getFullYear()
 //END Обновление даты в футере
-
+//Маска для телефона
+$(function(){
+  $("#inputTel").mask("+7(999)999-99-99");
+});//END Маска для телефона
 //Разделение чисел по разрядам
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");

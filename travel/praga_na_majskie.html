@@ -476,6 +476,9 @@
 									<div class="hotelPhoto">
 										<div class="triangle-topleft"></div>
 										<div class="hotelPhoto-shadow"></div>
+										<div class="cssload-container visible">
+											<div class="cssload-speeding-wheel"></div>
+										</div>
 										<img src="img/hotelPhoto.png" alt="" class="imgCenter">
 									</div>
 
@@ -825,6 +828,9 @@
 									<div class="modalSlider-itm" style="background-image: url(img/hotelPhoto3.jpg)">
 									</div>
 								</div>
+								<div class="cssload-container visible">
+									<div class="cssload-speeding-wheel"></div>
+								</div>
 								<div class="modalSlider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
 								<div class="modalSlider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 							</div>
@@ -899,8 +905,13 @@
 												</div>
 												<p class="food">Только завтрак — <span>BB</span></p>
 												<p class="Apartment">Apartment — <span>DBL + 1EXB + 2CHL (2-9)</span></p>
-												<p class="dollar"><span>$</span><span class="bit">259</span></p>
-												<p class="rub"><span>₽</span><span class="bit">19 433</span></p>
+												<div class="reservation-modal-price">
+													<p class="dollar"><span>$</span><span class="bit">259</span></p>
+													<p class="rub"><span>₽</span><span class="bit">19 433</span></p>
+													<div class="cssload-container visible">
+														<div class="cssload-speeding-wheel"></div>
+													</div>
+												</div>
 												<div>
 													<a href="#open-form" class="btn-lightBlue--lg" data-toggle="collapse" aria-expanded="false">Бронировать</a>
 												</div>
@@ -913,6 +924,9 @@
 													<p>02:05:00 → 06:05:00
 													<p>Airbus-321 Charter</p>
 													<p>Ural Airlines</p>
+													<div class="visible cssload-container">
+														<div class="cssload-speeding-wheel"></div>
+													</div>
 												</div>
 												<div class="flight">
 													<span class="return-icon">14 апреля в 14:21</span>
@@ -921,6 +935,9 @@
 													<p>02:05:00 → 06:05:00
 													<p>Airbus-321 Charter</p>
 													<p>Ural Airlines</p>
+													<div class="cssload-container">
+														<div class="cssload-speeding-wheel"></div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -931,13 +948,9 @@
 									</div>
 								</div>
 								<div id="open-form" class="col-xs-12 form-overflow collapse" aria-expanded="false">
-<!--
-									<div class="form-header">
-										<h2>Пожалуста введите точные данные туристов</h2>
-									</div>
--->
 									<div class="col-xs-12 reservation-form">
-										<p class="reservation-form--title">Данные заказчика (турист 1)</p>
+										<p class="reservation-form--title">Данные заказчика </p>
+										<span>Данные для оформления договора, и связи в случае возникновения вопросов по оплате</span>
 										<div class="form-flex">
 											<div class="form-flex--itm">
 												<div>
@@ -956,6 +969,63 @@
 														<input type="text" class="reservation-input" placeholder="Отчество">
 													</div>
 												</div>
+												<div>
+													<label for="name">Эл. почта</label>
+													<div class="input-group-flex">
+														<input type="email" class="reservation-input" placeholder="Эл. почта">
+													</div>
+												</div>
+												<div>
+													<label for="name">Телефон</label>
+													<div class="input-group-flex">
+														<input type="text" id="inputTel" class="reservation-input" placeholder="+7">
+													</div>
+												</div>
+											</div>
+											<div class="form-flex--itm">
+												<div>
+													<label for="name">Серия и номер паспорта</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input" placeholder="Серия">
+														<input type="text" class="reservation-input" placeholder="Номер">
+													</div>
+												</div>
+												<div class="input-group-date">
+													<label for="name">Дата и выдача паспорта</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input input-sm" placeholder="ДД">
+														<input type="text" class="reservation-input input-sm" placeholder="ММ">
+														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
+													</div>
+												</div>
+												<div>
+													<label for="name">Адрес</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input" placeholder="Адрес">
+													</div>
+												</div>
+												<div>
+													<label for="name">Кем выдан паспорт</label>
+													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 reservation-form">
+										<p class="reservation-form--title">Турист 1 <span>(Взрослый)</span></p>
+										<div class="form-flex">
+											<div class="form-flex--itm">
+												<div>
+													<label for="name">Фамилия</label>
+													<input type="text" class="reservation-input" placeholder="Фамилия">
+												</div>
+												<div>
+													<label for="name">Имя и Отчество</label>
+													<div class="input-group-flex">
+														<input type="text" class="reservation-input" placeholder="Имя">
+														<input type="text" class="reservation-input" placeholder="Отчество">
+													</div>
+												</div>
 												<div class="input-group-date">
 													<label for="name">Дата рождения</label>
 													<div class="input-group-flex">
@@ -968,12 +1038,12 @@
 													<label for="">Пол</label>
 													<div class="input-group-flex">
 														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender" id="men"/>
-															<label for="men"><i>М</i></label>
+															<input type="radio" class="radio-btn" name="gender2" id="men2"/>
+															<label for="men2"><i>М</i></label>
 														</div>
 														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender" id="women"/>
-															<label for="women"><i>Ж</i></label>
+															<input type="radio" class="radio-btn" name="gender2" id="women2"/>
+															<label for="women2"><i>Ж</i></label>
 														</div>
 													</div>
 												</div>
@@ -1002,15 +1072,22 @@
 													<div class="input-group-flex input-group-select">
 														<div>
 															<label for="name">Страна</label>
-															<select name="" id="">
-																<option value="1">Россия</option>
-																<option value="2">Другие страны</option>
+															<select class="selectpicker" data-live-search="true">
+																<option data-tokens="Россия">Россия</option>
+																<option data-tokens="Америка">Америка</option>
+																<option data-tokens="Гаити">Гаити</option>
 															</select>
 														</div>
 														<div>
 															<label for="name">Гражданство</label>
-															<select name="" id="">
-																<option value="1">Монголия</option>
+															<select class="selectpicker" data-live-search="true">
+																<option data-tokens="Россия">Монголия</option>
+																<option data-tokens="Америка">Америка</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
 															</select>
 														</div>
 													</div>
@@ -1079,92 +1156,22 @@
 													<div class="input-group-flex input-group-select">
 														<div>
 															<label for="name">Страна</label>
-															<select name="" id="">
-																<option value="1">Россия</option>
-																<option value="2">Другие страны</option>
+															<select class="selectpicker" data-live-search="true">
+																<option data-tokens="Россия">Россия</option>
+																<option data-tokens="Америка">Америка</option>
+																<option data-tokens="Гаити">Гаити</option>
 															</select>
 														</div>
 														<div>
 															<label for="name">Гражданство</label>
-															<select name="" id="">
-																<option value="1">Монголия</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 reservation-form">
-										<p class="reservation-form--title">Турист 2 <span>(Взрослый)</span></p>
-										<div class="form-flex">
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Фамилия</label>
-													<input type="text" class="reservation-input" placeholder="Фамилия">
-												</div>
-												<div>
-													<label for="name">Имя и Отчество</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Имя">
-														<input type="text" class="reservation-input" placeholder="Отчество">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата рождения</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="">Пол</label>
-													<div class="input-group-flex">
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="men2"/>
-															<label for="men2"><i>М</i></label>
-														</div>
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="women2"/>
-															<label for="women2"><i>Ж</i></label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Серия и номер паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Серия">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата и выдача паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="name">Кем выдан паспорт</label>
-													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-												</div>
-												<div>
-													<div class="input-group-flex input-group-select">
-														<div>
-															<label for="name">Страна</label>
-															<select name="" id="">
-																<option value="1">Россия</option>
-																<option value="2">Другие страны</option>
-															</select>
-														</div>
-														<div>
-															<label for="name">Гражданство</label>
-															<select name="" id="">
-																<option value="1">Монголия</option>
+															<select class="selectpicker" data-live-search="true">
+																<option data-tokens="Россия">Монголия</option>
+																<option data-tokens="Америка">Америка</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
+																<option data-tokens="Гаити">Гаити</option>
 															</select>
 														</div>
 													</div>
