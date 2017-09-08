@@ -1,5 +1,5 @@
 //Обновление даты в футере
-document.getElementById('newDate').innerHTML = (new Date()).getFullYear()
+document.getElementById('newDate').innerHTML = (new Date()).getFullYear();
 //END Обновление даты в футере
 //Маска для телефона
 $(function(){
@@ -71,7 +71,7 @@ $('a[href="#open-form"]').click(function() {
 	
 	if($('#open-form').hasClass('in') != true) {
 		setTimeout (function(){
-			var beforeForm = $('.reservation-form').offset().top - $(window).scrollTop(),
+			var beforeForm = $('.reservation-form--first').offset().top - $(window).scrollTop(),
 					positionForm = $('#reservation').scrollTop();
 					$('#reservation').scrollTop(positionForm + beforeForm);
 		}, 250)									
@@ -128,6 +128,10 @@ $('a[href="#open-form"]').click(function() {
 	sidebarClose.on('click', function(){
 		sidebar.removeClass('sidebar--show');
 		body.css('overflow', '');
+	});
+    $('.btn-search-sidebar--close').on('click', function(){
+		sidebar.removeClass('sidebar--show');
+		body.css('overflow', '');
 	});//END
 	
 	$(document).mouseup(function (e) {
@@ -166,8 +170,6 @@ $('a[href="#open-form"]').click(function() {
 		});
 	};
 	$(document).on('click', '.hotelCheckbox--js input', function(){
-		console.log($(this).is(':checked'));
-		console.log($('.hotelCheckbox--js input[type=checkbox]:checked').length);
 		if ($('.hotelCheckbox--js input[type=checkbox]:checked').length > 10){
 			$(this).removeAttr('checked');
 			$('#info').modal('show');
@@ -192,11 +194,13 @@ $('a[href="#open-form"]').click(function() {
 		var number = $(this).parents('.child').find(".child-itm"),
 	    index = $.inArray( this, number );
 		
-		$('.ageChildGroup .ageChildSelect--js').attr('disabled', true);//Блокирует поля для ввода возраста детей
+		$('.ageChildGroup .bootstrap-select.ageChildSelect--js').find('select').attr('disabled', true);//Блокирует поля для ввода возраста детей
+        $('.selectpicker').selectpicker('refresh');
 		
 		var i = index;
 		while (i != 0) {//Разблокирует поля для ввода возраста детей
-			$('.ageChildGroup .ageChildSelect--js:nth-child(' + (i) + ')').attr('disabled', false);
+			$('.ageChildGroup .bootstrap-select.ageChildSelect--js:nth-child(' + (i) + ')').find('select').attr('disabled', false);
+            $('.selectpicker').selectpicker('refresh');
 			i--;
 		};
 	});//END
@@ -208,9 +212,9 @@ $('a[href="#open-form"]').click(function() {
 	
 	//Меняет цвет шага
 	function rangeColor(){
-		var opt  			 = $("#slider").slider().data().uiSlider.options,
-				vals 			 = opt.max - opt.min,
-				difference = opt.values['1'] - opt.values['0'];
+        var opt  	   = $("#slider").slider().data().uiSlider.options,
+            vals 	   = opt.max - opt.min,
+            difference = opt.values['1'] - opt.values['0'];
 		
 		$('.sliderStep').css('color', '#bcbcbc');
 		for(var i = (opt.values['0'] - 1); i < opt.values['1']; i++){
@@ -362,11 +366,27 @@ $('a[href="#open-form"]').click(function() {
 
 (function($){
 	$(window).on('load',function(){
-		$('.filterScroll').mCustomScrollbar({
+		$('.filterScrollOne').mCustomScrollbar({
 			scrollButtons: {enable: true},
 			theme: 'dark-thick',
-			scrollbarPosition: 'outside'
-		});
+			scrollbarPosition: 'outside',
+            callbacks:{
+                whileScrolling:function(){ 
+                    console.log(this.mcs.topPct+"%")
+                }                                 
+            }
+        });
+        
+        $('.filterScrollTwo').mCustomScrollbar({
+			scrollButtons: {enable: true},
+			theme: 'dark-thick',
+			scrollbarPosition: 'outside',
+            callbacks:{
+                whileScrolling:function(){ 
+                    console.log(this.mcs.topPct+"%")
+                }                                 
+            }
+        });
 		
 		$('.formScroll').mCustomScrollbar({
 			scrollButtons: {enable: true},
@@ -398,3 +418,64 @@ $(window).scroll(function() {
 		//$('#menu').css('top', '')
 	}
 });
+
+
+
+
+
+
+
+
+// Убирает текст под ценой при изменении количества человек
+function removeTextTourPrice(){
+    
+    var changed = false,
+        textNew = 'Цена за человека';
+
+    $('.people .radio-btn').on('change', function(){
+
+        if (changed == false){
+            $('.tourPrice--desc--js').text(textNew);
+            changed = true;
+        } 
+
+    });
+}
+removeTextTourPrice()
+// END Убирает текст под ценой при изменении количества человек
+
+$(document).ready(function(){
+    $('#search-sidebar').keyup(function(){
+        _this = this;
+
+        $.each($('.check-itm'), function() {
+            if($(this).find('label').text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
+                $(this).hide();
+            } else {
+                $(this).show();                
+            }
+        });
+    });
+});
+
+//$.ajax({
+//    type:'GET',
+//    url: 'http://module.sletat.ru/Main.svc/GetHotels?countryId=90&all=-1',
+//    dataType: 'json',
+//    success: function(data){
+////        console.log(data);
+//        var  hotel = data.GetHotelsResult.Data;
+//        for (i = 0; i  < data.GetHotelsResult.Count; i++){
+////            console.log(hotel[i].Id + ' - ' + hotel[i].Name);
+//            
+//            
+//            $('#hotelSearch').append('<div class="check-itm"><input type="checkbox" id="'+ hotel[i].Id +'" class="checkbox"><label for="'+ hotel[i].Id +'">'+ hotel[i].Name +'</label></div>').fadeIn();
+//            
+//            
+//        }
+//    },
+//    error: function(data){
+//        console.log(data);
+//    }
+//});
+

@@ -309,7 +309,8 @@ input:-ms-input-placeholder {
           border-radius: 20px;
   font-size: 14px;
   font-family: "OpenSansBold", sans-serif;
-  color: #fff; }
+  color: #fff;
+  border: none; }
   .button:focus, .btn-yellow:focus, .btn-yellow--lg:focus, .btn-green:focus, .btn-green--lg:focus, .btn-blue:focus, .btn-black:focus, .btn-lightBlue:focus, .btn-lightBlue--lg:focus {
     color: #fff; }
 
@@ -2463,7 +2464,7 @@ html .ui-button.ui-state-disabled:active {
 
 .form-btn {
   float: right;
-  margin-top: 30px; }
+  margin-top: 30px !important; }
 
 .requisites-list {
   line-height: 2.1; }
@@ -2780,7 +2781,8 @@ html .ui-button.ui-state-disabled:active {
   .reservation .rub {
     display: inline-block;
     font-family: "RobotoSlabBold", sans-serif;
-    color: #375ec0; }
+    color: #375ec0;
+    margin-bottom: 0; }
     .reservation .dollar .bit,
     .reservation .rub .bit {
       font-size: 40px; }
@@ -2886,16 +2888,20 @@ html .ui-button.ui-state-disabled:active {
 
 .reservation-modal-price {
   position: relative;
-  min-height: 57px; }
+  min-height: 57px;
+  display: inline-block;
+  margin-bottom: 10px; }
 
-.reservation-form {
+.reservation-form,
+.reservation-form--first {
   padding: 50px 40px;
   border: 1px solid #e9eef0;
   background: #fafafa;
   margin-top: 40px;
   -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1); }
-  .reservation-form label {
+  .reservation-form label,
+  .reservation-form--first label {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2914,7 +2920,9 @@ html .ui-button.ui-state-disabled:active {
         -ms-flex-pack: center;
             justify-content: center; }
   .reservation-form select,
-  .reservation-form .bootstrap-select button {
+  .reservation-form .bootstrap-select button,
+  .reservation-form--first select,
+  .reservation-form--first .bootstrap-select button {
     width: 100% !important;
     background: -webkit-gradient(linear, left bottom, left top, from(#d4d4d4), to(#fff));
     background: -webkit-linear-gradient(bottom, #d4d4d4, #fff);
@@ -2932,13 +2940,18 @@ html .ui-button.ui-state-disabled:active {
     vertical-align: middle;
     font-family: "OpenSansRegular", sans-serif;
     font-size: 16px; }
-  .reservation-form .bootstrap-select {
+  .reservation-form .bootstrap-select,
+  .reservation-form--first .bootstrap-select {
     width: 100% !important; }
-    .reservation-form .bootstrap-select .dropdown-menu li {
+    .reservation-form .bootstrap-select .dropdown-menu li,
+    .reservation-form--first .bootstrap-select .dropdown-menu li {
       display: block; }
-  .reservation-form .btn-yellow, .reservation-form .btn-yellow--lg {
+  .reservation-form .btn-yellow, .reservation-form .btn-yellow--lg,
+  .reservation-form--first .btn-yellow,
+  .reservation-form--first .btn-yellow--lg {
     margin-top: 30px; }
-  .reservation-form .input-sm {
+  .reservation-form .input-sm,
+  .reservation-form--first .input-sm {
     padding: 0;
     text-align: center; }
 
@@ -3117,7 +3130,7 @@ html .ui-button.ui-state-disabled:active {
           animation: cssload-spin 575ms infinite linear; }
 
 .reservation-modal-price .cssload-speeding-wheel {
-  margin-left: 10px;
+  margin-right: -40px;
   width: 30px;
   height: 30px; }
 
@@ -3216,3 +3229,152 @@ html .ui-button.ui-state-disabled:active {
     z-index: 5; }
   .stop {
     z-index: 5; } }
+
+
+
+
+
+/**/
+.tourPrice--desc {
+    font-size: 14px !important;
+    display: block;
+}
+.search-sidebar {
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #CDD1DA;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .allTours-collapse {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .allTours-tourPrice {
+        min-width: 230px;
+    }
+}
+
+.allTours-tourDate {
+    padding-left: 0;
+}
+.allTours-tourInfo {
+    padding-right: 15px;
+}
+.modalSlider-prev, 
+.modalSlider-next {
+    opacity: 0;
+    transition: .2s
+}
+.modalSlider-prev:hover,
+.modalSlider-next:hover {
+    opacity: 1;
+}
+.modalSlider {
+    max-height: 400px;
+}
+.modalSlider-wrapper{
+    height: 400px;
+}
+.modal {
+    z-index: 1000;
+}
+.modal-backdrop {
+    z-index: 999;
+}
+.search--sidebar {
+    text-align: center;
+}
+.search--sidebar .btn-search {
+    position: static;
+    margin: 0;
+    margin-bottom: 20px;
+    display: none;
+}
+@media (max-width: 768px) {
+    .search--sidebar .btn-search {
+        display: inline-block;
+    } 
+}
+.mainSlider-description--itm {
+    padding: 0 40px;
+}
+.allTours-itm {
+    background: #fff;
+}
+.ageChild .bootstrap-select {
+    background: inherit;
+    width: 65px !important;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 65px !important;
+    background: #fff;
+    border: 2px solid #e1e1e1;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    margin-right: -6px;
+}
+.ageChild .bootstrap-select span {
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 16px;
+    color: #5281ff;
+}
+.ageChild .bootstrap-select>.disabled span{
+    color: #ededed;
+}
+.ageChild .bootstrap-select.disabled{
+    background: #f6f5f5;
+}
+.ageChild .bootstrap-select {
+    border-right: none;
+}
+.ageChild .bootstrap-select:last-child {
+    border-right: 2px solid #e1e1e1;;
+}
+.ageChild .bootstrap-select button {
+    height: 50px;
+    border-radius: 0;
+}
+.ageChildGroup {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.reservation-img .descriptionHotel {
+    display: block;
+    height: 65px;
+    margin: 0;
+    position: absolute;
+    top: unset;
+    right: 0;
+    bottom: 0px;
+    left: 15px;
+    
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 65px;
+    border: 1px solid #e9eef0;
+    border-top: none;
+}
+.reservation-img .descriptionHotel:hover {
+    background: #f9f9f9;
+}
+/*
+.mainSlider-description .mainSlider-description--left {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+*/
+/**/
