@@ -8,7 +8,6 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title></title>
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/libs.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -477,21 +476,17 @@
 
 								<div class="allTours-itm">
 									<div class="allTours-price">
-										<p class="dollar"><span>$</span><span class="bit">254369</span></p>
-										<p class="rub"><span>&#8381;</span><span class="bit">19433</span></p>
+										<div class="allTours-price--polygon">
+											<p class="dollar"><span>$</span><span class="bit">2 543.64</span></p>
+											<p class="rub"><span>&#8381;</span><span class="bit">19433</span></p>
+										</div>
 									</div>
 
-									<div class="hotelPhoto">
-										<div class="triangle-topleft"></div>
-										<div class="hotelPhoto-shadow"></div>
-										<div class="cssload-container visible">
-											<div class="cssload-speeding-wheel"></div>
-										</div>
-										<img src="img/hotelPhoto.png" alt="" class="imgCenter">
-									</div>
 
 									<div class="allTours-description">
-										<h4 class="allTours-title">Hotel Mignon</h4>
+										<div class="allTours-title allTours-title--js">
+											<h4 class="allTours-title--text">Hotel Mignon</h4>
+										</div>
 										<p class="allTours-location">Чехия, Карловы вары</p>
 										<a href="#" class="descriptionHotel descriptionHotel-openModal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 										<p class="allTours-time">10 - 20 ночей</p>
@@ -508,6 +503,14 @@
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
 										<i class="fa fa-angle-up" aria-hidden="true"></i>
 									</a>
+									</div>
+									
+									<div class="hotelPhoto">
+										<div class="hotelPhoto-shadow"></div>
+										<div class="cssload-container visible">
+											<div class="cssload-speeding-wheel"></div>
+										</div>
+										<img src="img/hotelPhoto.png" alt="" class="imgCenter">
 									</div>
 								</div>
 
@@ -572,18 +575,17 @@
 
 								<div class="allTours-itm">
 									<div class="allTours-price">
-										<p class="dollar"><span>$</span><span class="bit">160</span></p>
-										<p class="rub"><span>&#8381;</span><span class="bit">9600</span></p>
+										<div class="allTours-price--polygon">
+											<p class="dollar"><span>$</span><span class="bit">160</span></p>
+											<p class="rub"><span>&#8381;</span><span class="bit">9600</span></p>
+										</div>
 									</div>
-
-									<div class="hotelPhoto">
-										<div class="triangle-topleft"></div>
-										<div class="hotelPhoto-shadow"></div>
-										<img src="img/hotelPhoto2.jpg" alt="" class="imgCenter">
-									</div>
+									
 
 									<div class="allTours-description">
-										<h4 class="allTours-title">Esplanate spa & golf resort</h4>
+										<div class="allTours-title allTours-title--js">
+											<h4 class="allTours-title--text">Hotel Mignon Hotel Mignon Hotel Mignon</h4>
+										</div>
 										<p class="allTours-location">Чехия, Карловы вары</p>
 										<a href="#" class="descriptionHotel descriptionHotel-openModal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 										<p class="allTours-time">10 - 20 ночей</p>
@@ -598,6 +600,10 @@
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
 										<i class="fa fa-angle-up" aria-hidden="true"></i>
 									</a>
+									</div>
+									<div class="hotelPhoto">
+										<div class="hotelPhoto-shadow"></div>
+										<img src="img/hotelPhoto2.jpg" alt="" class="imgCenter">
 									</div>
 								</div>
 
@@ -662,8 +668,10 @@
 
 								<div class="allTours-itm">
 									<div class="allTours-price">
-										<p class="dollar"><span>$</span><span class="bit">160</span></p>
-										<p class="rub"><span>&#8381;</span><span class="bit">9600</span></p>
+										<div class="allTours-price--polygon">
+											<p class="dollar"><span>$</span><span class="bit">160</span></p>
+											<p class="rub"><span>&#8381;</span><span class="bit">9600</span></p>
+										</div>
 									</div>
 
 									<!--
@@ -675,7 +683,9 @@
 	-->
 
 									<div class="allTours-description noPhoto">
-										<h4 class="allTours-title">Esplanate spa & golf resort</h4>
+										<div class="allTours-title allTours-title--js">
+											<h4 class="allTours-title--text">Hotel Mignon Hotel Mignon Hotel Mignon</h4>
+										</div>
 										<p class="allTours-location">Чехия, Карловы вары</p>
 										<a href="#" class="descriptionHotel descriptionHotel-openModal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 										<a data-toggle="collapse" href="#el3" class="allTours-itm--open">Туры
@@ -892,342 +902,223 @@
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title descriptionHotel-title">Бронирование</h4>
+					<div class="progressBar-content">
+						<ul class="progressbar">
+							<li>Проверка тура</li>
+							<li>Заполнение данных</li>
+						</ul>
+					</div>
 				</div>
-				<div class="reservation-modal-content">
-					<div class="row">
-						<div class="col-xs-12 reservation-info--js">
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="row reservation-flex">
-										<div class="col-lg-8 col-sm-12 reservation-modal-info reservation-borderblock">
-											<div class="col-md-8 col-sm-8 reservation-modal-info--left">
-												<ul class="breadcrumb">
-													<li><a href="#">Москва</a></li>
-													<li><a href="#">Чехия, Карловы Вары</a></li>
-													<li><a href="#">С 21.04.2017 на 7 ночей</a></li>
-													<li><a href="#">1 взрослый</a></li>
-												</ul>
-												<h2 class="title">Hotel Mignon</h2>
-												<div class="reviews">
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span>
-													<span></span> 17 отзывов
-												</div>
-												<p class="food">Только завтрак — <span>BB</span></p>
-												<p class="Apartment">Apartment — <span>DBL + 1EXB + 2CHL (2-9)</span></p>
-												<div class="reservation-modal-price">
-													<p class="dollar"><span>$</span><span class="bit">259</span></p>
-													<p class="rub"><span>₽</span><span class="bit">19 433</span></p>
-													<div class="cssload-container visible">
-														<div class="cssload-speeding-wheel"></div>
-													</div>
-												</div>
-												<div>
-													<a href="#open-form" class="btn-lightBlue--lg" data-toggle="collapse" aria-expanded="false">Бронировать</a>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-12 col-sm-4 reservation-modal-info--right">
-												<div class="flight">
-													<span class="departure-icon">14 апреля в 14:21</span>
-													<p><strong>U6 1025</strong></p>
-													<p><strong>Moscow - Praga</strong></p>
-													<p>02:05:00 → 06:05:00
-													<p>Airbus-321 Charter</p>
-													<p>Ural Airlines</p>
-													<div class="visible cssload-container">
-														<div class="cssload-speeding-wheel"></div>
-													</div>
-												</div>
-												<div class="flight">
-													<span class="return-icon">14 апреля в 14:21</span>
-													<p><strong>U6 1025</strong></p>
-													<p><strong>Moscow - Praga</strong></p>
-													<p>02:05:00 → 06:05:00
-													<p>Airbus-321 Charter</p>
-													<p>Ural Airlines</p>
-													<div class="cssload-container">
-														<div class="cssload-speeding-wheel"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-4 reservation-img">
-											<img src="http://hotels.sletat.ru/i/f/6193_0.jpg" alt="">
-											<a href="#" class="descriptionHotel descriptionHotel-openModal" data-dismiss="modal">Описание отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
-										</div>
-									</div>
+				<div class="reservation-modal-content row">
+					<div class="reservation-header">
+						<div class="col-md-8 col-xs-12 reservation-header--left">
+							<div class="reservation-header--inf">
+								<h2 class="title">Hotel Mignon</h2>
+								<div class="reviews">
+									<span><i></i></span>
+									<span><i></i></span>
+									<span><i></i></span>
+									<span><i></i></span>
+									<span><i></i></span> 17 отзывов
 								</div>
-								<div id="open-form" class="col-xs-12 form-overflow collapse" aria-expanded="false">
-									<div class="col-xs-12 reservation-form--first">
-										<p class="reservation-form--title">Данные заказчика </p>
-										<span>Данные для оформления договора, и связи в случае возникновения вопросов по оплате</span>
-										<div class="form-flex">
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Фамилия</label>
-													<input type="text" class="reservation-input" placeholder="Фамилия">
-												</div>
-												<div>
-													<label for="name">Имя</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Имя">
-													</div>
-												</div>
-												<div>
-													<label for="name">Отчество</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Отчество">
-													</div>
-												</div>
-												<div>
-													<label for="name">Эл. почта</label>
-													<div class="input-group-flex">
-														<input type="email" class="reservation-input" placeholder="Эл. почта">
-													</div>
-												</div>
-												<div>
-													<label for="name">Телефон</label>
-													<div class="input-group-flex">
-														<input type="text" id="inputTel" class="reservation-input" placeholder="+7">
-													</div>
-												</div>
-											</div>
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Серия и номер паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Серия">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата и выдача паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="name">Адрес</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Адрес">
-													</div>
-												</div>
-												<div>
-													<label for="name">Кем выдан паспорт</label>
-													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 reservation-form">
-										<p class="reservation-form--title">Турист 1 <span>(Взрослый)</span></p>
-										<div class="form-flex">
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Фамилия</label>
-													<input type="text" class="reservation-input" placeholder="Фамилия">
-												</div>
-												<div>
-													<label for="name">Имя и Отчество</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Имя">
-														<input type="text" class="reservation-input" placeholder="Отчество">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата рождения</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="">Пол</label>
-													<div class="input-group-flex">
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="men2"/>
-															<label for="men2"><i>М</i></label>
-														</div>
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="women2"/>
-															<label for="women2"><i>Ж</i></label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Серия и номер паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Серия">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата и выдача паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="name">Кем выдан паспорт</label>
-													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-												</div>
-												<div>
-													<div class="input-group-flex input-group-select">
-														<div>
-															<label for="name">Страна</label>
-															<select class="selectpicker" data-live-search="true">
-																<option data-tokens="Россия">Россия</option>
-																<option data-tokens="Америка">Америка</option>
-																<option data-tokens="Гаити">Гаити</option>
-															</select>
-														</div>
-														<div>
-															<label for="name">Гражданство</label>
-															<select class="selectpicker" data-live-search="true">
-																<option data-tokens="Россия">Монголия</option>
-																<option data-tokens="Америка">Америка</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 reservation-form">
-										<p class="reservation-form--title">Турист 2 <span>(Взрослый)</span></p>
-										<div class="form-flex">
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Фамилия</label>
-													<input type="text" class="reservation-input" placeholder="Фамилия">
-												</div>
-												<div>
-													<label for="name">Имя и Отчество</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Имя">
-														<input type="text" class="reservation-input" placeholder="Отчество">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата рождения</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="">Пол</label>
-													<div class="input-group-flex">
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="men2"/>
-															<label for="men2"><i>М</i></label>
-														</div>
-														<div class="checkbox-block">
-															<input type="radio" class="radio-btn" name="gender2" id="women2"/>
-															<label for="women2"><i>Ж</i></label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-flex--itm">
-												<div>
-													<label for="name">Серия и номер паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input" placeholder="Серия">
-														<input type="text" class="reservation-input" placeholder="Номер">
-													</div>
-												</div>
-												<div class="input-group-date">
-													<label for="name">Дата и выдача паспорта</label>
-													<div class="input-group-flex">
-														<input type="text" class="reservation-input input-sm" placeholder="ДД">
-														<input type="text" class="reservation-input input-sm" placeholder="ММ">
-														<input type="text" class="reservation-input input-sm" placeholder="ГГГГ">
-													</div>
-												</div>
-												<div>
-													<label for="name">Кем выдан паспорт</label>
-													<input type="text" class="reservation-input" placeholder="Пример: РФ, РБ, УФМС Уфы">
-												</div>
-												<div>
-													<div class="input-group-flex input-group-select">
-														<div>
-															<label for="name">Страна</label>
-															<select class="selectpicker" data-live-search="true">
-																<option data-tokens="Россия">Россия</option>
-																<option data-tokens="Америка">Америка</option>
-																<option data-tokens="Гаити">Гаити</option>
-															</select>
-														</div>
-														<div>
-															<label for="name">Гражданство</label>
-															<select class="selectpicker" data-live-search="true">
-																<option data-tokens="Россия">Монголия</option>
-																<option data-tokens="Америка">Америка</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-																<option data-tokens="Гаити">Гаити</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12">
-										<a href="#" class="btn-green--lg btn-pay">Оплатить</a>
-									</div>
-								</div>
-<!--
-								<div class="col-xs-12">
-									<div class="row">
-										<div class="col-sm-6 flight">
-											<span class="departure-icon">14 апреля в 14:21</span>
-											<p><strong>U6 1025</strong></p>
-											<p><strong>Moscow - Praga</strong></p>
-											<p>02:05:00 → 06:05:00
-											<p>Airbus-321 Charter</p>
-											<p>Ural Airlines</p>
-										</div>
-										<div class="col-sm-6 flight">
-											<span class="return-icon">14 апреля в 14:21</span>
-											<p><strong>U6 1025</strong></p>
-											<p><strong>Moscow - Praga</strong></p>
-											<p>02:05:00 → 06:05:00
-											<p>Airbus-321 Charter</p>
-											<p>Ural Airlines</p>
-										</div>
-									</div>
-								</div>
--->
+								<p class="food">Только завтрак — <span>BB</span></p>
+								<p class="Apartment">Apartment — <span>DBL + 1EXB + 2CHL (2-9)</span></p>
+								<p class="Apartment">Туроператор — <span>Natalie tours</span>
+									<span class="cssload-container visible">
+										<span class="cssload-speeding-wheel"></span>
+									</span>
+								</p>
+							</div>
+							<div class="reservation-img-wrapper">
+								<img src="img/cardTour.jpg" alt="">
+								<a href="#" class="reservation-descriptionHotel descriptionHotel-openModal" data-dismiss="modal">Описание 
+								отеля<i class="fa fa-arrow-up fa-rotate-120" aria-hidden="true"></i></a>
 							</div>
 						</div>
-<!--
-						<div class="col-md-4 map-container">
-							<div id="modal-map" style="width: 100%; height: 635px"></div>
-							<div class="tourCardContent-inf">
-								<p class="tourPrice"><span>&#8381;</span>19 433</p>
-								<a href="#" class="btn-lightBlue--lg open-form--js" id="up">Бронировать</a>
+						<div class="col-md-4 col-xs-12 reservation-header--right">
+							<p class="rub"><span>₽</span><span class="bit">19 433</span>
+								<span class="cssload-container visible">
+									<span class="cssload-speeding-wheel"></span>
+								</span>
+							</p>
+							<button class="btn-lightBlue--lg reservation-btn--js" disabled>Бронировать</button>
+						</div>
+					</div>
+					<div class="flight-wrapper">
+						<div class="flight-header">
+							<div class="flight-header--left">
+								<div class="flight-header--title">
+									<h3 class="flight-header--title-text">Перелет</h3>
+									<p class="reservation-rub flight-header--title-price"><span>₽</span><span class="bit">19 433</span></p>
+								</div>
+							</div>
+							<div class="flight-header--right">
+								<div class="flight-header--itm">
+									<span>Казань</span>
+									<span class="fa fa-long-arrow-right" aria-hidden="true"></span>
+									<span>Казахстан, Астана</span>
+								</div>
+								<div class="flight-header--itm">
+									<span>
+										С 31 августа 2017
+										<span>7 ночей</span>
+									</span>
+								</div>
+								<div class="flight-header--itm">
+									<span>2 взрослых</span>
+								</div>
 							</div>
 						</div>
--->
+						<div class="flight-content">
+							<div class="flight-content_top row">
+								<div class="col-md-8 col-xs-12 flight-content_top-left">
+									<span class="departure-icon">Туда</span>
+									<div class="flight-departure">
+										<p class="flight-time">
+											23:10 
+											<span><i class="flight-time--liner"></i><i class="flight-time--gradient"></i></span>
+										</p>
+										<p class="flight-airport">Kazan airport</p>
+										<p class="flight-date">31.09.2017 Чт.</p>
+									</div>
+									<div class="flight-arrival">
+										<p class="flight-time">02:40</p>
+										<p class="flight-airport">Heydar Aliev international airport</p>
+										<p class="flight-date">01.10.2017 Пт.</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-xs-12 flight-content_top-right">
+									<p class="flight-voyage">Рейс <span>j2 3828</span></p>
+									<p class="flight-airline">Авиакомпания <span>Air Kazan</span></p>
+								</div>
+								<div class="visible cssload-container">
+									<div class="cssload-speeding-wheel"></div>
+								</div>
+							</div>
+							<div class="flight-content_bottom row">
+								<div class="col-md-8 col-xs-12 flight-content_bottom-left">
+									<span class="return-icon">Обратно</span>
+									<div class="flight-departure">
+										<p class="flight-time">
+											23:10 
+											<span><i class="flight-time--liner"></i><i class="flight-time--gradient"></i></span>
+										</p>
+										<p class="flight-airport">Kazan airport</p>
+										<p class="flight-date">31.09.2017 Чт.</p>
+									</div>
+									<div class="flight-arrival">
+										<p class="flight-time">02:40</p>
+										<p class="flight-airport">Heydar Aliev international airport</p>
+										<p class="flight-date">01.10.2017 Пт.</p>
+									</div>
+								</div>
+								<div class="col-md-4 col-xs-12 flight-content_bottom-right">
+									<p class="flight-voyage">Рейс <span>j2 3828</span></p>
+									<p class="flight-airline">Авиакомпания <span>Air Kazan</span></p>
+								</div>
+								<div class="visible cssload-container">
+									<div class="cssload-speeding-wheel"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--Формы туристов-->
+					<div class="reservation-form--first">
+						<p class="reservation-form--title">Турист 1 <span>(на него мы оформляем договор)</span></p>
+						<div class="form-flex">
+							<div class="form-flex--itm">
+								<div>
+									<label for="FIO">ФИО</label>
+									<input type="text" class="reservation-input FIO" id="FIO" placeholder="Фамилия Имя Отчество">
+								</div>
+								<div>
+									<label for="DOB">Дата рождения</label>
+									<input type="tel" class="reservation-input DOB" id="DOB" placeholder="ДД.ММ.ГГГГ">
+								</div>
+								<div>
+									<label for="email">Эл. почта</label>
+										<input type="email" class="reservation-input" id="email" placeholder="Эл. почта">
+								</div>
+								<div>
+									<label for="inputTel">Телефон</label>
+									<input type="tel" id="inputTel" class="reservation-input" placeholder="+7">
+								</div>
+							</div>
+							<div class="form-flex--itm">
+								<div>
+									<label for="series">Серия и номер паспорта</label>
+									<input type="tel" class="reservation-input series" id="series" placeholder="Серия и номер">
+								</div>
+								<div>
+									<label for="passportDate">Дата и выдача паспорта</label>
+									<input type="tel" class="reservation-input DOB" id="passportDate" placeholder="ДД.ММ.ГГГГ">
+								</div>
+								<div>
+									<label for="passportExtradition">Кем выдан паспорт</label>
+									<input type="text" class="reservation-input" id="passportExtradition" placeholder="Пример: РФ, РБ, УФМС Уфы">
+								</div>
+								<div>
+									<label for="name">Адрес прописки</label>
+									<div class="input-group-flex">
+										<input type="text" class="reservation-input" placeholder="Пример: Г. Москва">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reservation-form">
+						<p class="reservation-form--title">Турист 2</p>
+						<div class="form-flex">
+							<div class="form-flex--itm">
+								<div>
+									<label for="FIO">ФИО</label>
+									<input type="text" class="reservation-input" id="FIO" placeholder="Фамилия Имя Отчество">
+								</div>
+								<div>
+									<label for="DOB">Дата рождения</label>
+									<input type="tel" class="reservation-input DOB" id="DOB" placeholder="ДД.ММ.ГГГГ">
+								</div>
+								<div>
+									<label for="series">Серия и номер паспорта</label>
+									<input type="tel" class="reservation-input series" id="series" placeholder="Серия и номер">
+								</div>
+								<div>
+									<label for="passportDate">Дата и выдача паспорта</label>
+									<input type="tel" class="reservation-input DOB" id="passportDate" placeholder="ДД.ММ.ГГГГ">
+								</div>
+								<div>
+									<label for="passportExtradition">Кем выдан паспорт</label>
+									<input type="text" class="reservation-input" id="passportExtradition" placeholder="Пример: РФ, РБ, УФМС Уфы">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Формы туристов-->
+					
+					<div class="reservation-footer">
+						<div class="col-md-8 col-xs-12 reservation-footer--left">
+							<div class="reservation--itm reservation--itm-dolor">
+								<p class="reservation-dollar"><span>$</span><span class="bit">259</span>
+									<span class="cssload-container visible">
+										<span class="cssload-speeding-wheel"></span>
+									</span>
+								</p>
+							</div>
+							<div class="reservation--itm reservation--itm-rub">
+								<p class="reservation-rub"><span>₽</span><span class="bit">19 433</span>
+									<span class="cssload-container visible">
+										<span class="cssload-speeding-wheel"></span>
+									</span>
+								</p>
+							</div>
+							<div class="reservation--itm reservation--itm-inf">
+								Вы можете оплатить сегодня 99%, а остальную часть — в течение 3 дней.
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12 reservation-footer--right">
+							<button href="#" class="btn-white--lg reservation-btn--js">Бронировать</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1241,7 +1132,7 @@
 					<h4 class="modal-title descriptionHotel-title">Упс..</h4>
 				</div>
 				<div class="modal-body">
-					<p>Нельзя выбрать более 10 отелей</p>
+					<p>Нельзя выбрать более <span id="limit"></span> <span id="namelimit"></span></p>
 				</div>
 			</div>
 		</div>
@@ -1251,6 +1142,7 @@
 			<img src="img/loader.gif" alt="">
 		</div>
 	</div>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	</script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

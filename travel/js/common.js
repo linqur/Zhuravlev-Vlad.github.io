@@ -1,10 +1,12 @@
 //Обновление даты в футере
 document.getElementById('newDate').innerHTML = (new Date()).getFullYear();
 //END Обновление даты в футере
-//Маска для телефона
+//Маска для форм
 $(function(){
   $("#inputTel").mask("+7(999)999-99-99");
-});//END Маска для телефона
+  $(".DOB").mask("99.99.9999");
+  $(".series").mask("9999 999999");
+});//END Маска для форм
 //Разделение чисел по разрядам
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -20,25 +22,28 @@ function bitNumber(){
 bitNumber()
 //END Разделение чисел по разрядам
 
-//$(document).on('click', '.sidebarTag-more--open', function(){
-//	
-//	if ($(this).hasClass('more-active')){
-//		$(this).removeClass('more-active');
-//		$('.sidebarTag-more').css('display', 'none');
-//	} else {
-//		$(this).addClass('more-active');
-//		$('.sidebarTag-more').css('display', 'block');
-//	}
-//});
-//
-//$(document).mouseup(function (e) {
-//	var container = $('.sidebarTag-more'),
-//		body = $('body');
-//	if(e.target!=container[0]&&!container.has(e.target).length){
-//		container.css('display', 'none');
-//		$('.sidebarTag-more--open').removeClass('more-active');
-//	}
-//});
+$(document).on('click', '.sidebarTag-more--open', function(){
+    var body = $('body');
+	
+	if ($(this).hasClass('more-active')){
+		$(this).removeClass('more-active');
+		$('.sidebarTag-more').css('display', 'none');
+        body.css('overflow', '');
+	} else {
+		$(this).addClass('more-active');
+		$('.sidebarTag-more').css('display', 'block');
+        body.css('overflow', 'hidden');
+	}
+});
+
+$(document).mouseup(function (e) {
+	var container = $('.sidebarTag-more'),
+		body = $('body');
+	if(e.target!=container[0]&&!container.has(e.target).length){
+		container.css('display', 'none');
+		$('.sidebarTag-more--open').removeClass('more-active');
+	}
+});
 
 
 var doc_w = $(document).width();
@@ -65,20 +70,6 @@ $(document).ready(function() {
 		  additionalMarginTop: 85
 		});
 	};//END
-	
-//Прокручивает страницу вверх при клике на "бронировать"
-$('a[href="#open-form"]').click(function() {
-	
-	if($('#open-form').hasClass('in') != true) {
-		setTimeout (function(){
-			var beforeForm = $('.reservation-form--first').offset().top - $(window).scrollTop(),
-					positionForm = $('#reservation').scrollTop();
-					$('#reservation').scrollTop(positionForm + beforeForm);
-		}, 250)									
-	}
-
-})//END Прокручивает страницу вверх при клике на "бронировать"
-	
 	
 	$(document).on('click', '.tag-link--js', function(){
 		var _$ = $(this),
@@ -161,24 +152,32 @@ $('a[href="#open-form"]').click(function() {
 	function removeCheke(a, b){
 		a.find('label').on('click', function(){
 			$(this).parent(a).parent().find('input').removeAttr('checked');
-			
 		});
 		b.find('label').on('click', function(){
-			a.find('input').removeAttr('checked');
-			
-			//console.log($('.resortCheckbox--js input').is(':checked'))
+			a.find('input').removeAttr('checked');			
 		});
 	};
-	$(document).on('click', '.hotelCheckbox--js input', function(){
-		if ($('.hotelCheckbox--js input[type=checkbox]:checked').length > 10){
-			$(this).removeAttr('checked');
-			$('#info').modal('show');
-			
-			setTimeout (function(){
-				$('#info').modal('hide');
-			}, 2000);
-		}
+	$('.hotelCheckbox--js').find('label').on('click', function(){
+		removeCheke($('.hotelRemove--js'), $('.hotelCheckbox--js'));
 	});
+	
+	function limitCheckbox(a, b, limit, namelimit){
+		$(document).on('click', a, function(){
+			if ($(b).find('input[type=checkbox]:checked').length > limit){
+				$(this).removeAttr('checked');
+				
+				$('#limit').html(limit);
+				$('#namelimit').html(namelimit);
+				$('#info').modal('show');
+				
+				setTimeout (function(){
+					$('#info').modal('hide');
+				}, 2000);
+			}
+		});
+	};
+	limitCheckbox('.resortCheckbox--js input', '.resortCheckbox--js', 5, 'курортов');
+	limitCheckbox('.hotelCheckbox--js input', '.hotelCheckbox--js', 10, 'отелей');
 	
 	
 	
@@ -364,50 +363,9 @@ $('a[href="#open-form"]').click(function() {
 	$( document ).ready(resizeSlider);
 });
 
-(function($){
-	$(window).on('load',function(){
-		$('.filterScrollOne').mCustomScrollbar({
-			scrollButtons: {enable: true},
-			theme: 'dark-thick',
-			scrollbarPosition: 'outside',
-            callbacks:{
-                whileScrolling:function(){ 
-                    console.log(this.mcs.topPct+"%")
-                }                                 
-            }
-        });
-        
-        $('.filterScrollTwo').mCustomScrollbar({
-			scrollButtons: {enable: true},
-			theme: 'dark-thick',
-			scrollbarPosition: 'outside',
-            callbacks:{
-                whileScrolling:function(){ 
-                    console.log(this.mcs.topPct+"%")
-                }                                 
-            }
-        });
-		
-		$('.formScroll').mCustomScrollbar({
-			scrollButtons: {enable: true},
-			theme: 'dark-thick'
-		});
-		
-		$('.tourist-scroll').mCustomScrollbar({
-			axis: 'x',
-			autoExpandScrollbar:true,
-			advanced:{autoExpandHorizontalScroll:true}
-		});
-		
-		if (doc_w > 768){
-			$('.scroll').mCustomScrollbar({
-				scrollButtons: {enable: false},
-				theme: 'minimal-dark',
-				//scrollbarPosition: 'outside'
-			});
-		}
-	});
-})(jQuery);
+
+
+
 
 $(window).scroll(function() {
 	if ($(".navbar").offset().top > 100) {
@@ -445,7 +403,7 @@ removeTextTourPrice()
 // END Убирает текст под ценой при изменении количества человек
 
 $(document).ready(function(){
-    $('#search-sidebar').keyup(function(){
+    $(document).on('keyup', '#search-sidebar',function(){
         _this = this;
 
         $.each($('.check-itm'), function() {
@@ -458,24 +416,61 @@ $(document).ready(function(){
     });
 });
 
-//$.ajax({
-//    type:'GET',
-//    url: 'http://module.sletat.ru/Main.svc/GetHotels?countryId=90&all=-1',
-//    dataType: 'json',
-//    success: function(data){
-////        console.log(data);
-//        var  hotel = data.GetHotelsResult.Data;
-//        for (i = 0; i  < data.GetHotelsResult.Count; i++){
-////            console.log(hotel[i].Id + ' - ' + hotel[i].Name);
-//            
-//            
-//            $('#hotelSearch').append('<div class="check-itm"><input type="checkbox" id="'+ hotel[i].Id +'" class="checkbox"><label for="'+ hotel[i].Id +'">'+ hotel[i].Name +'</label></div>').fadeIn();
-//            
-//            
-//        }
-//    },
-//    error: function(data){
-//        console.log(data);
-//    }
-//});
+function runStr(){
+	setTimeout (function(){
+		$('.allTours-title--js').each(function(){
+			var width1 = $(this).outerWidth(),
+				width2 = $(this).find('.allTours-title--text').outerWidth(),
+				marginText = width1 - width2;
 
+			if (width1 < width2){
+				$(this).find('.allTours-title--text').css('right', marginText)
+				$(this).hover(
+				function(){
+				  $(this).find('.allTours-title--text').css('right', '0')
+				},
+				function(){
+				  $(this).find('.allTours-title--text').css('right', marginText)
+				});
+			}
+
+
+		});
+	}, 0);
+};
+runStr();
+
+//Шаг два в бронировании
+var reservationBtn = $('.reservation-btn--js'),
+	reservationForm = $('#reservation'),
+	progressBar = $('.progressBar-content li:nth-child(1)'),
+	backStepBtn = $('.flight-header');
+
+reservationBtn.on('click', function(){
+	reservationBtn.removeClass('reservation-btn--js');
+	checkStep2 = reservationForm.hasClass('reservation--step2')
+	reservationForm.addClass('reservation--step2');
+	progressBar.addClass('active');
+
+	//Прокручивает страницу вверх при клике на "бронировать"
+	if (checkStep2 != true){
+		
+		var beforeForm = $('.reservation-form--first').offset().top - $(window).scrollTop(),
+			positionForm = $('#reservation').scrollTop();
+
+		$('#reservation').scrollTop(positionForm + beforeForm);
+	}
+});
+
+progressBar.on('click', function(){
+	progressBar.removeClass('active');
+	reservationBtn.addClass('reservation-btn--js');
+	reservationForm.removeClass('reservation--step2');
+	
+});
+backStepBtn.on('click', function(){
+	progressBar.removeClass('active');
+	reservationBtn.addClass('reservation-btn--js');
+	reservationForm.removeClass('reservation--step2');
+	
+});//END Шаг два в бронировании
